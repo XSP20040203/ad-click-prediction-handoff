@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "independent_process": true,
+  "rows": 404182,
+  "maximum_independent_formula_error": 0.0,
+  "maximum_csv_rounding_error": 4.999997377935772e-11,
+  "original_row_order_and_zero_based_ids_preserved": true,
+  "duplicate_log_id_rows_preserved": 858,
+  "development": {
+    "20191115": {
+      "baseline_v6": {
+        "auc": 0.7905480723412239,
+        "logloss": 0.04213764355222077,
+        "average_precision": 0.0827857924429125,
+        "mean_probability": 0.008885367834888977
+      },
+      "candidate": {
+        "auc": 0.7917734252154336,
+        "logloss": 0.042094141292958936,
+        "average_precision": 0.08301497813500834,
+        "mean_probability": 0.008817805034480803
+      },
+      "rounded10_auc": 0.7917734255523406,
+      "versus_v6": {
+        "auc_delta": 0.001225352874209662,
+        "user_cluster_approximate_95_interval": [
+          0.0008475288444291183,
+          0.0016031769039902056
+        ]
+      }
+    },
+    "20191116": {
+      "baseline_v6": {
+        "auc": 0.7987435691593445,
+        "logloss": 0.04407908248111689,
+        "average_precision": 0.08655781610631355,
+        "mean_probability": 0.009875823612777914
+      },
+      "candidate": {
+        "auc": 0.7999730088636126,
+        "logloss": 0.044007093697901276,
+        "average_precision": 0.08730907321488096,
+        "mean_probability": 0.00982112995605389
+      },
+      "rounded10_auc": 0.7999730091846199,
+      "versus_v6": {
+        "auc_delta": 0.0012294397042680316,
+        "user_cluster_approximate_95_interval": [
+          0.0007976529396201075,
+          0.0016612264689159558
+        ]
+      }
+    }
+  },
+  "source_submission_files_unchanged": true,
+  "final_label_column_read": false,
+  "models_trained": 0,
+  "final_auc": null,
+  "platform_improvement_verified": false,
+  "submission_sha256": "c55583694642524fbabe71b5a0d4d06e86582076e899d1087d1d9dfd73271a83"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "read_only_independent_agent": true,
+  "goal_met": false,
+  "raw_labels_dates_logids_match_cache_rows": 2526320,
+  "optimizer_and_scalers_use_outer_training_rows_only": true,
+  "held_labels_used_for_checkpoint_selection": true,
+  "scope": "Repeated chronological development dates; offline complete same-day source/exposure availability, no blind test",
+  "results": {
+    "20191115": {
+      "baseline_auc": 0.7905480723412239,
+      "gated20_blend_auc": 0.7912847258935978,
+      "delta": 0.0007366535523738449,
+      "rows": 424780,
+      "clicks": 3523,
+      "cpu_replay_rows": 2048,
+      "maximum_cpu_saved_gpu_error": 5.960464477539063e-8,
+      "approximate_user_cluster_95_delta_interval": [-0.0000192573, 0.0014925644]
+    },
+    "20191116": {
+      "baseline_auc": 0.7987435691593445,
+      "gated20_blend_auc": 0.7996141309422394,
+      "delta": 0.0008705617828949075,
+      "rows": 421983,
+      "clicks": 3724,
+      "cpu_replay_rows": 2048,
+      "maximum_cpu_saved_gpu_error": 2.384185791015625e-7,
+      "approximate_user_cluster_95_delta_interval": [0.0001111432, 0.0016299803]
+    }
+  },
+  "uncertainty_caveat": "Normal paired AUC influence contributions grouped by user; descriptive conditional on fitted models, unadjusted for model, weight, stopping and repeated development selection",
+  "model_and_trainer_snapshot_hashes_match_protocol": true,
+  "blocking_discrepancy": null
+}

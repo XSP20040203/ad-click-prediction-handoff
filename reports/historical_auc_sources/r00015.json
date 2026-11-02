@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "read_only_independent_agent": true,
+  "formula": "0.7*(0.9*(0.8*old+0.2*gated500)+0.1*allocated)+0.3*gated166",
+  "maximum_complete_blend_replay_error": 0.0,
+  "raw_label_date_logid_cache_rows_verified": 2526320,
+  "results": {
+    "20191115": {"rows": 424780, "clicks": 3523, "baseline_auc": 0.7905480723412239, "auc": 0.7921069471244595, "delta": 0.0015588747832356, "approximate_user_cluster_95_delta_interval": [0.000329234, 0.002788515]},
+    "20191116": {"rows": 421983, "clicks": 3724, "baseline_auc": 0.7987435691593445, "auc": 0.7998466417345275, "delta": 0.0011030725751830, "approximate_user_cluster_95_delta_interval": [-0.000146980, 0.002353125]}
+  },
+  "day16_core166_cpu_replay_rows": 1024,
+  "maximum_cpu_saved_gpu_error": 1.0430813e-7,
+  "maximum_core_numeric_reconstruction_error": 0.0,
+  "core_numeric_columns": 166,
+  "core_column_definition": "75 base+43 exposure+48 snapshot",
+  "snapshot_hashes_match_protocol": true,
+  "source_identity_and_validation_order_verified": true,
+  "uncertainty_caveat": "Paired AUC influence grouped by raw user; unadjusted for repeated development/model/weight/stopping selection",
+  "goal_met": false,
+  "final_auc": null
+}

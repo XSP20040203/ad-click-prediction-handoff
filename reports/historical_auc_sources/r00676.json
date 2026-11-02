@@ -1,0 +1,56 @@
+{
+  "status": "fixed_before_training",
+  "day": 20191116,
+  "seed": 42,
+  "variants": [
+    "mse",
+    "mse_permuted",
+    "news",
+    "news_permuted"
+  ],
+  "epochs": 1,
+  "batch_size": 1024,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "aux_weight": 0.02,
+  "checks": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "source_teacher_frozen": true,
+  "new_source_objective": "Masked-topic news click BCE, no advertisement outcome",
+  "teacher_comparison_caveat": "Both supervision target and necessary own-response masking differ from old MSE pretraining",
+  "source_inputs_fit_through_held_date": true,
+  "ad_labels_fit_strictly_before_held_date": true,
+  "baseline_reused": "Verified original protected component and semantic-ID disabled complete training; bridge disabled one-step regression separately tested",
+  "minimum_auc_gain_each_day": 0.003,
+  "maximum_logloss_worsening_each_day": 0.0001,
+  "actual_must_beat_corresponding_permuted_each_day": true,
+  "day15_selects_mse_or_news_before_day16_bridge_results": true,
+  "second_seed_confirmation_before_export": true,
+  "reference": {
+    "manifest_path": "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\reference_day_state_protected_seed42_v1\\manifest.json",
+    "manifest_sha256": "c6a0c256c3cda8d2b94dcca1bfcb5c14a3e40aa358039b7cf08f84fd075d940f"
+  },
+  "ensemble_rule": "original_v7 + .30 * (new_core - original_gated166)",
+  "large_row_feature_cache_saved": false,
+  "sources_sha256": {
+    "E:\\AI\\ml\\大作业上传\\analysis\\supervised_interest_20261101\\news_teacher.py": "8bb9f0462a4b16bfd28907c25ebe7944c3fc8143831ad4289e2d8381814d35b5",
+    "E:\\AI\\ml\\大作业上传\\analysis\\supervised_interest_20261101\\bridge_model.py": "6c5e0920b11db5152b276a9d480b693ffca7b404d90e81905a5f8f12a2314cad",
+    "E:\\AI\\ml\\大作业上传\\analysis\\supervised_interest_20261101\\run_bridge.py": "db31e917f06cb3c99e296deaae755a955b15c8e8fd32ed834d125af7d23f4728",
+    "E:\\AI\\ml\\大作业上传\\analysis\\supervised_interest_20261101\\test_teacher.py": "3013cb6bbf2e4c2648487f9b7cf46311895735c56e296b0d17c52303911b4c86",
+    "E:\\AI\\ml\\大作业上传\\analysis\\supervised_interest_20261101\\test_bridge_train.py": "c90b0a82bc66b64a71e22d66df1c9d9332c19520e687a159cf2909246db56582",
+    "E:\\AI\\ml\\大作业上传\\analysis\\supervised_interest_20261101\\evaluate_bridge.py": "8c6c4083948810e5cea679ea2c14b5179bb5d9ba50dd7f4f98e0d4c11ed23aad",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\features.py": "bd4ddb907511f5e03935d5ca5f285f80f8c877a1125c56586262414fc6e97a8d",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\model.py": "4832bae4c1d83dc33af3ffa0849d87df3f04b342968cad0ff74d060acaf78b18",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\experiment.py": "b29758da89f150f38ee9533795742c949f436c292ba90cd18679ab874062c886",
+    "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\protected_day_model.py": "94093704489e11f3acd834b1a0ad332c26e201c2d46836c04166f71a96a12967",
+    "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\day_model.py": "cda70b86e260877f94c1350678880a9173118af4cef9481fd4b1b1aeba5e4209",
+    "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\day_context.py": "aa7f11fbeb9c839f230a3a1b8aa757de882ce17a63b581f2b9cc56adb0522f0a",
+    "E:\\AI\\ml\\大作业上传\\analysis\\transductive_interest_20261101\\run_transductive.py": "92ff9f4053596c7f88708309245e31387c82634a164b1dfb9e1777df4c91e316",
+    "E:\\AI\\ml\\大作业上传\\analysis\\transductive_interest_20261101\\topic_data.py": "2a4ae89c75879eb949900f5041ebae0d1dfcbafb40f4d5742bc45497c9d7c5b0",
+    "E:\\AI\\ml\\大作业上传\\analysis\\transductive_interest_20261101\\interest_model.py": "36558f7cc8188635126c35bb239731cef53f6e9631f79a0e99b2e04684118d2d"
+  }
+}

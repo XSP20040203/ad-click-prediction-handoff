@@ -1,0 +1,146 @@
+[
+  {
+    "name": "phase5_collaborative_degrees__replace_tabm32",
+    "auc": 0.7749751912392926,
+    "logloss": 0.04405316624883079,
+    "average_precision": 0.041717091038904246,
+    "mean_prediction": 0.008622575839573331,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase5_collaborative_degrees\\collaborative\\seed42",
+    "max_neighbors": 16,
+    "combination": "replace_tabm32",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_degrees__replace_tabm32.npy",
+    "auc_change_from_previous_best": 0.0009767387265073868
+  },
+  {
+    "name": "phase5_collaborative_degrees__combine_previous_best",
+    "auc": 0.7739129580575244,
+    "logloss": 0.04408455230586908,
+    "average_precision": 0.04186579095128473,
+    "mean_prediction": 0.008381790158934428,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase5_collaborative_degrees\\collaborative\\seed42",
+    "max_neighbors": 16,
+    "combination": "combine_previous_best",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_degrees__combine_previous_best.npy",
+    "auc_change_from_previous_best": -8.549445526084831e-05
+  },
+  {
+    "name": "phase5_collaborative_mean__replace_tabm32",
+    "auc": 0.7764268584506413,
+    "logloss": 0.044055696581955635,
+    "average_precision": 0.04093136968268035,
+    "mean_prediction": 0.008167563359401825,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase5_collaborative_mean\\collaborative\\seed42",
+    "max_neighbors": 16,
+    "combination": "replace_tabm32",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_mean__replace_tabm32.npy",
+    "auc_change_from_previous_best": 0.002428405937856093
+  },
+  {
+    "name": "phase5_collaborative_mean__combine_previous_best",
+    "auc": 0.7752599455486554,
+    "logloss": 0.044110495261662566,
+    "average_precision": 0.041663104668793687,
+    "mean_prediction": 0.007926777678762922,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase5_collaborative_mean\\collaborative\\seed42",
+    "max_neighbors": 16,
+    "combination": "combine_previous_best",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_mean__combine_previous_best.npy",
+    "auc_change_from_previous_best": 0.0012614930358701981
+  },
+  {
+    "name": "phase5_collaborative_neighbors__replace_tabm32",
+    "auc": 0.77674767927286,
+    "logloss": 0.04400279938141741,
+    "average_precision": 0.04159720313303085,
+    "mean_prediction": 0.00854792368000462,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase5_collaborative_neighbors\\collaborative\\seed42",
+    "max_neighbors": 16,
+    "combination": "replace_tabm32",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_neighbors__replace_tabm32.npy",
+    "auc_change_from_previous_best": 0.00274922676007483
+  },
+  {
+    "name": "phase5_collaborative_neighbors__combine_previous_best",
+    "auc": 0.775419080221314,
+    "logloss": 0.04404893411391371,
+    "average_precision": 0.041936557910985335,
+    "mean_prediction": 0.008307137999365716,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase5_collaborative_neighbors\\collaborative\\seed42",
+    "max_neighbors": 16,
+    "combination": "combine_previous_best",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_neighbors__combine_previous_best.npy",
+    "auc_change_from_previous_best": 0.0014206277085287988
+  },
+  {
+    "name": "phase5_collaborative_neighbors64__replace_tabm32",
+    "auc": 0.7764263422666982,
+    "logloss": 0.04405568021788865,
+    "average_precision": 0.04091967219733989,
+    "mean_prediction": 0.00817846600303031,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase5_collaborative_neighbors64\\collaborative\\seed42",
+    "max_neighbors": 64,
+    "combination": "replace_tabm32",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_neighbors64__replace_tabm32.npy",
+    "auc_change_from_previous_best": 0.0024278897539129485
+  },
+  {
+    "name": "phase5_collaborative_neighbors64__combine_previous_best",
+    "auc": 0.7752570954374941,
+    "logloss": 0.0441101357732479,
+    "average_precision": 0.04166202242730785,
+    "mean_prediction": 0.007937680322391406,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase5_collaborative_neighbors64\\collaborative\\seed42",
+    "max_neighbors": 64,
+    "combination": "combine_previous_best",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_neighbors64__combine_previous_best.npy",
+    "auc_change_from_previous_best": 0.001258642924708897
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "selected_enhancement": "both",
+  "screening_seed": 42,
+  "screening_complete_and_replayed": true,
+  "seed42_mean_auc_delta": 0.0009128950185355311,
+  "rule": "Improve AUC on both dates; select largest two-day mean improvement",
+  "confirmation_seeds": [2024, 2025],
+  "validation_days": [20191115, 20191116],
+  "paired_variants": ["none", "both"],
+  "baseline_retrained_locally_for_each_seed": false,
+  "baseline_origin": {"42": "local retraining", "2024": "local retraining", "2025": "reuse server checkpoint with full local replay"},
+  "reuse_reason": "Avoid repeating existing matched-seed baselines after local seed42 reproduced both days and seed2024 day15 differed by only 0.000010706 AUC. Candidate models are all freshly trained locally.",
+  "concurrent_training_processes": 1,
+  "source_setting": "offline_same_day_for_candidate",
+  "ad_label_rule": "Strictly previous three calendar days only",
+  "final_test_used": false,
+  "interpretation": "Exploratory reused holdouts; report every paired outcome, including losses"
+}

@@ -1,0 +1,41 @@
+{
+  "status": "complete_and_verified",
+  "selection": {
+    "selection_day": 20191115,
+    "leaves": 7,
+    "rounds": 499,
+    "exponent": 0.1,
+    "best_day15_candidate_auc": 0.7894751591723064,
+    "day15_base_auc": 0.7893219216708781,
+    "day16_labels_used_for_selection": false
+  },
+  "day15": {
+    "base_auc": 0.7893219216708781,
+    "fixed_correction_auc": 0.7894751591723064
+  },
+  "day16": {
+    "base_auc": 0.797183233748322,
+    "fixed_correction_auc": 0.7971520048649107,
+    "auc_gain": -3.122888341133834e-05
+  },
+  "goal_auc": 0.85,
+  "goal_met": false,
+  "tests": {
+    "status": "passed",
+    "tests": [
+      "advertisement_label_and_log_id_independence",
+      "future_date_feature_isolation",
+      "user_day_feature_isolation",
+      "row_permutation_alignment",
+      "validation_future_target_train_isolation",
+      "share_schema_fitted_on_earlier_inputs_only",
+      "raw_user_identity_renumbering_invariance",
+      "finite_label_free_budget_correction"
+    ],
+    "toy_feature_count": 105
+  },
+  "lightgbm_version": "4.6.0",
+  "seconds": 50.14474019999943,
+  "final_auc": null,
+  "final_labels_used": false
+}

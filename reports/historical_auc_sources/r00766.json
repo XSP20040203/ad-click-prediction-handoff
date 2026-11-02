@@ -1,0 +1,31 @@
+{
+  "epoch": 0.750182437363172,
+  "train_logloss_so_far": 0.0462408456700732,
+  "auc": 0.7254460531934062,
+  "logloss": 0.047541309148073196,
+  "average_precision": 0.024333252050140593,
+  "elapsed_seconds": 138.00832694099518,
+  "seed": 42,
+  "validation_day": 20191116,
+  "variant": "temporal",
+  "model_options": {
+    "numeric_dim": 21,
+    "embedding_dim": 16,
+    "interest_dim": 32,
+    "history_days": 3,
+    "cross_rank": 16,
+    "dropout": 0.15,
+    "variant": "temporal",
+    "initial_ctr": 0.008377935663346698
+  },
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "batch_size": 512,
+  "max_epochs": 4,
+  "validation_interval_epochs": 0.25,
+  "source_history_rule": "Each ad day uses source dates strictly before that day; no same-day source feedback",
+  "final_test_used": false,
+  "comparison_scope": "Architectural controls share static fields and source window numerics; full chronological holdout",
+  "train_rows": 2104337,
+  "valid_rows": 421983
+}

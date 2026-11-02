@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "rows": 505264,
+  "reference_dcn_auc": 0.769227665997684,
+  "maximum_probability_error": 0.0,
+  "reference_precision": "float32 matching original inference",
+  "modern_precision": "full CUDA AMP replay",
+  "ensemble_weights": "Fixed before scoring and reconstructed from matching validation rows in build_phase2_report.py"
+}

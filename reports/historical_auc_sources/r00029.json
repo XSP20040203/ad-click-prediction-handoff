@@ -1,0 +1,48 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "model": "BoundedIDDCN",
+  "auc": 0.76492613653325,
+  "logloss": 0.04392738755748046,
+  "average_precision": 0.06167409754141353,
+  "mean_probability": 0.010329781100153923,
+  "best_fractional_epoch": 0.5003046922608165,
+  "maximum_reload_error": 0.0,
+  "train_rows": 1679557,
+  "valid_rows": 424780,
+  "validation_clicks": 3523,
+  "seconds": 152.77848550000272,
+  "baseline_auc": 0.7905480723412239,
+  "fixed_blends": [
+    {
+      "weight": 0.05,
+      "auc": 0.7905092384014312,
+      "logloss": 0.04214431085658016,
+      "average_precision": 0.08266724401762776,
+      "mean_probability": 0.008957588473674867
+    },
+    {
+      "weight": 0.1,
+      "auc": 0.7902894300681929,
+      "logloss": 0.04216188745370593,
+      "average_precision": 0.08245478271547221,
+      "mean_probability": 0.009029809112460763
+    },
+    {
+      "weight": 0.2,
+      "auc": 0.7894512468502795,
+      "logloss": 0.042222623398203006,
+      "average_precision": 0.08137457197981902,
+      "mean_probability": 0.009174250390032545
+    },
+    {
+      "weight": 0.3,
+      "auc": 0.7881250185842197,
+      "logloss": 0.04231264249212541,
+      "average_precision": 0.0798070010758088,
+      "mean_probability": 0.009318691739255253
+    }
+  ],
+  "goal_met": false,
+  "final_auc": null
+}

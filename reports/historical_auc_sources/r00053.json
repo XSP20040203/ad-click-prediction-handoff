@@ -1,0 +1,48 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191116,
+  "model": "GatedCrossCTR",
+  "auc": 0.7896774359502997,
+  "logloss": 0.04442811984734524,
+  "average_precision": 0.0802702685247497,
+  "mean_probability": 0.009885819628834724,
+  "best_fractional_epoch": 1.0,
+  "maximum_reload_error": 0.0,
+  "train_rows": 2104337,
+  "valid_rows": 421983,
+  "validation_clicks": 3724,
+  "seconds": 367.6361539999998,
+  "baseline_auc": 0.7987435691593445,
+  "fixed_blends": [
+    {
+      "weight": 0.05,
+      "auc": 0.7989639612804579,
+      "logloss": 0.044060862926717265,
+      "average_precision": 0.0867915844588839,
+      "mean_probability": 0.00987632340537079
+    },
+    {
+      "weight": 0.1,
+      "auc": 0.7990848391830893,
+      "logloss": 0.044047036094510654,
+      "average_precision": 0.08696569987936109,
+      "mean_probability": 0.009876823197963663
+    },
+    {
+      "weight": 0.2,
+      "auc": 0.7990688632870568,
+      "logloss": 0.04403110637694832,
+      "average_precision": 0.08714832167480864,
+      "mean_probability": 0.009877822783149411
+    },
+    {
+      "weight": 0.3,
+      "auc": 0.7987534272964435,
+      "logloss": 0.04402966486491742,
+      "average_precision": 0.0869407401298483,
+      "mean_probability": 0.009878822436434316
+    }
+  ],
+  "goal_met": false,
+  "final_auc": null
+}

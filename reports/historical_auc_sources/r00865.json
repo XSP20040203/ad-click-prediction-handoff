@@ -1,0 +1,80 @@
+{
+  "status": "verified_development_reference",
+  "development": {
+    "20191115": {
+      "auc": 0.7934700801999591,
+      "logloss": 0.04204855010744797,
+      "average_precision": 0.0823399607498202,
+      "mean_probability": 0.008615116633256282
+    },
+    "20191116": {
+      "auc": 0.8012412673501383,
+      "logloss": 0.04389861132045347,
+      "average_precision": 0.08749928332848086,
+      "mean_probability": 0.009657048985881815
+    }
+  },
+  "family": "protected_day_aux_v1",
+  "mode": "both",
+  "endpoint": "best",
+  "seed": 42,
+  "recipe": "replacement",
+  "mean_control": false,
+  "selection": "Compared fixed development methods on repeatedly reused dates; seed confirmation pending",
+  "input_predictions_sha256": {
+    "20191115": {
+      "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\runs\\protected_day_aux_v1_day15_seed42\\both\\best_prediction.npy": "5d89548e0d55bcee74c5ab6eb305c64515c7267fac175893e387538926e1bd15",
+      "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\fixed_gated20_allocated10_core30_day15.npy": "113b93a9dd6c02d395902140e88c5757c91a0ce81575c036e9af325ebc20360d",
+      "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\results\\gated166_day15\\validation_prediction.npy": "10b6fbb4fd5d4c5bc7b151bb6fab591826dc8793dfa6a0fa8e98b5cfb692d412",
+      "E:\\AI\\ml\\大作业上传\\analysis\\learned_audience_20261101\\reference\\day15_prediction.npy": "786788b3f28f6ad7bc39d8d2a7cfeb0f65dcf17f8fe21e0938c70ea9989041b8"
+    },
+    "20191116": {
+      "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\runs\\protected_day_aux_v1_day16_seed42\\both\\best_prediction.npy": "c5080ab888c63d677427b872d7a5b53ef956f4d743045ab0eee184b1205eb428",
+      "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\fixed_gated20_allocated10_core30_day16.npy": "32a1315341af205c6f422e7ad70be52924a3ac5cd28f270d1c11adb4778c73a5",
+      "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\results\\gated166_day16\\validation_prediction.npy": "8865466cabf686a7cc4ff584c02de04c9b0d99e704735d284928b1b7eaad96dc",
+      "E:\\AI\\ml\\大作业上传\\analysis\\learned_audience_20261101\\reference\\day16_prediction.npy": "f3d9e3f73ede07468acd100a75b38d31c436d214cc70d5a557d6d9ee729c8fb1"
+    }
+  },
+  "verification_sha256": "6e889bdbf5578bef534ac0dd28624f67a83c3ca960ab5a4a923dc8884ff4df13",
+  "comparison_sha256": "f20d3bdb617d73e84522237ceab45cbe14e6407482fa5b4141d855ca0bb9ed1e",
+  "source_sha256": "083387abc77eb96eb7d93e768b12bb2b8b8cdba6b02a272f590b6ccf53ef99be",
+  "files_sha256": {
+    "day15_indices.npy": "d82f9999fec7aaa235312227f3d73826687f51a3e5e1981a40d26a0255e76a24",
+    "day15_prediction.npy": "e259c0d3a52df8376ec663ed085b2ee59519cbe4624a1c7e393a781d954eac61",
+    "day16_indices.npy": "4476f254ab1c3b9062d9d9a58a80bb00f72e88388792467b2a9925b8cc6b1738",
+    "day16_prediction.npy": "8689af8c3631e83ded6f1e1dad82c0b9ad00a6c875277f7f7a42e569119349ac",
+    "audit_verification.json": "6e889bdbf5578bef534ac0dd28624f67a83c3ca960ab5a4a923dc8884ff4df13",
+    "audit_comparison.csv": "f20d3bdb617d73e84522237ceab45cbe14e6407482fa5b4141d855ca0bb9ed1e",
+    "audit_paired_changes.csv": "e3ec378ddad01a3d7bdb90ba939d7f6cd09c5aa0ea9ef272569ab237c2765f46",
+    "audit_freezer_source.txt": "083387abc77eb96eb7d93e768b12bb2b8b8cdba6b02a272f590b6ccf53ef99be",
+    "audit_confirmation_protocol.json": "919d6acfd3be82bc6d6be4e6232951ad80c776e790181b71da3fc34e4c05c6bb",
+    "audit_protected_confirmation_protocol.json": "c6b00455bad55441dbde40aa89bdebb4b8725db36320f79093fc34220eb3a1b1",
+    "audit_mean_control_protocol.json": "c115eead933642425c02d1aff1ce1b980c142fdaf28c01a76f8088ff99c47784",
+    "audit_equal_ensemble_protocol.json": "e3128e417fbb92694d88b0d4bf5724eb38e717d69507ca35b75ca95d703b5a40",
+    "audit_day15_features.json": "0a3294bd729439a7bcfe68ad87184a141e047edcfc18d09f25ba41818a83abac",
+    "audit_day15_protocol.json": "4c8f1293469c4e39fc15e2dfa5e7b8e485ad1e5b458f78ad1fa55d2c5cd00ff2",
+    "audit_day16_features.json": "aff1dd89d2d7de56f164676d8f06fa09f7142bdcbab21cce19a3a75624ad11ec",
+    "audit_day16_protocol.json": "726922919a6e5be4b2b937b34c44d0664435436200690e2c836a6326ff6f7813",
+    "audit_verifier_source.txt": "f47cca1ff2f6a8d387fcbe4c9fd4695ceb8a3b4ed6d7bb454edd85f6adafeb52"
+  },
+  "original_v7_submission_sha256": "c44a9e803b8b4566b9bcef4e1bf85181c2ee00eee71a9f84474b73c619c121b9",
+  "final_submission_exported": false,
+  "final_test_auc": null,
+  "development_threshold_met": false,
+  "audit_snapshots_sha256": {
+    "audit_verification.json": "6e889bdbf5578bef534ac0dd28624f67a83c3ca960ab5a4a923dc8884ff4df13",
+    "audit_comparison.csv": "f20d3bdb617d73e84522237ceab45cbe14e6407482fa5b4141d855ca0bb9ed1e",
+    "audit_paired_changes.csv": "e3ec378ddad01a3d7bdb90ba939d7f6cd09c5aa0ea9ef272569ab237c2765f46",
+    "audit_freezer_source.txt": "083387abc77eb96eb7d93e768b12bb2b8b8cdba6b02a272f590b6ccf53ef99be",
+    "audit_verifier_source.txt": "f47cca1ff2f6a8d387fcbe4c9fd4695ceb8a3b4ed6d7bb454edd85f6adafeb52",
+    "audit_confirmation_protocol.json": "919d6acfd3be82bc6d6be4e6232951ad80c776e790181b71da3fc34e4c05c6bb",
+    "audit_protected_confirmation_protocol.json": "c6b00455bad55441dbde40aa89bdebb4b8725db36320f79093fc34220eb3a1b1",
+    "audit_mean_control_protocol.json": "c115eead933642425c02d1aff1ce1b980c142fdaf28c01a76f8088ff99c47784",
+    "audit_equal_ensemble_protocol.json": "e3128e417fbb92694d88b0d4bf5724eb38e717d69507ca35b75ca95d703b5a40",
+    "audit_day15_features.json": "0a3294bd729439a7bcfe68ad87184a141e047edcfc18d09f25ba41818a83abac",
+    "audit_day15_protocol.json": "4c8f1293469c4e39fc15e2dfa5e7b8e485ad1e5b458f78ad1fa55d2c5cd00ff2",
+    "audit_day16_features.json": "aff1dd89d2d7de56f164676d8f06fa09f7142bdcbab21cce19a3a75624ad11ec",
+    "audit_day16_protocol.json": "726922919a6e5be4b2b937b34c44d0664435436200690e2c836a6326ff6f7813"
+  },
+  "sealed_before_reference_publication": true
+}

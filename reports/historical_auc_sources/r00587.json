@@ -1,0 +1,61 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "mode": "bce",
+  "initial_backbone_sha256": "793c76b6ef2d2c463b974a99579e4165d71921be218998bad9494a9017b03f9e",
+  "row_order_sha256": "3d0d2924edcfac5f30b93da94792474189960945b14d33163917f4fcb59655c0",
+  "augmentation_draws_sha256": "a6b67dc2857d648553997cbc20b0c081bc71acfaa7b28211b2e4fbe6042b394d",
+  "fixed_endpoint": {
+    "fractional_epoch": 1.0,
+    "auc": 0.7856243205311304,
+    "logloss": 0.04235599192499821,
+    "average_precision": 0.07855833270002625,
+    "mean_probability": 0.008010371588170528,
+    "train_objective": 0.043177434956784846,
+    "train_bce": 0.04317701635784272,
+    "train_augmented_bce": 0.0431788253045274,
+    "train_rank": 0.0,
+    "seconds": 145.11310010000034
+  },
+  "best_checkpoint": {
+    "fractional_epoch": 0.7501523461304083,
+    "auc": 0.7865696489829944,
+    "logloss": 0.04233626558169159,
+    "average_precision": 0.07796857693735458,
+    "mean_probability": 0.008910326287150383,
+    "train_objective": 0.04372265724545446,
+    "train_bce": 0.043722179006394774,
+    "train_augmented_bce": 0.04372424654780632,
+    "train_rank": 0.0,
+    "seconds": 111.01239870000063
+  },
+  "v7_replace30": {
+    "auc": 0.7920173715984903,
+    "logloss": 0.042092703471005896,
+    "average_precision": 0.08256058424801122,
+    "mean_probability": 0.008770473934217446
+  },
+  "candidate_blend10": {
+    "auc": 0.7925849893992604,
+    "logloss": 0.0420708314117488,
+    "average_precision": 0.0828302724467091,
+    "mean_probability": 0.008713646085567678
+  },
+  "cold_core_replace30": {
+    "auc": 0.7927228821275392,
+    "logloss": 0.04206517026750725,
+    "average_precision": 0.08311492659369529,
+    "mean_probability": 0.008720253280173477
+  },
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "seconds": 156.80703950000043,
+  "files_sha256": {
+    "best_model.pt": "5b2d65a683a2b76767d39907d2dd295a23cef510c895dbd300bf328ba7e6eb63",
+    "final_model.pt": "0dc065742fd8f99d8208537a0c88ed43885a3c21f6e9c4ff142d5120a45e4e44",
+    "best_prediction.npy": "14220a0fef61fdcf3cfd5e0b2c5e5cf6e2d4e7997bd6c1c10a44cf8d87a71b28",
+    "final_prediction.npy": "34adf0b6f3c393893102ac0ec5f3e7de83ad5829d0e8a6ddceed406fa6785ef9"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "mode": "csv_positive",
+  "core_scores": {
+    "auc": 0.7900274299920174,
+    "logloss": 0.04456301033974884,
+    "average_precision": 0.08129446434135562,
+    "mean_probability": 0.01042686216533184
+  },
+  "candidate_scores": {
+    "auc": 0.8011719701997587,
+    "logloss": 0.04391177469009697,
+    "average_precision": 0.08724631548114212,
+    "mean_probability": 0.009806762908509719
+  },
+  "rounded6_scores": {
+    "auc": 0.8011718135481499,
+    "logloss": 0.04391178229484494,
+    "average_precision": 0.08724553280183331,
+    "mean_probability": 0.00980676332932843
+  },
+  "auc_gain": -6.929715037962136e-05,
+  "past_retention_scores": {
+    "auc": 0.8467660234296044,
+    "logloss": 0.037331586743008106,
+    "average_precision": 0.1390962516990698,
+    "mean_probability": 0.008656962774693966
+  },
+  "candidate_prediction_sha256": "23b38bf28312155c37e954f649502ae2e2383997f6a7aa320df07338b245eb9c"
+}

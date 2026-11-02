@@ -1,0 +1,16 @@
+{
+  "status": "user_reported_and_exact_file_hash_bound",
+  "client_date": "2026-11-01",
+  "version": "v9",
+  "submission": "E:/AI/ml/大作业上传/output/platform_feedback_v9/submission_v9.csv",
+  "submission_sha256": "c55583694642524fbabe71b5a0d4d06e86582076e899d1087d1d9dfd73271a83",
+  "user_reported_platform_auc": 0.80856,
+  "previous_best_version": "v6",
+  "previous_best_user_reported_platform_auc": 0.80817,
+  "auc_improvement": 0.00039,
+  "score_source": "Human feedback in this chat, attached to the exact submission_v9.csv path",
+  "platform_score_independently_recomputed": false,
+  "final_label_column_read": false,
+  "auc_085_goal_met": false,
+  "export_time_verification_preserved": "verification.json"
+}

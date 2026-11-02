@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "day": 20191115,
+  "results": {
+    "original": {
+      "auc": 0.7938319656483054,
+      "logloss": 0.042034408506586234,
+      "average_precision": 0.0824929615396982,
+      "mean_probability": 0.008617185857370329,
+      "mean_absolute_logit_change": 0.0
+    },
+    "permute_response_only": {
+      "auc": 0.7937587607777634,
+      "logloss": 0.04203728667692594,
+      "average_precision": 0.08255119901530862,
+      "mean_probability": 0.00863626709916242,
+      "mean_absolute_logit_change": 0.034306115264082275
+    },
+    "permute_volume_only": {
+      "auc": 0.7936571994429515,
+      "logloss": 0.04204744931586999,
+      "average_precision": 0.0823167709592735,
+      "mean_probability": 0.008621263188806797,
+      "mean_absolute_logit_change": 0.10320088144828896
+    },
+    "permute_advertisement_groups": {
+      "auc": 0.7937338003375864,
+      "logloss": 0.04204021461587926,
+      "average_precision": 0.08247174940254796,
+      "mean_probability": 0.008626429370900423,
+      "mean_absolute_logit_change": 0.033282146076790954
+    },
+    "permute_user_groups": {
+      "auc": 0.793662496971011,
+      "logloss": 0.04204699577093318,
+      "average_precision": 0.08233989750665699,
+      "mean_probability": 0.00865561913476832,
+      "mean_absolute_logit_change": 0.11440014232938067
+    },
+    "remove_temporal_output": {
+      "auc": 0.7935537035872723,
+      "logloss": 0.04204568789325348,
+      "average_precision": 0.08227889033172053,
+      "mean_probability": 0.008528453071176641,
+      "mean_absolute_logit_change": 0.08089958754608782
+    }
+  },
+  "interpretation": "Frozen-head interventions measure predictive dependence, not causal feature value or a newly trained model. CPU head rounding may slightly affect interventions.",
+  "advertisement_labels_used_only_for_metrics": true,
+  "models_trained": 0,
+  "checkpoint_sha256": "31eda948b8b03ab1d49a9fe4b9df76d0fee7e6b9b52c47e65199cc8cbfd0e5ad",
+  "source_sha256": "aa4a9d9d3192941b130c535d9a7379d4f43f73699d14f379dfcfbb70547e3762"
+}

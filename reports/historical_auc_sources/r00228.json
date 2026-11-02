@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "auc": 0.8504187550768378,
+  "logloss": 0.04051632293049667,
+  "threshold_exceeded_on_original_random_holdout": true,
+  "validation_rows": 505264,
+  "validation_clicks": 4271,
+  "maximum_ensemble_replay_error": 0.0,
+  "members": [
+    {
+      "name": "random20_catboost_aligned_lowalpha_d8",
+      "weight": 0.5,
+      "model_sha256": "8dc40f4cbab0bc3c475057fd3e7fa9e12b623540ca3992d714510d8ee92ebdd7",
+      "full_feature_replay_rows": 505264,
+      "maximum_feature_replay_error": 0.0
+    },
+    {
+      "name": "random20_catboost_aligned_lowalpha_d6",
+      "weight": 0.5,
+      "model_sha256": "ae5dc96e3c0006ce851d9a5b650edf8133ccc3ac915d73945f18c4b26e492812",
+      "full_feature_replay_rows": 505264,
+      "maximum_feature_replay_error": 0.0
+    }
+  ],
+  "validation_indices_sha256": "96c16a33ba7598469f8fd8bb38fd7272f843d89e88325fa0a3a4a496776bbd12",
+  "prediction_sha256": "ef5f22dd8998687b9e6f40b9a49287d12f45fd0386f4cd7e726df27bb4ed5550",
+  "original_submission_unchanged": {
+    "submission_best.csv": true,
+    "final_predictions_best_with_ids.csv": true
+  },
+  "final_labels_available": false,
+  "final_auc_verified": false,
+  "chronological_threshold_achieved": false,
+  "scope": "Verified fixed random development holdout only; not a claim of future-day or final AUC above .85"
+}

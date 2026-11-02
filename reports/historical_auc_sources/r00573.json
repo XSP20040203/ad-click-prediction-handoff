@@ -1,0 +1,46 @@
+{
+  "rule": "v6_75_v8_25",
+  "candidates": {
+    "delta_odds_cap075": {
+      "auc": 0.7916917488145524,
+      "logloss": 0.04210110392459571,
+      "average_precision": 0.08258037914352609,
+      "mean_probability": 0.0087586691659523,
+      "versus_v6": {
+        "auc_delta": 0.0011436764733283589,
+        "user_cluster_approximate_95_interval": [
+          0.00022739126424039299,
+          0.0020599616824163247
+        ]
+      }
+    },
+    "half_delta_odds_cap075": {
+      "auc": 0.791326885780796,
+      "logloss": 0.04211113309235987,
+      "average_precision": 0.0827673418573146,
+      "mean_probability": 0.008814262450190642,
+      "versus_v6": {
+        "auc_delta": 0.0007788134395722013,
+        "user_cluster_approximate_95_interval": [
+          0.00032003627603841765,
+          0.0012375906031059849
+        ]
+      }
+    },
+    "v6_75_v8_25": {
+      "auc": 0.7917734252154336,
+      "logloss": 0.042094141292958936,
+      "average_precision": 0.08301497813500834,
+      "mean_probability": 0.008817805034480803,
+      "versus_v6": {
+        "auc_delta": 0.001225352874209662,
+        "user_cluster_approximate_95_interval": [
+          0.0008475288444291183,
+          0.0016031769039902056
+        ]
+      }
+    }
+  },
+  "day16_used_for_rule_selection": false,
+  "protocol_sha256": "1260c3573e13c420d4baab12d469b3c95dd3124dbd4981953ab9c659116dfa62"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "models_fit": 0,
+  "weights_searched": false,
+  "reference_auc": 0.8012412673501383,
+  "direct_teacher_substitution_auc": 0.800654249473167,
+  "adapted_student_replacement_auc": 0.8011263987059407,
+  "direct_ranking_score_min": 0.0002988930268602049,
+  "direct_ranking_score_max": 0.8510563355152195,
+  "direct_outside_probability_range": 0,
+  "score_is_not_claimed_calibrated_probability": true,
+  "direct_formula": "reference+.30*(ensemble_teacher-initial_core)",
+  "specification_sha256": "59e001a02ccbee8f74ada7e880b536ba3ab9f42f958af411a4074d788209153c",
+  "source_sha256": "9364fe0513e34a34bd8f452962c2d0ddfcfdd230d9bc79857600f96827dc0ae6",
+  "submission_created": false,
+  "final_auc": null,
+  "goal_met": false
+}

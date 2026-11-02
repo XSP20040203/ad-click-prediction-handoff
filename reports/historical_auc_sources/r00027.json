@@ -1,0 +1,48 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "model": "AttentiveInteractionCTR",
+  "auc": 0.7770683268949803,
+  "logloss": 0.04293252627281747,
+  "average_precision": 0.06533465311242184,
+  "mean_probability": 0.00789374578744173,
+  "best_fractional_epoch": 1.0,
+  "maximum_reload_error": 0.0,
+  "train_rows": 1679557,
+  "valid_rows": 424780,
+  "validation_clicks": 3523,
+  "seconds": 273.1770968000019,
+  "baseline_auc": 0.7905480723412239,
+  "fixed_blends": [
+    {
+      "weight": 0.05,
+      "auc": 0.7905882370642674,
+      "logloss": 0.04214202453286699,
+      "average_precision": 0.08255966940695841,
+      "mean_probability": 0.008835786681689845
+    },
+    {
+      "weight": 0.1,
+      "auc": 0.7905808486904222,
+      "logloss": 0.042149240238262574,
+      "average_precision": 0.0823816785747094,
+      "mean_probability": 0.008786205528490713
+    },
+    {
+      "weight": 0.2,
+      "auc": 0.7904235447196684,
+      "logloss": 0.04217234220574844,
+      "average_precision": 0.08150623216163222,
+      "mean_probability": 0.008687043222092452
+    },
+    {
+      "weight": 0.3,
+      "auc": 0.7900334035422907,
+      "logloss": 0.04220747419601407,
+      "average_precision": 0.08067047841570454,
+      "mean_probability": 0.008587880970026574
+    }
+  ],
+  "goal_met": false,
+  "final_auc": null
+}

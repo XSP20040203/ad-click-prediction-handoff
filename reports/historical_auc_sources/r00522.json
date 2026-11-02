@@ -1,0 +1,18 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "auc": 0.7618890553414612,
+  "logloss": 0.04344296558957718,
+  "average_precision": 0.061760483706557796,
+  "best_iteration": 141,
+  "seconds": 149.67032370000015,
+  "maximum_reload_error": 0.0,
+  "features": 524,
+  "train_rows": 795809,
+  "validation_rows": 424780,
+  "validation_clicks": 3523,
+  "goal_auc": 0.85,
+  "goal_met": false,
+  "final_auc": null,
+  "final_labels_available": false
+}

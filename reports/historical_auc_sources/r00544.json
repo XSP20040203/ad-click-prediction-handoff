@@ -1,0 +1,66 @@
+{
+  "token_auc": 0.7726089092814834,
+  "baseline_auc": 0.7893219216708781,
+  "updated_baseline_auc": 0.7896107252197929,
+  "blends": [
+    {
+      "baseline": "original",
+      "token_weight": 0.05,
+      "auc": 0.7893121857279971,
+      "delta": -9.73594288100621e-06
+    },
+    {
+      "baseline": "original",
+      "token_weight": 0.1,
+      "auc": 0.7892075774049017,
+      "delta": -0.00011434426597645153
+    },
+    {
+      "baseline": "original",
+      "token_weight": 0.2,
+      "auc": 0.7887468676554472,
+      "delta": -0.0005750540154308981
+    },
+    {
+      "baseline": "updated",
+      "token_weight": 0.05,
+      "auc": 0.7895602922405679,
+      "delta": -5.0432979225023544e-05
+    },
+    {
+      "baseline": "updated",
+      "token_weight": 0.1,
+      "auc": 0.7894201193246835,
+      "delta": -0.00019060589510944137
+    },
+    {
+      "baseline": "updated",
+      "token_weight": 0.2,
+      "auc": 0.7889075791051373,
+      "delta": -0.0007031461146556062
+    }
+  ],
+  "token_gain_fraction": 0.011923722113919727,
+  "top_token_features": [
+    {
+      "feature": "past_token_response__ad_click_list_v003__token_slot__all__max_rate",
+      "gain": 931.305404663086
+    },
+    {
+      "feature": "past_token_response__ad_click_list_v002__token__all__mean_rate",
+      "gain": 733.3773059844971
+    },
+    {
+      "feature": "past_token_response__u_newsCatInterestsST__token_slot__all__mean_rate",
+      "gain": 686.8337001800537
+    },
+    {
+      "feature": "past_token_response__ad_click_list_v003__token__all__max_rate",
+      "gain": 628.5133094787598
+    },
+    {
+      "feature": "past_token_response__u_newsCatInterestsST__token_slot__3d__mean_rate",
+      "gain": 511.9660034179688
+    }
+  ]
+}

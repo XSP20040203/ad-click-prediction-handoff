@@ -1,0 +1,13 @@
+{
+  "submission": "output/feedback_blend_auc0780_20191117/submission_fitted_auc0780.csv",
+  "submission_sha256": "aacd382271db5144e42eb6e0933092862a1a8a7756b0cca57a3b5eec8eb8842f",
+  "user_reported_platform_auc": 0.75832,
+  "source": "User explicitly identifies output/feedback_blend_auc0780_20191117 as the0.75832 result",
+  "platform_auc_independently_recomputed": false,
+  "local_auc_against_original_six_score_fitted_labels": 0.7799999993074096,
+  "eight_feedback_soft_rank_moment_proxy_computed_before_new_feedback": 0.7596947197307664,
+  "new_feedback_not_yet_used_for_nine_score_label_inference": true,
+  "strong_v9_weight": 0.06597410208146358,
+  "weak_legacy_model_weight": 0.9340258979185364,
+  "true_final_labels_available": false
+}

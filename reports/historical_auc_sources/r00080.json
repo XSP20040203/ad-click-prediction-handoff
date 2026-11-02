@@ -1,0 +1,16 @@
+{
+  "candidate": "GatedCrossCTR core166 seed2026",
+  "day15_single_auc": 0.7847655007394301,
+  "day15_mean_of_seed42_and2026_single_auc": 0.7888726512668659,
+  "baseline": "fixed_gated20_allocated10_core30",
+  "candidate_weight": 0.1,
+  "day15_blend_auc": 0.7923296184946762,
+  "confirmation_day": 20191116,
+  "day16_labels_used_to_select_weight": false,
+  "numeric_width": 166,
+  "numeric_scale": 1,
+  "seed": 2026,
+  "max_epochs": 3,
+  "goal_auc": 0.85,
+  "goal_met": false
+}

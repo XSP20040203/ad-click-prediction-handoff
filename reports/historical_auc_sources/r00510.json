@@ -1,0 +1,67 @@
+{
+  "model_name": "EmbeddingPoolingMLP",
+  "status": "implemented_and_benchmarked_on_2019_11_16",
+  "embedding_dim": 16,
+  "sequence_max_length": 5,
+  "padding_index": 0,
+  "unknown_index": 1,
+  "first_real_category_index": 2,
+  "categorical_fields": [
+    "user_id", "age", "sex", "residence", "city", "city_rank",
+    "series_dev", "series_group", "device_dev", "device_name", "device_size", "net_type",
+    "task_id", "adv_id", "creat_type_cd", "adv_prim_id", "inter_type_cd", "slot_id",
+    "spread_app_id", "hispace_app_tags", "app_second_class", "app_score",
+    "u_refreshTimes", "u_feedLifeCycle"
+  ],
+  "sequence_fields": [
+    "ad_click_list_v001", "ad_click_list_v002", "ad_click_list_v003",
+    "ad_close_list_v001", "ad_close_list_v002", "ad_close_list_v003",
+    "u_newsCatInterestsST"
+  ],
+  "shared_embedding_groups": {
+    "ad_task": ["task_id", "ad_click_list_v001", "ad_close_list_v001"],
+    "advertiser": ["adv_prim_id", "ad_click_list_v002", "ad_close_list_v002"],
+    "promoted_app": ["spread_app_id", "ad_click_list_v003", "ad_close_list_v003"]
+  },
+  "numeric_fields": [
+    "hist_click_task_match", "hist_click_adv_prim_match", "hist_click_app_match",
+    "hist_close_task_match", "hist_close_adv_prim_match", "hist_close_app_match",
+    "ad_click_list_v001__length", "ad_click_list_v002__length", "ad_click_list_v003__length",
+    "ad_close_list_v001__length", "ad_close_list_v002__length", "ad_close_list_v003__length",
+    "u_newsCatInterestsST__length",
+    "feed_impressions", "feed_clicks", "feed_ctr_smoothed", "feed_progress_mean",
+    "feed_topic_nunique", "feed_active_days", "feed_days_since_last"
+  ],
+  "source_numeric_fields": [
+    "feed_impressions", "feed_clicks", "feed_ctr_smoothed", "feed_progress_mean",
+    "feed_topic_nunique", "feed_active_days", "feed_days_since_last"
+  ],
+  "mlp_hidden_dims": [256, 128, 64],
+  "dropout": 0.1,
+  "fusion_input_dim": 516,
+  "forward_output": "logits_shape_B",
+  "prediction_transform": "sigmoid",
+  "loss": "BCEWithLogitsLoss",
+  "source_history_condition": "e_et < pt_d",
+  "source_smoothing_alpha": 20,
+  "initial_source_ctr_if_no_history_exists": 0.1,
+  "suggested_high_cardinality_unknown_dropout": 0.01,
+  "training_defaults": {
+    "optimizer": "AdamW", "learning_rate": 0.001, "weight_decay": 0.00001,
+    "batch_size": 512, "class_weighting": "none_for_initial_baseline", "early_stopping_metric": "validation_auc"
+  },
+  "primary_validation_day": "2019-11-16",
+  "secondary_validation_day": "2019-11-15",
+  "target_test_day": "2019-11-17",
+  "benchmark": {
+    "implementation": "../model_comparison/benchmark_core.py",
+    "training_script": "../model_comparison/train_models.py",
+    "validation_auc": 0.7214146217954175,
+    "validation_logloss": 0.047662737696658804,
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "actual_batch_size": 2048,
+    "parameter_count": 729665,
+    "report": "../model_comparison/results/模型对比报告.html"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "mode": "self_teacher",
+  "core_scores": {
+    "auc": 0.7904779089785791,
+    "logloss": 0.04448327943581133,
+    "average_precision": 0.08161232858807597,
+    "mean_probability": 0.01022294070571661
+  },
+  "candidate_scores": {
+    "auc": 0.8012041511911034,
+    "logloss": 0.04390400920450452,
+    "average_precision": 0.08740965760725414,
+    "mean_probability": 0.009745585849214823
+  },
+  "rounded6_scores": {
+    "auc": 0.8012042892242832,
+    "logloss": 0.04390400551648655,
+    "average_precision": 0.08740859805365912,
+    "mean_probability": 0.009745585729756886
+  },
+  "auc_gain": -3.7116159034900065e-05,
+  "past_retention_scores": {
+    "auc": 0.8460466532874502,
+    "logloss": 0.03736281386481543,
+    "average_precision": 0.1388530824168469,
+    "mean_probability": 0.008544066920876503
+  },
+  "candidate_prediction_sha256": "dc974941809542ad4d1003be7e364143718b76dbe5a3999447666851b56affbe"
+}

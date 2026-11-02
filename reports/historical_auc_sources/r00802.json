@@ -1,0 +1,56 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191116,
+  "seed": 42,
+  "variant": "actual",
+  "fixed_epoch": {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7919556511129228,
+    "logloss": 0.04433204240791204,
+    "average_precision": 0.08260544446067453,
+    "mean_probability": 0.010003741830587387,
+    "objective": 0.052899474589660184,
+    "seconds": 122.67858849999902
+  },
+  "best_checkpoint": {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7919556511129228,
+    "logloss": 0.04433204240791204,
+    "average_precision": 0.08260544446067453,
+    "mean_probability": 0.010003741830587387,
+    "objective": 0.052899474589660184,
+    "seconds": 122.67858849999902
+  },
+  "replacement_scores": {
+    "auc": 0.801288169740616,
+    "logloss": 0.043893294360788385,
+    "average_precision": 0.08769378180012624,
+    "mean_probability": 0.009679826709068143
+  },
+  "reference_scores": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "auc_gain": 4.6902390477665534e-05,
+  "training_rows_seen": 2104337,
+  "initial_full_sha256": "66611905506ee8fb581fea189234721102c0c5d0da74a1ee00478790d8ba1b4c",
+  "initial_backbone_sha256": "45548fa3a07fac44d6d18ccc30096a34c967c37f7e0e8f71b8f0f89fdcaa098f",
+  "row_order_sha256": "f7b59138e9fd8fd7cf8def7c276c5500d1d03ad1c0c0726d80e9c64a94c4e3cb",
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "disabled_original_training_errors": {},
+  "files_sha256": {
+    "best_model.pt": "032a78c20e58bd3cb48261640207d1667fd9d4683a64b3d9523065e6774de4a0",
+    "final_model.pt": "032a78c20e58bd3cb48261640207d1667fd9d4683a64b3d9523065e6774de4a0",
+    "best_prediction.npy": "b5b8e9d7d1edd256d9a579f4b7721837d3ef148f8214aa1f384d763f209c4508",
+    "final_prediction.npy": "b5b8e9d7d1edd256d9a579f4b7721837d3ef148f8214aa1f384d763f209c4508",
+    "replacement_prediction.npy": "a6552806e8def17cd23b0754224d6f7f7697d3a57baa8420359174657afc7dd9",
+    "history.json": "4d9e57acd52092a645b79a70320813dc7235f2b9a1de6532dd913c18dbe581e1"
+  }
+}

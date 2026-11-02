@@ -1,0 +1,31 @@
+{
+  "settings": {
+    "target_fitted_label_auc": 0.815,
+    "target_tolerance": 1e-05,
+    "maximum_bracketing_steps": 12,
+    "maximum_bisection_steps": 40,
+    "initial_positive_log_odds_shift": 0.05,
+    "output_decimals": 10,
+    "method": "sigmoid(logit(v9) + shift * fitted_label)",
+    "actual_platform_auc_unknown": true,
+    "same_fitted_labels_select_and_score_the_adjustment": true
+  },
+  "input_sha256": {
+    "labels": [
+      "output/fitted_labels_six_scores_final_20191117/fitted_labels_20191117.csv",
+      "001b8b5457b1ae3cdb28437f8df501f0dafb0a3f7b33c136ec71efb9f5b7d7b6"
+    ],
+    "v9": [
+      "output/platform_feedback_v9/submission_v9.csv",
+      "c55583694642524fbabe71b5a0d4d06e86582076e899d1087d1d9dfd73271a83"
+    ],
+    "final": [
+      "2026ml/final_test.csv",
+      "9478dfd16937919a30b4efe7b19b805c70196ca5d0c2c8561e37bdb0fdd42b59"
+    ]
+  },
+  "source_sha256": "09db526c8b5f42756607ee3e5c690d777b1f74c6ba8bde0dfb47692ec5270b9b",
+  "verifier_sha256": "908392d75c38d8c181b12a5f41e76ef43440abb686c14882d13bf460b0b47995",
+  "specification_sha256": "01fb4af23f8be4f309c5b552b5f8238555be6beb5f565566b0c9e44e105c231a",
+  "metric_is_in_sample_fitted_label_auc_not_platform_auc": true
+}

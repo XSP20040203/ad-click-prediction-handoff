@@ -1,0 +1,202 @@
+{
+  "status": "passed",
+  "day": 20191116,
+  "seed": 42,
+  "verified_new_ad_models": 3,
+  "records": [
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "disabled",
+      "endpoint": "best",
+      "auc": 0.8012412673501383,
+      "logloss": 0.04389861132045347,
+      "average_precision": 0.08749928332848086,
+      "mean_probability": 0.009657048985881815,
+      "gain_vs_reference": 0.0,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "disabled",
+      "endpoint": "final",
+      "auc": 0.8012412673501383,
+      "logloss": 0.04389861132045347,
+      "average_precision": 0.08749928332848086,
+      "mean_probability": 0.009657048985881815,
+      "gain_vs_reference": 0.0,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "permuted",
+      "endpoint": "best",
+      "auc": 0.801121768816283,
+      "logloss": 0.0439052316709454,
+      "average_precision": 0.0872995888734369,
+      "mean_probability": 0.009623168556174842,
+      "gain_vs_reference": -0.00011949853385528897,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "permuted",
+      "endpoint": "final",
+      "auc": 0.801121768816283,
+      "logloss": 0.0439052316709454,
+      "average_precision": 0.0872995888734369,
+      "mean_probability": 0.009623168556174842,
+      "gain_vs_reference": -0.00011949853385528897,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "actual",
+      "endpoint": "best",
+      "auc": 0.8011729935713339,
+      "logloss": 0.04390514466417749,
+      "average_precision": 0.08728631994672115,
+      "mean_probability": 0.00963206144754963,
+      "gain_vs_reference": -6.827377880447294e-05,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "actual",
+      "endpoint": "final",
+      "auc": 0.8011729935713339,
+      "logloss": 0.04390514466417749,
+      "average_precision": 0.08728631994672115,
+      "mean_probability": 0.00963206144754963,
+      "gain_vs_reference": -6.827377880447294e-05,
+      "independent_reload_error": 0.0
+    }
+  ],
+  "comparisons": {
+    "disabled": {
+      "versus_reference": {
+        "auc_delta": 0.0,
+        "user_cluster_approximate_95_interval": [
+          0.0,
+          0.0
+        ],
+        "logloss_delta": 0.0
+      },
+      "versus_permuted": {
+        "auc_delta": 0.00011949853385506692,
+        "user_cluster_approximate_95_interval": [
+          -5.39830370147696e-05,
+          0.0002929801047249034
+        ],
+        "logloss_delta": -6.620350491925997e-06
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8050835956173258,
+          "logloss": 0.043416575987711016,
+          "average_precision": 0.09011972030426907,
+          "mean_probability": 0.009457051068948001
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7528808289714999,
+          "logloss": 0.0499022666364585,
+          "average_precision": 0.06390433460360662,
+          "mean_probability": 0.012147983727860797
+        }
+      }
+    },
+    "permuted": {
+      "versus_reference": {
+        "auc_delta": -0.00011949853385506692,
+        "user_cluster_approximate_95_interval": [
+          -0.0002929801047249034,
+          5.39830370147696e-05
+        ],
+        "logloss_delta": 6.620350491925997e-06
+      },
+      "versus_permuted": {
+        "auc_delta": 0.0,
+        "user_cluster_approximate_95_interval": [
+          0.0,
+          0.0
+        ],
+        "logloss_delta": 0.0
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8049757889878737,
+          "logloss": 0.04342236995289744,
+          "average_precision": 0.08992290427093792,
+          "mean_probability": 0.009419429466526965
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7526702283879386,
+          "logloss": 0.04991917945348844,
+          "average_precision": 0.06392905495172115,
+          "mean_probability": 0.012160698868908077
+        }
+      }
+    },
+    "actual": {
+      "versus_reference": {
+        "auc_delta": -6.827377880436192e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.00026515917166493514,
+          0.00012861161405621128
+        ],
+        "logloss_delta": 6.533343724017537e-06
+      },
+      "versus_permuted": {
+        "auc_delta": 5.1224755050705006e-05,
+        "user_cluster_approximate_95_interval": [
+          -8.970837498729689e-05,
+          0.0001921578850887069
+        ],
+        "logloss_delta": -8.700676790845963e-08
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8050525720942486,
+          "logloss": 0.043421154330419064,
+          "average_precision": 0.08994648927834126,
+          "mean_probability": 0.009427340335258404
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7524287071334307,
+          "logloss": 0.04993314913354336,
+          "average_precision": 0.06381242994960094,
+          "mean_probability": 0.012181822659270413
+        }
+      }
+    }
+  },
+  "reference_scores": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "side_inputs_reconstructed_exactly": true,
+  "within_userday_joint_multisets_preserved": true,
+  "existing_context_unchanged": true,
+  "held_ad_labels_fit": false,
+  "side_input_ad_labels_read": false,
+  "existing_submission_unchanged": true,
+  "submission_sha256": "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846",
+  "final_auc": null,
+  "platform_goal_proven": false,
+  "second_seed_confirmed": false,
+  "evaluator_sha256": "e8ee9e3a2b7efdbe76e57570b374c563c852efed7d5cfa42f4b2a5beba762876",
+  "limitations": "Repeated chronological development; paired user-cluster intervals are approximate, not blind final-score evidence"
+}

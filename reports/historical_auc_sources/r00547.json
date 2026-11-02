@@ -1,0 +1,27 @@
+{
+  "method": "Paired AUC influence contributions aggregated by user; normal approximation; no selection/multiple-use adjustment",
+  "development_only": true,
+  "results": {
+    "20191115": {
+      "auc": 0.7905480723412239,
+      "approximate_user_cluster_standard_error": 0.004305973607254374,
+      "approximate_95_interval": [
+        0.7821083640710054,
+        0.7989877806114425
+      ],
+      "gap_to_goal": 0.05945192765877605,
+      "selection_adjustment": false
+    },
+    "20191116": {
+      "auc": 0.7987435691593445,
+      "approximate_user_cluster_standard_error": 0.004128907130502582,
+      "approximate_95_interval": [
+        0.7906509111835595,
+        0.8068362271351296
+      ],
+      "gap_to_goal": 0.051256430840655454,
+      "selection_adjustment": false
+    }
+  },
+  "goal_met": false
+}

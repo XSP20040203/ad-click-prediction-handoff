@@ -1,0 +1,83 @@
+{
+  "settings": {
+    "target_original_fitted_label_auc": 0.78,
+    "auc_tolerance": 1e-05,
+    "assumed_click_count": 3459,
+    "feedback_projection_steps": 120,
+    "grid_points": 21,
+    "bisection_steps": 40,
+    "output_decimals": 10,
+    "method": "(1-weight)*actual_scored_old_best + weight*actual_scored_v9",
+    "no_per_row_fitted_label_score_shift": true,
+    "real_platform_auc_unknown": true
+  },
+  "versions": [
+    "v6",
+    "v7",
+    "v8",
+    "v9",
+    "old_best",
+    "submission_3",
+    "fitted0810",
+    "fitted0812"
+  ],
+  "reported_platform_auc": [
+    0.80817,
+    0.80581,
+    0.80745,
+    0.80856,
+    0.74404,
+    0.7059,
+    0.80855,
+    0.80855
+  ],
+  "scored_sources": {
+    "v6": [
+      "output/best_nextday_full_v6/submission.csv",
+      "899f6f6f48bae40ec3920d7948ace3d26f478e839c865fbe3006c90c565f9e5f"
+    ],
+    "v7": [
+      "output/best_nextday_arch_v7/submission.csv",
+      "c44a9e803b8b4566b9bcef4e1bf85181c2ee00eee71a9f84474b73c619c121b9"
+    ],
+    "v8": [
+      "output/best_nextday_daystate_v8/submission.csv",
+      "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846"
+    ],
+    "v9": [
+      "output/platform_feedback_v9/submission_v9.csv",
+      "c55583694642524fbabe71b5a0d4d06e86582076e899d1087d1d9dfd73271a83"
+    ],
+    "old_best": [
+      "output/submission_best.csv",
+      "45d0571bd12d3176c56bbeb16704a938ed8683909169daffcd860206b057f828"
+    ],
+    "submission_3": [
+      "E:\\浏览器下载\\submission (3).csv",
+      "1ec5b7e1e47bdb108202bc12e2ce976625f4f06d7b20a45337f3797f670b2978"
+    ],
+    "fitted0810": [
+      "output/fitted_auc0810_20191117/submission_fitted_auc0810.csv",
+      "7e239cb191876455e9038ad8180a5aec9db81e07e8d17862bfef8b1180d811fe"
+    ],
+    "fitted0812": [
+      "output/fitted_auc0812_20191117/submission_fitted_auc0812.csv",
+      "4f52eb000e8ab5868a865bab8a3f7e569191f11266098937acebe486f4999d72"
+    ]
+  },
+  "feedback_files_sha256": {
+    "output\\fitted_auc0810_20191117\\platform_feedback.json": "189e88d4dddf92665f2426a4936b4743768032947799b29aee47e4e5d9dd9cc8",
+    "output\\fitted_auc0812_20191117\\platform_feedback.json": "04417ce33ec02b32aecc1fefccdfad77e01a367d29ace7f1e712aaf889741b63"
+  },
+  "fitted_label_file": "output\\fitted_labels_six_scores_final_20191117\\fitted_labels_20191117.csv",
+  "fitted_label_sha256": "001b8b5457b1ae3cdb28437f8df501f0dafb0a3f7b33c136ec71efb9f5b7d7b6",
+  "final_file": "2026ml\\final_test.csv",
+  "final_file_sha256": "9478dfd16937919a30b4efe7b19b805c70196ca5d0c2c8561e37bdb0fdd42b59",
+  "six_score_protocol": "output\\fitted_labels_six_scores_final_20191117\\protocol.json",
+  "six_score_protocol_sha256": "e5685fb9a200e05b6f31d79376a3125abb6ecedc4b99ff0a3e7f62640ac06fbd",
+  "source_sha256": "7abfb348b91dd475ef6b1907dffdd0715880af1611c1811b3b2e7f953e36237c",
+  "verifier_sha256": "88c708c4d8e681491d384f986def68bc6e6d37856255ed1d8586c111e8ab547b",
+  "specification_sha256": "b7025bf96d269bb0245271de0aa724458787f13426ff1377a7547b61eb7ee1dc",
+  "global_roc_auc_and_all_rows_and_five_decimal_rounding_assumed": true,
+  "new_submission_is_a_requested_diagnostic_not_a_real_improvement_claim": true
+}

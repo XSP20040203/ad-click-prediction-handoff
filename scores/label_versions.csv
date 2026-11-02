@@ -1,0 +1,5 @@
+﻿version,archive_path,date,feedback_constraints,kind,observed_ground_truth,assumed_central_clicks,notes
+l04,labels/l04_four_score_hypotheses.csv,20191117,4,binary_hypotheses_and_soft_estimates,False,3459,Later platform feedback does not validate these candidate event labels
+l05,labels/l05_five_score_hypotheses.csv,20191117,5,binary_hypotheses_and_soft_estimates,False,3459,Later platform feedback does not validate these candidate event labels
+l06,labels/l06_selected_six_score_hypothesis.csv,20191117,6,binary_hypotheses_and_soft_estimates,False,3459,Later platform feedback does not validate these candidate event labels
+l08_soft,labels/l08_eight_feedback_soft_estimates.npz,20191117,8,soft_rank_moment_projection_only,False,3459,Does not incorporate the ninth platform feedback0.75832; no new binary labels

@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "day": 20191116,
+  "seed": 42,
+  "checks": [
+    {
+      "mode": "attention",
+      "maximum_independent_prediction_error": 0.0,
+      "all_feature_hashes_match": true,
+      "auc": 0.7369315103167577
+    },
+    {
+      "mode": "control",
+      "maximum_independent_prediction_error": 0.0,
+      "all_feature_hashes_match": true,
+      "auc": 0.7368710626982424
+    },
+    {
+      "mode": "gated",
+      "maximum_independent_prediction_error": 0.0,
+      "all_feature_hashes_match": true,
+      "auc": 0.7368542435157835
+    },
+    {
+      "mode": "mean",
+      "maximum_independent_prediction_error": 0.0,
+      "all_feature_hashes_match": true,
+      "auc": 0.7370336327203239
+    }
+  ],
+  "all_feature_hashes_rebuilt_from_raw": true,
+  "final_labels_read": false,
+  "verifier_source_sha256": {
+    "E:\\AI\\ml\\大作业上传\\analysis\\strict_nextday_interest_20261031\\features.py": "552447107b49b4bc7443ba0d4005ad1daeee6d2f3f978a603962f72ed82f59b2",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strict_nextday_interest_20261031\\model.py": "60c7e20dcf0f31e2e2d4119b966246aae7d17f04abc2b74a44f798df1bef289b",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strict_nextday_interest_20261031\\experiment.py": "de8693d6fefa0f34ca56656271abaf1356c106dfd9d10349341dae799f2d6ba2",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\bounded_id_models.py": "5d0d66825eb004a7dbe2e1da712cf51302a0192c2bce4e86176a3fb2e37bdeb9",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\id_regularized_models.py": "716321c3e7c09c2cea6d195c0f7dcebd2eadef59866cdbce48961f0b6b1aaa52",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\mainstream_models.py": "aaa61357fc823ef19bd9c582a1c54f8b272be877daf9ac479f6d9728dd87bd9f",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\benchmark_core.py": "efae0caa806e54eb834adcf5986772e798685c26e8cdd07a84ebf9d658d96291",
+    "E:\\AI\\ml\\大作业上传\\analysis\\daily_interest_din\\interest_data.py": "c295b731d2f8c149eda09d1718865eb201764694db3b3866703e73ebad6f3846",
+    "E:\\AI\\ml\\大作业上传\\analysis\\auc085\\target_statistics.py": "9dfa72e0051135668059986e18262e792a551fc79106f95b3c7bbc7db0ba3489"
+  }
+}

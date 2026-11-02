@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "rows": 404182,
+  "assumed_ones": 3459,
+  "zeros": 400723,
+  "all_six_auc_matched_to_five_decimals": true,
+  "selected_actual_auc": {
+    "v6": 0.8081682478896266,
+    "v7": 0.8058076776010534,
+    "v8": 0.80744778516503,
+    "v9": 0.8085581076875418,
+    "old_best": 0.7440391655424825,
+    "submission_3": 0.7058986332478691
+  },
+  "integer_candidates_independently_verified": 11,
+  "lowest_nll_searched_candidate_selected": true,
+  "probability_csv_rounding_error": 4.9999659143887265e-11,
+  "probability_replay_error": 2.7755575615628914e-15,
+  "valid_objective_lower_bound": 10458.984545625255,
+  "objective_gap": 168.27579390781284,
+  "global_optimality_proven": false,
+  "actual_final_labels_recovered": false,
+  "raw_datasets_and_scored_submissions_unchanged": true,
+  "fitted_labels_sha256": "001b8b5457b1ae3cdb28437f8df501f0dafb0a3f7b33c136ec71efb9f5b7d7b6"
+}

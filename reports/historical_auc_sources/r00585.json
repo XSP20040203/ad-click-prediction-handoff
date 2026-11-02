@@ -1,0 +1,7 @@
+{
+  "status": "stopped_before_completion",
+  "reason": "User requested starting with the simplest model and diagnosing overfitting.",
+  "best_recorded_auc": 0.7263891631702528,
+  "best_checkpoint_replay_complete": false,
+  "artifacts_preserved": true
+}

@@ -1,0 +1,94 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191116,
+  "mode": "attention",
+  "seed": 42,
+  "fixed_epochs_completed": 1,
+  "train_rows": 2104337,
+  "valid_rows": 421983,
+  "valid_clicks": 3724,
+  "initial_backbone_sha256": "45548fa3a07fac44d6d18ccc30096a34c967c37f7e0e8f71b8f0f89fdcaa098f",
+  "batch_order_sha256": "808c7374ad4b4c695ca2a327c397743b8c7c0cd191cd720248eb1d789ae59044",
+  "scores": {
+    "auc": 0.7926146481570583,
+    "logloss": 0.0443062693770568,
+    "average_precision": 0.08113751588348553,
+    "mean_probability": 0.00955052487552166
+  },
+  "best_scores": {
+    "fractional_epoch": 1.0,
+    "auc": 0.7926146481570583,
+    "logloss": 0.0443062693770568,
+    "average_precision": 0.08113751588348553,
+    "mean_probability": 0.00955052487552166,
+    "train_loss": 0.0428544035319104,
+    "seconds": 155.53107969999996
+  },
+  "slices": {
+    "seen_task": {
+      "rows": 390620,
+      "auc": 0.7959972013723166,
+      "logloss": 0.04382440824380721,
+      "average_precision": 0.0838671075232373,
+      "mean_probability": 0.009348801337182522
+    },
+    "new_task": {
+      "rows": 31363,
+      "auc": 0.7499362460392853,
+      "logloss": 0.05030775507262026,
+      "average_precision": 0.056987123347323566,
+      "mean_probability": 0.012062961235642433
+    }
+  },
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "branch_parameter_update_norm": {
+    "encoder.interest_scores.u_newsCatInterestsST.0.weight": 0.785311222076416,
+    "encoder.interest_scores.u_newsCatInterestsST.0.bias": 0.39095452427864075,
+    "encoder.interest_scores.u_newsCatInterestsST.2.weight": 0.042248960584402084,
+    "encoder.interest_scores.u_newsCatInterestsST.2.bias": 1.6971423519862583e-06,
+    "encoder.interest_scores.feed_long_interest.0.weight": 1.297458291053772,
+    "encoder.interest_scores.feed_long_interest.0.bias": 0.27070552110671997,
+    "encoder.interest_scores.feed_long_interest.2.weight": 0.11847423762083054,
+    "encoder.interest_scores.feed_long_interest.2.bias": 1.7406102415407076e-05,
+    "encoder.interest_scores.feed_dislike_topics.0.weight": 0.19146014750003815,
+    "encoder.interest_scores.feed_dislike_topics.0.bias": 0.017888104543089867,
+    "encoder.interest_scores.feed_dislike_topics.2.weight": 0.08494560420513153,
+    "encoder.interest_scores.feed_dislike_topics.2.bias": 4.5962632810869763e-08,
+    "encoder.interest_scores.feed_clicked_topics.0.weight": 0.7395420670509338,
+    "encoder.interest_scores.feed_clicked_topics.0.bias": 0.13681142032146454,
+    "encoder.interest_scores.feed_clicked_topics.2.weight": 0.12092716991901398,
+    "encoder.interest_scores.feed_clicked_topics.2.bias": 1.9780995899054687e-06,
+    "encoder.interest_scores.feed_click_ca2.0.weight": 0.8794816136360168,
+    "encoder.interest_scores.feed_click_ca2.0.bias": 0.3357942998409271,
+    "encoder.interest_scores.feed_click_ca2.2.weight": 0.057156361639499664,
+    "encoder.interest_scores.feed_click_ca2.2.bias": 1.8720536445471225e-06,
+    "encoder.interest_scores.feed_exposed_topics.0.weight": 1.1251953840255737,
+    "encoder.interest_scores.feed_exposed_topics.0.bias": 0.16281862556934357,
+    "encoder.interest_scores.feed_exposed_topics.2.weight": 0.22999632358551025,
+    "encoder.interest_scores.feed_exposed_topics.2.bias": 3.249704832342104e-06,
+    "encoder.interest_query.weight": 1.0847923755645752,
+    "encoder.interest_query.bias": 0.119148850440979
+  },
+  "source_sha256": {
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\features.py": "bd4ddb907511f5e03935d5ca5f285f80f8c877a1125c56586262414fc6e97a8d",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\model.py": "4832bae4c1d83dc33af3ffa0849d87df3f04b342968cad0ff74d060acaf78b18",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\experiment.py": "b29758da89f150f38ee9533795742c949f436c292ba90cd18679ab874062c886",
+    "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\interaction_models.py": "eef8ad2cf3812cfc6085e84c1f8201dbb78df7a5624c50442d6431c5e663b34d",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\id_regularized_models.py": "716321c3e7c09c2cea6d195c0f7dcebd2eadef59866cdbce48961f0b6b1aaa52",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\mainstream_models.py": "aaa61357fc823ef19bd9c582a1c54f8b272be877daf9ac479f6d9728dd87bd9f",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\benchmark_core.py": "efae0caa806e54eb834adcf5986772e798685c26e8cdd07a84ebf9d658d96291"
+  },
+  "feature_manifest_sha256": "f6f52d6cd347e413e6f3982c1009e8dd7476f6c1383a1316e303ea8403c19698",
+  "seconds": 171.7774476999998,
+  "files_sha256": {
+    "best_model.pt": "3e5a60ba5c6593595f7910c707700ade1e23e6f82f16c2cd053f458318ba8fc0",
+    "final_model.pt": "3e5a60ba5c6593595f7910c707700ade1e23e6f82f16c2cd053f458318ba8fc0",
+    "best_prediction.npy": "d6733975a4f20ca994952c4a494d6dfc03f801016235b4c6d3ae5583307a0b7c",
+    "final_prediction.npy": "d6733975a4f20ca994952c4a494d6dfc03f801016235b4c6d3ae5583307a0b7c",
+    "valid_indices.npy": "4476f254ab1c3b9062d9d9a58a80bb00f72e88388792467b2a9925b8cc6b1738",
+    "history.json": "445bd4ef52deac9982deaa0ec4f37023f7d9ad6d7faab2237d299ac61c579a21"
+  }
+}

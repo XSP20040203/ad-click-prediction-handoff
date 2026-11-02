@@ -1,0 +1,62 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "auc": 0.7714604891554537,
+  "logloss": 0.04333885599112148,
+  "average_precision": 0.062020436003931534,
+  "mean_prediction": 0.008991382084786892,
+  "best_fractional_epoch": 0.7503045066991474,
+  "numeric_fields": 420,
+  "train_rows": 1679557,
+  "validation_rows": 424780,
+  "validation_clicks": 3523,
+  "checkpoints_completed": 7,
+  "maximum_reload_error": 0.0,
+  "ranking_weight": 0.05,
+  "training_seconds": 118.7333151999992,
+  "seconds": 157.26801339999838,
+  "peak_cuda_allocated_mib": 93.7216796875,
+  "comparison": {
+    "baseline_auc": 0.7893219216708781,
+    "ranking_model_auc": 0.7714604891554537,
+    "baseline_path": "E:\\AI\\ml\\大作业上传\\analysis\\auc085_next\\evaluation\\day15_fixed_oof25_shared_blend.npy",
+    "blends": [
+      {
+        "rank_weight": 0.05,
+        "auc": 0.789513231028121,
+        "delta_from_baseline": 0.0001913093572428748
+      },
+      {
+        "rank_weight": 0.1,
+        "auc": 0.7894824767956496,
+        "delta_from_baseline": 0.0001605551247715331
+      },
+      {
+        "rank_weight": 0.2,
+        "auc": 0.7889982529484224,
+        "delta_from_baseline": -0.00032366872245570555
+      }
+    ],
+    "updated_baseline_auc": 0.7896107252197929,
+    "updated_blends": [
+      {
+        "rank_weight": 0.05,
+        "auc": 0.7897597055624472,
+        "delta_from_baseline": 0.0001489803426543146
+      },
+      {
+        "rank_weight": 0.1,
+        "auc": 0.7897012076998153,
+        "delta_from_baseline": 9.048248002241355e-05
+      },
+      {
+        "rank_weight": 0.2,
+        "auc": 0.7891883689805324,
+        "delta_from_baseline": -0.0004223562392605684
+      }
+    ]
+  },
+  "final_auc": null,
+  "final_labels_available": false,
+  "model_sha256": "abe1772043662ff6fece18033ffee836485ad22fa9edb829af212fd20a0d2ca3"
+}

@@ -1,0 +1,16 @@
+{
+  "model": "GatedCrossCTR",
+  "statistics": "outer-training grouped OOF; held-day labels excluded",
+  "development_day": 20191115,
+  "confirmation_day": 20191116,
+  "baseline": "previous best TabM/OOF/tree fusion with input count correction",
+  "new_model_weight": 0.2,
+  "baseline_weight": 0.8,
+  "day15_single_auc": 0.7811804730816673,
+  "day15_baseline_auc": 0.7905480723412239,
+  "day15_blend_auc": 0.7912847258935978,
+  "day16_labels_used_to_select_weight": false,
+  "scope": "Both dates have repeatedly been used for project development; no blind test claim",
+  "target_auc": 0.85,
+  "final_submission_v6_preserved": true
+}

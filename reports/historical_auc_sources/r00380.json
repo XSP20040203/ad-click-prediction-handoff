@@ -1,0 +1,929 @@
+{
+  "status": "complete",
+  "final_token_novelty": {
+    "ad_click_list_v001": {
+      "known_tokens": 9250,
+      "final_token_occurrences": 1909851,
+      "unknown_token_occurrences": 32501,
+      "unknown_token_fraction": 0.017017557914203778,
+      "final_unseen_sorted_multiset_fraction": 0.3663225972457952,
+      "final_unseen_token_set_fraction": 0.3663225972457952,
+      "top_training_states": {
+        "15764": {
+          "rows": 19039,
+          "fraction": 0.007536258272902879
+        },
+        "11291": {
+          "rows": 1809,
+          "fraction": 0.0007160613065644891
+        },
+        "11695^25688^15904": {
+          "rows": 1622,
+          "fraction": 0.0006420405965990056
+        }
+      }
+    },
+    "ad_click_list_v002": {
+      "known_tokens": 829,
+      "final_token_occurrences": 1878010,
+      "unknown_token_occurrences": 1364,
+      "unknown_token_fraction": 0.0007263007119237917,
+      "final_unseen_sorted_multiset_fraction": 0.3020372010628875,
+      "final_unseen_token_set_fraction": 0.3020372010628875,
+      "top_training_states": {
+        "1942": {
+          "rows": 19039,
+          "fraction": 0.007536258272902879
+        },
+        "1036": {
+          "rows": 5399,
+          "fraction": 0.002137100604832325
+        },
+        "1236": {
+          "rows": 2893,
+          "fraction": 0.0011451439247601254
+        }
+      }
+    },
+    "ad_click_list_v003": {
+      "known_tokens": 184,
+      "final_token_occurrences": 1653056,
+      "unknown_token_occurrences": 126,
+      "unknown_token_fraction": 7.622246312284642e-05,
+      "final_unseen_sorted_multiset_fraction": 0.11812252895972607,
+      "final_unseen_token_set_fraction": 0.11812252895972607,
+      "top_training_states": {
+        "293": {
+          "rows": 39223,
+          "fraction": 0.015525744957091739
+        },
+        "162": {
+          "rows": 30493,
+          "fraction": 0.01207012571645714
+        },
+        "190": {
+          "rows": 14645,
+          "fraction": 0.005796969505050825
+        }
+      }
+    },
+    "ad_close_list_v001": {
+      "known_tokens": 1248,
+      "final_token_occurrences": 453999,
+      "unknown_token_occurrences": 3953,
+      "unknown_token_fraction": 0.008707067636712857,
+      "final_unseen_sorted_multiset_fraction": 0.010614030313076782,
+      "final_unseen_token_set_fraction": 0.010614030313076782,
+      "top_training_states": {
+        "24107": {
+          "rows": 2297376,
+          "fraction": 0.909376484372526
+        },
+        "36314": {
+          "rows": 2700,
+          "fraction": 0.0010687482187529687
+        },
+        "28451^22640": {
+          "rows": 2116,
+          "fraction": 0.0008375819373634377
+        }
+      }
+    },
+    "ad_close_list_v002": {
+      "known_tokens": 357,
+      "final_token_occurrences": 449878,
+      "unknown_token_occurrences": 981,
+      "unknown_token_fraction": 0.002180591182498366,
+      "final_unseen_sorted_multiset_fraction": 0.007946915003636975,
+      "final_unseen_token_set_fraction": 0.007946915003636975,
+      "top_training_states": {
+        "1218": {
+          "rows": 2297376,
+          "fraction": 0.909376484372526
+        },
+        "1036": {
+          "rows": 8389,
+          "fraction": 0.0033206402989328352
+        },
+        "1795": {
+          "rows": 5894,
+          "fraction": 0.0023330377782703696
+        }
+      }
+    },
+    "ad_close_list_v003": {
+      "known_tokens": 93,
+      "final_token_occurrences": 434895,
+      "unknown_token_occurrences": 204,
+      "unknown_token_fraction": 0.00046907874314489707,
+      "final_unseen_sorted_multiset_fraction": 0.0044286979627989375,
+      "final_unseen_token_set_fraction": 0.0044286979627989375,
+      "top_training_states": {
+        "173": {
+          "rows": 2332912,
+          "fraction": 0.9234427942620096
+        },
+        "162": {
+          "rows": 20596,
+          "fraction": 0.00815256974571709
+        },
+        "312": {
+          "rows": 11627,
+          "fraction": 0.004602346496089173
+        }
+      }
+    },
+    "u_newsCatInterestsST": {
+      "known_tokens": 207,
+      "final_token_occurrences": 1994041,
+      "unknown_token_occurrences": 0,
+      "unknown_token_fraction": 0.0,
+      "final_unseen_sorted_multiset_fraction": 0.7688516559371769,
+      "final_unseen_token_set_fraction": 0.7446966960428718,
+      "top_training_states": {
+        "98^78^98^98^98": {
+          "rows": 1944,
+          "fraction": 0.0007694987175021375
+        },
+        "98^98^78^98^98": {
+          "rows": 1698,
+          "fraction": 0.0006721238797935337
+        },
+        "78^98^98^98^98": {
+          "rows": 1561,
+          "fraction": 0.0006178948035086608
+        }
+      }
+    }
+  },
+  "within_day_constant_snapshots": [
+    {
+      "day": 20191110,
+      "field": "u_newsCatInterestsST",
+      "user_day_fraction_single_state": 1.0,
+      "row_fraction_single_state": 1.0
+    },
+    {
+      "day": 20191111,
+      "field": "u_newsCatInterestsST",
+      "user_day_fraction_single_state": 0.9499707773232028,
+      "row_fraction_single_state": 0.943352673002739
+    },
+    {
+      "day": 20191112,
+      "field": "u_newsCatInterestsST",
+      "user_day_fraction_single_state": 0.9012215175005873,
+      "row_fraction_single_state": 0.873608326480833
+    },
+    {
+      "day": 20191113,
+      "field": "u_newsCatInterestsST",
+      "user_day_fraction_single_state": 0.8937271978345298,
+      "row_fraction_single_state": 0.8618329264039065
+    },
+    {
+      "day": 20191114,
+      "field": "u_newsCatInterestsST",
+      "user_day_fraction_single_state": 0.9029525938124926,
+      "row_fraction_single_state": 0.8754024561247751
+    },
+    {
+      "day": 20191115,
+      "field": "u_newsCatInterestsST",
+      "user_day_fraction_single_state": 0.9063859814183229,
+      "row_fraction_single_state": 0.8797918922736475
+    },
+    {
+      "day": 20191116,
+      "field": "u_newsCatInterestsST",
+      "user_day_fraction_single_state": 0.9053386641580433,
+      "row_fraction_single_state": 0.8768220520731878
+    },
+    {
+      "day": 20191110,
+      "field": "ad_click_list_v001",
+      "user_day_fraction_single_state": 1.0,
+      "row_fraction_single_state": 1.0
+    },
+    {
+      "day": 20191111,
+      "field": "ad_click_list_v001",
+      "user_day_fraction_single_state": 0.982583284628872,
+      "row_fraction_single_state": 0.9773117711556303
+    },
+    {
+      "day": 20191112,
+      "field": "ad_click_list_v001",
+      "user_day_fraction_single_state": 0.9655860934930702,
+      "row_fraction_single_state": 0.9511978786506888
+    },
+    {
+      "day": 20191113,
+      "field": "ad_click_list_v001",
+      "user_day_fraction_single_state": 0.9602212545604331,
+      "row_fraction_single_state": 0.9389218307948688
+    },
+    {
+      "day": 20191114,
+      "field": "ad_click_list_v001",
+      "user_day_fraction_single_state": 0.9642395012351488,
+      "row_fraction_single_state": 0.947971203334021
+    },
+    {
+      "day": 20191115,
+      "field": "ad_click_list_v001",
+      "user_day_fraction_single_state": 0.9611901681759379,
+      "row_fraction_single_state": 0.945051556099628
+    },
+    {
+      "day": 20191116,
+      "field": "ad_click_list_v001",
+      "user_day_fraction_single_state": 0.9609595484477893,
+      "row_fraction_single_state": 0.9436541282468726
+    },
+    {
+      "day": 20191110,
+      "field": "ad_close_list_v001",
+      "user_day_fraction_single_state": 1.0,
+      "row_fraction_single_state": 1.0
+    },
+    {
+      "day": 20191111,
+      "field": "ad_close_list_v001",
+      "user_day_fraction_single_state": 0.9995324371712448,
+      "row_fraction_single_state": 0.9991454736739305
+    },
+    {
+      "day": 20191112,
+      "field": "ad_close_list_v001",
+      "user_day_fraction_single_state": 0.9985905567300916,
+      "row_fraction_single_state": 0.9977155765801557
+    },
+    {
+      "day": 20191113,
+      "field": "ad_close_list_v001",
+      "user_day_fraction_single_state": 0.9990584912321996,
+      "row_fraction_single_state": 0.9979750416618223
+    },
+    {
+      "day": 20191114,
+      "field": "ad_close_list_v001",
+      "user_day_fraction_single_state": 0.9989413010234091,
+      "row_fraction_single_state": 0.9986264919926572
+    },
+    {
+      "day": 20191115,
+      "field": "ad_close_list_v001",
+      "user_day_fraction_single_state": 0.9987063389391979,
+      "row_fraction_single_state": 0.9981614011959132
+    },
+    {
+      "day": 20191116,
+      "field": "ad_close_list_v001",
+      "user_day_fraction_single_state": 0.9990592662276576,
+      "row_fraction_single_state": 0.9985260069718448
+    }
+  ],
+  "full_state_user_identity": [
+    {
+      "field": "u_newsCatInterestsST",
+      "states": 48355,
+      "state_fraction_unique_to_one_user": 0.9886464688243202,
+      "row_fraction_state_unique_to_one_user": 0.9681683238861268,
+      "state_fraction_seen_on_one_day": 0.8701271843656292
+    },
+    {
+      "field": "ad_click_list_v001",
+      "states": 23003,
+      "state_fraction_unique_to_one_user": 0.9970438638438465,
+      "row_fraction_state_unique_to_one_user": 0.9862052313246145,
+      "state_fraction_seen_on_one_day": 0.4122940486023562
+    },
+    {
+      "field": "ad_close_list_v001",
+      "states": 954,
+      "state_fraction_unique_to_one_user": 0.949685534591195,
+      "row_fraction_state_unique_to_one_user": 0.07682280946198423,
+      "state_fraction_seen_on_one_day": 0.18867924528301888
+    }
+  ],
+  "adjacent_day_token_jaccard": [
+    {
+      "day": 20191111,
+      "field": "u_newsCatInterestsST",
+      "matched_users": 253,
+      "jaccard": {
+        "0": 0.5,
+        "0.1": 1.0,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191112,
+      "field": "u_newsCatInterestsST",
+      "matched_users": 8500,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 0.1111111111111111,
+        "0.5": 0.2857142857142857,
+        "0.9": 0.7142857142857143,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191113,
+      "field": "u_newsCatInterestsST",
+      "matched_users": 8438,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 0.09090909090909091,
+        "0.5": 0.25,
+        "0.9": 0.6666666666666666,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191114,
+      "field": "u_newsCatInterestsST",
+      "matched_users": 8424,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 0.1111111111111111,
+        "0.5": 0.2857142857142857,
+        "0.9": 0.7142857142857143,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191115,
+      "field": "u_newsCatInterestsST",
+      "matched_users": 8431,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 0.1111111111111111,
+        "0.5": 0.2857142857142857,
+        "0.9": 0.6666666666666666,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191116,
+      "field": "u_newsCatInterestsST",
+      "matched_users": 8435,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 0.1111111111111111,
+        "0.5": 0.2857142857142857,
+        "0.9": 0.6666666666666666,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191111,
+      "field": "ad_click_list_v001",
+      "matched_users": 261,
+      "jaccard": {
+        "0": 0.5,
+        "0.1": 1.0,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191112,
+      "field": "ad_click_list_v001",
+      "matched_users": 8513,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 0.6666666666666666,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191113,
+      "field": "ad_click_list_v001",
+      "matched_users": 8455,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 0.6666666666666666,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191114,
+      "field": "ad_click_list_v001",
+      "matched_users": 8442,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 0.6666666666666666,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191115,
+      "field": "ad_click_list_v001",
+      "matched_users": 8448,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 0.6666666666666666,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191116,
+      "field": "ad_click_list_v001",
+      "matched_users": 8451,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 0.625,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191111,
+      "field": "ad_close_list_v001",
+      "matched_users": 261,
+      "jaccard": {
+        "0": 1.0,
+        "0.1": 1.0,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191112,
+      "field": "ad_close_list_v001",
+      "matched_users": 8513,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 1.0,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191113,
+      "field": "ad_close_list_v001",
+      "matched_users": 8455,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 1.0,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191114,
+      "field": "ad_close_list_v001",
+      "matched_users": 8442,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 1.0,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191115,
+      "field": "ad_close_list_v001",
+      "matched_users": 8448,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 1.0,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    },
+    {
+      "day": 20191116,
+      "field": "ad_close_list_v001",
+      "matched_users": 8451,
+      "jaccard": {
+        "0": 0.0,
+        "0.1": 1.0,
+        "0.5": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      }
+    }
+  ],
+  "candidate_history_matches": [
+    {
+      "day": 20191115,
+      "field": "ad_click_list_v001",
+      "group": "match",
+      "rows": 17718,
+      "clicks": 217,
+      "ctr": 0.0122474319900666
+    },
+    {
+      "day": 20191115,
+      "field": "ad_click_list_v001",
+      "group": "no_match",
+      "rows": 407062,
+      "clicks": 3306,
+      "ctr": 0.008121612923829786
+    },
+    {
+      "day": 20191115,
+      "field": "ad_click_list_v002",
+      "group": "match",
+      "rows": 87350,
+      "clicks": 921,
+      "ctr": 0.010543789353176874
+    },
+    {
+      "day": 20191115,
+      "field": "ad_click_list_v002",
+      "group": "no_match",
+      "rows": 337430,
+      "clicks": 2602,
+      "ctr": 0.007711228995643541
+    },
+    {
+      "day": 20191115,
+      "field": "ad_click_list_v003",
+      "group": "match",
+      "rows": 167593,
+      "clicks": 1714,
+      "ctr": 0.010227157458843747
+    },
+    {
+      "day": 20191115,
+      "field": "ad_click_list_v003",
+      "group": "no_match",
+      "rows": 257187,
+      "clicks": 1809,
+      "ctr": 0.007033792532281959
+    },
+    {
+      "day": 20191115,
+      "field": "ad_close_list_v001",
+      "group": "match",
+      "rows": 224,
+      "clicks": 3,
+      "ctr": 0.013392857142857142
+    },
+    {
+      "day": 20191115,
+      "field": "ad_close_list_v001",
+      "group": "no_match",
+      "rows": 424556,
+      "clicks": 3520,
+      "ctr": 0.008291014612913256
+    },
+    {
+      "day": 20191115,
+      "field": "ad_close_list_v002",
+      "group": "match",
+      "rows": 2242,
+      "clicks": 19,
+      "ctr": 0.00847457627118644
+    },
+    {
+      "day": 20191115,
+      "field": "ad_close_list_v002",
+      "group": "no_match",
+      "rows": 422538,
+      "clicks": 3504,
+      "ctr": 0.008292745267881232
+    },
+    {
+      "day": 20191115,
+      "field": "ad_close_list_v003",
+      "group": "match",
+      "rows": 5286,
+      "clicks": 44,
+      "ctr": 0.00832387438516837
+    },
+    {
+      "day": 20191115,
+      "field": "ad_close_list_v003",
+      "group": "no_match",
+      "rows": 419494,
+      "clicks": 3479,
+      "ctr": 0.008293324815134423
+    },
+    {
+      "day": 20191116,
+      "field": "ad_click_list_v001",
+      "group": "match",
+      "rows": 21315,
+      "clicks": 281,
+      "ctr": 0.013183204316209242
+    },
+    {
+      "day": 20191116,
+      "field": "ad_click_list_v001",
+      "group": "no_match",
+      "rows": 400668,
+      "clicks": 3443,
+      "ctr": 0.008593149440434475
+    },
+    {
+      "day": 20191116,
+      "field": "ad_click_list_v002",
+      "group": "match",
+      "rows": 91203,
+      "clicks": 1021,
+      "ctr": 0.011194807188360032
+    },
+    {
+      "day": 20191116,
+      "field": "ad_click_list_v002",
+      "group": "no_match",
+      "rows": 330780,
+      "clicks": 2703,
+      "ctr": 0.008171594413205151
+    },
+    {
+      "day": 20191116,
+      "field": "ad_click_list_v003",
+      "group": "match",
+      "rows": 185068,
+      "clicks": 1861,
+      "ctr": 0.010055763287008019
+    },
+    {
+      "day": 20191116,
+      "field": "ad_click_list_v003",
+      "group": "no_match",
+      "rows": 236915,
+      "clicks": 1863,
+      "ctr": 0.007863579764894582
+    },
+    {
+      "day": 20191116,
+      "field": "ad_close_list_v001",
+      "group": "match",
+      "rows": 326,
+      "clicks": 3,
+      "ctr": 0.009202453987730062
+    },
+    {
+      "day": 20191116,
+      "field": "ad_close_list_v001",
+      "group": "no_match",
+      "rows": 421657,
+      "clicks": 3721,
+      "ctr": 0.008824708234418022
+    },
+    {
+      "day": 20191116,
+      "field": "ad_close_list_v002",
+      "group": "match",
+      "rows": 2251,
+      "clicks": 21,
+      "ctr": 0.009329187027987561
+    },
+    {
+      "day": 20191116,
+      "field": "ad_close_list_v002",
+      "group": "no_match",
+      "rows": 419732,
+      "clicks": 3703,
+      "ctr": 0.008822296131817446
+    },
+    {
+      "day": 20191116,
+      "field": "ad_close_list_v003",
+      "group": "match",
+      "rows": 4887,
+      "clicks": 41,
+      "ctr": 0.008389605074687948
+    },
+    {
+      "day": 20191116,
+      "field": "ad_close_list_v003",
+      "group": "no_match",
+      "rows": 417096,
+      "clicks": 3683,
+      "ctr": 0.00883010146345206
+    }
+  ],
+  "historical_support": [
+    {
+      "day": 20191115,
+      "keys": [
+        "user_id"
+      ],
+      "historical_entities": 8556,
+      "historical_entity_clicks": {
+        "0": 0.0,
+        "0.1": 0.0,
+        "0.5": 1.0,
+        "0.9": 4.0,
+        "0.99": 9.0,
+        "1": 31.0
+      },
+      "held_row_fraction_no_exposure": 0.0,
+      "held_row_fraction_no_click": 0.24262912566505015
+    },
+    {
+      "day": 20191115,
+      "keys": [
+        "task_id"
+      ],
+      "historical_entities": 7373,
+      "historical_entity_clicks": {
+        "0": 0.0,
+        "0.1": 0.0,
+        "0.5": 0.0,
+        "0.9": 4.0,
+        "0.99": 30.0,
+        "1": 269.0
+      },
+      "held_row_fraction_no_exposure": 0.12514713498752295,
+      "held_row_fraction_no_click": 0.2448820565940016
+    },
+    {
+      "day": 20191115,
+      "keys": [
+        "user_id",
+        "task_id"
+      ],
+      "historical_entities": 472589,
+      "historical_entity_clicks": {
+        "0": 0.0,
+        "0.1": 0.0,
+        "0.5": 0.0,
+        "0.9": 0.0,
+        "0.99": 1.0,
+        "1": 13.0
+      },
+      "held_row_fraction_no_exposure": 0.5083808088893074,
+      "held_row_fraction_no_click": 0.9717736239935967
+    },
+    {
+      "day": 20191116,
+      "keys": [
+        "user_id"
+      ],
+      "historical_entities": 8556,
+      "historical_entity_clicks": {
+        "0": 0.0,
+        "0.1": 0.0,
+        "0.5": 1.0,
+        "0.9": 5.0,
+        "0.99": 10.0,
+        "1": 34.0
+      },
+      "held_row_fraction_no_exposure": 0.0,
+      "held_row_fraction_no_click": 0.1627245647336504
+    },
+    {
+      "day": 20191116,
+      "keys": [
+        "task_id"
+      ],
+      "historical_entities": 8444,
+      "historical_entity_clicks": {
+        "0": 0.0,
+        "0.1": 0.0,
+        "0.5": 0.0,
+        "0.9": 4.0,
+        "0.99": 34.0,
+        "1": 315.0
+      },
+      "held_row_fraction_no_exposure": 0.07432289926371441,
+      "held_row_fraction_no_click": 0.191401075398772
+    },
+    {
+      "day": 20191116,
+      "keys": [
+        "user_id",
+        "task_id"
+      ],
+      "historical_entities": 587525,
+      "historical_entity_clicks": {
+        "0": 0.0,
+        "0.1": 0.0,
+        "0.5": 0.0,
+        "0.9": 0.0,
+        "0.99": 1.0,
+        "1": 13.0
+      },
+      "held_row_fraction_no_exposure": 0.45672929952154473,
+      "held_row_fraction_no_click": 0.963199939334049
+    }
+  ],
+  "identifier_audit": {
+    "training_unique_log_id": 1089013,
+    "training_rows": 2526320,
+    "final_duplicate_log_id_rows": 858,
+    "daily_duplicate_log_id_rows": {
+      "20191110": 0,
+      "20191111": 200,
+      "20191112": 882,
+      "20191113": 863,
+      "20191114": 784,
+      "20191115": 1055,
+      "20191116": 1070
+    },
+    "rule": "log_id is not a globally unique row key and has no established within-day time semantics"
+  },
+  "v7_within_user": [
+    {
+      "day": 20191115,
+      "eligible_users": 2513,
+      "eligible_rows": 163309,
+      "eligible_clicks": 3519,
+      "pair_weighted_within_user_auc": 0.7511858264712955,
+      "macro_within_user_auc": 0.7361052258292642,
+      "scope": "Only users with both outcomes, not directly comparable with overall AUC"
+    },
+    {
+      "day": 20191116,
+      "eligible_users": 2621,
+      "eligible_rows": 169270,
+      "eligible_clicks": 3723,
+      "pair_weighted_within_user_auc": 0.7599016167415122,
+      "macro_within_user_auc": 0.7392584042799415,
+      "scope": "Only users with both outcomes, not directly comparable with overall AUC"
+    }
+  ],
+  "final_labels_read": false,
+  "v7_interest_state_slices": [
+    {
+      "day": 20191115,
+      "group": "seen_full_interest_state",
+      "rows": 45713,
+      "clicks": 407,
+      "ctr": 0.008903375407433333,
+      "auc": 0.800603317587823,
+      "logloss": 0.042992332704105504,
+      "average_precision": 0.14676861324730137,
+      "mean_prediction": 0.01007128609814822
+    },
+    {
+      "day": 20191115,
+      "group": "unseen_full_interest_state",
+      "rows": 379067,
+      "clicks": 3116,
+      "ctr": 0.008220182711763356,
+      "auc": 0.7910695404140167,
+      "logloss": 0.04198182203659657,
+      "average_precision": 0.07318359755888967,
+      "mean_prediction": 0.008587151886415964
+    },
+    {
+      "day": 20191116,
+      "group": "seen_full_interest_state",
+      "rows": 42635,
+      "clicks": 427,
+      "ctr": 0.010015245690160665,
+      "auc": 0.8252732536358358,
+      "logloss": 0.046712017253226594,
+      "average_precision": 0.13486283932910328,
+      "mean_prediction": 0.010569976997424681
+    },
+    {
+      "day": 20191116,
+      "group": "unseen_full_interest_state",
+      "rows": 379348,
+      "clicks": 3297,
+      "ctr": 0.008691228107173361,
+      "auc": 0.7965036298344679,
+      "logloss": 0.0436678999292499,
+      "average_precision": 0.07992074570180904,
+      "mean_prediction": 0.00943522533458275
+    }
+  ],
+  "source_sha256": "c49933a7325f54a5748f106b6dd935f5315a7720efef4195ab807243e6a268d5"
+}

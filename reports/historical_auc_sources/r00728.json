@@ -1,0 +1,17 @@
+{
+  "name": "day15_static_paststats_seed2025",
+  "kind": "paststats",
+  "variant": "static",
+  "day": 20191115,
+  "seed": 2025,
+  "auc": 0.7270119017188391,
+  "logloss": 0.04518906772136688,
+  "best_epoch": 1.0,
+  "new_task_auc": 0.674192771408138,
+  "new_pair_auc": 0.7080912522425847,
+  "full_replay_rows": 424780,
+  "maximum_probability_error": 0.0,
+  "checkpoint_sha256": "e589b4809d1c0b0a39158640e8534c49df139be4df1285a1dd0a58794e82c4a5",
+  "parameter_count": 393334,
+  "output": "/root/lanyun-tmp/ctr_temporal_20261027/analysis/temporal_interest/optimization_v1/runs/day15_static_paststats_seed2025"
+}

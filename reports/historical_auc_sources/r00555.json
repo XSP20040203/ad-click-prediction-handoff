@@ -1,0 +1,164 @@
+{
+  "status": "passed",
+  "per_date_ids": {
+    "20191110": {
+      "rows": 274,
+      "distinct_ids": 274,
+      "id_min": 5121,
+      "id_max": 1176053,
+      "duplicate_id_rows": 0,
+      "duplicate_id_groups_spanning_users": 0
+    },
+    "20191111": {
+      "rows": 450542,
+      "distinct_ids": 450342,
+      "id_min": 1,
+      "id_max": 1176633,
+      "duplicate_id_rows": 400,
+      "duplicate_id_groups_spanning_users": 200
+    },
+    "20191112": {
+      "rows": 432932,
+      "distinct_ids": 432050,
+      "id_min": 7,
+      "id_max": 1176163,
+      "duplicate_id_rows": 1763,
+      "duplicate_id_groups_spanning_users": 876
+    },
+    "20191113": {
+      "rows": 412848,
+      "distinct_ids": 411985,
+      "id_min": 1,
+      "id_max": 1176157,
+      "duplicate_id_rows": 1726,
+      "duplicate_id_groups_spanning_users": 855
+    },
+    "20191114": {
+      "rows": 382961,
+      "distinct_ids": 382177,
+      "id_min": 288,
+      "id_max": 1136835,
+      "duplicate_id_rows": 1568,
+      "duplicate_id_groups_spanning_users": 784
+    },
+    "20191115": {
+      "rows": 424780,
+      "distinct_ids": 423725,
+      "id_min": 6,
+      "id_max": 1134858,
+      "duplicate_id_rows": 2110,
+      "duplicate_id_groups_spanning_users": 1055
+    },
+    "20191116": {
+      "rows": 421983,
+      "distinct_ids": 420913,
+      "id_min": 1,
+      "id_max": 1134172,
+      "duplicate_id_rows": 2140,
+      "duplicate_id_groups_spanning_users": 1070
+    }
+  },
+  "rank_diagnostics": {
+    "20191115": {
+      "log_id__pt_d": {
+        "train_auc_ascending": 0.4969122812669481,
+        "direction_from_training": -1,
+        "held_auc_fixed_training_direction": 0.4996558847193909,
+        "held_raw_ascending_auc": 0.5003441152806091,
+        "held_correlation_with_current_reference": 0.0006440973900977171
+      },
+      "log_id__pt_d__user_id": {
+        "train_auc_ascending": 0.498826054255163,
+        "direction_from_training": -1,
+        "held_auc_fixed_training_direction": 0.49671794418452614,
+        "held_raw_ascending_auc": 0.503282055815474,
+        "held_correlation_with_current_reference": -0.00029270534903936543
+      },
+      "log_id__pt_d__task_id": {
+        "train_auc_ascending": 0.4984427069486677,
+        "direction_from_training": -1,
+        "held_auc_fixed_training_direction": 0.4992708743010325,
+        "held_raw_ascending_auc": 0.5007291256989675,
+        "held_correlation_with_current_reference": -0.00018170091021102726
+      },
+      "log_id__pt_d__user_id__task_id": {
+        "train_auc_ascending": 0.49594207817925284,
+        "direction_from_training": -1,
+        "held_auc_fixed_training_direction": 0.49697782021154807,
+        "held_raw_ascending_auc": 0.503022179788452,
+        "held_correlation_with_current_reference": -0.0004568980622510107
+      },
+      "source_row__pt_d": {
+        "train_auc_ascending": 0.49725958175880813,
+        "direction_from_training": -1,
+        "held_auc_fixed_training_direction": 0.5031084398111374,
+        "held_raw_ascending_auc": 0.4968915601888626,
+        "held_correlation_with_current_reference": -0.0010109773528615027
+      },
+      "source_row__pt_d__user_id": {
+        "train_auc_ascending": 0.5045028948186121,
+        "direction_from_training": 1,
+        "held_auc_fixed_training_direction": 0.4910280324936787,
+        "held_raw_ascending_auc": 0.4910280324936787,
+        "held_correlation_with_current_reference": -0.004820771513841302
+      }
+    },
+    "20191116": {
+      "log_id__pt_d": {
+        "train_auc_ascending": 0.4975981221538029,
+        "direction_from_training": -1,
+        "held_auc_fixed_training_direction": 0.49797546831441425,
+        "held_raw_ascending_auc": 0.5020245316855858,
+        "held_correlation_with_current_reference": -0.00412999079857988
+      },
+      "log_id__pt_d__user_id": {
+        "train_auc_ascending": 0.499716386247242,
+        "direction_from_training": -1,
+        "held_auc_fixed_training_direction": 0.49852764180168463,
+        "held_raw_ascending_auc": 0.5014723581983154,
+        "held_correlation_with_current_reference": -0.0013049569051800049
+      },
+      "log_id__pt_d__task_id": {
+        "train_auc_ascending": 0.4988999047899411,
+        "direction_from_training": -1,
+        "held_auc_fixed_training_direction": 0.49904826379311185,
+        "held_raw_ascending_auc": 0.5009517362068883,
+        "held_correlation_with_current_reference": -0.0020101820254462975
+      },
+      "log_id__pt_d__user_id__task_id": {
+        "train_auc_ascending": 0.4973446604090298,
+        "direction_from_training": -1,
+        "held_auc_fixed_training_direction": 0.5036720244564287,
+        "held_raw_ascending_auc": 0.49632797554357144,
+        "held_correlation_with_current_reference": -0.00043556313237181433
+      },
+      "source_row__pt_d": {
+        "train_auc_ascending": 0.4971860353606326,
+        "direction_from_training": -1,
+        "held_auc_fixed_training_direction": 0.4944271889986688,
+        "held_raw_ascending_auc": 0.5055728110013312,
+        "held_correlation_with_current_reference": 0.004506475731135346
+      },
+      "source_row__pt_d__user_id": {
+        "train_auc_ascending": 0.5018098913147748,
+        "direction_from_training": 1,
+        "held_auc_fixed_training_direction": 0.4978179198110122,
+        "held_raw_ascending_auc": 0.4978179198110122,
+        "held_correlation_with_current_reference": -0.005238073037776131
+      }
+    }
+  },
+  "rank_feature_labels_read": false,
+  "held_labels_used_only_for_metrics": true,
+  "rank_direction_fit_uses_earlier_labels_only": true,
+  "source_row_is_explicit_observed_input_position": true,
+  "row_permutation_with_position_preserved_passed": true,
+  "label_allowlist_rejection_passed": true,
+  "deep_models_trained": 0,
+  "event_timestamps_recovered": false,
+  "final_test_read": false,
+  "final_auc": null,
+  "source_sha256": "50ca1eef8aae0cabae8f254b60ffb08fa324c41e4940ea41d418521f86a45f95",
+  "input_sha256": "3f1b4dc73a754c60df3df8fd6f4c13f76ee57bd3be03ded365aba69f6dca34ad",
+  "interpretation": "Label-free identifier/file-position ranks with training-only sign are descriptive probes, not evidence of true event time, a deployable model or final-platform AUC."
+}

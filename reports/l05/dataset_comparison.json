@@ -1,0 +1,30 @@
+{
+  "rows": 404182,
+  "date": 20191117,
+  "new_submission_matches_user_file": true,
+  "fifth_score_user_reported": 0.74404,
+  "old_hypotheses_fifth_auc": {
+    "A": 0.7487287586317393,
+    "B": 0.7487287586317393,
+    "C": 0.7518830532690451
+  },
+  "old_hypotheses_ruled_out": {
+    "A": true,
+    "B": true,
+    "C": true
+  },
+  "four_score_unique_vectors": 261470,
+  "five_score_unique_vectors": 261474,
+  "four_score_rows_in_nonunique_groups": 206399,
+  "five_score_rows_in_nonunique_groups": 206396,
+  "five_score_maximum_group_size": 86,
+  "rank_correlation_with_four_scores": [
+    0.8297993501284654,
+    0.8498279699556248,
+    0.8435359677306663,
+    0.8357625265313525
+  ],
+  "fifth_rank_variance_not_explained_linearly_by_four": 0.27059449206170233,
+  "new_rank_variation_is_not_a_per_row_label_confidence": true,
+  "true_final_positive_count_unknown": true
+}

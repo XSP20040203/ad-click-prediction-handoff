@@ -1,0 +1,46 @@
+[
+  {
+    "step": 514,
+    "fractional_epoch": 0.25,
+    "auc": 0.7777565319746775,
+    "logloss": 0.04545314404640356,
+    "average_precision": 0.06388223332205997,
+    "mean_probability": 0.010952266864478588,
+    "objective": 0.05464787430814848,
+    "mean_source_anchor_mse": 0.041885304850276056,
+    "seconds": 35.96627020000051
+  },
+  {
+    "step": 1028,
+    "fractional_epoch": 0.5,
+    "auc": 0.7881094214003749,
+    "logloss": 0.04473987725580406,
+    "average_precision": 0.07215354339328581,
+    "mean_probability": 0.009404584765434265,
+    "objective": 0.05407073193842161,
+    "mean_source_anchor_mse": 0.06412070933182935,
+    "seconds": 71.10357739999927
+  },
+  {
+    "step": 1542,
+    "fractional_epoch": 0.75,
+    "auc": 0.7893123401156862,
+    "logloss": 0.04454658039286631,
+    "average_precision": 0.07797324858667973,
+    "mean_probability": 0.01037601474672556,
+    "objective": 0.05377638640773667,
+    "mean_source_anchor_mse": 0.07499555092563925,
+    "seconds": 108.69138949999979
+  },
+  {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7915451763889282,
+    "logloss": 0.044381066843648065,
+    "average_precision": 0.08144894720149819,
+    "mean_probability": 0.009944102726876736,
+    "objective": 0.05293257857989425,
+    "mean_source_anchor_mse": 0.08128105530461344,
+    "seconds": 145.55987649999952
+  }
+]

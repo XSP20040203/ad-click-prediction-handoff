@@ -1,0 +1,81 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "records": {
+    "control": {
+      "iteration": 64,
+      "scores": {
+        "auc": 0.7640440209596111,
+        "logloss": 0.043534785177400115,
+        "average_precision": 0.05832594375076748,
+        "mean_probability": 0.0077651704790136855
+      },
+      "fixed_weight_v7_blends": {
+        "0.05": {
+          "auc": 0.7921270759791681,
+          "logloss": 0.042099570602953086,
+          "average_precision": 0.0824352762554055,
+          "mean_probability": 0.008697783160835793
+        },
+        "0.1": {
+          "auc": 0.7920159013356787,
+          "logloss": 0.04211427470665107,
+          "average_precision": 0.0823125314550028,
+          "mean_probability": 0.008648698282845153
+        },
+        "0.2": {
+          "auc": 0.7914185312643077,
+          "logloss": 0.04216010013208425,
+          "average_precision": 0.08181853336475664,
+          "mean_probability": 0.008550528526863879
+        },
+        "0.3": {
+          "auc": 0.7903839264600254,
+          "logloss": 0.04222758380170799,
+          "average_precision": 0.08096817879214309,
+          "mean_probability": 0.008452358770882604
+        }
+      },
+      "full_model_sha256": "eaf87c5cdad09a68b0a43785a998e3131ef123b8fd7e350ca12118cb7b4ff74f"
+    },
+    "audience": {
+      "iteration": 69,
+      "scores": {
+        "auc": 0.7634127900349192,
+        "logloss": 0.04353698723309434,
+        "average_precision": 0.05920051577523217,
+        "mean_probability": 0.007683389919350567
+      },
+      "fixed_weight_v7_blends": {
+        "0.05": {
+          "auc": 0.7921646465171408,
+          "logloss": 0.04209752041234617,
+          "average_precision": 0.08247183030251545,
+          "mean_probability": 0.008693694132852637
+        },
+        "0.1": {
+          "auc": 0.7920863850071531,
+          "logloss": 0.04211029554378252,
+          "average_precision": 0.08234506983219482,
+          "mean_probability": 0.00864052022687884
+        },
+        "0.2": {
+          "auc": 0.7915517059448286,
+          "logloss": 0.042152665214678184,
+          "average_precision": 0.0819404950745728,
+          "mean_probability": 0.008534172414931257
+        },
+        "0.3": {
+          "auc": 0.7905606504328401,
+          "logloss": 0.0422172839271124,
+          "average_precision": 0.08094656361351499,
+          "mean_probability": 0.00842782460298367
+        }
+      },
+      "full_model_sha256": "a808b338186aaf0e96351ecacbc17e26ebabc60a2bde99c51108e0662f0df444"
+    }
+  },
+  "selection": "Secondary best prefix; same complete 500-check history for both arms",
+  "auc_delta": -0.0006312309246918613,
+  "source_sha256": "2a3c83da910fde6e4282b9371e49a3784232a5566942d55b1278c24b0ca84917"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "dcn_tabm32",
+  "weights": {
+    "dcn": 0.5,
+    "tabm32": 0.5
+  },
+  "members": {
+    "dcn": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\random20_rich_oof_statistics\\bounded\\seed42",
+    "tabm32": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\random20_architecture_capacity32\\tabm_ple_clip\\seed42"
+  },
+  "auc": 0.7739984525127852,
+  "logloss": 0.044238131189961,
+  "average_precision": 0.039724957243227894,
+  "mean_prediction": 0.007297875845554577,
+  "validation_strategy": "random20",
+  "seed": 42,
+  "weight_fitting": "none; weights fixed before scoring",
+  "validated_rows": 505264
+}

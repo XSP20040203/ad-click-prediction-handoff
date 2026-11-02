@@ -1,0 +1,79 @@
+[
+  {
+    "fractional_epoch": 0.25091352009744217,
+    "auc": 0.7595479933304324,
+    "logloss": 0.044139960413736946,
+    "average_precision": 0.052665880621717835,
+    "mean_prediction": 0.00943781714886427,
+    "training_loss": 0.08864211594884835,
+    "training_bce": 0.05168511066585779,
+    "training_pairwise": 0.7391400992580988,
+    "seconds": 25.046066799999608
+  },
+  {
+    "fractional_epoch": 0.5006090133982948,
+    "auc": 0.77080781543816,
+    "logloss": 0.043948134700205414,
+    "average_precision": 0.05827997418201967,
+    "mean_prediction": 0.010764043778181076,
+    "training_loss": 0.08615382314816009,
+    "training_bce": 0.05220384296673348,
+    "training_pairwise": 0.6789995962323353,
+    "seconds": 39.7407144000008
+  },
+  {
+    "fractional_epoch": 0.7503045066991474,
+    "auc": 0.7714604891554537,
+    "logloss": 0.04333885599112148,
+    "average_precision": 0.062020436003931534,
+    "mean_prediction": 0.008991382084786892,
+    "training_loss": 0.08728071402564838,
+    "training_bce": 0.05409666541480012,
+    "training_pairwise": 0.6636809631940219,
+    "seconds": 54.58485490000021
+  },
+  {
+    "fractional_epoch": 1.0,
+    "auc": 0.7673686375817942,
+    "logloss": 0.043851294913121244,
+    "average_precision": 0.05114721334754274,
+    "mean_prediction": 0.007382638286799192,
+    "training_loss": 0.08286289485342113,
+    "training_bce": 0.051535435460173556,
+    "training_pairwise": 0.6265491761798831,
+    "seconds": 70.00266949999968
+  },
+  {
+    "fractional_epoch": 1.2509135200974422,
+    "auc": 0.7516384527579199,
+    "logloss": 0.046135810050848804,
+    "average_precision": 0.04715442857607932,
+    "mean_prediction": 0.005721258465200663,
+    "training_loss": 0.06106346973118562,
+    "training_bce": 0.04063436986643423,
+    "training_pairwise": 0.4085819864446677,
+    "seconds": 87.10424830000011
+  },
+  {
+    "fractional_epoch": 1.5006090133982948,
+    "auc": 0.7583635032508855,
+    "logloss": 0.04697906257699574,
+    "average_precision": 0.04518149844587689,
+    "mean_prediction": 0.010641569271683693,
+    "training_loss": 0.06706469930672153,
+    "training_bce": 0.042784091701545277,
+    "training_pairwise": 0.4856121389245175,
+    "seconds": 100.47893509999994
+  },
+  {
+    "fractional_epoch": 1.7503045066991474,
+    "auc": 0.7391901559697577,
+    "logloss": 0.04680620187042946,
+    "average_precision": 0.038531490055038586,
+    "mean_prediction": 0.009829212911427021,
+    "training_loss": 0.07054201247739036,
+    "training_bce": 0.04328048199886916,
+    "training_pairwise": 0.5452305940403179,
+    "seconds": 114.3626308999992
+  }
+]

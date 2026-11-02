@@ -1,0 +1,40 @@
+{
+  "day": 20191115,
+  "arm": "today_din",
+  "seed": 42,
+  "model_class": "DailyInterestDCN",
+  "model_options": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "cross_layers": 2,
+    "group_norm_caps": {
+      "user_id": 0.2,
+      "ad_task": 0.2,
+      "adv_id": 0.2
+    },
+    "interest_dim": 8,
+    "interest_hidden": 32,
+    "interest_mode": "din",
+    "time_mode": "today",
+    "numeric_dim": 75,
+    "n_topics": 214,
+    "context_dim": 7
+  },
+  "best_fractional_epoch": 0.7501523461304083,
+  "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\user_personalization\\cache_day15_stats",
+  "features": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\cache_day15",
+  "initial_backbone_sha256": "fa1a804aebc1ca916f9c2858eba20bc9b7fe27c2d3ef2bff4c4bf124702732dd",
+  "parameter_count": 632559,
+  "rows": 424780,
+  "clicks": 3523,
+  "ctr": 0.008293704976693819,
+  "auc": 0.7384477803863129,
+  "logloss": 0.04485227612002793,
+  "average_precision": 0.024950290367070305,
+  "mean_prediction": 0.008566179433676964
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "step": 411,
+    "fractional_epoch": 0.25045703839122485,
+    "auc": 0.7741223184445443,
+    "logloss": 0.04316344074496609,
+    "average_precision": 0.06493690469864735,
+    "mean_probability": 0.009145061485469341,
+    "training_objective": 0.05441241206968353,
+    "seconds": 24.54218660000015
+  },
+  {
+    "step": 821,
+    "fractional_epoch": 0.5003046922608165,
+    "auc": 0.7836060644233411,
+    "logloss": 0.04275076693385904,
+    "average_precision": 0.07378063811191185,
+    "mean_probability": 0.010162793099880219,
+    "training_objective": 0.05388114522194238,
+    "seconds": 49.7842926000003
+  },
+  {
+    "step": 1231,
+    "fractional_epoch": 0.7501523461304083,
+    "auc": 0.784223705187332,
+    "logloss": 0.04244992526227619,
+    "average_precision": 0.07548518187016216,
+    "mean_probability": 0.008270693011581898,
+    "training_objective": 0.05400651976448022,
+    "seconds": 73.8014105000002
+  },
+  {
+    "step": 1641,
+    "fractional_epoch": 1.0,
+    "auc": 0.7836274149033834,
+    "logloss": 0.04253441845437452,
+    "average_precision": 0.07555492478642817,
+    "mean_probability": 0.00780542753636837,
+    "training_objective": 0.05327576480243486,
+    "seconds": 98.25988410000036
+  }
+]

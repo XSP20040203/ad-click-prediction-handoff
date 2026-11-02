@@ -1,0 +1,39 @@
+{
+  "variant": "UA50",
+  "model_class": "IDRegularizedDCN",
+  "seed": 42,
+  "validation_day": 20191116,
+  "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\cache",
+  "model_options": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "cross_layers": 2,
+    "group_dropout_rates": {
+      "user_id": 0.5,
+      "ad_task": 0.3,
+      "adv_id": 0.3
+    }
+  },
+  "best_fractional_epoch": 0.75,
+  "train_rows": 2104337,
+  "valid_rows": 421983,
+  "valid_clicks": 3724,
+  "parameter_count": 465253,
+  "new_task_metrics": {
+    "auc": 0.6735358902921844,
+    "logloss": 0.05295752537208796,
+    "average_precision": 0.01914273101391587,
+    "mean_prediction": 0.009829491991059244
+  },
+  "zero_train_click_user_mean_prediction": 0.006621591746807098,
+  "zero_train_click_user_actual_ctr": 0.011883437459041461,
+  "auc": 0.724700267626947,
+  "logloss": 0.047586254596529334,
+  "average_precision": 0.026061210902448985,
+  "mean_prediction": 0.008672461479070378
+}

@@ -1,0 +1,43 @@
+{
+  "validation_day": 20191116,
+  "variant": "cross_attention",
+  "seed": 42,
+  "batch_size": 512,
+  "epochs": 3,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "validation_interval_epochs": 0.25,
+  "early_stopping_evaluations": 4,
+  "options": {
+    "use_feed": true,
+    "embedding_dim": 8,
+    "dimension": 32,
+    "latent_count": 4,
+    "dropout": 0.1,
+    "initial_ctr": 0.008377935663346698
+  },
+  "raw_cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\raw_cross_attention\\raw_cache_20191116",
+  "raw_sha256": {
+    "ad": "3f1b4dc73a754c60df3df8fd6f4c13f76ee57bd3be03ded365aba69f6dca34ad",
+    "feed": "c9eea8f2637fdd5e42a7c341c7ff0ddca12f9d0a054a5fa40a05ebe2263f7c85"
+  },
+  "previous_artifacts_used": false,
+  "parameters": 2447297,
+  "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "torch_version": "2.1.0",
+  "source_setting": "offline source events on or before each ad day; no future-day events",
+  "source_sha256": {
+    "raw_data.py": "c90a827dd2e50f5fc45288642a25bba624c61d157b83cf5447ab1a260d33d4f2",
+    "raw_model.py": "b335bb07148e25f8944809e71c9b173d874b71bfbf9aea09cdbbe73bbfb4e3ce",
+    "train_raw.py": "46bc3f56512a7216cfaadb8b36e7fff0de44574f15aa74273382f447f82987c4"
+  },
+  "epoch": 1.0,
+  "auc": 0.7249465226718574,
+  "logloss": 0.0475398722336415,
+  "average_precision": 0.02410203375540168,
+  "train_logloss": 0.046171982815672176,
+  "elapsed_seconds": 408.49983900000007,
+  "peak_cuda_mb": 218.4228515625,
+  "train_rows": 2104337,
+  "valid_rows": 421983
+}

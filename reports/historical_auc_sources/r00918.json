@@ -1,0 +1,74 @@
+[
+  {
+    "step": 514,
+    "fractional_epoch": 0.25,
+    "auc": 0.7781143672640315,
+    "logloss": 0.04542434809555855,
+    "average_precision": 0.06471492903775664,
+    "mean_probability": 0.010977041907608509,
+    "objective": 0.056026973054972604,
+    "row_bce": 0.04378716524233788,
+    "any_bce": 0.5439124644846304,
+    "poisson_mean_loss_without_factorial": 0.6800683504876459,
+    "weighted_last_batch_head_gradients_before_clip": {
+      "any_head": 0.0005045948782935739,
+      "count_head": 0.0011897595832124352,
+      "day_encoder": 0.005674136336892843
+    },
+    "seconds": 31.421323200000188
+  },
+  {
+    "step": 1028,
+    "fractional_epoch": 0.5,
+    "auc": 0.7871929218542243,
+    "logloss": 0.04476275124481926,
+    "average_precision": 0.07183285282399346,
+    "mean_probability": 0.00913610402494669,
+    "objective": 0.05535957652618855,
+    "row_bce": 0.043390942761920945,
+    "any_bce": 0.5328298637839143,
+    "poisson_mean_loss_without_factorial": 0.6640335412456831,
+    "weighted_last_batch_head_gradients_before_clip": {
+      "any_head": 0.0005247511435300112,
+      "count_head": 0.0013539488427340984,
+      "day_encoder": 0.007705453783273697
+    },
+    "seconds": 62.488000100000136
+  },
+  {
+    "step": 1542,
+    "fractional_epoch": 0.75,
+    "auc": 0.7900772487346781,
+    "logloss": 0.0445016846510233,
+    "average_precision": 0.07669594495844607,
+    "mean_probability": 0.00988690834492445,
+    "objective": 0.05503865177036491,
+    "row_bce": 0.04327817195929809,
+    "any_bce": 0.5244894905544905,
+    "poisson_mean_loss_without_factorial": 0.6515585188735784,
+    "weighted_last_batch_head_gradients_before_clip": {
+      "any_head": 0.00037360709393396974,
+      "count_head": 0.0010954940225929022,
+      "day_encoder": 0.011383800767362118
+    },
+    "seconds": 92.1664768999999
+  },
+  {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7908657610274213,
+    "logloss": 0.04438529093296786,
+    "average_precision": 0.08178110704190114,
+    "mean_probability": 0.009604958817362785,
+    "objective": 0.05424149883223065,
+    "row_bce": 0.04265375803175721,
+    "any_bce": 0.517433432967163,
+    "poisson_mean_loss_without_factorial": 0.6413406728969104,
+    "weighted_last_batch_head_gradients_before_clip": {
+      "any_head": 0.003590361215174198,
+      "count_head": 0.006039283704012632,
+      "day_encoder": 0.024932075291872025
+    },
+    "seconds": 122.4685473999998
+  }
+]

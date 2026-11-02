@@ -1,0 +1,9 @@
+{
+  "status": "aborted_after_restricted_lp_elapsed_time_budget_overrun",
+  "feasible_initial_checkpoint_preserved": true,
+  "final_label_file_exported_by_this_run": false,
+  "process_running": false,
+  "completed_lp_objectives_not_exported_as_binary_labels": [10801.08341504422, 10592.673443426207, 10564.194530834167],
+  "superseded_by": "output/fitted_labels_six_scores_final_20191117",
+  "frozen_sources_preserved": true
+}

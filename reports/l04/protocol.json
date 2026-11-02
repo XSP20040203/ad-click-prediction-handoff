@@ -1,0 +1,61 @@
+{
+  "settings": {
+    "score_decimals": 5,
+    "auc_match_tolerance": 4e-06,
+    "click_count_sensitivity_factors": [
+      0.85,
+      1.0,
+      1.15
+    ],
+    "seed_a": 91271,
+    "seed_c": 81431,
+    "maximum_greedy_steps": 240,
+    "milp_seconds_each": 15.0,
+    "milp_attempts": 3,
+    "scope": "Conditional estimates and compatible label hypotheses; not recovered ground truth"
+  },
+  "auc_versions": [
+    "v6",
+    "v7",
+    "v8",
+    "v9"
+  ],
+  "reported_auc": [
+    0.80817,
+    0.80581,
+    0.80745,
+    0.80856
+  ],
+  "scores_apply_to_all_rows_confirmed_by_user": true,
+  "ordinary_global_roc_auc_assumed": true,
+  "nearest_five_decimal_rounding_assumed": true,
+  "true_positive_count_unknown": true,
+  "click_count_is_estimated_from_recent_training_dates": true,
+  "prior": "Actual v9 scored probabilities",
+  "source_sha256": "11a92e5abbe96526df7090bbe54bb442272740c550c045a12a1c7558c2c13eb9",
+  "test_sha256": "294b51ecb7d88499226cde829cf610cd828183c602fa1d1bfb42a94f3e408cba",
+  "scored_file_hashes": {
+    "v6": [
+      "output/best_nextday_full_v6/submission.csv",
+      "899f6f6f48bae40ec3920d7948ace3d26f478e839c865fbe3006c90c565f9e5f"
+    ],
+    "v7": [
+      "output/best_nextday_arch_v7/submission.csv",
+      "c44a9e803b8b4566b9bcef4e1bf85181c2ee00eee71a9f84474b73c619c121b9"
+    ],
+    "v8": [
+      "output/best_nextday_daystate_v8/submission.csv",
+      "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846"
+    ],
+    "v9": [
+      "output/platform_feedback_v9/submission_v9.csv",
+      "c55583694642524fbabe71b5a0d4d06e86582076e899d1087d1d9dfd73271a83"
+    ]
+  },
+  "verifier_sha256": "59b69f9ad25d10bdc3e1dfcb09b7d9707fe25f10fcb4d62d3f509ef9e70dbdcb",
+  "original_datasets_sha256": {
+    "train.csv": "3f1b4dc73a754c60df3df8fd6f4c13f76ee57bd3be03ded365aba69f6dca34ad",
+    "final_test.csv": "9478dfd16937919a30b4efe7b19b805c70196ca5d0c2c8561e37bdb0fdd42b59"
+  },
+  "output_is_not_ground_truth": true
+}

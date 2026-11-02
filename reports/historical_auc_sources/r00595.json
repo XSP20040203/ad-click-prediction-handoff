@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "verified_model_count": 4,
+  "baseline_replays": [
+    {
+      "day": 20191115,
+      "endpoint": "final",
+      "maximum_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "endpoint": "best",
+      "maximum_error": 0.0
+    }
+  ],
+  "goal_auc_both_days": 0.85,
+  "goal_met": false,
+  "best_common_model": "frozen_candidate",
+  "best_common_min_auc": 0.7926443086415286,
+  "highest_each_day": {
+    "20191115": 0.7927228821275392,
+    "20191116": 0.8004121944890122
+  },
+  "evaluator_sha256": "8106bda62a8946dbed5d42e663e5fd5e7b2cd09d03fe1bba2f772e8f01a193aa",
+  "final_test_auc": null,
+  "limitations": "Repeated development dates; checkpoint selection and paired intervals are exploratory"
+}

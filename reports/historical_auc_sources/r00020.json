@@ -1,0 +1,14 @@
+{
+  "scope": "Whole-day chronological development; target labels only before held day in optimizer/features",
+  "preserve_best_final_submission": "output/best_nextday_full_v6/submission.csv",
+  "fixed_starting_baseline_auc": {"20191115": 0.7905480723412239, "20191116": 0.7987435691593445},
+  "completed_gated_blend": {"weight": 0.2, "20191115": 0.7912847258935978, "20191116": 0.7996141309422394},
+  "next_structures": [
+    {"tag": "finalmlp_oof_day15", "model": "FinalMLPCTR", "learning_rate": 0.001, "max_epochs": 3},
+    {"tag": "gated_dropout20_day15", "model": "GatedCrossCTR", "learning_rate": 0.001, "id_dropout": 0.2, "max_epochs": 3},
+    {"tag": "gated_slowids_day15", "model": "GatedCrossCTR", "learning_rate": 0.001, "slow_id_factor": 0.2, "max_epochs": 3}
+  ],
+  "confirmation_rule": "Select using day15; confirm fixed configuration and blend weight on day16 only when blended gain is positive",
+  "goal_auc": 0.85,
+  "goal_met": false
+}

@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "rows": 404182,
+  "all_four_reported_auc_values_reproduced_by_each_hypothesis": true,
+  "actual_auc_by_hypothesis": {
+    "A": [
+      0.808170728589341,
+      0.805810705879969,
+      0.8074506846654377,
+      0.808560720773005
+    ],
+    "B": [
+      0.808170728589341,
+      0.805810705879969,
+      0.8074506846654377,
+      0.808560720773005
+    ],
+    "C": [
+      0.8081711022995204,
+      0.8058114648434995,
+      0.8074511409814386,
+      0.8085610858258059
+    ]
+  },
+  "maximum_csv_probability_rounding_error": 4.999995990156991e-11,
+  "conditional_probability_reload_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "A_B_different_rows": 2510,
+  "A_C_different_rows": 6670,
+  "equal_score_permutation_prior_log_likelihood_difference": -2.1316282072803006e-14,
+  "log2_equally_scored_labels_from_score_tie_symmetry": 2068.3446220052124,
+  "original_datasets_and_submissions_unchanged": true,
+  "actual17_labels_recovered": false,
+  "conditional_hypotheses_are_not_ground_truth": true
+}

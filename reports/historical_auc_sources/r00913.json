@@ -1,0 +1,74 @@
+[
+  {
+    "step": 514,
+    "fractional_epoch": 0.25,
+    "auc": 0.7767020339174923,
+    "logloss": 0.04551627170946714,
+    "average_precision": 0.06376196500456918,
+    "mean_probability": 0.011106220073997974,
+    "objective": 0.05465348118894411,
+    "row_bce": 0.043823765713996925,
+    "any_bce": 0.5414857855102895,
+    "poisson_mean_loss_without_factorial": 0.7614051242746732,
+    "weighted_last_batch_head_gradients_before_clip": {
+      "any_head": 0.0010955877369269729,
+      "count_head": 0.0,
+      "day_encoder": 0.004815473221242428
+    },
+    "seconds": 30.544970799999646
+  },
+  {
+    "step": 1028,
+    "fractional_epoch": 0.5,
+    "auc": 0.7877989895940419,
+    "logloss": 0.04476022068307537,
+    "average_precision": 0.07168882278855025,
+    "mean_probability": 0.009280395694077015,
+    "objective": 0.054069207539122394,
+    "row_bce": 0.04342201056777851,
+    "any_bce": 0.5323598581123444,
+    "poisson_mean_loss_without_factorial": 0.7650806359975718,
+    "weighted_last_batch_head_gradients_before_clip": {
+      "any_head": 0.0011413650354370475,
+      "count_head": 0.0,
+      "day_encoder": 0.00520824221894145
+    },
+    "seconds": 60.11300640000081
+  },
+  {
+    "step": 1542,
+    "fractional_epoch": 0.75,
+    "auc": 0.7901338423384097,
+    "logloss": 0.044507659052928535,
+    "average_precision": 0.07809811824458396,
+    "mean_probability": 0.010326492600142956,
+    "objective": 0.05376644492820968,
+    "row_bce": 0.04330580911192024,
+    "any_bce": 0.5230318005214869,
+    "poisson_mean_loss_without_factorial": 0.7652006363435787,
+    "weighted_last_batch_head_gradients_before_clip": {
+      "any_head": 0.0007904781377874315,
+      "count_head": 0.0,
+      "day_encoder": 0.010558363050222397
+    },
+    "seconds": 88.96060729999954
+  },
+  {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7918529024239293,
+    "logloss": 0.04435622268435219,
+    "average_precision": 0.08222688831511693,
+    "mean_probability": 0.00992781762033701,
+    "objective": 0.05291799273189849,
+    "row_bce": 0.042670471718771974,
+    "any_bce": 0.5123760606146298,
+    "poisson_mean_loss_without_factorial": 0.7643361157430665,
+    "weighted_last_batch_head_gradients_before_clip": {
+      "any_head": 0.006534677930176258,
+      "count_head": 0.0,
+      "day_encoder": 0.030788090080022812
+    },
+    "seconds": 117.6317584999997
+  }
+]

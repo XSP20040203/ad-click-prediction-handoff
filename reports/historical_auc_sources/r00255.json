@@ -1,0 +1,71 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "mode": "both",
+  "fixed_endpoint": {
+    "fractional_epoch": 1.0,
+    "auc": 0.7826394158130785,
+    "logloss": 0.04260309748936343,
+    "average_precision": 0.0747022322149063,
+    "mean_probability": 0.0076379026286304,
+    "train_objective": 0.05316149405317897,
+    "train_row_bce": 0.04295170054852378,
+    "train_auxiliary_bce": 0.510489685242083,
+    "seconds": 141.51927500000238
+  },
+  "best_checkpoint": {
+    "fractional_epoch": 0.7501523461304083,
+    "auc": 0.7848113938947806,
+    "logloss": 0.042430001237551994,
+    "average_precision": 0.07538026313681984,
+    "mean_probability": 0.00839246902614832,
+    "train_objective": 0.053941811832117416,
+    "train_row_bce": 0.04352542455516193,
+    "train_auxiliary_bce": 0.5208193739674907,
+    "seconds": 106.38987570000245
+  },
+  "initial_backbone_sha256": "793c76b6ef2d2c463b974a99579e4165d71921be218998bad9494a9017b03f9e",
+  "initial_full_weights_sha256": "6e211f8f7d151067499e40dfa4235a307de351dbaf7951b9ed7c29cb3d5fca7c",
+  "row_order_sha256": "3d0d2924edcfac5f30b93da94792474189960945b14d33163917f4fcb59655c0",
+  "reload_errors": {
+    "best": 0.0,
+    "best_auxiliary": 0.0,
+    "final": 0.0,
+    "final_auxiliary": 0.0
+  },
+  "v7_replace30": {
+    "auc": 0.7934700801999591,
+    "logloss": 0.04204855010744797,
+    "average_precision": 0.0823399607498202,
+    "mean_probability": 0.008615116633256282
+  },
+  "candidate_blend10": {
+    "auc": 0.7932471029180485,
+    "logloss": 0.04204988154547807,
+    "average_precision": 0.0828887980222412,
+    "mean_probability": 0.008661860318580626
+  },
+  "slices": {
+    "seen": {
+      "auc": 0.7906045538043175,
+      "logloss": 0.04172850854243937,
+      "average_precision": 0.07630177565227549,
+      "mean_probability": 0.008336544013695964
+    },
+    "cold": {
+      "auc": 0.7424692467418585,
+      "logloss": 0.04733385122789996,
+      "average_precision": 0.07015450187667754,
+      "mean_probability": 0.0087834174794315
+    }
+  },
+  "seconds": 164.78888590000133,
+  "files_sha256": {
+    "best_model.pt": "a9e8a77db09d311bb13e64a398692e6a4fb2fe62fc029b09a01d05a3b369da69",
+    "final_model.pt": "38b18fc6e4be129e83b78fe022a3d63eca32bae174d16656a6ed2f84f9022d00",
+    "best_prediction.npy": "5d89548e0d55bcee74c5ab6eb305c64515c7267fac175893e387538926e1bd15",
+    "final_prediction.npy": "83e8367958cea40f75d22413e65dac38c72dc52394199ca50b6360dc03ebf346",
+    "best_any_prediction.npy": "4c4c34e5be6429584d3b2e35e617b2e346eaf8143efa3e4aa310d7a2c59cd29b",
+    "final_any_prediction.npy": "0fd714f9f98ee00b6fd85cc1e4b588023ec39443f9bbfc6f11c3d0bee15c564a"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "tag": "deep_tree_d8ctr2_mem75_day15",
+  "auc": 0.7556942825557851,
+  "logloss": 0.04451736308431066,
+  "average_precision": 0.06655747295808219,
+  "mean_probability": 0.01199594665674074,
+  "train_rows": 1679557,
+  "valid_rows": 424780,
+  "validation_clicks": 3523,
+  "trees": 84,
+  "best_iteration": 83,
+  "features": 428,
+  "numeric_features": 341,
+  "categorical_features": 87,
+  "params": {
+    "iterations": 1800,
+    "depth": 8,
+    "learning_rate": 0.03,
+    "l2_leaf_reg": 30,
+    "loss_function": "Logloss",
+    "eval_metric": "AUC",
+    "random_seed": 42,
+    "task_type": "GPU",
+    "devices": "0",
+    "border_count": 64,
+    "one_hot_max_size": 12,
+    "max_ctr_complexity": 2,
+    "gpu_ram_part": 0.75,
+    "gpu_cat_features_storage": "CpuPinnedMemory",
+    "pinned_memory_size": "512mb",
+    "thread_count": 3,
+    "allow_writing_files": false,
+    "counter_calc_method": "SkipTest"
+  },
+  "maximum_reload_error": 0.0,
+  "model_sha256": "396a3a2c628c61dac807a457513016bae4f8b0f028e5a504b70d7b9e4be751a3",
+  "fit_seconds": 561.7352395999987,
+  "seconds": 583.6536536999993,
+  "baseline_auc": 0.7905480723412239,
+  "baseline_metrics": {
+    "auc": 0.7905480723412239,
+    "logloss": 0.04213764355222077,
+    "average_precision": 0.0827857924429125,
+    "mean_probability": 0.008885367834888977
+  },
+  "fixed_blends": [
+    {
+      "tree_weight": 0.05,
+      "auc": 0.7902404289443643,
+      "logloss": 0.04218716391413026,
+      "average_precision": 0.08272647323107445,
+      "mean_probability": 0.009040896775981565
+    },
+    {
+      "tree_weight": 0.1,
+      "auc": 0.7898396657582956,
+      "logloss": 0.042246791494942613,
+      "average_precision": 0.08266578555128332,
+      "mean_probability": 0.009196425717074155
+    },
+    {
+      "tree_weight": 0.2,
+      "auc": 0.7887659615313849,
+      "logloss": 0.042392195284945235,
+      "average_precision": 0.08234825236602081,
+      "mean_probability": 0.009507483599259329
+    },
+    {
+      "tree_weight": 0.3,
+      "auc": 0.7872685116601182,
+      "logloss": 0.04256780710194164,
+      "average_precision": 0.08176992669198933,
+      "mean_probability": 0.009818541481444504
+    }
+  ],
+  "recent_days": 0,
+  "validation_labels_used_for_features_or_optimizer": false,
+  "final_test_read": false,
+  "development_caveat": "Held days previously reused for model development; not a blind test"
+}

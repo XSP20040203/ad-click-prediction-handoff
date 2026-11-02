@@ -1,0 +1,161 @@
+{
+  "status": "passed",
+  "verified_dates": [
+    "20191115",
+    "20191116"
+  ],
+  "days": {
+    "20191115": {
+      "reference": {
+        "auc": 0.7934700801999591,
+        "logloss": 0.04204855010744797,
+        "average_precision": 0.0823399607498202,
+        "mean_probability": 0.008615116633256282
+      },
+      "actual": {
+        "auc": 0.7938319656483054,
+        "logloss": 0.042034408506586234,
+        "average_precision": 0.0824929615396982,
+        "mean_probability": 0.008617185857370329
+      },
+      "permuted": {
+        "auc": 0.7934671848198941,
+        "logloss": 0.042046764144378475,
+        "average_precision": 0.08243437249998872,
+        "mean_probability": 0.008604315086637098
+      },
+      "actual_minus_reference": {
+        "auc_delta": 0.0003618854483461442,
+        "user_cluster_approximate_95_interval": [
+          0.00018134013759873015,
+          0.0005424307590935583
+        ],
+        "logloss_delta": -1.4141600861737602e-05
+      },
+      "actual_minus_permuted": {
+        "auc_delta": 0.00036478082841107096,
+        "user_cluster_approximate_95_interval": [
+          0.00019914172151850508,
+          0.0005304199353036368
+        ],
+        "logloss_delta": -1.2355637792241247e-05
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 371620,
+          "reference": {
+            "auc": 0.799788240893592,
+            "logloss": 0.04132330781647826,
+            "average_precision": 0.08315722074755214,
+            "mean_probability": 0.008418198459707656
+          },
+          "actual": {
+            "auc": 0.8002522628976579,
+            "logloss": 0.04130471727149841,
+            "average_precision": 0.08338080837811035,
+            "mean_probability": 0.008412056835306712
+          }
+        },
+        "cold_task": {
+          "rows": 53160,
+          "reference": {
+            "auc": 0.7474548394652347,
+            "logloss": 0.04711842482848194,
+            "average_precision": 0.07866374659535685,
+            "mean_probability": 0.009991691720805962
+          },
+          "actual": {
+            "auc": 0.7471816316871647,
+            "logloss": 0.04713538399160017,
+            "average_precision": 0.07775556197140493,
+            "mean_probability": 0.010051159656830136
+          }
+        }
+      },
+      "actual_final_minus_disabled_final": 0.0004147333780375462,
+      "original_screen_gate_passed": false,
+      "verification_sha256": "4cdc49c08b01256b9b24c8bcebd2c39fe981cc53c2db381f3442726133962f79"
+    },
+    "20191116": {
+      "reference": {
+        "auc": 0.8012412673501383,
+        "logloss": 0.04389861132045347,
+        "average_precision": 0.08749928332848086,
+        "mean_probability": 0.009657048985881815
+      },
+      "actual": {
+        "auc": 0.801288169740616,
+        "logloss": 0.043893294360788385,
+        "average_precision": 0.08769378180012624,
+        "mean_probability": 0.009679826709068143
+      },
+      "permuted": {
+        "auc": 0.8011521868350147,
+        "logloss": 0.043902721547781166,
+        "average_precision": 0.08732607360526226,
+        "mean_probability": 0.009646460480153326
+      },
+      "actual_minus_reference": {
+        "auc_delta": 4.6902390477665534e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.00029522832928451976,
+          0.00038903311023985083
+        ],
+        "logloss_delta": -5.316959665088716e-06
+      },
+      "actual_minus_permuted": {
+        "auc_delta": 0.0001359829056012396,
+        "user_cluster_approximate_95_interval": [
+          -0.0001913302919003449,
+          0.0004632961031028241
+        ],
+        "logloss_delta": -9.427186992781722e-06
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "reference": {
+            "auc": 0.8050835956173258,
+            "logloss": 0.043416575987711016,
+            "average_precision": 0.09011972030426907,
+            "mean_probability": 0.009457051068948001
+          },
+          "actual": {
+            "auc": 0.8050703554716176,
+            "logloss": 0.043415191690118274,
+            "average_precision": 0.09024750946087029,
+            "mean_probability": 0.009477234874373314
+          }
+        },
+        "cold_task": {
+          "rows": 31363,
+          "reference": {
+            "auc": 0.7528808289714999,
+            "logloss": 0.0499022666364585,
+            "average_precision": 0.06390433460360662,
+            "mean_probability": 0.012147983727860797
+          },
+          "actual": {
+            "auc": 0.753867102743758,
+            "logloss": 0.04984796914372199,
+            "average_precision": 0.06475227866551174,
+            "mean_probability": 0.012203068186876208
+          }
+        }
+      },
+      "actual_final_minus_disabled_final": 4.6902390477665534e-05,
+      "original_screen_gate_passed": false,
+      "verification_sha256": "f96636be79c86cc9e350d9baff7d5999c0f48ace5bcb1f71bf062a29239c9dcc"
+    }
+  },
+  "verified_new_ad_models": 6,
+  "positive_direction_on_both_dates": true,
+  "original_both_date_screen_passed": false,
+  "same_configuration_auc85_threshold_met": false,
+  "objective_complete": false,
+  "second_seed_confirmed": false,
+  "final_auc": null,
+  "limitations": "Repeated development dates and checkpoint selection; user-cluster influence intervals are approximate descriptive paired uncertainty, not blind-test or seed confirmation.",
+  "source_sha256": "e307c990cefd80588525c4cd252c53aec185651e5313e2411f81a3b0aa664c57",
+  "paired_interval_source_sha256": "a918a568df2e6e10ab49383e552b542cf310407400f40d0a8557f73f92f6d4b1"
+}

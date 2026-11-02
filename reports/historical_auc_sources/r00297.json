@@ -1,0 +1,44 @@
+{
+  "rows": 424780,
+  "clicks": 3523,
+  "ctr": 0.008293704976693819,
+  "auc": 0.7785900522741834,
+  "logloss": 0.04274560305530342,
+  "average_precision": 0.0783567545793455,
+  "mean_prediction": 0.009360988641485834,
+  "best_fractional_epoch": 0.7503045066991474,
+  "maximum_reload_error": 0.0,
+  "options": {
+    "numeric_dim": 251,
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "cross_layers": 2,
+    "group_norm_caps": {
+      "user_id": 0.2,
+      "ad_task": 0.2,
+      "adv_id": 0.2
+    }
+  },
+  "device": "cuda",
+  "training_seconds": 82.0585957000003,
+  "epochs_completed": 2,
+  "evaluations": 7,
+  "model_sha256": "a440a637b6dacf852e6c125bcd57d3f11e278c7050573d566364f33fc10b316f",
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "tag": "goal085_day15_oof60_fixed",
+  "seed": 42,
+  "model": "dcn",
+  "numeric_dim": 251,
+  "train_rows": 1679557,
+  "valid_rows": 424780,
+  "protocol": "whole_date_outer_group_hash5_oof_v1",
+  "protocol_file": "protocol.json",
+  "seconds": 99.96403830000054,
+  "final_labels_used": false
+}

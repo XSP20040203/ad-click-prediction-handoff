@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "day": 20191116,
+  "seed": 42,
+  "verified_new_ad_models": 3,
+  "records": [
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "disabled",
+      "endpoint": "best",
+      "auc": 0.8012412673501383,
+      "logloss": 0.04389861132045347,
+      "average_precision": 0.08749928332848086,
+      "mean_probability": 0.009657048985881815,
+      "gain": 0.0,
+      "logloss_change": 0.0,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "disabled",
+      "endpoint": "final",
+      "auc": 0.8012412673501383,
+      "logloss": 0.04389861132045347,
+      "average_precision": 0.08749928332848086,
+      "mean_probability": 0.009657048985881815,
+      "gain": 0.0,
+      "logloss_change": 0.0,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "permuted",
+      "endpoint": "best",
+      "auc": 0.8011521868350147,
+      "logloss": 0.043902721547781166,
+      "average_precision": 0.08732607360526226,
+      "mean_probability": 0.009646460480153326,
+      "gain": -8.908051512368509e-05,
+      "logloss_change": 4.110227327693006e-06,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "permuted",
+      "endpoint": "final",
+      "auc": 0.8011521868350147,
+      "logloss": 0.043902721547781166,
+      "average_precision": 0.08732607360526226,
+      "mean_probability": 0.009646460480153326,
+      "gain": -8.908051512368509e-05,
+      "logloss_change": 4.110227327693006e-06,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "actual",
+      "endpoint": "best",
+      "auc": 0.801288169740616,
+      "logloss": 0.043893294360788385,
+      "average_precision": 0.08769378180012624,
+      "mean_probability": 0.009679826709068143,
+      "gain": 4.6902390477665534e-05,
+      "logloss_change": -5.316959665088716e-06,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "actual",
+      "endpoint": "final",
+      "auc": 0.801288169740616,
+      "logloss": 0.043893294360788385,
+      "average_precision": 0.08769378180012624,
+      "mean_probability": 0.009679826709068143,
+      "gain": 4.6902390477665534e-05,
+      "logloss_change": -5.316959665088716e-06,
+      "independent_reload_error": 0.0
+    }
+  ],
+  "reference_scores": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "gate_passed": false,
+  "proceed_to_day16": false,
+  "both_day_goal_proven": false,
+  "held_ad_labels_fit": false,
+  "final_auc": null,
+  "existing_submission_unchanged": true,
+  "submission_sha256": "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846",
+  "feature_reconstruction_exact": true,
+  "evaluator_sha256": "32e93d72bb7175b5f1772ed6c34e3c60424f403c06c13dbbd2492e32aa58b1db"
+}

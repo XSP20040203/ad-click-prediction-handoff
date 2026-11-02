@@ -1,0 +1,858 @@
+{
+  "goal_auc": 0.85,
+  "goal_met_on_chronological_development": false,
+  "final_auc": null,
+  "final_labels_available": false,
+  "protocol": "Whole future days 15/16; repeatedly used development sets, not untouched test; target-derived inputs strictly earlier dates",
+  "same_day_input_assumption": "Offline supplied full-day unlabeled exposures and history snapshots",
+  "experiments": [
+    {
+      "day": 20191115,
+      "model": "dcn",
+      "auc": 0.7805012915096471,
+      "logloss": 0.04253072198235796,
+      "average_precision": 0.07771627435684789,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "tree",
+      "auc": 0.7761661703993995,
+      "logloss": 0.042706977942457924,
+      "average_precision": 0.0779078958084706,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "lgb",
+      "auc": 0.7667657472867364,
+      "logloss": 0.04325630926493438,
+      "average_precision": 0.06434879943069906,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_contextstats",
+      "auc": 0.7724998450243946,
+      "logloss": 0.042810687537714,
+      "average_precision": 0.07638542880245106,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_ctrpairs",
+      "auc": 0.771228032990819,
+      "logloss": 0.042713903746747925,
+      "average_precision": 0.07917932951884579,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_local",
+      "auc": 0.7654060691940812,
+      "logloss": 0.042936459985389086,
+      "average_precision": 0.07678867866913214,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_multiscale_tree",
+      "auc": 0.776068807601517,
+      "logloss": 0.04279234335124553,
+      "average_precision": 0.07743734633607544,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_source_context_tree",
+      "auc": 0.7789192368405334,
+      "logloss": 0.042611030572251817,
+      "average_precision": 0.07789304608067563,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_cap1_emb16",
+      "auc": 0.780525463250181,
+      "logloss": 0.042497642878624155,
+      "average_precision": 0.07845302987480168,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_multiscale_dcn",
+      "auc": 0.7761320113832489,
+      "logloss": 0.04283565674450104,
+      "average_precision": 0.07422267830356705,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_oof60_fixed",
+      "auc": 0.7785900505896477,
+      "logloss": 0.042739768825523855,
+      "average_precision": 0.07835675472899085,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_oof_exposure",
+      "auc": 0.7810435331268145,
+      "logloss": 0.042735512960643346,
+      "average_precision": 0.07189278414475958,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_posweight10",
+      "auc": 0.7807189911410204,
+      "logloss": 0.04256855126315919,
+      "average_precision": 0.07661863318146149,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_posweight100_serial",
+      "auc": 0.7776610570810528,
+      "logloss": 0.043280482086261854,
+      "average_precision": 0.060501317967387454,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_recent3_multi_serial",
+      "auc": 0.772199646938689,
+      "logloss": 0.04348384638422706,
+      "average_precision": 0.06671879152103818,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_seed2026",
+      "auc": 0.7821998904484404,
+      "logloss": 0.04249803117417406,
+      "average_precision": 0.07831600904894864,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_source_context_dcn",
+      "auc": 0.7757981832256218,
+      "logloss": 0.04292989270441949,
+      "average_precision": 0.07402375939171593,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_lgb31_utf8",
+      "auc": 0.7667657472867364,
+      "logloss": 0.04325630926493438,
+      "average_precision": 0.06434879943069906,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "goal085_day15_lgb_shared_multi",
+      "auc": 0.7767474673043586,
+      "logloss": 0.04277900886863382,
+      "average_precision": 0.07249701808516709,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "existing_equal_blend",
+      "auc": 0.7858631196467175,
+      "logloss": 0.04227038828810208,
+      "average_precision": 0.0820390824516422,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "fixed_40_40_20_blend",
+      "auc": 0.786473152710307,
+      "logloss": 0.042278749508101524,
+      "average_precision": 0.08198286096146028,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "fixed_multiscale25_blend",
+      "auc": 0.7871077503481697,
+      "logloss": 0.04221850523195797,
+      "average_precision": 0.08205078534467845,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "fixed_lgb_multiscale25_blend",
+      "auc": 0.7876002210086661,
+      "logloss": 0.0422219354033571,
+      "average_precision": 0.08190184770189753,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "fixed_shared20_multi_lgb_blend",
+      "auc": 0.7880938883633664,
+      "logloss": 0.04221810189292352,
+      "average_precision": 0.08208558180703457,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "fixed_oof25_shared_blend",
+      "auc": 0.7893219216708781,
+      "logloss": 0.04214117036798535,
+      "average_precision": 0.08273977908582403,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "fixed_source10_each_shared_blend",
+      "auc": 0.7885934138596276,
+      "logloss": 0.04219293704001463,
+      "average_precision": 0.08237316761547345,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "fixed_seed25_multi_lgb_blend",
+      "auc": 0.7882550647449263,
+      "logloss": 0.04218896241229428,
+      "average_precision": 0.08228451460589509,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_contextstats",
+      "auc": 0.7852340648053212,
+      "logloss": 0.04229757065134439,
+      "average_precision": 0.08133282980632969,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_contextstats",
+      "auc": 0.7850750284579913,
+      "logloss": 0.04231727391290761,
+      "average_precision": 0.08171076019214851,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_ctrpairs",
+      "auc": 0.7850951040813698,
+      "logloss": 0.04226547278183242,
+      "average_precision": 0.08295890973504888,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_ctrpairs",
+      "auc": 0.7864389539391128,
+      "logloss": 0.042240009858307954,
+      "average_precision": 0.08292596046216782,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_local",
+      "auc": 0.783377324681501,
+      "logloss": 0.042325870719320466,
+      "average_precision": 0.0815313156272298,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_local",
+      "auc": 0.7846479652889089,
+      "logloss": 0.042320431327658184,
+      "average_precision": 0.08175009659078766,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_multiscale_tree",
+      "auc": 0.7859304842317781,
+      "logloss": 0.0422764271231226,
+      "average_precision": 0.08230790199021668,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_multiscale_tree",
+      "auc": 0.7856217068054445,
+      "logloss": 0.0423032664373749,
+      "average_precision": 0.08230397943631679,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_source_context_tree",
+      "auc": 0.7873869062238772,
+      "logloss": 0.04222595408518461,
+      "average_precision": 0.08212975295195085,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_source_context_tree",
+      "auc": 0.7858205312136219,
+      "logloss": 0.042293344808193814,
+      "average_precision": 0.08191123303631564,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_cap1_emb16",
+      "auc": 0.7820505395079188,
+      "logloss": 0.042422894251048365,
+      "average_precision": 0.07933268459651902,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_cap1_emb16",
+      "auc": 0.7867594180007381,
+      "logloss": 0.04221649855792955,
+      "average_precision": 0.08249271692705484,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_multiscale_dcn",
+      "auc": 0.7835681923534676,
+      "logloss": 0.042399764568118344,
+      "average_precision": 0.07891354867174198,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_multiscale_dcn",
+      "auc": 0.7871077503481697,
+      "logloss": 0.04221850523195797,
+      "average_precision": 0.08205078534467845,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_oof60_fixed",
+      "auc": 0.7851453901690767,
+      "logloss": 0.04228047079869876,
+      "average_precision": 0.08128890692083522,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_oof60_fixed",
+      "auc": 0.7883043286563336,
+      "logloss": 0.04214687930932342,
+      "average_precision": 0.08365208605021093,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_oof_exposure",
+      "auc": 0.7833028203600735,
+      "logloss": 0.04244036513254244,
+      "average_precision": 0.0779559530504326,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_oof_exposure",
+      "auc": 0.7874901291847632,
+      "logloss": 0.04219568153734641,
+      "average_precision": 0.08237427684953838,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_posweight10",
+      "auc": 0.7811547667290558,
+      "logloss": 0.04249230170508439,
+      "average_precision": 0.07811706131348908,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_posweight10",
+      "auc": 0.786491939326922,
+      "logloss": 0.042234887972526974,
+      "average_precision": 0.08188686723247622,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_posweight100_serial",
+      "auc": 0.7826641939864861,
+      "logloss": 0.042570667216489576,
+      "average_precision": 0.07562071869725631,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_posweight100_serial",
+      "auc": 0.7861953121201214,
+      "logloss": 0.0423316480942783,
+      "average_precision": 0.08087830285028924,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_recent3_multi_serial",
+      "auc": 0.7815096798838893,
+      "logloss": 0.04259902977679437,
+      "average_precision": 0.07514529604844374,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_recent3_multi_serial",
+      "auc": 0.7862388614124148,
+      "logloss": 0.04229159992628105,
+      "average_precision": 0.08063047340738311,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_seed2026",
+      "auc": 0.7842350269521781,
+      "logloss": 0.0423644152425561,
+      "average_precision": 0.08018407083224505,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_seed2026",
+      "auc": 0.7873432686619101,
+      "logloss": 0.04221121755582326,
+      "average_precision": 0.08276886023556715,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_source_context_dcn",
+      "auc": 0.7833501585101995,
+      "logloss": 0.04239192242682968,
+      "average_precision": 0.07913573657184331,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_source_context_dcn",
+      "auc": 0.7871344920164598,
+      "logloss": 0.04221022819567454,
+      "average_precision": 0.08234366259392739,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_lgb31_utf8",
+      "auc": 0.7825915194078017,
+      "logloss": 0.04247494363207723,
+      "average_precision": 0.07795596315252086,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_lgb31_utf8",
+      "auc": 0.7863427460589476,
+      "logloss": 0.042293541668270845,
+      "average_precision": 0.08181225842472184,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "dcn50_goal085_day15_lgb_shared_multi",
+      "auc": 0.7856869926733766,
+      "logloss": 0.042312678005406106,
+      "average_precision": 0.08020248459843095,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191115,
+      "model": "baseline75_goal085_day15_lgb_shared_multi",
+      "auc": 0.787178031875353,
+      "logloss": 0.04224263749448521,
+      "average_precision": 0.08242308892909624,
+      "rows": 424780,
+      "clicks": 3523
+    },
+    {
+      "day": 20191116,
+      "model": "dcn",
+      "auc": 0.785762575177717,
+      "logloss": 0.04487690213388207,
+      "average_precision": 0.07118002125741946,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "tree",
+      "auc": 0.7838375557845688,
+      "logloss": 0.044631009989023904,
+      "average_precision": 0.08025663538082725,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "lgb",
+      "auc": 0.7698131086471949,
+      "logloss": 0.04555040086717771,
+      "average_precision": 0.06169828935349023,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "goal085_day16_source_context_tree",
+      "auc": 0.7852850603063367,
+      "logloss": 0.04455794769259017,
+      "average_precision": 0.08065564157702379,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "goal085_day16_multiscale_dcn",
+      "auc": 0.7857505139668662,
+      "logloss": 0.044600753133642916,
+      "average_precision": 0.07666119005662422,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "goal085_day16_oof60_fixed",
+      "auc": 0.7860966616979772,
+      "logloss": 0.04510721206259422,
+      "average_precision": 0.06536842492378453,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "goal085_day16_oof_exposure",
+      "auc": 0.7900313793459975,
+      "logloss": 0.044624791852633204,
+      "average_precision": 0.07814084461321183,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "goal085_day16_seed2026",
+      "auc": 0.7865851482811097,
+      "logloss": 0.04466090444027765,
+      "average_precision": 0.08020997024308163,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "goal085_day16_source_context_dcn",
+      "auc": 0.7861180144678752,
+      "logloss": 0.044799574695515515,
+      "average_precision": 0.07571859976710901,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "goal085_day16_lgb31",
+      "auc": 0.7698131086471949,
+      "logloss": 0.04555040086717771,
+      "average_precision": 0.06169828935349023,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "goal085_day16_lgb_shared_multi",
+      "auc": 0.7813616401925747,
+      "logloss": 0.044827799022423294,
+      "average_precision": 0.07374507879994655,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "existing_equal_blend",
+      "auc": 0.7917860844136609,
+      "logloss": 0.04430904919159503,
+      "average_precision": 0.08325297433637519,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "fixed_40_40_20_blend",
+      "auc": 0.79243244179162,
+      "logloss": 0.044281429487538486,
+      "average_precision": 0.08343999274706304,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "fixed_multiscale25_blend",
+      "auc": 0.7943438584964065,
+      "logloss": 0.04418671040970382,
+      "average_precision": 0.08441220690798659,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "fixed_lgb_multiscale25_blend",
+      "auc": 0.7948963507440203,
+      "logloss": 0.044186760019793304,
+      "average_precision": 0.08453524945460557,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "fixed_shared20_multi_lgb_blend",
+      "auc": 0.7957095722599832,
+      "logloss": 0.044164037656334254,
+      "average_precision": 0.08482291341860047,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "fixed_oof25_shared_blend",
+      "auc": 0.797183233748322,
+      "logloss": 0.044074475418452594,
+      "average_precision": 0.08570812966676367,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "fixed_source10_each_shared_blend",
+      "auc": 0.7959509216698839,
+      "logloss": 0.044132458997884115,
+      "average_precision": 0.08561619346971214,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "fixed_seed25_multi_lgb_blend",
+      "auc": 0.7949794049873183,
+      "logloss": 0.04414299355301577,
+      "average_precision": 0.08574973097462402,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "dcn50_goal085_day16_source_context_tree",
+      "auc": 0.7923013147648822,
+      "logloss": 0.04427275251886791,
+      "average_precision": 0.08335062178759604,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "baseline75_goal085_day16_source_context_tree",
+      "auc": 0.7918786205733912,
+      "logloss": 0.04427831466835927,
+      "average_precision": 0.0844869991218131,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "dcn50_goal085_day16_multiscale_dcn",
+      "auc": 0.7914832004542055,
+      "logloss": 0.04436884097672939,
+      "average_precision": 0.07959739832266648,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "baseline75_goal085_day16_multiscale_dcn",
+      "auc": 0.7943438584964065,
+      "logloss": 0.04418671040970382,
+      "average_precision": 0.08441220690798659,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "dcn50_goal085_day16_oof60_fixed",
+      "auc": 0.7905457696208663,
+      "logloss": 0.04456655889801868,
+      "average_precision": 0.07643973068572277,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "baseline75_goal085_day16_oof60_fixed",
+      "auc": 0.7943358673383164,
+      "logloss": 0.04421968627687652,
+      "average_precision": 0.08317316746546033,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "dcn50_goal085_day16_oof_exposure",
+      "auc": 0.7905559307889465,
+      "logloss": 0.04455110584719111,
+      "average_precision": 0.07872317226843802,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "baseline75_goal085_day16_oof_exposure",
+      "auc": 0.794305168117107,
+      "logloss": 0.04421363100926215,
+      "average_precision": 0.08449447903794902,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "dcn50_goal085_day16_seed2026",
+      "auc": 0.7895340326377566,
+      "logloss": 0.04449360936373205,
+      "average_precision": 0.08123959685265407,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "baseline75_goal085_day16_seed2026",
+      "auc": 0.7930362079084157,
+      "logloss": 0.044229843182756114,
+      "average_precision": 0.08538225125994195,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "dcn50_goal085_day16_source_context_dcn",
+      "auc": 0.7887652465704412,
+      "logloss": 0.044601745365927176,
+      "average_precision": 0.07777101878359835,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "baseline75_goal085_day16_source_context_dcn",
+      "auc": 0.7929777614500007,
+      "logloss": 0.04426732548423694,
+      "average_precision": 0.08367219978762906,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "dcn50_goal085_day16_lgb31",
+      "auc": 0.7883202407599633,
+      "logloss": 0.04451491183055119,
+      "average_precision": 0.07752804919413941,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "baseline75_goal085_day16_lgb31",
+      "auc": 0.7923483628927173,
+      "logloss": 0.04429070226475962,
+      "average_precision": 0.08334104648663389,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "dcn50_goal085_day16_lgb_shared_multi",
+      "auc": 0.7919041509335273,
+      "logloss": 0.04431878378883879,
+      "average_precision": 0.08022766185264013,
+      "rows": 421983,
+      "clicks": 3724
+    },
+    {
+      "day": 20191116,
+      "model": "baseline75_goal085_day16_lgb_shared_multi",
+      "auc": 0.7938769680067775,
+      "logloss": 0.04420562629253079,
+      "average_precision": 0.08435489086697293,
+      "rows": 421983,
+      "clicks": 3724
+    }
+  ],
+  "prediction_note": "40/40/20 weights chosen on day15; day16 confirms direction, both are development dates",
+  "source_sha256": "7fa6fd72d4d4b8208c7c0ac2ee5e08343c14be5dae234193b86144fa06b39a67"
+}

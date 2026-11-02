@@ -1,0 +1,18 @@
+{
+  "model": "AllocatedSetContextCTR",
+  "statistics": "strictly previous dates; no within-user-day OOF mixing",
+  "day15_auc": 0.7752708133639621,
+  "confirmation_day": 20191116,
+  "model_learning_rate": 0.0005,
+  "model_max_epochs": 3,
+  "count_loss_weight": 0.01,
+  "consistency_loss_weight": 0,
+  "baseline": "80%previous full best blend+20%GatedCrossCTR",
+  "allocated_weight": 0.1,
+  "day15_baseline_auc": 0.7912847258935978,
+  "day15_new_blend_auc": 0.7915329011352276,
+  "day16_labels_used_for_choice": false,
+  "development_scope": "Repeatedly used whole future days; checkpoint stopping selected on development labels",
+  "goal_auc": 0.85,
+  "goal_met": false
+}

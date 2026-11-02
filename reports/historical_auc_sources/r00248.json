@@ -1,0 +1,17 @@
+{
+  "status": "complete_and_verified",
+  "auc": 0.7225313660755518,
+  "logloss": 0.04871574620637084,
+  "average_precision": 0.02783880616486431,
+  "mean_prediction": 0.013859177305384206,
+  "best_iteration": 535,
+  "trees": 536,
+  "features": 168,
+  "categorical_fields": 39,
+  "elapsed_seconds": 158.7301907000001,
+  "maximum_reload_error": 0.0,
+  "model_sha256": "a339b71b8697b5e923a2920b4cdcf25ac956f2c60ee4c4aca0e5898de6a45869",
+  "validation_strategy": "time20191116",
+  "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_time16",
+  "final_test_used": false
+}

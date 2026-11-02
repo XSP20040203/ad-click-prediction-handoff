@@ -1,0 +1,26 @@
+{
+  "auc": 0.7663172962409179,
+  "logloss": 0.04389098352582405,
+  "best_iteration": 278,
+  "maximum_reload_error": 0.0,
+  "blends": [
+    {
+      "weight": 0.05,
+      "auc": 0.7922366617685285
+    },
+    {
+      "weight": 0.1,
+      "auc": 0.792275450562763
+    },
+    {
+      "weight": 0.2,
+      "auc": 0.7921018726289346
+    },
+    {
+      "weight": 0.3,
+      "auc": 0.7915797500961685
+    }
+  ],
+  "model_saved": false,
+  "model_sha256": "be6b7f84b9968019664c0cbc5f8aedd3172b7ff83776dcf63ecae5a63f6d5a49"
+}

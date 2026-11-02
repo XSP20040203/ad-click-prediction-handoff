@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "read_only_independent_agent": true,
+  "held_labels_in_inputs_or_optimizer": false,
+  "feature_rule": "Advertisement target statistics strictly before each row date; complete supplied same-day exposure and news inputs allowed offline",
+  "group_key": "raw user_id and calendar date; complete bags, no grouping by unknown vocabulary IDs",
+  "checkpoint_selection_on_development_labels": true,
+  "numeric_probe_columns": 500,
+  "numeric_probe_rows_per_day": 2048,
+  "maximum_numeric_source_probe_error": 0.0,
+  "historical_user_statistics_probes_per_date": 128,
+  "maximum_historical_statistics_probe_error": 0.0,
+  "results": {
+    "20191115": {
+      "fixed_gated20_allocated10_auc": 0.7915329011352276,
+      "logloss": 0.04211350777517584,
+      "valid_rows": 424780,
+      "clicks": 3523,
+      "cpu_whole_bag_rows": 2048,
+      "cpu_groups": 26,
+      "maximum_prediction_replay_error": 1.490116e-7,
+      "maximum_count_replay_error": 1.19e-7,
+      "maximum_relative_group_mass_error": 4.30e-7
+    },
+    "20191116": {
+      "fixed_gated20_allocated10_auc": 0.7996507058828065,
+      "logloss": 0.04404404448899282,
+      "valid_rows": 421983,
+      "clicks": 3724,
+      "cpu_whole_bag_rows": 2048,
+      "cpu_groups": 18,
+      "maximum_prediction_replay_error": 5.960464e-8,
+      "maximum_count_replay_error": 2.98e-7,
+      "maximum_relative_group_mass_error": 8.99e-7
+    }
+  },
+  "negative_intensity_mass": 0,
+  "saved_blend_formula_replay_error": 0.0,
+  "model_and_trainer_snapshot_hashes_match": true,
+  "goal_auc": 0.85,
+  "goal_met": false,
+  "final_auc": null,
+  "scope": "Repeated chronological development; not a blind final test"
+}

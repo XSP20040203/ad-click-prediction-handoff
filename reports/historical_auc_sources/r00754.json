@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "exit_code": 0,
+  "validation_day": 20191116,
+  "variant": "mean_history",
+  "best_auc": 0.7254200493473627,
+  "best_epoch": 0.750182437363172
+}

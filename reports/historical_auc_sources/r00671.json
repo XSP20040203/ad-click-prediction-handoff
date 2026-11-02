@@ -1,0 +1,57 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191116,
+  "variant": "mse_permuted",
+  "seed": 42,
+  "fixed_epoch": {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7906652087683534,
+    "logloss": 0.044440305515173376,
+    "average_precision": 0.08116637107991677,
+    "mean_probability": 0.010021822527050972,
+    "objective": 0.052938911797582526,
+    "seconds": 132.90670590000082
+  },
+  "best_checkpoint": {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7906652087683534,
+    "logloss": 0.044440305515173376,
+    "average_precision": 0.08116637107991677,
+    "mean_probability": 0.010021822527050972,
+    "objective": 0.052938911797582526,
+    "seconds": 132.90670590000082
+  },
+  "replacement_scores": {
+    "auc": 0.8008119706785476,
+    "logloss": 0.04393024785336238,
+    "average_precision": 0.08695710542570834,
+    "mean_probability": 0.009685250309043957
+  },
+  "reference_scores": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "auc_gain": -0.0004292966715907509,
+  "initial_full_sha256": "617dac332bd6f77152472ba254cc733396c2bc406d1d872052d0d7ba22ccfcaa",
+  "initial_backbone_sha256": "45548fa3a07fac44d6d18ccc30096a34c967c37f7e0e8f71b8f0f89fdcaa098f",
+  "row_order_sha256": "f7b59138e9fd8fd7cf8def7c276c5500d1d03ad1c0c0726d80e9c64a94c4e3cb",
+  "extra_parameters": 2241,
+  "training_rows_seen": 2104337,
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "frozen_teacher_value_sha256": "1a2aed5a1fd77f792d43833ae6652ee0da1138cc48ad1166da771fbcddef6663",
+  "ad_held_labels_fit": false,
+  "files_sha256": {
+    "best_model.pt": "e9313dd3867061d0cf1a757c2f1c64391e31e9ac24b4f2bf17470fbeaf5e7e85",
+    "final_model.pt": "e9313dd3867061d0cf1a757c2f1c64391e31e9ac24b4f2bf17470fbeaf5e7e85",
+    "best_prediction.npy": "b771a41b0ea2a5f2150b169b730fde6484b5b91c350df6c497efb156b056315d",
+    "final_prediction.npy": "b771a41b0ea2a5f2150b169b730fde6484b5b91c350df6c497efb156b056315d",
+    "replacement_prediction.npy": "03cbb77cc53a63f127789136ec3be25a477b14d51dfc8da9eac06ccd5bcce2fc"
+  }
+}

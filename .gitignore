@@ -1,0 +1,9 @@
+# 原始数据留空:单文件超过 GitHub 100MB 硬限制,改由 Release 资产分发
+# 下载:见 data/README.md 或 releases 页
+data/*.csv
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

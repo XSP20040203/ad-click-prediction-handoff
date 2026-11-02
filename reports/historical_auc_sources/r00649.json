@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "day": 20191115,
+  "rows": 424780,
+  "auc": 0.7869607186764833,
+  "logloss": 0.042325736340952984,
+  "average_precision": 0.07789592063523593,
+  "mean_probability": 0.008831638842821121,
+  "maximum_probability_error": 0.0,
+  "original_checkpoint_sha256": "e254f4d579721d894448808c21a47f7b5fa212e08aa45981f6b23de1238947b0",
+  "prediction_sha256": "10b6fbb4fd5d4c5bc7b151bb6fab591826dc8793dfa6a0fa8e98b5cfb692d412"
+}

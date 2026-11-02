@@ -1,0 +1,62 @@
+[
+  {
+    "step": 514,
+    "fractional_epoch": 0.25,
+    "auc": 0.7762172957377108,
+    "logloss": 0.04550512069838041,
+    "average_precision": 0.0638754410066506,
+    "mean_probability": 0.011021994054317474,
+    "objective": 0.054643936799512995,
+    "last_batch_new_module_gradients_before_clip": {
+      "history": 0.0002550436765886843,
+      "query": 0.0013040227349847555,
+      "match": 0.004102483857423067
+    },
+    "seconds": 30.94405320000078
+  },
+  {
+    "step": 1028,
+    "fractional_epoch": 0.5,
+    "auc": 0.7880883328195631,
+    "logloss": 0.04474804018060037,
+    "average_precision": 0.07176734557731881,
+    "mean_probability": 0.009317159652709961,
+    "objective": 0.05406777372453289,
+    "last_batch_new_module_gradients_before_clip": {
+      "history": 8.50351934786886e-05,
+      "query": 0.0005965710734017193,
+      "match": 0.0026447423733770847
+    },
+    "seconds": 63.55136510000011
+  },
+  {
+    "step": 1542,
+    "fractional_epoch": 0.75,
+    "auc": 0.7901460691890763,
+    "logloss": 0.04451260544068884,
+    "average_precision": 0.07783008930793239,
+    "mean_probability": 0.010278796777129173,
+    "objective": 0.05375945814504698,
+    "last_batch_new_module_gradients_before_clip": {
+      "history": 0.000283265981124714,
+      "query": 0.0012592427665367723,
+      "match": 0.005295475013554096
+    },
+    "seconds": 94.15740000000005
+  },
+  {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7916628872326007,
+    "logloss": 0.04435923111550516,
+    "average_precision": 0.08188037722887093,
+    "mean_probability": 0.00985847320407629,
+    "objective": 0.05291622523951631,
+    "last_batch_new_module_gradients_before_clip": {
+      "history": 8.163456368492916e-05,
+      "query": 0.0003222441300749779,
+      "match": 0.004308730363845825
+    },
+    "seconds": 122.99241860000257
+  }
+]

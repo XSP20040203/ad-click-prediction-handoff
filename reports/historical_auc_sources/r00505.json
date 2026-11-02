@@ -1,0 +1,62 @@
+{
+  "model": "B3",
+  "variant": "B3",
+  "auc": 0.7218748748151412,
+  "logloss": 0.04758233491201174,
+  "average_precision": 0.027746886923165834,
+  "mean_prediction": 0.009323070321602612,
+  "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+  "best_epoch": 1,
+  "epochs_completed": 4,
+  "parameter_count": 322436,
+  "training_seconds": 126.46196980000241,
+  "inference_seconds": null,
+  "feature_note": "24 categorical embeddings, three target-aware click-history attention pools, four masked-mean pools, and the same 20 numeric inputs. Flat MLP fusion.",
+  "model_class": "OptimizedCTRModel",
+  "model_options": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "attention": true,
+    "source_gate": false
+  },
+  "parameters": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "attention": true,
+    "source_gate": false,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "batch_size": 2048,
+    "max_epochs": 10,
+    "early_stopping_patience": 3,
+    "loss": "unweighted BCEWithLogitsLoss",
+    "seed": 42
+  },
+  "train_rows": 2104337,
+  "valid_rows": 421983,
+  "validation_day": 20191116,
+  "validation_clicks": 3724,
+  "seed": 42,
+  "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\cache",
+  "python": "3.10.0",
+  "new_task_rows": 31363,
+  "new_task_clicks": 303,
+  "new_task_metrics": {
+    "auc": 0.662172224949475,
+    "logloss": 0.053014620528143,
+    "average_precision": 0.020020137927536888,
+    "mean_prediction": 0.010590588877788338
+  },
+  "experiment_scope": "Architecture-only; same frozen preprocessing, numeric features, training settings, row order and seed for this date."
+}

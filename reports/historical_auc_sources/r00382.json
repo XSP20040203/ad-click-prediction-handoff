@@ -1,0 +1,90 @@
+{
+  "status": "verified_secondary_prediction_transform",
+  "mean_fitted_to_ad_labels": false,
+  "both_day_gain": false,
+  "changes": [
+    {
+      "day": 20191115,
+      "mode": "base",
+      "comparison": "mean_aligned_seed_average_minus_current_reference",
+      "auc_delta": -0.0010277682843519154,
+      "user_cluster_approximate_95_interval": [
+        -0.002017034578562389,
+        -3.850199014144152e-05
+      ],
+      "logloss_delta": 3.5168507238267366e-05
+    },
+    {
+      "day": 20191115,
+      "mode": "both",
+      "comparison": "mean_aligned_seed_average_minus_current_reference",
+      "auc_delta": -2.937965129090614e-05,
+      "user_cluster_approximate_95_interval": [
+        -0.0005964815116102211,
+        0.0005377222090284089
+      ],
+      "logloss_delta": -1.613274847852425e-05
+    },
+    {
+      "day": 20191115,
+      "mode": "both",
+      "comparison": "mean_aligned_both_minus_mean_aligned_base",
+      "auc_delta": 0.0009983886330610092,
+      "user_cluster_approximate_95_interval": [
+        0.0001600740380447909,
+        0.0018367032280772275
+      ],
+      "logloss_delta": -5.1301255716791616e-05
+    },
+    {
+      "day": 20191116,
+      "mode": "base",
+      "comparison": "mean_aligned_seed_average_minus_current_reference",
+      "auc_delta": -0.0014104127592950988,
+      "user_cluster_approximate_95_interval": [
+        -0.0024245781616819215,
+        -0.00039624735690827633
+      ],
+      "logloss_delta": 7.33845150578255e-05
+    },
+    {
+      "day": 20191116,
+      "mode": "both",
+      "comparison": "mean_aligned_seed_average_minus_current_reference",
+      "auc_delta": -6.85838719478582e-05,
+      "user_cluster_approximate_95_interval": [
+        -0.0007216976072821406,
+        0.0005845298633864242
+      ],
+      "logloss_delta": 3.704287455387478e-05
+    },
+    {
+      "day": 20191116,
+      "mode": "both",
+      "comparison": "mean_aligned_both_minus_mean_aligned_base",
+      "auc_delta": 0.0013418288873472406,
+      "user_cluster_approximate_95_interval": [
+        0.0005887752399113838,
+        0.0020948825347830973
+      ],
+      "logloss_delta": -3.634164050395072e-05
+    }
+  ],
+  "input_predictions_sha256": {
+    "20191115": {
+      "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\runs\\protected_day_aux_v1_day15_seed42\\base\\best_prediction.npy": "fc0027e052f184c2d902886de76cc959cbf7890bca7754b0685c62416243b268",
+      "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\runs\\protected_day_aux_v1_day15_seed2026\\base\\best_prediction.npy": "ee205cbc5a4abc745c2cce3b9affdda660c3c160b3a0e4490f4d2d3acc3daf5d",
+      "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\runs\\protected_day_aux_v1_day15_seed42\\both\\best_prediction.npy": "5d89548e0d55bcee74c5ab6eb305c64515c7267fac175893e387538926e1bd15",
+      "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\runs\\protected_day_aux_v1_day15_seed2026\\both\\best_prediction.npy": "39a34cb23579ff8cf1bf062574e458a10330ca9c33d9ea7a44562d64c9056c0f"
+    },
+    "20191116": {
+      "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\runs\\protected_day_aux_v1_day16_seed42\\base\\best_prediction.npy": "46bbaaf21c80a77daf48ba6bb4452a6379ec0ae50d828ad0cfdc4f703bbba9eb",
+      "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\runs\\protected_day_aux_v1_day16_seed2026\\base\\best_prediction.npy": "6f24e5f594ef23fcc22a9440e9cf251e792dfb9b24e384bebc60b2dbb762fcbf",
+      "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\runs\\protected_day_aux_v1_day16_seed42\\both\\best_prediction.npy": "c5080ab888c63d677427b872d7a5b53ef956f4d743045ab0eee184b1205eb428",
+      "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\runs\\protected_day_aux_v1_day16_seed2026\\both\\best_prediction.npy": "bd9a7cf73f2e331f459bd20d9d2295c7410fbd038abae183b048bfb307dc20e5"
+    }
+  },
+  "policy_sha256": "bd0c31d7e96fe4788fb070e7228b021ce9ad1cb26708917af1540a327c210306",
+  "final_test_auc": null,
+  "limitations": "Posthoc development calibration; no fresh blind-test or causal performance claim"
+}

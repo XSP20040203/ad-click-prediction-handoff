@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "independent_process": true,
+  "verification_pid": 32224,
+  "full_train_rows": 2526320,
+  "rows": 404182,
+  "numeric_dim": 325,
+  "full_final_model_reload": true,
+  "maximum_full_multiscale_reload_error": 0.0,
+  "maximum_ensemble_replay_error": 0.0,
+  "maximum_csv_rounding_error": {
+    "result.csv": 4.999906278516097e-07,
+    "submission.csv": 4.999906278516097e-07
+  },
+  "maximum_detail_error": {
+    "pctr": 0.0,
+    "dcn_pctr": 0.0,
+    "tree_pctr": 0.0,
+    "lgb_pctr": 0.0,
+    "multiscale_dcn_pctr": 0.0
+  },
+  "original_ids_and_row_order": true,
+  "duplicate_log_id_rows_preserved": 858,
+  "submission_ids_are_zero_based_original_row_positions": true,
+  "all_166_base_and_159_standardized_features_verified": true,
+  "all_159_scalers_refit_from_training_prefix": true,
+  "budget_fixed_epoch_fraction": 0.75,
+  "actual_optimizer_steps": 926,
+  "actual_training_rows_seen": 1896448,
+  "actual_fractional_epoch_by_batches": 0.7504051863857374,
+  "shuffle_order_reproduces": true,
+  "seed": 42,
+  "shuffle_seed": 43,
+  "utf8_no_bom": true,
+  "six_decimals": true,
+  "all_final_labels_forced_to_minus_one": true,
+  "input_model_source_and_export_hashes_match": true,
+  "old_dcn_tree_and_entire_v2_unchanged": true,
+  "final_labels_read": false,
+  "final_labels_available": false,
+  "final_auc": null,
+  "development_auc": {
+    "20191115": {
+      "fixed_v3_auc": 0.7876002210086661,
+      "fixed_v2_auc": 0.786473152710307,
+      "multiscale_dcn_auc": 0.7761320006022201,
+      "best_fractional_epoch": 0.7503045066991474
+    },
+    "20191116": {
+      "fixed_v3_auc": 0.7948963507440203,
+      "fixed_v2_auc": 0.79243244179162,
+      "multiscale_dcn_auc": 0.7857505309802582,
+      "best_fractional_epoch": 0.75
+    }
+  },
+  "warnings": [
+    "开发日期15/16反复用于模型和固定融合权重选型，不是独立盲测；开发AUC不代表final AUC。",
+    "源域新闻数据、当前日曝光和广告历史快照采用所提供整日离线输入假设，不代表逐条在线曝光前可用。",
+    "final标签不读取且强制为-1；final_auc=None，不能声称final达标或AUC达到0.85。"
+  ],
+  "verification_seconds": 55.360945699999775
+}

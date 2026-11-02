@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "verified_model_count": 9,
+  "store_checks": [
+    {
+      "run": "centered_content_v1_day15_seed42",
+      "status": "passed",
+      "source_user_days": 42832,
+      "edges": 821251,
+      "matched_source_rows": 682938,
+      "distribution_errors": {
+        "exposure": 7.54992167673052e-08,
+        "click": 6.811959407659884e-08,
+        "read": 9.36644417581789e-08
+      },
+      "construction": "Independent pandas grouping and float64 sparse normalization"
+    },
+    {
+      "run": "content_audience_v1_day15_seed42",
+      "status": "passed",
+      "source_user_days": 42832,
+      "edges": 821251,
+      "matched_source_rows": 682938,
+      "distribution_errors": {
+        "exposure": 7.54992167673052e-08,
+        "click": 6.811959407659884e-08,
+        "read": 9.36644417581789e-08
+      },
+      "construction": "Independent pandas grouping and float64 sparse normalization"
+    },
+    {
+      "run": "fast_content_v1_day15_seed42",
+      "status": "passed",
+      "source_user_days": 42832,
+      "edges": 821251,
+      "matched_source_rows": 682938,
+      "distribution_errors": {
+        "exposure": 7.54992167673052e-08,
+        "click": 6.811959407659884e-08,
+        "read": 9.36644417581789e-08
+      },
+      "construction": "Independent pandas grouping and float64 sparse normalization"
+    },
+    {
+      "run": "stable_centered_v1_day15_seed42",
+      "status": "passed",
+      "source_user_days": 42832,
+      "edges": 821251,
+      "matched_source_rows": 682938,
+      "distribution_errors": {
+        "exposure": 7.54992167673052e-08,
+        "click": 6.811959407659884e-08,
+        "read": 9.36644417581789e-08
+      },
+      "construction": "Independent pandas grouping and float64 sparse normalization"
+    }
+  ],
+  "pending_preparation_runs": [],
+  "failed_runs_excluded": [
+    {
+      "run": "centered_content_v1_day15_seed42",
+      "status": "failed_replay",
+      "reason": "First ID arm completed one epoch but failed checkpoint probability replay threshold",
+      "probability_error_limit": 2e-07,
+      "accepted_model_count": 0,
+      "untrained_modes": [
+        "news"
+      ],
+      "scores_promoted": false,
+      "source_and_checkpoints_preserved": true,
+      "next_action": "Diagnose GPU aggregation jitter and use a new implementation and tag"
+    }
+  ],
+  "goal_auc_both_days": 0.85,
+  "goal_met": false,
+  "best_common_model": "frozen_candidate",
+  "best_common_min_auc": 0.7926443086415286,
+  "highest_each_day": {
+    "20191115": 0.7927397059230861,
+    "20191116": 0.8004121944890122
+  },
+  "evaluator_sha256": "fbf672212a142279f91c318b27733be8a5bede172f44c772e38dffe873cedfa6",
+  "final_test_auc": null,
+  "limitations": "Repeated development dates; checkpoint selection and paired intervals are exploratory"
+}

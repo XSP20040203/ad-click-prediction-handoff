@@ -1,0 +1,24 @@
+[
+  {
+    "name": "replace_tabm32_member",
+    "display_name": "DCN＋保留主干的改造模型",
+    "auc": 0.7739984525127852,
+    "logloss": 0.044238131189961,
+    "average_precision": 0.039724957243227894,
+    "mean_prediction": 0.007297875845554577,
+    "weight_fitting": "none; 0.5/0.5 fixed before adapter training",
+    "validation_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\phase4_replace_tabm32_member_validation_prediction.npy"
+  },
+  {
+    "name": "combine_with_previous_best",
+    "display_name": "原最佳＋保留主干的改造模型",
+    "auc": 0.7734562439257867,
+    "logloss": 0.04430149882075708,
+    "average_precision": 0.040699338661568316,
+    "mean_prediction": 0.007057090164915674,
+    "weight_fitting": "none; 0.5/0.5 fixed before adapter training",
+    "validation_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\phase4_combine_with_previous_best_validation_prediction.npy"
+  }
+]

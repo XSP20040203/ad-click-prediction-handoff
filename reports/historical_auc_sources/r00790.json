@@ -1,0 +1,239 @@
+{
+  "status": "passed",
+  "days": {
+    "20191115": {
+      "auc": 0.7934700801999591,
+      "pair_partitions": [
+        {
+          "field": "user_id",
+          "groups_with_positive_and_negative": 2513,
+          "same_group_pair_mass": 0.00016251188151081115,
+          "same_group_auc": 0.751737277242912,
+          "same_group_error_contribution": 4.0345642184251245e-05,
+          "cross_group_pair_mass": 0.9998374881184892,
+          "cross_group_auc": 0.7934768633786355,
+          "cross_group_error_contribution": 0.20648957415785657
+        },
+        {
+          "field": "task_id",
+          "groups_with_positive_and_negative": 1151,
+          "same_group_pair_mass": 0.0018897054779305868,
+          "same_group_auc": 0.7303664837457078,
+          "same_group_error_contribution": 0.0005095279326994219,
+          "cross_group_pair_mass": 0.9981102945220695,
+          "cross_group_auc": 0.7935895531806019,
+          "cross_group_error_contribution": 0.2060203918673414
+        },
+        {
+          "field": "adv_prim_id",
+          "groups_with_positive_and_negative": 297,
+          "same_group_pair_mass": 0.01531604844531058,
+          "same_group_auc": 0.7509914048913414,
+          "same_group_error_contribution": 0.0038138277059829423,
+          "cross_group_pair_mass": 0.9846839515546895,
+          "cross_group_auc": 0.7941308053472435,
+          "cross_group_error_contribution": 0.20271609209405786
+        },
+        {
+          "field": "spread_app_id",
+          "groups_with_positive_and_negative": 75,
+          "same_group_pair_mass": 0.0659241776128929,
+          "same_group_auc": 0.7677354583386534,
+          "same_group_error_contribution": 0.015311848897659778,
+          "cross_group_pair_mass": 0.9340758223871071,
+          "cross_group_auc": 0.7952863500805453,
+          "cross_group_error_contribution": 0.19121807090238102
+        },
+        {
+          "field": "slot_id",
+          "groups_with_positive_and_negative": 52,
+          "same_group_pair_mass": 0.03925387703873122,
+          "same_group_auc": 0.72074982923713,
+          "same_group_error_contribution": 0.010961651866170392,
+          "cross_group_pair_mass": 0.9607461229612688,
+          "cross_group_auc": 0.7964412624106374,
+          "cross_group_error_contribution": 0.19556826793387042
+        }
+      ],
+      "historical_response_slices": {
+        "all": {
+          "rows": 424780,
+          "clicks": 3523,
+          "auc": 0.7934700801999591,
+          "ctr": 0.008293704976693819,
+          "mean_prediction": 0.008615116633256282,
+          "logloss": 0.04204855010744797
+        },
+        "unseen_task": {
+          "rows": 53160,
+          "clicks": 486,
+          "auc": 0.7474548394652347,
+          "ctr": 0.009142212189616254,
+          "mean_prediction": 0.009991691720805962,
+          "logloss": 0.04711842482848194
+        },
+        "seen_not_active_yesterday": {
+          "rows": 5045,
+          "clicks": 41,
+          "auc": 0.8401717650270026,
+          "ctr": 0.008126858275520317,
+          "mean_prediction": 0.008387666726864081,
+          "logloss": 0.040421408068829816
+        },
+        "active_yesterday": {
+          "rows": 366575,
+          "clicks": 2996,
+          "auc": 0.79921272805251,
+          "ctr": 0.008172952328991338,
+          "mean_prediction": 0.008418618653643946,
+          "logloss": 0.04133572024020299
+        },
+        "previous_response_higher": {
+          "rows": 60893,
+          "clicks": 399,
+          "auc": 0.8385200363291274,
+          "ctr": 0.006552477296240947,
+          "mean_prediction": 0.006364335774560591,
+          "logloss": 0.03331687293993995
+        },
+        "previous_response_similar": {
+          "rows": 232986,
+          "clicks": 1975,
+          "auc": 0.7761490989332582,
+          "ctr": 0.00847690419166817,
+          "mean_prediction": 0.008911802839103948,
+          "logloss": 0.04343395573212126
+        },
+        "previous_response_lower": {
+          "rows": 72696,
+          "clicks": 622,
+          "auc": 0.8340001482934608,
+          "ctr": 0.008556179157037526,
+          "mean_prediction": 0.008558742411793463,
+          "logloss": 0.04132790927859358
+        }
+      }
+    },
+    "20191116": {
+      "auc": 0.8012412673501383,
+      "pair_partitions": [
+        {
+          "field": "user_id",
+          "groups_with_positive_and_negative": 2621,
+          "same_group_pair_mass": 0.00016483793932677235,
+          "same_group_auc": 0.7592317069845882,
+          "same_group_error_contribution": 3.9687749275885e-05,
+          "cross_group_pair_mass": 0.9998351620606732,
+          "cross_group_auc": 0.8012481932611539,
+          "cross_group_error_contribution": 0.19871904490058578
+        },
+        {
+          "field": "task_id",
+          "groups_with_positive_and_negative": 1184,
+          "same_group_pair_mass": 0.002328619743779653,
+          "same_group_auc": 0.7570059690381991,
+          "same_group_error_contribution": 0.0005658406981182539,
+          "cross_group_pair_mass": 0.9976713802562204,
+          "cross_group_auc": 0.8013445149635907,
+          "cross_group_error_contribution": 0.19819289195174342
+        },
+        {
+          "field": "adv_prim_id",
+          "groups_with_positive_and_negative": 298,
+          "same_group_pair_mass": 0.016253087843963822,
+          "same_group_auc": 0.7662198513313034,
+          "same_group_error_contribution": 0.0037996492924872462,
+          "cross_group_pair_mass": 0.9837469121560362,
+          "cross_group_auc": 0.8018198777060546,
+          "cross_group_error_contribution": 0.19495908335737444
+        },
+        {
+          "field": "spread_app_id",
+          "groups_with_positive_and_negative": 77,
+          "same_group_pair_mass": 0.053985860353580814,
+          "same_group_auc": 0.7942692676407773,
+          "same_group_error_contribution": 0.011106550587584904,
+          "cross_group_pair_mass": 0.9460141396464192,
+          "cross_group_auc": 0.8016391360361554,
+          "cross_group_error_contribution": 0.18765218206227677
+        },
+        {
+          "field": "slot_id",
+          "groups_with_positive_and_negative": 50,
+          "same_group_pair_mass": 0.043525905652449466,
+          "same_group_auc": 0.7352870419006345,
+          "same_group_error_contribution": 0.011521871239213789,
+          "cross_group_pair_mass": 0.9564740943475505,
+          "cross_group_auc": 0.8042426213975302,
+          "cross_group_error_contribution": 0.18723686141064788
+        }
+      ],
+      "historical_response_slices": {
+        "all": {
+          "rows": 421983,
+          "clicks": 3724,
+          "auc": 0.8012412673501383,
+          "ctr": 0.008825000059244094,
+          "mean_prediction": 0.009657048985881815,
+          "logloss": 0.04389861132045347
+        },
+        "unseen_task": {
+          "rows": 31363,
+          "clicks": 303,
+          "auc": 0.7528808289714999,
+          "ctr": 0.009661065586837993,
+          "mean_prediction": 0.012147983727860797,
+          "logloss": 0.0499022666364585
+        },
+        "seen_not_active_yesterday": {
+          "rows": 6670,
+          "clicks": 87,
+          "auc": 0.8296325785155425,
+          "ctr": 0.013043478260869565,
+          "mean_prediction": 0.012280435152432961,
+          "logloss": 0.05552805419972798
+        },
+        "active_yesterday": {
+          "rows": 383950,
+          "clicks": 3334,
+          "auc": 0.8043284341586817,
+          "ctr": 0.008683422320614663,
+          "mean_prediction": 0.009408003089167184,
+          "logloss": 0.0432061747383969
+        },
+        "previous_response_higher": {
+          "rows": 55757,
+          "clicks": 300,
+          "auc": 0.8244945333020779,
+          "ctr": 0.005380490342019836,
+          "mean_prediction": 0.006433919287865696,
+          "logloss": 0.028462270170173977
+        },
+        "previous_response_similar": {
+          "rows": 248805,
+          "clicks": 2261,
+          "auc": 0.8004614894039563,
+          "ctr": 0.009087437953417335,
+          "mean_prediction": 0.009685137898640221,
+          "logloss": 0.045085755883904434
+        },
+        "previous_response_lower": {
+          "rows": 79388,
+          "clicks": 773,
+          "auc": 0.7941794467428877,
+          "ctr": 0.009736987957877766,
+          "mean_prediction": 0.01062825632943307,
+          "logloss": 0.04767066181581923
+        }
+      }
+    }
+  },
+  "training_performed": false,
+  "held_labels_used_only_for_diagnostics": true,
+  "slices_defined_only_by_strict_past_training_outcomes": true,
+  "pair_decomposition_is_descriptive_not_causal_attribution": true,
+  "reference_sha256": "c6a0c256c3cda8d2b94dcca1bfcb5c14a3e40aa358039b7cf08f84fd075d940f",
+  "source_sha256": "0d914b4a5d6cbed712a326782ca2dab6478e9b0cdbc014759cdfbaaa98835ec4",
+  "final_test_read": false,
+  "final_auc": null
+}

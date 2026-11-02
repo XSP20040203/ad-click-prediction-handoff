@@ -1,0 +1,71 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "mode": "context",
+  "fixed_endpoint": {
+    "fractional_epoch": 1.0,
+    "auc": 0.7863138141572619,
+    "logloss": 0.04236174378929396,
+    "average_precision": 0.07742010178525353,
+    "mean_probability": 0.008057480677962303,
+    "train_objective": 0.04315176469707088,
+    "train_row_bce": 0.04315176469707088,
+    "train_auxiliary_bce": 0.0,
+    "seconds": 188.54925489999732
+  },
+  "best_checkpoint": {
+    "fractional_epoch": 0.7501523461304083,
+    "auc": 0.7865485926228961,
+    "logloss": 0.042318738640663496,
+    "average_precision": 0.07782810305071947,
+    "mean_probability": 0.0083888228982687,
+    "train_objective": 0.043712217735987574,
+    "train_row_bce": 0.043712217735987574,
+    "train_auxiliary_bce": 0.0,
+    "seconds": 130.42324839999856
+  },
+  "initial_backbone_sha256": "793c76b6ef2d2c463b974a99579e4165d71921be218998bad9494a9017b03f9e",
+  "initial_full_weights_sha256": "6e211f8f7d151067499e40dfa4235a307de351dbaf7951b9ed7c29cb3d5fca7c",
+  "row_order_sha256": "3d0d2924edcfac5f30b93da94792474189960945b14d33163917f4fcb59655c0",
+  "reload_errors": {
+    "best": 0.0,
+    "best_auxiliary": 0.0,
+    "final": 0.0,
+    "final_auxiliary": 0.0
+  },
+  "v7_replace30": {
+    "auc": 0.7924806499280722,
+    "logloss": 0.042070069329716825,
+    "average_precision": 0.0827679699103113,
+    "mean_probability": 0.008614022682025099
+  },
+  "candidate_blend10": {
+    "auc": 0.7928023922154325,
+    "logloss": 0.04206144045959162,
+    "average_precision": 0.08292469842339419,
+    "mean_probability": 0.008661495668170231
+  },
+  "slices": {
+    "seen": {
+      "auc": 0.7908337579118591,
+      "logloss": 0.04166187084382196,
+      "average_precision": 0.07846942868545617,
+      "mean_probability": 0.008337744691616973
+    },
+    "cold": {
+      "auc": 0.7563314554888512,
+      "logloss": 0.04691063516236881,
+      "average_precision": 0.07593043702068974,
+      "mean_probability": 0.008745886291653513
+    }
+  },
+  "seconds": 212.27834079999957,
+  "files_sha256": {
+    "best_model.pt": "c900e813649a804c31d1c79b9b37ce45fcbe67e14e1c600d6442f6b7ffe2676b",
+    "final_model.pt": "0149a85bd157fd400555ee8f8975430e5ae8d81e85fd019d859d7f6e5117d6dc",
+    "best_prediction.npy": "602a468749d9a48ef30c1158f1fb17864c555c8d94babf62c1886c6b09ca40f6",
+    "final_prediction.npy": "37c6c4535946a98e45503a6c4233ef8678d92bf1a0063c7dfd8b871ce3cec0b4",
+    "best_any_prediction.npy": "e82be37c38ee558358fbd37b125fdb79f3280f65e13e115f68e0e430ce8270d2",
+    "final_any_prediction.npy": "03bc6caa6defc9acb015f4345ac06c1667ab4e008d14903bc7eb3f0018a166d7"
+  }
+}

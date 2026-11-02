@@ -1,0 +1,19 @@
+{
+  "status": "fixed_before_day16_training",
+  "objective_unchanged": "Both complete-day AUCs >= 0.85, then independently verified final full refit",
+  "observed_day15_seed42_selected_fusion_auc": 0.7938319656483054,
+  "day15_auc_gain": 0.00036188544834625525,
+  "original_screening_minimum_gain": 0.0005,
+  "original_day15_screening_gate_passed": false,
+  "reason_for_exploratory_extension": "Positive improvement versus both disabled and permuted controls, lower logloss, and improved core scores at both selected and final endpoints justify measuring whether the direction repeats while the unrestricted user goal is active. This does not convert the failed original screen into a pass.",
+  "day15_independent_verification_required_before_training": true,
+  "day16_configuration_changes": [],
+  "variants": ["disabled", "permuted", "actual"],
+  "seed": 42,
+  "training_budget": "All eligible rows, one epoch, same four quarter checks",
+  "fusion": "v7 + .30 * (new_core - original_gated166)",
+  "blend_weight_search": false,
+  "interpretation": "Exploratory two-date consistency evidence; original 0.0005 adoption screen remains unchanged and a second seed is still required before recommendation",
+  "promote_or_export_on_this_extension_alone": false,
+  "final_labels_available": false
+}

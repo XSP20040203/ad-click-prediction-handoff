@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "day": 20191115,
+  "rows": 424780,
+  "results": [
+    {
+      "tag": "date_density_day15",
+      "arm": "control",
+      "auc": 0.7663172962409179,
+      "independent_auc_recomputed": true
+    },
+    {
+      "tag": "date_density_day15",
+      "arm": "date_weighted",
+      "auc": 0.7697322946078851,
+      "independent_auc_recomputed": true
+    },
+    {
+      "tag": "stable_date_density_day15",
+      "arm": "control",
+      "auc": 0.7663172962409179,
+      "independent_auc_recomputed": true
+    },
+    {
+      "tag": "stable_date_density_day15",
+      "arm": "date_weighted",
+      "auc": 0.7583268699886101,
+      "independent_auc_recomputed": true
+    }
+  ],
+  "best_confirmed_future_day_auc": 0.7998466417345275,
+  "goal_auc": 0.85,
+  "goal_met": false,
+  "no_large_feature_caches_written": true,
+  "persistent_lowdisk_bytes": 30724712,
+  "v7_submission_sha256": "c44a9e803b8b4566b9bcef4e1bf85181c2ee00eee71a9f84474b73c619c121b9"
+}

@@ -1,0 +1,157 @@
+{
+  "status": "four_primary_variants_tested_secondary_confirmation_interrupted",
+  "baseline_measured_auc": 0.7214146217954175,
+  "baseline_parameters": 729665,
+  "shared_embedding_vocabulary_rows": 34756,
+  "same_input_cache": "../model_comparison/cache",
+  "variants": [
+    {
+      "name": "B1_embedding8",
+      "change": "Only embedding dimension 16 -> 8",
+      "embedding_dim": 8,
+      "hidden_dims": [
+        256,
+        128,
+        64
+      ],
+      "parameters_estimated": 388129,
+      "actual_test_result": {
+        "auc": 0.7221449104088776,
+        "logloss": 0.04767274314917787,
+        "parameter_count": 388129,
+        "best_epoch": 1,
+        "epochs_completed": 4,
+        "new_task_auc": 0.6637668177635535
+      }
+    },
+    {
+      "name": "B2_compact",
+      "change": "B1 plus smaller head",
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "parameters_estimated": 320801,
+      "actual_test_result": {
+        "auc": 0.7215974104682704,
+        "logloss": 0.04759605394524297,
+        "parameter_count": 320801,
+        "best_epoch": 1,
+        "epochs_completed": 4,
+        "new_task_auc": 0.6629072549882161
+      }
+    },
+    {
+      "name": "B3_compact_attention",
+      "change": "B2 plus three current-ad-conditioned click-history attention modules",
+      "attention_hidden_dim": 16,
+      "attention_input": "[history,query,history-query,history*query]",
+      "parameters_estimated": 322436,
+      "actual_test_result": {
+        "auc": 0.7218748748151412,
+        "logloss": 0.04758233491201174,
+        "parameter_count": 322436,
+        "best_epoch": 1,
+        "epochs_completed": 4,
+        "new_task_auc": 0.662172224949475
+      }
+    },
+    {
+      "name": "B4_attention_source_gate",
+      "change": "B3 plus explicit source branch and vector gating",
+      "target_input_dim": 261,
+      "target_hidden_dims": [
+        128,
+        64
+      ],
+      "source_input_dim": 7,
+      "source_hidden_dims": [
+        32,
+        16
+      ],
+      "gate_input_dim": 80,
+      "gate_output_dim": 16,
+      "prediction_hidden_dims": [
+        32
+      ],
+      "parameters_estimated": 326180,
+      "actual_test_result": {
+        "auc": 0.7220317732785684,
+        "logloss": 0.047573202337539706,
+        "parameter_count": 326180,
+        "best_epoch": 1,
+        "epochs_completed": 4,
+        "new_task_auc": 0.6642561825403404
+      }
+    }
+  ],
+  "controlled_structure_training": {
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "unknown_dropout": 0.01,
+    "batch_size": 2048,
+    "early_stopping": true
+  },
+  "separate_regularization_candidates": {
+    "dropout": [
+      0.2,
+      0.3
+    ],
+    "weight_decay": [
+      0.0001
+    ],
+    "learning_rate": [
+      0.0005
+    ]
+  },
+  "attention_queries": {
+    "ad_click_list_v001": "task_id",
+    "ad_click_list_v002": "adv_prim_id",
+    "ad_click_list_v003": "spread_app_id"
+  },
+  "mean_pooling_retained_for": [
+    "ad_close_list_v001",
+    "ad_close_list_v002",
+    "ad_close_list_v003",
+    "u_newsCatInterestsST"
+  ],
+  "target_numeric_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "source_numeric_indices": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "gate_formula": "g=sigmoid(W concat(h_target,h_source)+b); fused=concat(h_target,g*h_source)",
+  "optional_cold_start_extension": "For unknown task embedding, use a learned projection of existing advertiser and promoted-app embeddings; train this path with category dropout.",
+  "separate_feature_experiment": "Replace cumulative source counts with strictly-past 1-day/3-day windows; fit scalers on the training window.",
+  "evaluation": [
+    "2019-11-15 holdout",
+    "2019-11-16 holdout",
+    "multiple seeds after screening",
+    "overall and new-task AUC",
+    "Logloss and train-validation gap"
+  ],
+  "primary_validation_date": "2019-11-16",
+  "secondary_confirmation_completed": false,
+  "report": "../model_comparison/results_v2/V2新模型测试报告.html"
+}

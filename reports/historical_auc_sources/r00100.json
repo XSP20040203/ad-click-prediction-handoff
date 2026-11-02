@@ -1,0 +1,39 @@
+{
+  "status": "implemented_trained_full_raw_validation_verified",
+  "objective": "Held-out advertisement AUC above0.85, primarily by a modern model architecture; final scoring remains deferred",
+  "audit": "phase5_target_collaboration_audit.json",
+  "hypothesis": "Shared metadata priors added no new target preference information. Add label-derived collaborative neighborhoods while protecting the trained backbone as a controlled alternative.",
+  "architecture": "Modern TabM with a separate attention branch over users who clicked the candidate ad and ads clicked by the current user; user vectors anchored in frozen source-news preference pretraining; fuse neighbor matching through a context gate",
+  "data": {
+    "positive_edges": "15293 unique user-task pairs from advertisement training labels only",
+    "source_vectors": "Audited source_graph_teacher_day16 user vectors, mapped through the exact ad user vocabulary; frozen",
+    "ad_metadata": "Training-X-only task metadata prototypes or full observed attribute links; do not assume all task attributes are unique",
+    "mixed_pairs": "11183 clicked user-task pairs also have nonclick rows, so neighborhood evidence must not be interpreted as deterministic target labels"
+  },
+  "query_exclusion": [
+    "Exclude the queried user-task edge from BOTH user and candidate-ad neighborhoods for training and validation queries",
+    "Remove the query before limiting the neighbor count; a K+1 sorted reservoir supports deterministic K-neighbor selection without self-edge sampling leakage",
+    "Subtract the query edge from any label-derived degree/confidence count, even if the query node is outside the stored neighbor prefix",
+    "Use full sorted positive pair keys for membership; never expose the membership flag as a feature",
+    "Frozen source user vectors and task metadata inputs must not depend on advertisement query labels",
+    "No aggregation from later advertisement history snapshots; no advertisement validation labels in graph construction, fitting or gradients"
+  ],
+  "tests_required": [
+    "Flipping only the queried training label cannot change its returned neighborhoods or adjusted degrees",
+    "Self-exclusion remains invariant at, inside and beyond the neighbor-cap boundary",
+    "Unknown/PAD nodes cannot create shared neighbor hubs; real raw category0 keeps its encoded identity",
+    "Empty neighborhoods return finite outputs and source/metadata fallback representations",
+    "Current user query changes attention over other clickers; current ad query changes attention over other clicked ads",
+    "Saved graph indices, source mappings and model predictions reload exactly"
+  ],
+  "controls": [
+    "A new branch with no collaborative messages, using the same parameters and initialization",
+    "A query-excluded collaborative-attention branch on the identical fixed random20 indices",
+    "Consider a protected strong TabM32 backbone first; compare full fine-tuning only as a separately identified experiment"
+  ],
+  "success_evidence": "Replay all saved held-out predictions; verify all graph labels come from train indices; independently confirm any AUC>0.85 winner before marking the goal complete",
+  "current_goal_achieved": false,
+  "single_model_best_auc": 0.7722097400864857,
+  "fixed_blend_best_auc": 0.77674767927286,
+  "verified_models": 5
+}

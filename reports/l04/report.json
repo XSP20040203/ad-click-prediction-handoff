@@ -1,0 +1,231 @@
+{
+  "status": "complete_conditional_hypotheses_not_truth",
+  "assumed_click_count": 3459,
+  "rounded_auc_matches": {
+    "A": {
+      "v6": 0.808170728589341,
+      "v7": 0.805810705879969,
+      "v8": 0.8074506846654377,
+      "v9": 0.808560720773005
+    },
+    "B": {
+      "v6": 0.808170728589341,
+      "v7": 0.805810705879969,
+      "v8": 0.8074506846654377,
+      "v9": 0.808560720773005
+    },
+    "C": {
+      "v6": 0.8081711022995204,
+      "v7": 0.8058114648434995,
+      "v8": 0.8074511409814386,
+      "v9": 0.8085610858258059
+    }
+  },
+  "construction_A": {
+    "seed": 91271,
+    "positives": 3459,
+    "binary_rank_auc": [
+      0.8081707285893402,
+      0.8058107058799692,
+      0.8074506846654381,
+      0.8085607207730052
+    ],
+    "greedy_swaps": 49,
+    "integer_repairs": [],
+    "seconds": 1.2325657999999748
+  },
+  "construction_C": {
+    "seed": 81431,
+    "positives": 3459,
+    "binary_rank_auc": [
+      0.808171102299521,
+      0.8058114648434996,
+      0.80745114098144,
+      0.8085610858258054
+    ],
+    "greedy_swaps": 19,
+    "integer_repairs": [],
+    "seconds": 0.36601480000035735
+  },
+  "A_B_different_rows": 2510,
+  "A_C_different_rows": 6670,
+  "A_C_common_positive_rows": 124,
+  "A_C_positive_overlap_fraction": 0.0358485111303845,
+  "equal_score_swap_log2_number_of_compatible_labels": 2068.3446220052124,
+  "conditional_probabilities": [
+    {
+      "assumed_positive_count": 2940,
+      "expected_positive_count": 2940.0000056340377,
+      "expected_rank_moments_not_binary_auc": [
+        0.8081700004960753,
+        0.8058100006153578,
+        0.8074500007135915,
+        0.8085600005853383
+      ],
+      "maximum_expected_rank_moment_error": 7.135915192080233e-10,
+      "theta": [
+        -0.4888757995794639,
+        -0.1104623325624941,
+        0.06433281375048938,
+        -0.017272414987956605,
+        -0.24894218107120142
+      ],
+      "optimizer_success": false,
+      "optimizer_message": "A bad approximation caused failure to predict improvement.",
+      "probability_min": 1.1992647995838724e-07,
+      "probability_max": 0.9065066012717345,
+      "rows_probability_at_least_half": 17
+    },
+    {
+      "assumed_positive_count": 3459,
+      "expected_positive_count": 3459.000007442039,
+      "expected_rank_moments_not_binary_auc": [
+        0.8081700005569579,
+        0.8058100006906541,
+        0.8074500008008649,
+        0.8085600006568574
+      ],
+      "maximum_expected_rank_moment_error": 8.008649299284798e-10,
+      "theta": [
+        -0.32418685975936323,
+        -0.11265780475216025,
+        0.06414533635678939,
+        -0.017392234578342058,
+        -0.25251069981915
+      ],
+      "optimizer_success": false,
+      "optimizer_message": "A bad approximation caused failure to predict improvement.",
+      "probability_min": 1.1306823403677953e-07,
+      "probability_max": 0.920102861071202,
+      "rows_probability_at_least_half": 22
+    },
+    {
+      "assumed_positive_count": 3978,
+      "expected_positive_count": 3977.9999999999745,
+      "expected_rank_moments_not_binary_auc": [
+        0.8081699999999942,
+        0.8058099999999939,
+        0.807449999999993,
+        0.8085599999999948
+      ],
+      "maximum_expected_rank_moment_error": 6.994405055138486e-15,
+      "theta": [
+        -0.18219515964098207,
+        -0.11473462093345764,
+        0.06396410742096884,
+        -0.0174977721585554,
+        -0.2558672299597105
+      ],
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "probability_min": 1.0546394786214381e-07,
+      "probability_max": 0.9303874047719398,
+      "rows_probability_at_least_half": 25
+    }
+  ],
+  "oracle_feedback_backtests": [
+    {
+      "day": 20191115,
+      "prior": {
+        "auc": 0.7917734255523406,
+        "logloss": 0.04209414129262911,
+        "top_assumed_click_count_precision": 0.12120351972750497,
+        "actual_clicks_found_in_top_count": 427,
+        "actual_clicks": 3523
+      },
+      "conditioned": {
+        "auc": 0.7934393421390311,
+        "logloss": 0.041980827779293045,
+        "top_assumed_click_count_precision": 0.12035197275049674,
+        "actual_clicks_found_in_top_count": 424,
+        "actual_clicks": 3523
+      },
+      "known_true_positive_count_given_to_inference": true,
+      "rounded_oracle_auc_given_to_inference": [
+        0.79055,
+        0.79211,
+        0.79347,
+        0.79177
+      ],
+      "not_an_independent_model_validation": true,
+      "projection": {
+        "assumed_positive_count": 3523,
+        "expected_positive_count": 3523.000000000032,
+        "expected_rank_moments_not_binary_auc": [
+          0.7905500000000026,
+          0.7921100000000043,
+          0.7934700000000057,
+          0.7917700000000032
+        ],
+        "maximum_expected_rank_moment_error": 5.662137425588298e-15,
+        "theta": [
+          -0.19742073573082827,
+          0.023292493909605055,
+          0.06528074417533067,
+          -0.11946750749419346,
+          -0.1363613522301381
+        ],
+        "optimizer_success": true,
+        "optimizer_message": "Optimization terminated successfully.",
+        "probability_min": 0.00015001299059547732,
+        "probability_max": 0.9001784134387515,
+        "rows_probability_at_least_half": 95
+      }
+    },
+    {
+      "day": 20191116,
+      "prior": {
+        "auc": 0.7999730091846199,
+        "logloss": 0.044007093698728836,
+        "top_assumed_click_count_precision": 0.13184747583243825,
+        "actual_clicks_found_in_top_count": 491,
+        "actual_clicks": 3724
+      },
+      "conditioned": {
+        "auc": 0.8012033672910449,
+        "logloss": 0.04382285906921986,
+        "top_assumed_click_count_precision": 0.13157894736842105,
+        "actual_clicks_found_in_top_count": 490,
+        "actual_clicks": 3724
+      },
+      "known_true_positive_count_given_to_inference": true,
+      "rounded_oracle_auc_given_to_inference": [
+        0.79874,
+        0.79985,
+        0.80124,
+        0.79997
+      ],
+      "not_an_independent_model_validation": true,
+      "projection": {
+        "assumed_positive_count": 3724,
+        "expected_positive_count": 3724.000000000057,
+        "expected_rank_moments_not_binary_auc": [
+          0.7987400000000049,
+          0.7998500000000044,
+          0.8012400000000037,
+          0.799970000000005
+        ],
+        "maximum_expected_rank_moment_error": 4.9960036108132044e-15,
+        "theta": [
+          -0.2904289890590006,
+          0.031897105411802615,
+          0.05480358534365354,
+          -0.10843166391954935,
+          -0.18240248778353083
+        ],
+        "optimizer_success": true,
+        "optimizer_message": "Optimization terminated successfully.",
+        "probability_min": 0.00012616783272267237,
+        "probability_max": 0.9187489135977519,
+        "rows_probability_at_least_half": 92
+      }
+    }
+  ],
+  "probability_estimates_depend_on_prior_and_click_count_assumptions": true,
+  "label_hypotheses_are_not_recovered_actual_labels": true,
+  "source_files_and_datasets_unchanged": true,
+  "files_sha256": {
+    "estimated_labels_20191117.csv": "b5e84550f9b409f4de27bf31330e56e69c5b13af0dbff7f50671af6350de1dde",
+    "inference_arrays.npz": "18bfd2b800ac97a770824009016b6c4ee3c41d5a7444135a27044f40a41ea127"
+  }
+}

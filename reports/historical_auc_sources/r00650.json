@@ -1,0 +1,54 @@
+{
+  "seed": 42,
+  "epochs": 1,
+  "batch_size": 1024,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "max_grad_norm": 5.0,
+  "checks": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "numeric_width": 166,
+  "primary": "Fixed complete one-epoch matched comparison",
+  "secondary": "Best of the same four quarter-epoch checks, matching old selection",
+  "promotion_min_auc_gain_both_days": 0.0005,
+  "promotion_max_logloss_worsening_both_days": 0.0001,
+  "confirmation_seed": 2026,
+  "day": 20191115,
+  "backbone": "Original GatedCrossCTR, categories27 + sequences12x5 + numeric166",
+  "input_availability": "Original full supplied same-day source, snapshots and unlabeled exposures",
+  "change": "Only six news-interest fields use candidate-conditioned residual attention pooling",
+  "query_fields": [
+    "adv_prim_id",
+    "spread_app_id",
+    "app_second_class",
+    "slot_id"
+  ],
+  "interest_fields": [
+    "u_newsCatInterestsST",
+    "feed_long_interest",
+    "feed_dislike_topics",
+    "feed_clicked_topics",
+    "feed_click_ca2",
+    "feed_exposed_topics"
+  ],
+  "support": "n/(n+3); original mean plus supported attentive-minus-mean residual",
+  "initial_attention": "Zero output scores give exactly uniform pooling at initialization",
+  "validation": "Two previously reused whole-day development dates; no blind-test claim",
+  "optimizer_validation_labels_used": false,
+  "final_test_read": false,
+  "ensemble_comparison": "Replace only v7's .30 original gated166 component",
+  "promotion_rule": "Both fixed-budget AUC gains>=.0005, logloss worsening<=.0001; then seed2026 confirmation",
+  "source_sha256": {
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\features.py": "bd4ddb907511f5e03935d5ca5f285f80f8c877a1125c56586262414fc6e97a8d",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\model.py": "4832bae4c1d83dc33af3ffa0849d87df3f04b342968cad0ff74d060acaf78b18",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\experiment.py": "b29758da89f150f38ee9533795742c949f436c292ba90cd18679ab874062c886",
+    "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\interaction_models.py": "eef8ad2cf3812cfc6085e84c1f8201dbb78df7a5624c50442d6431c5e663b34d",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\id_regularized_models.py": "716321c3e7c09c2cea6d195c0f7dcebd2eadef59866cdbce48961f0b6b1aaa52",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\mainstream_models.py": "aaa61357fc823ef19bd9c582a1c54f8b272be877daf9ac479f6d9728dd87bd9f",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\benchmark_core.py": "efae0caa806e54eb834adcf5986772e798685c26e8cdd07a84ebf9d658d96291"
+  }
+}

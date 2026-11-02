@@ -1,0 +1,14 @@
+{
+  "name": "existing_best_plus_position",
+  "auc": 0.7728691280367483,
+  "logloss": 0.044141501021152926,
+  "average_precision": 0.040281057686378546,
+  "mean_prediction": 0.00832937043598025,
+  "weights": {
+    "previous_dcn_tabm32": 0.5,
+    "position_history": 0.5
+  },
+  "validation_rows": 505264,
+  "weight_fitting": "none; fixed in protocol before training",
+  "scope": "Reused random validation; final test unscored"
+}

@@ -1,0 +1,71 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "mode": "news",
+  "fixed_endpoint": {
+    "fractional_epoch": 1.0,
+    "auc": 0.7857723635980874,
+    "logloss": 0.0423492603341518,
+    "average_precision": 0.07872081870599465,
+    "mean_probability": 0.008039244450628757,
+    "train_loss": 0.04317378719418876,
+    "seconds": 209.25710720000006
+  },
+  "best_checkpoint": {
+    "fractional_epoch": 0.7501523461304083,
+    "auc": 0.7864837625903408,
+    "logloss": 0.04235000827280314,
+    "average_precision": 0.07789620830649842,
+    "mean_probability": 0.008976785466074944,
+    "train_loss": 0.04371994373083696,
+    "seconds": 156.58426719999989
+  },
+  "initial_backbone_sha256": "793c76b6ef2d2c463b974a99579e4165d71921be218998bad9494a9017b03f9e",
+  "initial_full_weights_sha256": "2ef6a5234e6909db4f15ff98149268e88179a9a8c6a3504060872a5e7f931aca",
+  "row_order_sha256": "3d0d2924edcfac5f30b93da94792474189960945b14d33163917f4fcb59655c0",
+  "reload_errors": {
+    "best": 1.1175870895385742e-08,
+    "final": 7.450580596923828e-09
+  },
+  "v7_replace30": {
+    "auc": 0.7919728169752549,
+    "logloss": 0.04209665563646384,
+    "average_precision": 0.08253701770932875,
+    "mean_probability": 0.008790411569205207
+  },
+  "candidate_blend10": {
+    "auc": 0.7925773456497937,
+    "logloss": 0.042071948437867504,
+    "average_precision": 0.08283292780270318,
+    "mean_probability": 0.00872029196389693
+  },
+  "cold_core_replace30": {
+    "auc": 0.7926907128850291,
+    "logloss": 0.04206670358481988,
+    "average_precision": 0.08312237614270951,
+    "mean_probability": 0.008740663291127713
+  },
+  "slices": {
+    "seen": {
+      "auc": 0.79142871993593,
+      "logloss": 0.04167316251501718,
+      "average_precision": 0.07814016845175137,
+      "mean_probability": 0.008703500105272452
+    },
+    "cold": {
+      "auc": 0.7537939122713184,
+      "logloss": 0.04708156277440075,
+      "average_precision": 0.07833973655063604,
+      "mean_probability": 0.010887212066018413
+    }
+  },
+  "source_projection_change": 1.3816413879394531,
+  "prior_head_norm": 3.4217960834503174,
+  "seconds": 223.9573502000003,
+  "files_sha256": {
+    "best_model.pt": "bef91867e2ae6341f571eecaa57e1788d59b33f40af794e02582b865fe92f02f",
+    "final_model.pt": "b41a9fef24f1dde5661d53b061be8fd16dbb01477d6cd3f5f11f2fbeb0819ecf",
+    "best_prediction.npy": "b130845f407a7348989be3e266e9bb42002f10c5fa3d628c4237b20735013bff",
+    "final_prediction.npy": "941faf971e3b4f266d9ac51c3c2528f8a9d84dc05f5b5607a1228b33736a3c6c"
+  }
+}

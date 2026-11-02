@@ -1,0 +1,219 @@
+{
+  "status": "passed",
+  "all_twenty_two_planned_models_complete": true,
+  "missing_planned_runs": [],
+  "models_independently_rescored": 22,
+  "all_model_prediction_index_hashes_match": true,
+  "raw_validation_row_order_matches": true,
+  "all_auc_logloss_ap_recomputed": true,
+  "raw_input_hashes_match_initial_audit": true,
+  "trainer_source_matches_frozen_protocol": true,
+  "compressed_model_archives_verified": 22,
+  "runtime": {
+    "python": "3.10.0",
+    "numpy": "1.23.5",
+    "pandas": "2.2.3",
+    "lightgbm": "4.6.0",
+    "scikit_learn": "1.6.1"
+  },
+  "leave_group_out": [
+    {
+      "day": 20191115,
+      "seed": 42,
+      "removed_group": "interest",
+      "full_auc": 0.7728196810910882,
+      "without_auc": 0.7713325132891964,
+      "auc_delta": 0.0014871678018917311,
+      "user_cluster_approximate_95_interval": [
+        -7.791823442618718e-05,
+        0.0030522538382096497
+      ],
+      "method": "Paired AUC influence, clustered by user; exploratory, no multiple-selection correction"
+    },
+    {
+      "day": 20191115,
+      "seed": 42,
+      "removed_group": "snapshot",
+      "full_auc": 0.7728196810910882,
+      "without_auc": 0.7644148876788177,
+      "auc_delta": 0.008404793412270628,
+      "user_cluster_approximate_95_interval": [
+        0.005401417744760141,
+        0.011408169079781115
+      ],
+      "method": "Paired AUC influence, clustered by user; exploratory, no multiple-selection correction"
+    },
+    {
+      "day": 20191115,
+      "seed": 42,
+      "removed_group": "exposure",
+      "full_auc": 0.7728196810910882,
+      "without_auc": 0.7383685391503269,
+      "auc_delta": 0.034451141940761154,
+      "user_cluster_approximate_95_interval": [
+        0.029078568774691622,
+        0.039823715106830686
+      ],
+      "method": "Paired AUC influence, clustered by user; exploratory, no multiple-selection correction"
+    },
+    {
+      "day": 20191115,
+      "seed": 42,
+      "removed_group": "news_content",
+      "full_auc": 0.7728196810910882,
+      "without_auc": 0.7713325132891964,
+      "auc_delta": 0.0014871678018917311,
+      "user_cluster_approximate_95_interval": [
+        -7.791823442618718e-05,
+        0.0030522538382096497
+      ],
+      "method": "Paired AUC influence, clustered by user; exploratory, no multiple-selection correction"
+    },
+    {
+      "day": 20191115,
+      "seed": 42,
+      "removed_group": "news_activity",
+      "full_auc": 0.7728196810910882,
+      "without_auc": 0.7728196810910882,
+      "auc_delta": 0.0,
+      "user_cluster_approximate_95_interval": [
+        0.0,
+        0.0
+      ],
+      "method": "Paired AUC influence, clustered by user; exploratory, no multiple-selection correction"
+    },
+    {
+      "day": 20191115,
+      "seed": 42,
+      "removed_group": "short_interest_string",
+      "full_auc": 0.7728196810910882,
+      "without_auc": 0.7710112531159707,
+      "auc_delta": 0.001808427975117377,
+      "user_cluster_approximate_95_interval": [
+        0.0005945688121205637,
+        0.0030222871381141905
+      ],
+      "method": "Paired AUC influence, clustered by user; exploratory, no multiple-selection correction"
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "removed_group": "interest",
+      "full_auc": 0.7766123345001114,
+      "without_auc": 0.7769198804499637,
+      "auc_delta": -0.0003075459498523836,
+      "user_cluster_approximate_95_interval": [
+        -0.0014850185826222224,
+        0.0008699266829174553
+      ],
+      "method": "Paired AUC influence, clustered by user; exploratory, no multiple-selection correction"
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "removed_group": "snapshot",
+      "full_auc": 0.7766123345001114,
+      "without_auc": 0.7679542036161051,
+      "auc_delta": 0.008658130884006243,
+      "user_cluster_approximate_95_interval": [
+        0.005862215104417767,
+        0.01145404666359472
+      ],
+      "method": "Paired AUC influence, clustered by user; exploratory, no multiple-selection correction"
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "removed_group": "exposure",
+      "full_auc": 0.7766123345001114,
+      "without_auc": 0.7369435814788378,
+      "auc_delta": 0.039668753021273595,
+      "user_cluster_approximate_95_interval": [
+        0.03418494033848683,
+        0.04515256570406036
+      ],
+      "method": "Paired AUC influence, clustered by user; exploratory, no multiple-selection correction"
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "removed_group": "news_content",
+      "full_auc": 0.7766123345001114,
+      "without_auc": 0.7769198804499637,
+      "auc_delta": -0.0003075459498523836,
+      "user_cluster_approximate_95_interval": [
+        -0.0014850185826222224,
+        0.0008699266829174553
+      ],
+      "method": "Paired AUC influence, clustered by user; exploratory, no multiple-selection correction"
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "removed_group": "news_activity",
+      "full_auc": 0.7766123345001114,
+      "without_auc": 0.7766123345001114,
+      "auc_delta": 0.0,
+      "user_cluster_approximate_95_interval": [
+        0.0,
+        0.0
+      ],
+      "method": "Paired AUC influence, clustered by user; exploratory, no multiple-selection correction"
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "removed_group": "short_interest_string",
+      "full_auc": 0.7766123345001114,
+      "without_auc": 0.7764636557520394,
+      "auc_delta": 0.00014867874807178438,
+      "user_cluster_approximate_95_interval": [
+        -0.0008414091675337302,
+        0.001138766663677299
+      ],
+      "method": "Paired AUC influence, clustered by user; exploratory, no multiple-selection correction"
+    }
+  ],
+  "factorial_auc_attributions": [
+    {
+      "day": 20191115,
+      "seed": 42,
+      "group": "interest",
+      "auc_shapley": 0.002142299649918466
+    },
+    {
+      "day": 20191115,
+      "seed": 42,
+      "group": "snapshot",
+      "auc_shapley": 0.009879897972825789
+    },
+    {
+      "day": 20191115,
+      "seed": 42,
+      "group": "exposure",
+      "auc_shapley": 0.03586301997835173
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "group": "interest",
+      "auc_shapley": 0.0007249696279280996
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "group": "snapshot",
+      "auc_shapley": 0.008463229585617996
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "group": "exposure",
+      "auc_shapley": 0.04105647114625841
+    }
+  ],
+  "attribution_scope": "Feature-subset refits of diagnostic trees; not causal effects or v7 attributions",
+  "final_auc": null,
+  "final_labels_read": false,
+  "verifier_sha256": "c49933a7325f54a5748f106b6dd935f5315a7720efef4195ab807243e6a268d5"
+}

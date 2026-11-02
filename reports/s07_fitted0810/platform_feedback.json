@@ -1,0 +1,12 @@
+{
+  "submission": "output/fitted_auc0810_20191117/submission_fitted_auc0810.csv",
+  "submission_sha256": "7e239cb191876455e9038ad8180a5aec9db81e07e8d17862bfef8b1180d811fe",
+  "local_auc_against_original_fitted_labels": 0.8100000002380779,
+  "user_reported_platform_auc": 0.80855,
+  "source": "User refers to the immediately preceding 0.810 fitted submission",
+  "platform_auc_independently_recomputed": false,
+  "current_original_v9_user_reported_platform_auc": 0.80856,
+  "reported_change_vs_original_v9": -0.00001,
+  "original_fitted_label_hypothesis_does_not_reproduce_this_new_feedback": true,
+  "does_not_recover_any_actual_individual_labels": true
+}

@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "independent_process": true,
+  "rows": 404182,
+  "source_day": 20191117,
+  "formula": ".7*(.9*(.8*v6+.2*gated500)+.1*allocated)+.3*gated166",
+  "maximum_formula_replay_error": 0.0,
+  "maximum_csv_rounding_error": {
+    "submission.csv": 4.999946392322471e-07,
+    "result.csv": 4.999946392322471e-07
+  },
+  "all_output_hashes_match": true,
+  "full_source_predictions_unchanged": true,
+  "raw_final_and_cache_row_order_verified": true,
+  "duplicate_log_ids_preserved": 858,
+  "probabilities_finite_in_range": true,
+  "final_label_column_read": false,
+  "development": {
+    "20191115": {
+      "auc": 0.7921069471244595,
+      "logloss": 0.04209056885646528,
+      "rows": 424780,
+      "clicks": 3523,
+      "formula_replay_error": 0.0
+    },
+    "20191116": {
+      "auc": 0.7998466417345275,
+      "logloss": 0.043975461945036654,
+      "rows": 421983,
+      "clicks": 3724,
+      "formula_replay_error": 0.0
+    }
+  },
+  "final_auc": null,
+  "goal_auc085_met": false,
+  "original_source_hashes_bound": true,
+  "finite_comparisons_enforced": true,
+  "verifier_sha256": "dcdd3acee710d310fcf7128209d57c185172fb9145fb6c842625a672eff828a2"
+}

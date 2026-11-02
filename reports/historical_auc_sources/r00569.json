@@ -1,0 +1,63 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191116,
+  "seed": 42,
+  "variant": "permuted",
+  "fixed_epoch": {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7914399556219859,
+    "logloss": 0.044367302390204776,
+    "average_precision": 0.08188341034881332,
+    "mean_probability": 0.009814881719648838,
+    "objective": 0.05292215242177943,
+    "seconds": 114.9716832999984
+  },
+  "best_checkpoint": {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7914399556219859,
+    "logloss": 0.044367302390204776,
+    "average_precision": 0.08188341034881332,
+    "mean_probability": 0.009814881719648838,
+    "objective": 0.05292215242177943,
+    "seconds": 114.9716832999984
+  },
+  "replacement_scores": {
+    "auc": 0.801121768816283,
+    "logloss": 0.0439052316709454,
+    "average_precision": 0.0872995888734369,
+    "mean_probability": 0.009623168556174842
+  },
+  "reference_scores": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "auc_gain": -0.00011949853385528897,
+  "initial_full_sha256": "bd27a6677a67a50ad41019ab014d0c7d9f31a7f5ee48f6ef9a27de7d89bb2ad2",
+  "initial_backbone_sha256": "45548fa3a07fac44d6d18ccc30096a34c967c37f7e0e8f71b8f0f89fdcaa098f",
+  "original_initial_sha256": "b7d1bea7b72ce252ebebf911be11e5e2bbb248758d0ae68c0c61c6ca41b2560a",
+  "row_order_sha256": "f7b59138e9fd8fd7cf8def7c276c5500d1d03ad1c0c0726d80e9c64a94c4e3cb",
+  "training_rows_seen": 2104337,
+  "head_parameter_update_norms": {
+    "0.weight": 0.6769888997077942,
+    "0.bias": 0.18869654834270477,
+    "2.weight": 0.07744632661342621,
+    "2.bias": 0.03682616353034973
+  },
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "disabled_control_errors": {},
+  "files_sha256": {
+    "best_model.pt": "b23da13f07c1c934ba0a8dbb361fc0d0ee579e641317b1052de744bd1b358e9a",
+    "final_model.pt": "b23da13f07c1c934ba0a8dbb361fc0d0ee579e641317b1052de744bd1b358e9a",
+    "best_prediction.npy": "d9170eb14236c77d0fab964e341d53adc01edfe95218affd2247e60101d1b452",
+    "final_prediction.npy": "d9170eb14236c77d0fab964e341d53adc01edfe95218affd2247e60101d1b452",
+    "replacement_prediction.npy": "ee69514256608b9975546db60c8f851abe03b008e2b17ae14792025a5d1d0253",
+    "history.json": "67712f77bc99fd9baa39b31a36060a389a041109ef30c26ff6dc08747ec49867"
+  }
+}

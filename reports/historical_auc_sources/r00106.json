@@ -1,0 +1,63 @@
+{
+  "auc": 0.7410812970675544,
+  "logloss": 0.045343314924970034,
+  "average_precision": 0.028598619276764468,
+  "mean_prediction": 0.008628571695076307,
+  "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+  "best_epoch": 1,
+  "epochs_completed": 4,
+  "parameter_count": 474661,
+  "training_seconds": 150.03614780000044,
+  "inference_seconds": null,
+  "feature_note": "24 category embeddings + 7 masked-mean pooled lists + 20 shared numeric features; historical labels are source-domain observations only.",
+  "model_class": "BoundedIDDCN",
+  "model_options": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "cross_layers": 2,
+    "numeric_dim": 20,
+    "group_norm_caps": {
+      "user_id": 0.2,
+      "ad_task": 0.2,
+      "adv_id": 0.2
+    }
+  },
+  "parameters": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "cross_layers": 2,
+    "numeric_dim": 20,
+    "group_norm_caps": {
+      "user_id": 0.2,
+      "ad_task": 0.2,
+      "adv_id": 0.2
+    },
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "batch_size": 2048,
+    "max_epochs": 8,
+    "early_stopping_patience": 3,
+    "loss": "unweighted BCEWithLogitsLoss",
+    "seed": 42
+  },
+  "model": "bounded",
+  "seed": 42,
+  "validation_strategy": "random20",
+  "validation_day": null,
+  "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_random20_seed42",
+  "train_rows": 2021056,
+  "valid_rows": 505264,
+  "validation_clicks": 4271,
+  "scope": "Offline validation, never interpreted as measured final-test AUC."
+}

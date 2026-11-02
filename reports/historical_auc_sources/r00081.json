@@ -1,0 +1,86 @@
+{
+  "status": "complete",
+  "results": {
+    "20191115": {
+      "baseline_auc": 0.7921069471244595,
+      "selected_strength": 0.5,
+      "auc": 0.7921112248345694,
+      "logloss": 0.042076615519824494,
+      "affected_rows": 673,
+      "historical_class_rates": [
+        {
+          "nearest": false,
+          "rows": 2200,
+          "clicks": 314,
+          "rate": 0.14341167659553308,
+          "relative_logit": -0.5139569986828567
+        },
+        {
+          "nearest": true,
+          "rows": 679,
+          "clicks": 316,
+          "rate": 0.4583317911903912,
+          "relative_logit": 1.1062207871065006
+        }
+      ],
+      "candidates": [
+        {
+          "strength": 0.0,
+          "auc": 0.7921069471244595,
+          "logloss": 0.04209056885646528
+        },
+        {
+          "strength": 0.1,
+          "auc": 0.7921085706800253,
+          "logloss": 0.04208544376278014
+        },
+        {
+          "strength": 0.25,
+          "auc": 0.792110111693339,
+          "logloss": 0.04207995994811251
+        },
+        {
+          "strength": 0.5,
+          "auc": 0.7921112248345694,
+          "logloss": 0.042076615519824494
+        },
+        {
+          "strength": 0.75,
+          "auc": 0.7921086892713428,
+          "logloss": 0.04208033317482039
+        },
+        {
+          "strength": 1.0,
+          "auc": 0.792101779979468,
+          "logloss": 0.04209084506080269
+        }
+      ]
+    },
+    "20191116": {
+      "baseline_auc": 0.7998466417345275,
+      "selected_strength": 0.5,
+      "auc": 0.7998453567419254,
+      "logloss": 0.04395882162335797,
+      "affected_rows": 577,
+      "historical_class_rates": [
+        {
+          "nearest": false,
+          "rows": 2699,
+          "clicks": 385,
+          "rate": 0.14323533905777722,
+          "relative_logit": -0.5395071318908922
+        },
+        {
+          "nearest": true,
+          "rows": 853,
+          "clicks": 407,
+          "rate": 0.4713137306965593,
+          "relative_logit": 1.1342959107252781
+        }
+      ],
+      "candidates": null
+    }
+  },
+  "goal_met": false,
+  "final_auc": null
+}

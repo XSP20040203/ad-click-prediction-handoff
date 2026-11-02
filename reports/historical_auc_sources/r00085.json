@@ -1,0 +1,156 @@
+{
+  "objective": "如何提高auc呢，训练集的的日期不重要，可以吧日期打乱训练，目标是训练的模型需要auc大于0.85，主体优化模型架构，模型需要先进性",
+  "goal_achieved": false,
+  "goal_status": "active",
+  "final_scoring": "Temporarily deferred by user; no longer a required verification gate for the revised objective.",
+  "last_goal_turn_classification": "progress",
+  "phase": "phase6_signed_collaboration_training",
+  "best_random_validation_auc": 0.77674767927286,
+  "best_temporal_validation_auc": 0.7338903234937643,
+  "best_random_results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_collaborative_ensembles",
+  "best_temporal_results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\time16_rich_oof_statistics\\bounded\\seed42",
+  "verified_models": 6,
+  "verification": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\phase1_verification.json",
+  "missing_completion_evidence": "No held-out advertisement validation AUC above 0.85; best architecture candidates need further improvement and another split/seed confirmation",
+  "next_actions": [
+    "Test contrastive clicked-versus-never-clicked collaborative neighborhoods using training labels only",
+    "Preserve query-edge and degree exclusion for both positive and negative relations",
+    "Compare signed collaborative information with the verified positive-neighbor controls",
+    "Verify any actual AUC>0.85 winner on a fresh split or seed before completion"
+  ],
+  "completion_requires": "Held-out advertisement validation AUC above 0.85 with a modern model architecture as the primary optimization; no substitution of training AUC.",
+  "phase2_architectures": [
+    "Official TabM",
+    "TabM with numerical PLE",
+    "Clipped numerical PLE",
+    "Field-token Transformer",
+    "Shared source/ad gated user-interest TabM",
+    "TabM+CIN+linear gated experts",
+    "32-member wider TabM"
+  ],
+  "phase2_findings": [
+    "Completed small architecture candidates have not exceeded the verified 0.769228 random validation baseline",
+    "Source task is implemented and tested to update shared user/interest parameters while excluding its own response fields",
+    "Numerical PLE extrapolation was diagnosed on target-stat frequencies; train-input-only frequency alignment preserves cross-fitted target rates"
+  ],
+  "live_tool_sessions": {
+    "signed_model_training": 58580
+  },
+  "phase2_completed_families": [
+    "TabM8",
+    "TabM8 numerical PLE",
+    "bounded PLE",
+    "field Transformer",
+    "gated transfer control",
+    "gated transfer auxiliary",
+    "CIN interaction mixture",
+    "aligned-frequency TabM8"
+  ],
+  "phase2_current_best_observed_auc": 0.7701322296373161,
+  "best_single_modern_validation_auc": 0.7722097400864857,
+  "best_ensemble_definition": {
+    "name": "phase5_collaborative_neighbors__replace_tabm32",
+    "auc": 0.77674767927286,
+    "logloss": 0.04400279938141741,
+    "average_precision": 0.04159720313303085,
+    "mean_prediction": 0.00854792368000462,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\phase5_collaborative_neighbors\\collaborative\\seed42",
+    "max_neighbors": 16,
+    "combination": "replace_tabm32",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_neighbors__replace_tabm32.npy",
+    "auc_change_from_previous_best": 0.00274922676007483,
+    "members": {
+      "baseline": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\random20_rich_oof_statistics\\bounded\\seed42",
+      "collaborative": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\phase5_collaborative_neighbors\\collaborative\\seed42"
+    },
+    "baseline_kind": "DCN",
+    "member_cache_dirs": {
+      "baseline_DCN": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20",
+      "collaborative": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned"
+    }
+  },
+  "phase2_verified_modern_models": 11,
+  "phase2_verified_fixed_ensembles": 4,
+  "source_graph_pretraining": {
+    "status": "complete",
+    "nodes": 82495,
+    "source_users": 8556,
+    "documents": 61572,
+    "categories": 208,
+    "shared_entities": 12159,
+    "bpr_epochs": 10,
+    "source_train_bpr_loss": 0.1434434574240873,
+    "ad_labels_used": false
+  },
+  "phase3_verified_graph_models": 3,
+  "phase3_graph_auc": {
+    "control": 0.7684767737529413,
+    "frozen": 0.768353480799588,
+    "finetune": 0.7683121741668015
+  },
+  "phase3_verified_models": 7,
+  "phase3_behavior_tests_total": 40,
+  "phase3_fixed_blend": {
+    "name": "existing_best_plus_position",
+    "auc": 0.7728691280367483,
+    "logloss": 0.044141501021152926,
+    "average_precision": 0.040281057686378546,
+    "mean_prediction": 0.00832937043598025,
+    "weights": {
+      "previous_dcn_tabm32": 0.5,
+      "position_history": 0.5
+    },
+    "validation_rows": 505264,
+    "weight_fitting": "none; fixed in protocol before training",
+    "scope": "Reused random validation; final test unscored"
+  },
+  "phase3_graph_source_audit": "phase3_graph_source_audit.json",
+  "phase3_best_new_model": {
+    "experiment": "phase3_history_position",
+    "auc": 0.7686039339965887,
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\phase3_history_position\\ad_history\\seed42"
+  },
+  "phase3_browser_verification": "phase3_browser_verification.json",
+  "phase4_support_audit": "phase4_support_audit.json",
+  "phase4_next_actions": [
+    "Finish four matched metadata/residual architecture controls",
+    "Inspect whether representation shrinkage improves peak AUC or only delays overfitting",
+    "Scale a promising mode to the strongest bounded-PLE TabM32 backbone",
+    "If needed, protect the trained backbone and learn shared input adapters to isolate memorization"
+  ],
+  "phase4_behavior_tests_total": 49,
+  "phase4_verified_models": 5,
+  "phase4_adapter_best_epoch": 0.0,
+  "phase5_target_collaboration_audit": "phase5_target_collaboration_audit.json",
+  "phase4_screen_auc": {
+    "metadata": 0.7684212149286362,
+    "raw": 0.7684767737529413,
+    "shared": 0.766802105964873,
+    "shrink": 0.7678315253637485
+  },
+  "phase4_protected_adapter_auc": 0.7701322296373161,
+  "phase4_browser_verification": "phase4_browser_verification.json",
+  "phase5_plan": "phase5_collaborative_attention_plan.json",
+  "phase5_behavior_tests_total": 64,
+  "phase5_observed_single_auc": 0.7722097400864857,
+  "phase5_verified_first_models": 2,
+  "phase5_numerical_alignment_fix": "phase5_numerical_alignment_fix.json",
+  "phase5_verified_models": 5,
+  "phase5_fixed_ensembles": 8,
+  "phase5_single_results": {
+    "只看邻居数量": 0.7712377250622922,
+    "邻居兴趣平均汇总": 0.7720930535398516,
+    "邻居注意力（最多16个）": 0.7722097400864857,
+    "邻居注意力（最多64个）": 0.7721000466756001,
+    "不使用邻居信息（对照）": 0.7701322261322191
+  },
+  "phase5_browser_verification": "phase5_browser_verification.json",
+  "phase6_test_count": 71,
+  "phase6_negative_edges": 606335
+}

@@ -1,0 +1,128 @@
+{
+  "auc": 0.7678605851878145,
+  "logloss": 0.044440186751075895,
+  "average_precision": 0.03656691398147928,
+  "mean_prediction": 0.009254515898465055,
+  "family": "joint_attention",
+  "model_class": "AttentiveCrossDomainTabM",
+  "model_options": {
+    "numeric_dim": 75,
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "embedding_dim": 8,
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 8,
+    "group_norm_caps": {
+      "user_id": 0.2,
+      "ad_task": 0.2,
+      "adv_id": 0.2
+    },
+    "source_schema": {
+      "categorical_fields": [
+        "u_userId",
+        "u_phonePrice",
+        "u_browserLifeCycle",
+        "u_browserMode",
+        "u_feedLifeCycle",
+        "u_refreshTimes",
+        "i_cat",
+        "i_s_sourceId",
+        "i_regionEntity",
+        "i_dtype",
+        "e_ch",
+        "e_m",
+        "e_po",
+        "e_pl",
+        "e_rn",
+        "e_section"
+      ],
+      "sequence_fields": [
+        "u_newsCatInterests",
+        "u_newsCatDislike",
+        "u_newsCatInterestsST",
+        "u_click_ca2_news"
+      ],
+      "numeric_fields": [
+        "i_dislikeTimes",
+        "i_upTimes"
+      ],
+      "group_for_field": {
+        "u_userId": "user_id",
+        "u_phonePrice": "feed_phone_price",
+        "u_browserLifeCycle": "feed_browser_lifecycle",
+        "u_browserMode": "feed_browser_mode",
+        "u_feedLifeCycle": "u_feedLifeCycle",
+        "u_refreshTimes": "u_refreshTimes",
+        "i_cat": "news_interest",
+        "i_s_sourceId": "source_i_s_sourceId",
+        "i_regionEntity": "source_i_regionEntity",
+        "i_dtype": "source_i_dtype",
+        "e_ch": "source_e_ch",
+        "e_m": "source_e_m",
+        "e_po": "source_e_po",
+        "e_pl": "source_e_pl",
+        "e_rn": "source_e_rn",
+        "e_section": "source_e_section",
+        "u_newsCatInterests": "news_interest",
+        "u_newsCatDislike": "news_interest",
+        "u_newsCatInterestsST": "news_interest",
+        "u_click_ca2_news": "news_interest"
+      },
+      "vocabulary_sizes": {
+        "feed_phone_price": 10,
+        "feed_browser_mode": 10,
+        "u_refreshTimes": 12,
+        "news_interest": 214,
+        "feed_browser_lifecycle": 10,
+        "u_feedLifeCycle": 10,
+        "user_id": 8558,
+        "source_i_s_sourceId": 2935,
+        "source_i_regionEntity": 368,
+        "source_i_dtype": 7,
+        "source_e_ch": 21,
+        "source_e_m": 197,
+        "source_e_po": 29,
+        "source_e_pl": 2294,
+        "source_e_rn": 101,
+        "source_e_section": 4
+      },
+      "positive_rate": 0.10513638230533208,
+      "rows": 827820,
+      "latest_day": 20191116,
+      "source_input_exclusions": [
+        "label",
+        "pro",
+        "cillabel",
+        "i_docId"
+      ],
+      "ad_cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+      "ad_manifest_sha256": "0c17db6fbc9742650fc1ebda2bb2c7c76d456fa6f66417a2f8b890521a7fd622",
+      "numeric_scaler": {
+        "mean": [
+          0.6185707449913025,
+          1.1097469329833984
+        ],
+        "std": [
+          0.8309933543205261,
+          0.978601336479187
+        ]
+      },
+      "availability": "Provided source-domain responses through the latest validation day; no advertisement validation labels"
+    },
+    "profile_dim": 64
+  },
+  "seed": 42,
+  "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+  "validation_day": null,
+  "validation_strategy": "random20",
+  "best_epoch": 1,
+  "train_rows": 2021056,
+  "valid_rows": 505264,
+  "parameter_count": 726754,
+  "batch_size": 2048,
+  "amp": true,
+  "ensemble_members": 8,
+  "auxiliary_weight": 0.0,
+  "source_cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\source_task_aligned_nodoc"
+}

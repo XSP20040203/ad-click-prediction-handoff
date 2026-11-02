@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "verified_new_ad_models": 8,
+  "records": [
+    {
+      "day": 20191115,
+      "variant": "mse",
+      "auc": 0.7926116246048903,
+      "logloss": 0.042130757140990856,
+      "reference_auc": 0.7934700801999591,
+      "gain": -0.0008584555950688078,
+      "logloss_change": 8.220703354288456e-05
+    },
+    {
+      "day": 20191115,
+      "variant": "mse_permuted",
+      "auc": 0.7923685602447574,
+      "logloss": 0.04213452036761137,
+      "reference_auc": 0.7934700801999591,
+      "gain": -0.0011015199552016908,
+      "logloss_change": 8.597026016339548e-05
+    },
+    {
+      "day": 20191115,
+      "variant": "news",
+      "auc": 0.7925708440155727,
+      "logloss": 0.04213422311059308,
+      "reference_auc": 0.7934700801999591,
+      "gain": -0.000899236184386476,
+      "logloss_change": 8.567300314511056e-05
+    },
+    {
+      "day": 20191115,
+      "variant": "news_permuted",
+      "auc": 0.7925255488704169,
+      "logloss": 0.04213466872029527,
+      "reference_auc": 0.7934700801999591,
+      "gain": -0.0009445313295421975,
+      "logloss_change": 8.611861284729683e-05
+    },
+    {
+      "day": 20191116,
+      "variant": "mse",
+      "auc": 0.8008229882943573,
+      "logloss": 0.043936265844685705,
+      "reference_auc": 0.8012412673501383,
+      "gain": -0.00041827905578106783,
+      "logloss_change": 3.765452423223209e-05
+    },
+    {
+      "day": 20191116,
+      "variant": "mse_permuted",
+      "auc": 0.8008119706785476,
+      "logloss": 0.04393024785336238,
+      "reference_auc": 0.8012412673501383,
+      "gain": -0.0004292966715907509,
+      "logloss_change": 3.1636532908906057e-05
+    },
+    {
+      "day": 20191116,
+      "variant": "news",
+      "auc": 0.8011975307345898,
+      "logloss": 0.04391090636813715,
+      "reference_auc": 0.8012412673501383,
+      "gain": -4.3736615548573e-05,
+      "logloss_change": 1.2295047683678895e-05
+    },
+    {
+      "day": 20191116,
+      "variant": "news_permuted",
+      "auc": 0.8010806596462623,
+      "logloss": 0.0439151280424058,
+      "reference_auc": 0.8012412673501383,
+      "gain": -0.00016060770387604784,
+      "logloss_change": 1.6516721952325453e-05
+    }
+  ],
+  "selection": {
+    "variant": "mse",
+    "day15_scores": {
+      "auc": 0.7926116246048903,
+      "logloss": 0.042130757140990856,
+      "average_precision": 0.0826038624208151,
+      "mean_probability": 0.00908532658460854
+    },
+    "rule": "Choose higher day15 AUC of real MSE/news teacher views before any day16 bridge results; permuted controls cannot be recommended",
+    "minimum_gain_each_day": 0.003,
+    "maximum_logloss_worsening_each_day": 0.0001,
+    "comparison_sha256": "75ae4f55786d93599054f88144d0af3f57772ad56e0c5715a825356f8fa4e732"
+  },
+  "decisions": [
+    {
+      "day": 20191115,
+      "chosen_gain": -0.0008584555950688078,
+      "true_minus_permuted": 0.00024306436013288302,
+      "gate_passed": false
+    },
+    {
+      "day": 20191116,
+      "chosen_gain": -0.00041827905578106783,
+      "true_minus_permuted": 1.1017615809683079e-05,
+      "gate_passed": false
+    }
+  ],
+  "proceed_to_second_seed": false,
+  "final_ad_labels_read": false,
+  "final_auc": null,
+  "existing_submission_unchanged": true,
+  "submission_sha256": "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846",
+  "evaluator_sha256": "8c6c4083948810e5cea679ea2c14b5179bb5d9ba50dd7f4f98e0d4c11ed23aad"
+}

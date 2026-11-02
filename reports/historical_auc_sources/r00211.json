@@ -1,0 +1,67 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "mode": "control",
+  "seed": 42,
+  "fixed_epochs_completed": 1,
+  "train_rows": 1679557,
+  "valid_rows": 424780,
+  "valid_clicks": 3523,
+  "initial_backbone_sha256": "793c76b6ef2d2c463b974a99579e4165d71921be218998bad9494a9017b03f9e",
+  "batch_order_sha256": "36cc3c2b749138330d1390fd3b19405d93f1182c62ccde682af575d65994054b",
+  "scores": {
+    "auc": 0.7860007819305045,
+    "logloss": 0.042342021452678735,
+    "average_precision": 0.07845978963678377,
+    "mean_probability": 0.008195054717361927
+  },
+  "best_scores": {
+    "fractional_epoch": 0.7501523461304083,
+    "auc": 0.7869851484878956,
+    "logloss": 0.04232076106196753,
+    "average_precision": 0.07796734774915162,
+    "mean_probability": 0.008812882006168365,
+    "train_loss": 0.04372217514719375,
+    "seconds": 84.61957239999902
+  },
+  "slices": {
+    "seen_task": {
+      "rows": 371620,
+      "auc": 0.7918033018818482,
+      "logloss": 0.04163492883660611,
+      "average_precision": 0.07914133073546091,
+      "mean_probability": 0.00792014691978693
+    },
+    "new_task": {
+      "rows": 53160,
+      "auc": 0.7461991344852592,
+      "logloss": 0.04728501915743621,
+      "average_precision": 0.07341902429288288,
+      "mean_probability": 0.010116828605532646
+    }
+  },
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "branch_parameter_update_norm": {},
+  "source_sha256": {
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\features.py": "bd4ddb907511f5e03935d5ca5f285f80f8c877a1125c56586262414fc6e97a8d",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\model.py": "4832bae4c1d83dc33af3ffa0849d87df3f04b342968cad0ff74d060acaf78b18",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\experiment.py": "b29758da89f150f38ee9533795742c949f436c292ba90cd18679ab874062c886",
+    "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\interaction_models.py": "eef8ad2cf3812cfc6085e84c1f8201dbb78df7a5624c50442d6431c5e663b34d",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\id_regularized_models.py": "716321c3e7c09c2cea6d195c0f7dcebd2eadef59866cdbce48961f0b6b1aaa52",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\mainstream_models.py": "aaa61357fc823ef19bd9c582a1c54f8b272be877daf9ac479f6d9728dd87bd9f",
+    "E:\\AI\\ml\\大作业上传\\analysis\\model_comparison\\benchmark_core.py": "efae0caa806e54eb834adcf5986772e798685c26e8cdd07a84ebf9d658d96291"
+  },
+  "feature_manifest_sha256": "4580638d9ffb027a58becda5a01887070c6de7ba41fe9e772ba61fa2aa7fae43",
+  "seconds": 124.98351319999892,
+  "files_sha256": {
+    "best_model.pt": "cbe196164b2c8e66570c6814a0c9b95a88e93b268b23deee176420f17dbcf530",
+    "final_model.pt": "44e50c8c86e289c28cfeca8e14feaf2f6fcb3697a8ea258737bc80de00fe74dd",
+    "best_prediction.npy": "fc0027e052f184c2d902886de76cc959cbf7890bca7754b0685c62416243b268",
+    "final_prediction.npy": "c9060941ffac979d1a950a17984e993b01e4797c6a356361bb68fadc717ffcbb",
+    "valid_indices.npy": "d82f9999fec7aaa235312227f3d73826687f51a3e5e1981a40d26a0255e76a24",
+    "history.json": "55dfe7721cd11a2be1c68db0b9c36a299acef875b893691f44dcdcd7d130e7e8"
+  }
+}

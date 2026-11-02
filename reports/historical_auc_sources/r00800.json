@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "day": 20191115,
+  "seed": 42,
+  "verified_new_ad_models": 3,
+  "records": [
+    {
+      "day": 20191115,
+      "seed": 42,
+      "variant": "disabled",
+      "endpoint": "best",
+      "auc": 0.7934700801999591,
+      "logloss": 0.04204855010744797,
+      "average_precision": 0.0823399607498202,
+      "mean_probability": 0.008615116633256282,
+      "gain": 0.0,
+      "logloss_change": 0.0,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "seed": 42,
+      "variant": "disabled",
+      "endpoint": "final",
+      "auc": 0.7925238353606413,
+      "logloss": 0.042069125590375574,
+      "average_precision": 0.08232007688768161,
+      "mean_probability": 0.008388746289237343,
+      "gain": -0.0009462448393178224,
+      "logloss_change": 2.057548292760253e-05,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "seed": 42,
+      "variant": "permuted",
+      "endpoint": "best",
+      "auc": 0.7934671848198941,
+      "logloss": 0.042046764144378475,
+      "average_precision": 0.08243437249998872,
+      "mean_probability": 0.008604315086637098,
+      "gain": -2.895380065037756e-06,
+      "logloss_change": -1.7859630694963546e-06,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "seed": 42,
+      "variant": "permuted",
+      "endpoint": "final",
+      "auc": 0.7925667270101739,
+      "logloss": 0.04206784887262098,
+      "average_precision": 0.08245805876210956,
+      "mean_probability": 0.008410264039207778,
+      "gain": -0.0009033531897851832,
+      "logloss_change": 1.9298765173009214e-05,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "seed": 42,
+      "variant": "actual",
+      "endpoint": "best",
+      "auc": 0.7938319656483054,
+      "logloss": 0.042034408506586234,
+      "average_precision": 0.0824929615396982,
+      "mean_probability": 0.008617185857370329,
+      "gain": 0.00036188544834625525,
+      "logloss_change": -1.4141600861737602e-05,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "seed": 42,
+      "variant": "actual",
+      "endpoint": "final",
+      "auc": 0.7929385687386789,
+      "logloss": 0.04205226127014451,
+      "average_precision": 0.08249628706177269,
+      "mean_probability": 0.008410508443405997,
+      "gain": -0.0005315114612802763,
+      "logloss_change": 3.71116269654026e-06,
+      "independent_reload_error": 0.0
+    }
+  ],
+  "reference_scores": {
+    "auc": 0.7934700801999591,
+    "logloss": 0.04204855010744797,
+    "average_precision": 0.0823399607498202,
+    "mean_probability": 0.008615116633256282
+  },
+  "gate_passed": false,
+  "proceed_to_day16": false,
+  "both_day_goal_proven": false,
+  "held_ad_labels_fit": false,
+  "final_auc": null,
+  "existing_submission_unchanged": true,
+  "submission_sha256": "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846",
+  "feature_reconstruction_exact": true,
+  "evaluator_sha256": "32e93d72bb7175b5f1772ed6c34e3c60424f403c06c13dbbd2492e32aa58b1db"
+}

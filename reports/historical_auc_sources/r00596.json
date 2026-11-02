@@ -1,0 +1,32 @@
+{
+  "status": "research_proposal_not_trained",
+  "objective": "Test whether target-trained discrete semantic states can use the already learned source representation more effectively",
+  "current_submission": "output/best_nextday_daystate_v8/submission.csv",
+  "current_development_auc": {"20191115": 0.7934700801999591, "20191116": 0.8012412673501383},
+  "user_reported_external_auc": 0.80745,
+  "external_labels_available": false,
+  "proposal_is_not_an_observed_improvement": true,
+  "first_probe": {
+    "frozen_encoder_assets": "analysis/transductive_interest_20261101/runs/day{15,16}_seed42/pretrain_all/model.pt",
+    "final_encoder_asset": "analysis/transductive_interest_20261101/unlabeled_day17/pretrain_all/model.pt",
+    "codebook_levels": 2,
+    "centers_each_level": 16,
+    "arms": ["same_capacity_disabled_adapter", "within_day_permuted_semantic_codes", "actual_semantic_codes"],
+    "fit_codebooks_with_ad_labels": false,
+    "codebook_fit_scope": "Available input groups through each held date, including target-date inputs as authorized",
+    "adapter_initial_output": 0,
+    "frozen_source_encoder": true,
+    "reproduce_original_backbone_first": true,
+    "ad_epochs": 1,
+    "quarter_checks": [0.25, 0.5, 0.75, 1.0],
+    "checkpoint_rule": "Same four-check ad-core selection rule as baseline; fixed fusion, no weight search",
+    "minimum_gain_each_development_day_to_continue": 0.003,
+    "maximum_logloss_worsening_each_development_day": 0.0001,
+    "second_seed_confirmation_before_recommendation": true,
+    "interpretation": "Simplified hypothesis test inspired by semantic-ID research, not a reproduction of industrial RQ-FSQ"
+  },
+  "main_followup_if_justified": "Supervised news teacher plus advertisement-target-supervised translation/augmentation, with frozen-versus-finetuned and random-teacher controls",
+  "secondary_direction": "Meta-learned cold-ad embedding generation using training-task episodes",
+  "original_auc85_goal_automatically_resumed": false,
+  "training_or_submission_changes_in_research_turn": false
+}

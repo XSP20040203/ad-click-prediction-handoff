@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "verified_model_count": 4,
+  "checks": [
+    {
+      "day": 20191115,
+      "mode": "base",
+      "endpoint": "final",
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "mode": "base",
+      "endpoint": "best",
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "mode": "both",
+      "endpoint": "final",
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "mode": "both",
+      "endpoint": "best",
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "context_asset_equal_to_verified_seed42": true,
+      "targets_equal_to_verified_seed42": true
+    },
+    {
+      "day": 20191116,
+      "mode": "base",
+      "endpoint": "final",
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "mode": "base",
+      "endpoint": "best",
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "mode": "both",
+      "endpoint": "final",
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "mode": "both",
+      "endpoint": "best",
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "context_asset_equal_to_verified_seed42": true,
+      "targets_equal_to_verified_seed42": true
+    }
+  ],
+  "matched_ensemble_gain_positive_both_days": true,
+  "equal_seed_improves_current_both_days": false,
+  "goal_met": false,
+  "best_common_model": "captured_seed42_candidate",
+  "best_common_min_auc": 0.7934700801999591,
+  "final_test_auc": null,
+  "protocol_sha256": "25bb67b474173a8edc9049767284e5daac34068e19ceff74be4a7ed80b644787",
+  "evaluator_sha256": "1cbb5a1358afd3c6b4d592dbd9bfa224eae5875e72b153cfaed6a10ceb8585db",
+  "derived_sha256": {
+    "day15_base_best_replacement.npy": "ea5f887a44ce3d8a32838432a54c738fd5774df5d79aadb26aa40981e820fa77",
+    "day15_base_final_replacement.npy": "ea5f887a44ce3d8a32838432a54c738fd5774df5d79aadb26aa40981e820fa77",
+    "day15_both_best_replacement.npy": "22a34e41e1e95f9dffe72b3a463ee02debf1c218953d438bd630349107eb4c62",
+    "day15_both_final_replacement.npy": "6857525aac2136e86e5a9521015af6f156bf387a3229fe97cd65f6fa0575da72",
+    "day15_equal_seed_replacement.npy": "9dede756289852666fddee73940f43a41285111ac5ad9f66e2141fa5f6b9900d",
+    "day15_indices.npy": "d82f9999fec7aaa235312227f3d73826687f51a3e5e1981a40d26a0255e76a24",
+    "day16_base_best_replacement.npy": "02e9b8564046864488019ae40c33262f9f83019c1acf5f7186010f539ec0f9e4",
+    "day16_base_final_replacement.npy": "02e9b8564046864488019ae40c33262f9f83019c1acf5f7186010f539ec0f9e4",
+    "day16_both_best_replacement.npy": "dc681c1090e83bb8ef7f2b1d8ac03d2b5d99b4bafc5a974f6db7f7a3062250fb",
+    "day16_both_final_replacement.npy": "d16dc494044ed0918f69da250e982c0d98330c08e7d6f4de5f6ae877400baa9d",
+    "day16_equal_seed_replacement.npy": "3c013ab557155dd3f9da0a93f5613ae113fd93126db833b64904c430255bd34a",
+    "day16_indices.npy": "4476f254ab1c3b9062d9d9a58a80bb00f72e88388792467b2a9925b8cc6b1738"
+  },
+  "limitations": "Seed confirmation on reused development dates, not independent blind testing"
+}

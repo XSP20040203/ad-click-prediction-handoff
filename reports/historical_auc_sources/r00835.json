@@ -1,0 +1,25 @@
+{
+  "status": "complete_and_verified",
+  "training_runs": 6,
+  "unit_tests_passed": 10,
+  "independent_checkpoint_replays": 6,
+  "maximum_reload_probability_error": 0.0,
+  "source_hashes_verified": true,
+  "matched_initial_backbones_verified_for_every_date_seed": true,
+  "validation_days": [20191115, 20191116],
+  "seed": 42,
+  "day15_rank8_auc_delta": 0.0005704592756906601,
+  "day16_rank8_auc_delta": -0.0005053661149817534,
+  "recommendation": "Retain the matched control; additional user residual not confirmed",
+  "additional_seed_run": false,
+  "additional_seed_reason": "No arm passed the predeclared day15 AUC/logloss guards; day16 diagnostic also regressed",
+  "final_refit_completed": false,
+  "original_submission_hashes_unchanged": true,
+  "source_versions": {
+    "training": "source_snapshot_v1",
+    "runner_followup": "Added provenance validation and all-date/seed initialization checks after the first fresh run; training implementation and frozen protocol unchanged"
+  },
+  "report": "用户个性化实验报告.md",
+  "metrics": "experiment_results.json",
+  "verification": "verification.json"
+}

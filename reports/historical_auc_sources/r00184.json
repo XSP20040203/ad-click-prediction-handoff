@@ -1,0 +1,154 @@
+[
+  {
+    "name": "phase6_signed_contrast__replace_tabm32",
+    "auc": 0.7769866189274209,
+    "logloss": 0.044007409377916154,
+    "average_precision": 0.04159465231238801,
+    "mean_prediction": 0.007986451416371502,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase6_signed_contrast\\signed\\seed42",
+    "max_neighbors": 16,
+    "combination": "replace_tabm32",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "baseline_prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results\\random20_rich_oof_statistics\\bounded\\seed42\\validation_prediction.npy",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_signed_ensembles\\phase6_signed_contrast__replace_tabm32.npy",
+    "auc_change_from_previous_best": 0.00023893965456089905
+  },
+  {
+    "name": "phase6_signed_contrast__combine_previous_best",
+    "auc": 0.7757536160205266,
+    "logloss": 0.04402660760974546,
+    "average_precision": 0.041718458756756435,
+    "mean_prediction": 0.008370689652957619,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase6_signed_contrast\\signed\\seed42",
+    "max_neighbors": 16,
+    "combination": "combine_previous_best",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "baseline_prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_neighbors__replace_tabm32.npy",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_signed_ensembles\\phase6_signed_contrast__combine_previous_best.npy",
+    "auc_change_from_previous_best": -0.0009940632523334214
+  },
+  {
+    "name": "phase6_signed_contrast_learned_queries__replace_tabm32",
+    "auc": 0.77674767927286,
+    "logloss": 0.04400279938141741,
+    "average_precision": 0.04159720313303085,
+    "mean_prediction": 0.00854792368000462,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase6_signed_contrast_learned_queries\\signed\\seed42",
+    "max_neighbors": 16,
+    "combination": "replace_tabm32",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "baseline_prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results\\random20_rich_oof_statistics\\bounded\\seed42\\validation_prediction.npy",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_signed_ensembles\\phase6_signed_contrast_learned_queries__replace_tabm32.npy",
+    "auc_change_from_previous_best": 0.0
+  },
+  {
+    "name": "phase6_signed_contrast_learned_queries__combine_previous_best",
+    "auc": 0.7755012504426335,
+    "logloss": 0.04405020064787671,
+    "average_precision": 0.041676367263270564,
+    "mean_prediction": 0.008932161916590737,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase6_signed_contrast_learned_queries\\signed\\seed42",
+    "max_neighbors": 16,
+    "combination": "combine_previous_best",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "baseline_prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_neighbors__replace_tabm32.npy",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_signed_ensembles\\phase6_signed_contrast_learned_queries__combine_previous_best.npy",
+    "auc_change_from_previous_best": -0.0012464288302265203
+  },
+  {
+    "name": "phase6_signed_positive__replace_tabm32",
+    "auc": 0.77674767927286,
+    "logloss": 0.04400279938141741,
+    "average_precision": 0.04159720313303085,
+    "mean_prediction": 0.00854792368000462,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase6_signed_positive\\signed\\seed42",
+    "max_neighbors": 16,
+    "combination": "replace_tabm32",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "baseline_prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results\\random20_rich_oof_statistics\\bounded\\seed42\\validation_prediction.npy",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_signed_ensembles\\phase6_signed_positive__replace_tabm32.npy",
+    "auc_change_from_previous_best": 0.0
+  },
+  {
+    "name": "phase6_signed_positive__combine_previous_best",
+    "auc": 0.7755012504426335,
+    "logloss": 0.04405020064787671,
+    "average_precision": 0.041676367263270564,
+    "mean_prediction": 0.008932161916590737,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase6_signed_positive\\signed\\seed42",
+    "max_neighbors": 16,
+    "combination": "combine_previous_best",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "baseline_prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_neighbors__replace_tabm32.npy",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_signed_ensembles\\phase6_signed_positive__combine_previous_best.npy",
+    "auc_change_from_previous_best": -0.0012464288302265203
+  },
+  {
+    "name": "phase6_signed_positive_learned_queries__replace_tabm32",
+    "auc": 0.77674767927286,
+    "logloss": 0.04400279938141741,
+    "average_precision": 0.04159720313303085,
+    "mean_prediction": 0.00854792368000462,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase6_signed_positive_learned_queries\\signed\\seed42",
+    "max_neighbors": 16,
+    "combination": "replace_tabm32",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "baseline_prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results\\random20_rich_oof_statistics\\bounded\\seed42\\validation_prediction.npy",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_signed_ensembles\\phase6_signed_positive_learned_queries__replace_tabm32.npy",
+    "auc_change_from_previous_best": 0.0
+  },
+  {
+    "name": "phase6_signed_positive_learned_queries__combine_previous_best",
+    "auc": 0.7755012504426335,
+    "logloss": 0.04405020064787671,
+    "average_precision": 0.041676367263270564,
+    "mean_prediction": 0.008932161916590737,
+    "model_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\phase6_signed_positive_learned_queries\\signed\\seed42",
+    "max_neighbors": 16,
+    "combination": "combine_previous_best",
+    "weights": {
+      "baseline": 0.5,
+      "collaborative": 0.5
+    },
+    "weight_fitting": "none; fixed before training",
+    "baseline_prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_neighbors__replace_tabm32.npy",
+    "validated_rows": 505264,
+    "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_signed_ensembles\\phase6_signed_positive_learned_queries__combine_previous_best.npy",
+    "auc_change_from_previous_best": -0.0012464288302265203
+  }
+]

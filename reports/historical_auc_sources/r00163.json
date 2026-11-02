@@ -1,0 +1,32 @@
+{
+  "auc": 0.7676305669396678,
+  "logloss": 0.04432832522217988,
+  "average_precision": 0.039030683335272154,
+  "mean_prediction": 0.008073333881468858,
+  "family": "tabm",
+  "model_class": "TabMFieldModel",
+  "model_options": {
+    "numeric_dim": 75,
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "embedding_dim": 8,
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 8
+  },
+  "seed": 42,
+  "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20",
+  "validation_day": null,
+  "validation_strategy": "random20",
+  "best_epoch": 1,
+  "train_rows": 2021056,
+  "valid_rows": 505264,
+  "parameter_count": 539408,
+  "batch_size": 2048,
+  "amp": true,
+  "ensemble_members": 8,
+  "epochs_completed": 4,
+  "training_seconds": 191.98448730000018,
+  "architecture_source": "Official TabM backbone with CTR feature adapter",
+  "scope": "Held-out advertisement validation; no claim about final-test AUC"
+}

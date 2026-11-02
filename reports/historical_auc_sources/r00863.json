@@ -1,0 +1,15 @@
+{
+  "status": "fixed_after_day15_training_before_protected_day16_training",
+  "selected_mode": "both",
+  "checkpoint_rule": "Best advertisement-row AUC among the same four quarter-epoch checks; secondary development selection",
+  "seed": 42,
+  "auxiliary_weight": 0.02,
+  "gradient_policy": "No auxiliary gradient into backbone; separate norm clips",
+  "formulas": ["original_v7 + .30 * (new_core - original_core)", ".90 * frozen_candidate + .10 * new_core"],
+  "day15_selected_v7_replacement_auc": 0.7934700801999591,
+  "day15_selected_reference_blend_auc": 0.7932471029180485,
+  "blend_weights_fit_on_day16": false,
+  "held_labels_in_optimizer_or_features": false,
+  "all_four_matched_arms_run": true,
+  "limitations": "Both dates are reused development dates; quarter-checkpoint choice is validation selection, not blind testing"
+}

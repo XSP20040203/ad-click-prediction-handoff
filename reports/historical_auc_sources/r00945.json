@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "rows": 404182,
+  "original_row_order": true,
+  "id_range": [
+    0,
+    404181
+  ],
+  "finite_probabilities_in_0_1": true,
+  "exported_probabilities_match_equal_ensemble": true,
+  "export_sha256_matches_manifest": true,
+  "validation_auc_rescored": 0.7769866189274209,
+  "final_auc": null,
+  "files": {
+    "submission_best.csv": 9039197,
+    "final_predictions_best_with_ids.csv": 30540942
+  },
+  "preview": [
+    {
+      "id": 0,
+      "pctr": 0.006596968509
+    },
+    {
+      "id": 1,
+      "pctr": 0.006584318355
+    },
+    {
+      "id": 2,
+      "pctr": 0.007952625863
+    }
+  ]
+}

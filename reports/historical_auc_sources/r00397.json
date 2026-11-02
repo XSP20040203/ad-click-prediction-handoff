@@ -1,0 +1,137 @@
+{
+  "status": "complete_and_reloaded",
+  "records": [
+    {
+      "mode": "disabled",
+      "core_scores": {
+        "auc": 0.7900335670113942,
+        "logloss": 0.04456240893089751,
+        "average_precision": 0.0812977111007263,
+        "mean_probability": 0.010426119901239872
+      },
+      "candidate_scores": {
+        "auc": 0.801176241524156,
+        "logloss": 0.04391161284612295,
+        "average_precision": 0.08725012444741073,
+        "mean_probability": 0.009806540212389617
+      },
+      "rounded6_scores": {
+        "auc": 0.8011760710692293,
+        "logloss": 0.043911625859569405,
+        "average_precision": 0.08724920167974723,
+        "mean_probability": 0.009806538005085512
+      },
+      "auc_gain": -6.502582598233442e-05,
+      "past_retention_scores": {
+        "auc": 0.8466674508445278,
+        "logloss": 0.0373365956001409,
+        "average_precision": 0.13894996979450921,
+        "mean_probability": 0.008655276149511337
+      },
+      "candidate_prediction_sha256": "66cb03ee353278a87498e656a05da30410eb947d859c0b237891963581df4bd3"
+    },
+    {
+      "mode": "csv_positive",
+      "core_scores": {
+        "auc": 0.7900274299920174,
+        "logloss": 0.04456301033974884,
+        "average_precision": 0.08129446434135562,
+        "mean_probability": 0.01042686216533184
+      },
+      "candidate_scores": {
+        "auc": 0.8011719701997587,
+        "logloss": 0.04391177469009697,
+        "average_precision": 0.08724631548114212,
+        "mean_probability": 0.009806762908509719
+      },
+      "rounded6_scores": {
+        "auc": 0.8011718135481499,
+        "logloss": 0.04391178229484494,
+        "average_precision": 0.08724553280183331,
+        "mean_probability": 0.00980676332932843
+      },
+      "auc_gain": -6.929715037962136e-05,
+      "past_retention_scores": {
+        "auc": 0.8467660234296044,
+        "logloss": 0.037331586743008106,
+        "average_precision": 0.1390962516990698,
+        "mean_probability": 0.008656962774693966
+      },
+      "candidate_prediction_sha256": "23b38bf28312155c37e954f649502ae2e2383997f6a7aa320df07338b245eb9c"
+    },
+    {
+      "mode": "snapshot_positive",
+      "core_scores": {
+        "auc": 0.7900314554247501,
+        "logloss": 0.04456312588964357,
+        "average_precision": 0.08129732852484506,
+        "mean_probability": 0.010428594425320625
+      },
+      "candidate_scores": {
+        "auc": 0.8011744438827442,
+        "logloss": 0.04391171822456531,
+        "average_precision": 0.0872454757890141,
+        "mean_probability": 0.009807282272718527
+      },
+      "rounded6_scores": {
+        "auc": 0.8011740480806262,
+        "logloss": 0.0439117318201568,
+        "average_precision": 0.08724467643295891,
+        "mean_probability": 0.009807282196202218
+      },
+      "auc_gain": -6.682346739417255e-05,
+      "past_retention_scores": {
+        "auc": 0.8467657556905772,
+        "logloss": 0.03733079052131812,
+        "average_precision": 0.13916416333287032,
+        "mean_probability": 0.00865524634718895
+      },
+      "candidate_prediction_sha256": "fe1e22341aef2e8231835a593baf8929760b58975934d59932a3de38e963761b"
+    },
+    {
+      "mode": "permuted_snapshot",
+      "core_scores": {
+        "auc": 0.7900302997981282,
+        "logloss": 0.04456306548559175,
+        "average_precision": 0.08129675604258926,
+        "mean_probability": 0.010428321547806263
+      },
+      "candidate_scores": {
+        "auc": 0.801174090132595,
+        "logloss": 0.043911719899932346,
+        "average_precision": 0.08724632742364466,
+        "mean_probability": 0.009807199882865764
+      },
+      "rounded6_scores": {
+        "auc": 0.8011741174182236,
+        "logloss": 0.04391171554273456,
+        "average_precision": 0.08724602737788463,
+        "mean_probability": 0.009807199204707299
+      },
+      "auc_gain": -6.717721754334605e-05,
+      "past_retention_scores": {
+        "auc": 0.8467763760053116,
+        "logloss": 0.03733089224046537,
+        "average_precision": 0.13918217100885696,
+        "mean_probability": 0.008654999546706676
+      },
+      "candidate_prediction_sha256": "59c406c9865dc8649409d57f1739a6fd49d4fd71e0bdc9e5609cdec51f0d7ae3"
+    }
+  ],
+  "reference_scores": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "initial_core_scores": {
+    "auc": 0.7918529024239293,
+    "logloss": 0.04435622268435219,
+    "average_precision": 0.08222688831511693,
+    "mean_probability": 0.00992781762033701
+  },
+  "past_retention_is_previous_base_training_data": true,
+  "evaluation_ad_outcomes_fit": false,
+  "final_auc": null,
+  "goal_met": false
+}

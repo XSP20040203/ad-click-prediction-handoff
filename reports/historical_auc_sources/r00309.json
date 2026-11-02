@@ -1,0 +1,180 @@
+{
+  "status": "development_experiments_complete",
+  "experiments": [
+    {
+      "kind": "tree",
+      "experiment": "day15_exposure_budget_d6",
+      "day": 20191115,
+      "auc": 0.7711147496454642,
+      "logloss": 0.04277015207299544,
+      "input_fields": 334,
+      "reload_error": 0.0,
+      "recent_days": 0
+    },
+    {
+      "kind": "tree",
+      "experiment": "day15_exposure_contextvolume_d6",
+      "day": 20191115,
+      "auc": 0.7733218425489073,
+      "logloss": 0.04266414404498888,
+      "input_fields": 379,
+      "reload_error": 0.0,
+      "recent_days": 0
+    },
+    {
+      "kind": "tree",
+      "experiment": "day15_exposure_finecounts_d6",
+      "day": 20191115,
+      "auc": 0.774946871746713,
+      "logloss": 0.04262471927909505,
+      "input_fields": 384,
+      "reload_error": 0.0,
+      "recent_days": 0
+    },
+    {
+      "kind": "tree",
+      "experiment": "day15_exposure_full_d8",
+      "day": 20191115,
+      "auc": 0.7712748991340247,
+      "logloss": 0.043903070406045706,
+      "input_fields": 253,
+      "reload_error": 0.0,
+      "recent_days": 0
+    },
+    {
+      "kind": "tree",
+      "experiment": "day15_exposure_recent3_d8",
+      "day": 20191115,
+      "auc": 0.778587375209953,
+      "logloss": 0.04256274133674577,
+      "input_fields": 253,
+      "reload_error": 0.0,
+      "recent_days": 3
+    },
+    {
+      "kind": "tree",
+      "experiment": "day15_exposure_richsource_d6",
+      "day": 20191115,
+      "auc": 0.7767316623160399,
+      "logloss": 0.04265006151009242,
+      "input_fields": 417,
+      "reload_error": 0.0,
+      "recent_days": 0
+    },
+    {
+      "kind": "tree",
+      "experiment": "day15_exposure_sharedonly_d6",
+      "day": 20191115,
+      "auc": 0.7758734048223762,
+      "logloss": 0.04261735466804745,
+      "input_fields": 190,
+      "reload_error": 0.0,
+      "recent_days": 0
+    },
+    {
+      "kind": "tree",
+      "experiment": "day15_snapshot_exposure_d6",
+      "day": 20191115,
+      "auc": 0.7761661703993995,
+      "logloss": 0.042706977942457924,
+      "input_fields": 253,
+      "reload_error": 0.0,
+      "recent_days": 0
+    },
+    {
+      "kind": "tree",
+      "experiment": "day15_strict_base_d6",
+      "day": 20191115,
+      "auc": 0.7281283163392346,
+      "logloss": 0.045253045355759546,
+      "input_fields": 162,
+      "reload_error": 0.0,
+      "recent_days": 0
+    },
+    {
+      "kind": "tree",
+      "experiment": "day15_strict_snapshot_d6",
+      "day": 20191115,
+      "auc": 0.7390850766504639,
+      "logloss": 0.044218123512794534,
+      "input_fields": 210,
+      "reload_error": 0.0,
+      "recent_days": 0
+    },
+    {
+      "kind": "tree",
+      "experiment": "day16_exposure_recent3_d8",
+      "day": 20191116,
+      "auc": 0.7809763523508038,
+      "logloss": 0.044740487073822735,
+      "input_fields": 253,
+      "reload_error": 0.0,
+      "recent_days": 3
+    },
+    {
+      "kind": "tree",
+      "experiment": "day16_snapshot_exposure_d6",
+      "day": 20191116,
+      "auc": 0.7838375557845688,
+      "logloss": 0.044631009989023904,
+      "input_fields": 253,
+      "reload_error": 0.0,
+      "recent_days": 0
+    },
+    {
+      "kind": "tree",
+      "experiment": "day16_strict_snapshot_d6",
+      "day": 20191116,
+      "auc": 0.7405245454465308,
+      "logloss": 0.04665161725403605,
+      "input_fields": 210,
+      "reload_error": 0.0,
+      "recent_days": 0
+    },
+    {
+      "kind": "dense",
+      "experiment": "day15_dcn_exposure_snapshot",
+      "day": 20191115,
+      "auc": 0.7805013184622193,
+      "logloss": 0.042536556279652436,
+      "input_fields": 166,
+      "reload_error": 0.0,
+      "recent_days": 0
+    },
+    {
+      "kind": "dense",
+      "experiment": "day16_dcn_exposure_snapshot",
+      "day": 20191116,
+      "auc": 0.7857625260635855,
+      "logloss": 0.04488864803732939,
+      "input_fields": 166,
+      "reload_error": 0.0,
+      "recent_days": 0
+    }
+  ],
+  "equal_blends": [
+    {
+      "day": 20191115,
+      "weights": {
+        "dcn_exposure": 0.5,
+        "tree_exposure": 0.5
+      },
+      "auc": 0.7858631196467175,
+      "logloss": 0.04227038828810208
+    },
+    {
+      "day": 20191116,
+      "weights": {
+        "dcn_exposure": 0.5,
+        "tree_exposure": 0.5
+      },
+      "auc": 0.7917860844136609,
+      "logloss": 0.04430904919159503
+    }
+  ],
+  "final_auc_goal": 0.85,
+  "final_auc_verified": false,
+  "previous_random_model_external_score": 0.7059,
+  "evidence": "Held-out complete15/16 days; target stats strict past, full same-day input-only exposures and source snapshots",
+  "selection_bias_note": "Dates repeatedly used for development; many candidate comparisons; not an untouched evaluation"
+}

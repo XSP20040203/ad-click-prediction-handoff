@@ -1,0 +1,13 @@
+{
+  "auc": 0.7225188361939042,
+  "logloss": 0.04760713093714275,
+  "average_precision": 0.025123691240892275,
+  "mean_prediction": 0.009513342588080452,
+  "positive_logloss": 4.324569756909479,
+  "negative_logloss": 0.00952687726867183,
+  "positive_mean_probability": 0.017142720662975404,
+  "negative_mean_probability": 0.009445413855044441,
+  "fractional_epoch": 1.0,
+  "learning_rate": 0.001,
+  "mask_user_id": true
+}

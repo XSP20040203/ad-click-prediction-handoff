@@ -1,0 +1,101 @@
+{
+  "settings": {
+    "assumed_positive_count": 3459,
+    "auc_tolerance": 4e-06,
+    "lp_seconds": 90.0,
+    "milp_seconds_per_pool": 20.0,
+    "milp_positive_pool_sizes": [
+      256,
+      768,
+      2048
+    ],
+    "milp_relative_gap": 1e-05,
+    "baseline_seeds": [
+      91271,
+      81431,
+      701531
+    ],
+    "prior": "Actual v9 scored probabilities",
+    "clipping": 1e-09,
+    "selection": "All six rounded AUCs match; lowest v9 prior NLL among valid searched integer candidates",
+    "within_equal_score_group_order": "Ascending original id, arbitrary deterministic choice"
+  },
+  "versions": [
+    "v6",
+    "v7",
+    "v8",
+    "v9",
+    "old_best",
+    "submission_3"
+  ],
+  "reported_auc": [
+    0.80817,
+    0.80581,
+    0.80745,
+    0.80856,
+    0.74404,
+    0.7059
+  ],
+  "scored_files": {
+    "v6": [
+      "output/best_nextday_full_v6/submission.csv",
+      "899f6f6f48bae40ec3920d7948ace3d26f478e839c865fbe3006c90c565f9e5f"
+    ],
+    "v7": [
+      "output/best_nextday_arch_v7/submission.csv",
+      "c44a9e803b8b4566b9bcef4e1bf85181c2ee00eee71a9f84474b73c619c121b9"
+    ],
+    "v8": [
+      "output/best_nextday_daystate_v8/submission.csv",
+      "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846"
+    ],
+    "v9": [
+      "output/platform_feedback_v9/submission_v9.csv",
+      "c55583694642524fbabe71b5a0d4d06e86582076e899d1087d1d9dfd73271a83"
+    ],
+    "old_best": [
+      "output/submission_best.csv",
+      "45d0571bd12d3176c56bbeb16704a938ed8683909169daffcd860206b057f828"
+    ],
+    "submission_3": [
+      "E:\\浏览器下载\\submission (3).csv",
+      "1ec5b7e1e47bdb108202bc12e2ce976625f4f06d7b20a45337f3797f670b2978"
+    ]
+  },
+  "sixth_attachment_sha256": "1ec5b7e1e47bdb108202bc12e2ce976625f4f06d7b20a45337f3797f670b2978",
+  "source_sha256": "6b81079da39fb115373fc7f7b6bc985779beecee4e2a9be53a60252c534f1ebc",
+  "verifier_sha256": "522f701c4ca67fed1c495fa1dc41ddf61f6a139659367776f084743aaf47fbe1",
+  "specification_sha256": "4cef20d745222f4c3fd6301767b5c1baeedaa9ec532006a2c8dbb1b7aa248662",
+  "generic_source_sha256": "11a92e5abbe96526df7090bbe54bb442272740c550c045a12a1c7558c2c13eb9",
+  "generic_baseline_settings": {
+    "score_decimals": 5,
+    "auc_match_tolerance": 4e-06,
+    "click_count_sensitivity_factors": [
+      0.85,
+      1.0,
+      1.15
+    ],
+    "seed_a": 91271,
+    "seed_c": 81431,
+    "maximum_greedy_steps": 240,
+    "milp_seconds_each": 15.0,
+    "milp_attempts": 3,
+    "scope": "Conditional estimates and compatible label hypotheses; not recovered ground truth"
+  },
+  "original_datasets_sha256": {
+    "train.csv": "3f1b4dc73a754c60df3df8fd6f4c13f76ee57bd3be03ded365aba69f6dca34ad",
+    "final_test.csv": "9478dfd16937919a30b4efe7b19b805c70196ca5d0c2c8561e37bdb0fdd42b59"
+  },
+  "previous_five_score_output_sha256": {
+    "protocol.json": "555152af1a7ae83f19a0637087a28a925d9c2133ecd86c7f39ecdd69f0027bb5",
+    "report.json": "1542643350def0886f0daff1473839b0da2e9eca4886f7d6123ac20af6fa83ff",
+    "inference_arrays.npz": "72c2ead70384a3b21b10f2d2a0948ee996c2c8fdf35cce200e2ff56aa85356ca",
+    "conditional_estimates_20191117.csv": "92dd29dac9804b92f228e39d19797986c17889fd2672520e0b775ae5796bf0c5",
+    "verification.json": "d88fd015fd761ec2fde20186d1e11ff03d58d306c8fafe92b95a1d0ab2a6401b"
+  },
+  "scores_cover_all_rows_confirmed_by_user": true,
+  "ordinary_auc_and_nearest_five_decimal_rounding_assumed": true,
+  "true_final_positive_count_unknown": true,
+  "fitted_labels_are_not_observed_ground_truth": true,
+  "unbounded_auc_goal_remains_paused": true
+}

@@ -1,0 +1,71 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191116,
+  "mode": "context",
+  "fixed_endpoint": {
+    "fractional_epoch": 1.0,
+    "auc": 0.795513135636726,
+    "logloss": 0.0441662710509568,
+    "average_precision": 0.08220941814544633,
+    "mean_probability": 0.00948239117860794,
+    "train_objective": 0.04281535762157026,
+    "train_row_bce": 0.04281535762157026,
+    "train_auxiliary_bce": 0.0,
+    "seconds": 125.5080281999999
+  },
+  "best_checkpoint": {
+    "fractional_epoch": 1.0,
+    "auc": 0.795513135636726,
+    "logloss": 0.0441662710509568,
+    "average_precision": 0.08220941814544633,
+    "mean_probability": 0.00948239117860794,
+    "train_objective": 0.04281535762157026,
+    "train_row_bce": 0.04281535762157026,
+    "train_auxiliary_bce": 0.0,
+    "seconds": 125.5080281999999
+  },
+  "initial_backbone_sha256": "45548fa3a07fac44d6d18ccc30096a34c967c37f7e0e8f71b8f0f89fdcaa098f",
+  "initial_full_weights_sha256": "b7d1bea7b72ce252ebebf911be11e5e2bbb248758d0ae68c0c61c6ca41b2560a",
+  "row_order_sha256": "f7b59138e9fd8fd7cf8def7c276c5500d1d03ad1c0c0726d80e9c64a94c4e3cb",
+  "reload_errors": {
+    "best": 0.0,
+    "best_auxiliary": 0.0,
+    "final": 0.0,
+    "final_auxiliary": 0.0
+  },
+  "v7_replace30": {
+    "auc": 0.8008407367932248,
+    "logloss": 0.04392982696021558,
+    "average_precision": 0.08676729610465894,
+    "mean_probability": 0.009523421394475427
+  },
+  "candidate_blend10": {
+    "auc": 0.8006214405913579,
+    "logloss": 0.04396301613603682,
+    "average_precision": 0.08618656311017577,
+    "mean_probability": 0.009609585092455667
+  },
+  "slices": {
+    "seen": {
+      "auc": 0.7989860140327623,
+      "logloss": 0.043688497103130323,
+      "average_precision": 0.08475015806218193,
+      "mean_probability": 0.009289027548769105
+    },
+    "cold": {
+      "auc": 0.7513317139827311,
+      "logloss": 0.05011685251503509,
+      "average_precision": 0.0599173470805698,
+      "mean_probability": 0.011890712885070013
+    }
+  },
+  "seconds": 140.10464690000117,
+  "files_sha256": {
+    "best_model.pt": "d4be77c537a0c0de3fa3dedc4d58a6f9f422eb01cb5395436a7032959b12bbc1",
+    "final_model.pt": "d4be77c537a0c0de3fa3dedc4d58a6f9f422eb01cb5395436a7032959b12bbc1",
+    "best_prediction.npy": "6ca1d9c61f75d80faee941a4cdf23eba0018aecc70508119f45ecb6716d7f495",
+    "final_prediction.npy": "6ca1d9c61f75d80faee941a4cdf23eba0018aecc70508119f45ecb6716d7f495",
+    "best_any_prediction.npy": "dc0b04c718d32a90761c6ac5fd6dfe218784510c7329748e650d7378501c3062",
+    "final_any_prediction.npy": "dc0b04c718d32a90761c6ac5fd6dfe218784510c7329748e650d7378501c3062"
+  }
+}

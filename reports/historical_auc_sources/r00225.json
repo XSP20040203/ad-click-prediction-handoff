@@ -1,0 +1,119 @@
+{
+  "status": "complete_and_verified",
+  "random_holdout_auc": 0.8504187550768378,
+  "random_holdout_threshold_achieved": true,
+  "chronological_threshold_achieved": false,
+  "final_auc_verified": false,
+  "original_submission_unchanged": {
+    "submission_best.csv": true,
+    "final_predictions_best_with_ids.csv": true
+  },
+  "models": {
+    "random20_catboost_aligned_lowalpha_d8": 0.5,
+    "random20_catboost_aligned_lowalpha_d6": 0.5
+  },
+  "source_sha256": {
+    "audit_interest_features.py": "ed0c1b5c104d371f8ed91d7702555c474e36f30ca7f23fec731584f0ab28184e",
+    "build_goal_report.py": "96bc95588a23d580ea772e18d0f3312e0bcc65153af81cf4367c593b06e6f773",
+    "evaluate_candidates.py": "88119cc2ba71d3f4c4bc07820b96f7cc5da88c43e5e06c0a738646045c4226f7",
+    "prepare_interest_match.py": "f09bc2c111ac993061d421ed6d9e595dcc972e44e9f0f2c7d1b9584b20e7f4eb",
+    "saved_tree_features.py": "ef7d5a8169e6501a44cda720929498d9730a45ef2e34cbb51bf2818a31a10c18",
+    "save_ensemble.py": "2e6f71b6728e9d77d2f2d40decb3d666c88231b579d87702b652ab8974cb168c",
+    "test_interest_match.py": "8317a133c78f3c500c4908ccec8cb8dbdf3b3b66ba042ad19e150df1952232a2",
+    "train_tree.py": "9e8b0eb0484563aaabfa53869e477070dc24e0a8c3bc747a0ba6796778640c1e",
+    "verify_ensemble.py": "715738b01c1a6f6f9991fe1c18ebd01e595ada0e86955930c23c524c2d981939",
+    "verify_saved_tree.py": "2c67808921485c5146e02eddd6bc2e678d3e04bcb548346c5106ac150ac642b0"
+  },
+  "experiments": [
+    {
+      "experiment": "random20_catboost_aligned_lowalpha_d6",
+      "validation_strategy": "random20",
+      "auc": 0.8493547499517282,
+      "logloss": 0.04057416844493422,
+      "features": 198,
+      "trees": 1850,
+      "maximum_reload_error": 0.0,
+      "elapsed_seconds": 302.6705464000006
+    },
+    {
+      "experiment": "random20_catboost_aligned_lowalpha_d8",
+      "validation_strategy": "random20",
+      "auc": 0.8493599480104954,
+      "logloss": 0.040575492746644785,
+      "features": 198,
+      "trees": 1042,
+      "maximum_reload_error": 0.0,
+      "elapsed_seconds": 241.69421069999953
+    },
+    {
+      "experiment": "random20_catboost_extra_d6",
+      "validation_strategy": "random20",
+      "auc": 0.8463790556067101,
+      "logloss": 0.04089591024201647,
+      "features": 177,
+      "trees": 1758,
+      "maximum_reload_error": 0.0,
+      "elapsed_seconds": 249.62406499999997
+    },
+    {
+      "experiment": "random20_catboost_extra_d6_lr003",
+      "validation_strategy": "random20",
+      "auc": 0.8459024124284442,
+      "logloss": 0.04094241204666097,
+      "features": 177,
+      "trees": 2403,
+      "maximum_reload_error": 0.0,
+      "elapsed_seconds": 305.58177389999946
+    },
+    {
+      "experiment": "random20_catboost_extra_d8",
+      "validation_strategy": "random20",
+      "auc": 0.8473489659370255,
+      "logloss": 0.04084305373257631,
+      "features": 177,
+      "trees": 1480,
+      "maximum_reload_error": 0.0,
+      "elapsed_seconds": 275.83487010000135
+    },
+    {
+      "experiment": "random20_catboost_extra_interest_d6",
+      "validation_strategy": "random20",
+      "auc": 0.8450793941681832,
+      "logloss": 0.0409429020082097,
+      "features": 213,
+      "trees": 1472,
+      "maximum_reload_error": 0.0,
+      "elapsed_seconds": 247.40000529999998
+    },
+    {
+      "experiment": "time16_catboost_aligned_lowalpha_d6",
+      "validation_strategy": "time20191116",
+      "auc": 0.7254072007053719,
+      "logloss": 0.04813352453520005,
+      "features": 186,
+      "trees": 341,
+      "maximum_reload_error": 0.0,
+      "elapsed_seconds": 163.20850969999992
+    },
+    {
+      "experiment": "time16_catboost_extra_noday_d6",
+      "validation_strategy": "time20191116",
+      "auc": 0.7225313660755518,
+      "logloss": 0.04871574620637084,
+      "features": 168,
+      "trees": 536,
+      "maximum_reload_error": 0.0,
+      "elapsed_seconds": 158.7301907000001
+    },
+    {
+      "experiment": "aligned_d6_d8_equal_ensemble",
+      "validation_strategy": "random20",
+      "auc": 0.8504187550768378,
+      "logloss": 0.04051632293049667,
+      "features": 198,
+      "trees": null,
+      "maximum_reload_error": 0.0,
+      "elapsed_seconds": null
+    }
+  ]
+}

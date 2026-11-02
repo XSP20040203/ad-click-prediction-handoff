@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "verified_model_count": 4,
+  "checks": [
+    {
+      "day": 20191115,
+      "mode": "context",
+      "endpoint": "final",
+      "scalar_control_max_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "mode": "context",
+      "endpoint": "best",
+      "scalar_control_max_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "mode": "both",
+      "endpoint": "final",
+      "scalar_control_max_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "mode": "both",
+      "endpoint": "best",
+      "scalar_control_max_error": 0.0
+    }
+  ],
+  "goal_auc_both_days": 0.85,
+  "goal_met": false,
+  "best_common_model": "captured_reference",
+  "best_common_min_auc": 0.7934700801999591,
+  "highest_each_day": {
+    "20191115": 0.7937725729602777,
+    "20191116": 0.8012412673501383
+  },
+  "evaluator_sha256": "c5b6f5119a9efe3462bb5481b56655852ab24b630b9f3a505c45e3387c62eeef",
+  "final_test_auc": null,
+  "limitations": "Repeated development dates; checkpoint selection is exploratory"
+}

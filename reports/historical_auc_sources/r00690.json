@@ -1,0 +1,227 @@
+{
+  "status": "verified_available_runs",
+  "runs": [
+    {
+      "day": 20191115,
+      "enhancement": "both",
+      "seed": 42,
+      "auc": 0.726877213988298,
+      "best_epoch": 1.0,
+      "logloss": 0.045291365770551296,
+      "source_setting": "offline_same_day",
+      "new_ad_rows": 53160,
+      "new_ad_clicks": 486,
+      "new_ad_auc": 0.6730183373435579,
+      "unseen_pair_rows": 215950,
+      "unseen_pair_clicks": 2172,
+      "unseen_pair_auc": 0.7081870965796139
+    },
+    {
+      "day": 20191115,
+      "enhancement": "identity",
+      "seed": 42,
+      "auc": 0.7261683273126779,
+      "best_epoch": 1.0,
+      "logloss": 0.04531303466020643,
+      "source_setting": "strict_history",
+      "new_ad_rows": 53160,
+      "new_ad_clicks": 486,
+      "new_ad_auc": 0.6743596687818589,
+      "unseen_pair_rows": 215950,
+      "unseen_pair_clicks": 2172,
+      "unseen_pair_auc": 0.7075622993144106
+    },
+    {
+      "day": 20191115,
+      "enhancement": "none",
+      "seed": 42,
+      "auc": 0.7258391080448913,
+      "best_epoch": 1.0,
+      "logloss": 0.04526745576876989,
+      "source_setting": "strict_history",
+      "new_ad_rows": 53160,
+      "new_ad_clicks": 486,
+      "new_ad_auc": 0.6719311313270804,
+      "unseen_pair_rows": 215950,
+      "unseen_pair_clicks": 2172,
+      "unseen_pair_auc": 0.7068949112663595
+    },
+    {
+      "day": 20191115,
+      "enhancement": "snapshot",
+      "seed": 42,
+      "auc": 0.7266183469981965,
+      "best_epoch": 1.0,
+      "logloss": 0.045245516851828385,
+      "source_setting": "offline_same_day",
+      "new_ad_rows": 53160,
+      "new_ad_clicks": 486,
+      "new_ad_auc": 0.6710122094266917,
+      "unseen_pair_rows": 215950,
+      "unseen_pair_clicks": 2172,
+      "unseen_pair_auc": 0.7076806795511021
+    },
+    {
+      "day": 20191116,
+      "enhancement": "both",
+      "seed": 42,
+      "auc": 0.7273100362404766,
+      "best_epoch": 0.750182437363172,
+      "logloss": 0.04747141893571458,
+      "source_setting": "offline_same_day",
+      "new_ad_rows": 31363,
+      "new_ad_clicks": 303,
+      "new_ad_auc": 0.6792814503601037,
+      "unseen_pair_rows": 192732,
+      "unseen_pair_clicks": 2012,
+      "unseen_pair_auc": 0.7081422616774188
+    },
+    {
+      "day": 20191116,
+      "enhancement": "identity",
+      "seed": 42,
+      "auc": 0.7271487778546109,
+      "best_epoch": 0.750182437363172,
+      "logloss": 0.047468770045226115,
+      "source_setting": "strict_history",
+      "new_ad_rows": 31363,
+      "new_ad_clicks": 303,
+      "new_ad_auc": 0.6800730620389792,
+      "unseen_pair_rows": 192732,
+      "unseen_pair_clicks": 2012,
+      "unseen_pair_auc": 0.7080333018666525
+    },
+    {
+      "day": 20191116,
+      "enhancement": "none",
+      "seed": 42,
+      "auc": 0.7265223521468123,
+      "best_epoch": 0.750182437363172,
+      "logloss": 0.047492756496529315,
+      "source_setting": "strict_history",
+      "new_ad_rows": 31363,
+      "new_ad_clicks": 303,
+      "new_ad_auc": 0.6785911012221635,
+      "unseen_pair_rows": 192732,
+      "unseen_pair_clicks": 2012,
+      "unseen_pair_auc": 0.7076861138120938
+    },
+    {
+      "day": 20191116,
+      "enhancement": "snapshot",
+      "seed": 42,
+      "auc": 0.7266839514425314,
+      "best_epoch": 0.750182437363172,
+      "logloss": 0.04749210480886295,
+      "source_setting": "offline_same_day",
+      "new_ad_rows": 31363,
+      "new_ad_clicks": 303,
+      "new_ad_auc": 0.6778807227148987,
+      "unseen_pair_rows": 192732,
+      "unseen_pair_clicks": 2012,
+      "unseen_pair_auc": 0.7077601283552878
+    }
+  ],
+  "paired_user_bootstrap": [
+    {
+      "day": 20191115,
+      "enhancement": "both",
+      "seed": 42,
+      "method": "paired bootstrap of users within one future-day validation; exploratory, reused holdout",
+      "users": 8503,
+      "draws": 200,
+      "auc_change": 0.0010381059434066975,
+      "interval_95": [
+        -0.0001815085686437484,
+        0.002714277933513465
+      ]
+    },
+    {
+      "day": 20191115,
+      "enhancement": "identity",
+      "seed": 42,
+      "method": "paired bootstrap of users within one future-day validation; exploratory, reused holdout",
+      "users": 8503,
+      "draws": 200,
+      "auc_change": 0.0003292192677866179,
+      "interval_95": [
+        -0.0006627030936809331,
+        0.0015457607637468177
+      ]
+    },
+    {
+      "day": 20191115,
+      "enhancement": "snapshot",
+      "seed": 42,
+      "method": "paired bootstrap of users within one future-day validation; exploratory, reused holdout",
+      "users": 8503,
+      "draws": 200,
+      "auc_change": 0.000779238953305228,
+      "interval_95": [
+        -8.281267368377141e-05,
+        0.0015891448875781562
+      ]
+    },
+    {
+      "day": 20191116,
+      "enhancement": "both",
+      "seed": 42,
+      "method": "paired bootstrap of users within one future-day validation; exploratory, reused holdout",
+      "users": 8504,
+      "draws": 200,
+      "auc_change": 0.0007876840936643648,
+      "interval_95": [
+        -4.0745898915842116e-05,
+        0.0017153333768824839
+      ]
+    },
+    {
+      "day": 20191116,
+      "enhancement": "identity",
+      "seed": 42,
+      "method": "paired bootstrap of users within one future-day validation; exploratory, reused holdout",
+      "users": 8504,
+      "draws": 200,
+      "auc_change": 0.0006264257077985835,
+      "interval_95": [
+        -9.78332017577882e-05,
+        0.0014108942490409784
+      ]
+    },
+    {
+      "day": 20191116,
+      "enhancement": "snapshot",
+      "seed": 42,
+      "method": "paired bootstrap of users within one future-day validation; exploratory, reused holdout",
+      "users": 8504,
+      "draws": 200,
+      "auc_change": 0.00016159929571912812,
+      "interval_95": [
+        -0.0005065517148637927,
+        0.000736317223222033
+      ]
+    }
+  ],
+  "ensembles": [],
+  "seed42_screening": [
+    {
+      "enhancement": "snapshot",
+      "mean_delta": 0.00047041912451217804,
+      "both_days_improved": true
+    },
+    {
+      "enhancement": "identity",
+      "mean_delta": 0.0004778224877926007,
+      "both_days_improved": true
+    },
+    {
+      "enhancement": "both",
+      "mean_delta": 0.0009128950185355311,
+      "both_days_improved": true
+    }
+  ],
+  "screening_complete": true,
+  "selected_for_confirmation": "both",
+  "final_test_used": false,
+  "uncertainty_scope": "Exploratory reused holdouts; users resampled as clusters; intervals do not correct model selection"
+}

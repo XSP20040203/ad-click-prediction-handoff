@@ -1,0 +1,54 @@
+{
+  "status": "fixed_before_training",
+  "held_day": 20191115,
+  "seed": 42,
+  "variants": [
+    "random",
+    "past",
+    "all"
+  ],
+  "pretraining": {
+    "steps": 1200,
+    "batch_size": 512,
+    "mask_probability": 0.3,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "seed": 98213
+  },
+  "ad_epochs": 1,
+  "ad_batch_size": 1024,
+  "ad_learning_rate": 0.001,
+  "ad_weight_decay": 0.0001,
+  "auxiliary_weight": 0.02,
+  "checks": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "advertisement_held_labels_fit": false,
+  "supplied_same_day_news_feedback_used": true,
+  "feature_standardization": "Same full-topic scaler fit on all permitted unlabeled input groups for every arm",
+  "pretraining_comparison": "Past and all use equal initialization, 1200 steps, 512 groups per step; all also samples target-day groups",
+  "ensemble_rule": "original_v7 + .30 * (new_core - original_gated166)",
+  "promotion_minimum_auc_gain_each_development_day": 0.0005,
+  "promotion_maximum_logloss_worsening_each_day": 0.0001,
+  "reference": {
+    "manifest_path": "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\reference_day_state_protected_seed42_v1\\manifest.json",
+    "manifest_sha256": "c6a0c256c3cda8d2b94dcca1bfcb5c14a3e40aa358039b7cf08f84fd075d940f"
+  },
+  "source_sha256": {
+    "E:\\AI\\ml\\大作业上传\\analysis\\transductive_interest_20261101\\topic_data.py": "2a4ae89c75879eb949900f5041ebae0d1dfcbafb40f4d5742bc45497c9d7c5b0",
+    "E:\\AI\\ml\\大作业上传\\analysis\\transductive_interest_20261101\\interest_model.py": "36558f7cc8188635126c35bb239731cef53f6e9631f79a0e99b2e04684118d2d",
+    "E:\\AI\\ml\\大作业上传\\analysis\\transductive_interest_20261101\\pretrain.py": "cde0207fa4ac9fd33791f23279bcc8df48d680125606bcbc7467be259a124cd3",
+    "E:\\AI\\ml\\大作业上传\\analysis\\transductive_interest_20261101\\run_transductive.py": "92ff9f4053596c7f88708309245e31387c82634a164b1dfb9e1777df4c91e316",
+    "E:\\AI\\ml\\大作业上传\\analysis\\transductive_interest_20261101\\test_transductive.py": "aa918182a6bea3071b1b5d23ee95e29c9b0c3c17e8d6f331e1eb453e65cc6521",
+    "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\protected_day_model.py": "94093704489e11f3acd834b1a0ad332c26e201c2d46836c04166f71a96a12967",
+    "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\day_model.py": "cda70b86e260877f94c1350678880a9173118af4cef9481fd4b1b1aeba5e4209",
+    "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\day_context.py": "aa7f11fbeb9c839f230a3a1b8aa757de882ce17a63b581f2b9cc56adb0522f0a",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\features.py": "bd4ddb907511f5e03935d5ca5f285f80f8c877a1125c56586262414fc6e97a8d",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\model.py": "4832bae4c1d83dc33af3ffa0849d87df3f04b342968cad0ff74d060acaf78b18",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\experiment.py": "b29758da89f150f38ee9533795742c949f436c292ba90cd18679ab874062c886"
+  },
+  "scope": "One bounded new experiment; existing 0.85 automation is not resumed by this script"
+}

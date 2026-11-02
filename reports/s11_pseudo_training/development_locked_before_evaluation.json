@@ -1,0 +1,12 @@
+{
+  "models": {
+    "weight_0": "a4d387840dc5d59c6fc079563fdcf5721358e3a3cf25fd19d2f712ab55a02994",
+    "weight_0.01": "6053961f0d3e17edae79f3f29ed0c163b6400727874e52d9f29c1a5ef58611de",
+    "weight_0.03": "bedc5d0c995d025ab0ecfa81a6e38c8a354202c7cfcd4b43e4a8eafc56861be4",
+    "weight_0.1": "856157a2ebd2b78d966ad8049257fca1f06b4b8be89e97822d7492e0bd642f20",
+    "weight_0.3": "99c79336389f4d17072863a2a9acadae632bb6154c064d5cbc66e632955508d1",
+    "weight_1": "219676ac3a6ec4feb8135d3e2d55e073094ef910ff528a0cbf733ba4a9a8623c",
+    "permuted_01": "eac3b870833338f60eea5bac4cb39819242cae7fb805f5d925c25021b5c15495"
+  },
+  "target_real_outcomes_loaded_for_evaluation": false
+}

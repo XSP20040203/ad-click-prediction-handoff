@@ -1,0 +1,8 @@
+{
+  "status": "aborted_after_lp_elapsed_time_budget_overrun",
+  "feasible_initial_checkpoint_preserved": true,
+  "final_label_file_exported_by_this_run": false,
+  "process_running": false,
+  "superseded_by": "output/fitted_labels_six_scores_final_20191117",
+  "frozen_sources_preserved": true
+}

@@ -1,0 +1,6 @@
+{
+  "status": "complete",
+  "measurements": 8,
+  "training_seconds": 63.86949269999968,
+  "best_auc": 0.7218825144701339
+}

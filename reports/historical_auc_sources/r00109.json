@@ -1,0 +1,10 @@
+{
+  "epoch": 4,
+  "train_logloss": 0.029819885978498866,
+  "auc": 0.696778190319224,
+  "logloss": 0.05424347215358709,
+  "average_precision": 0.02669041550664967,
+  "mean_prediction": 0.0033475964053622654,
+  "epoch_seconds": 45.41018149999945,
+  "learning_rate": 0.0005
+}

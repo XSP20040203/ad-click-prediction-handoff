@@ -1,0 +1,13 @@
+{
+  "variant": "all",
+  "day15_scores": {
+    "auc": 0.793362131779358,
+    "logloss": 0.042050405848057096,
+    "average_precision": 0.08264085323795883,
+    "mean_probability": 0.008588196378936364
+  },
+  "selection_rule": "Largest fixed v7 replacement AUC among the three preregistered arms on day15, before seeing day16 results",
+  "required_auc_gain_both_days": 0.0005,
+  "maximum_logloss_worsening_both_days": 0.0001,
+  "day15_comparison_sha256": "0d29cc48a68c84b8402b89d3af14a02e5d250fdf39c4b71e50abfd982e32a963"
+}

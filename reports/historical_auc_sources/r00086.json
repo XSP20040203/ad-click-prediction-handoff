@@ -1,0 +1,392 @@
+[
+  {
+    "auc": 0.7410812970675544,
+    "logloss": 0.045343314924970034,
+    "average_precision": 0.028598619276764468,
+    "mean_prediction": 0.008628571695076307,
+    "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "parameter_count": 474661,
+    "training_seconds": 150.03614780000044,
+    "inference_seconds": null,
+    "feature_note": "24 category embeddings + 7 masked-mean pooled lists + 20 shared numeric features; historical labels are source-domain observations only.",
+    "model_class": "BoundedIDDCN",
+    "model_options": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "numeric_dim": 20,
+      "group_norm_caps": {
+        "user_id": 0.2,
+        "ad_task": 0.2,
+        "adv_id": 0.2
+      }
+    },
+    "parameters": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "numeric_dim": 20,
+      "group_norm_caps": {
+        "user_id": 0.2,
+        "ad_task": 0.2,
+        "adv_id": 0.2
+      },
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048,
+      "max_epochs": 8,
+      "early_stopping_patience": 3,
+      "loss": "unweighted BCEWithLogitsLoss",
+      "seed": 42
+    },
+    "model": "bounded",
+    "seed": 42,
+    "validation_strategy": "random20",
+    "validation_day": null,
+    "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_random20_seed42",
+    "train_rows": 2021056,
+    "valid_rows": 505264,
+    "validation_clicks": 4271,
+    "scope": "Offline validation, never interpreted as measured final-test AUC.",
+    "experiment": "random20_original_features",
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\random20_original_features\\bounded\\seed42",
+    "max_reload_error": 7.450580596923828e-09
+  },
+  {
+    "auc": 0.7383205633078873,
+    "logloss": 0.04541527391927366,
+    "average_precision": 0.028342584939680462,
+    "mean_prediction": 0.008631493246632576,
+    "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "parameter_count": 474661,
+    "training_seconds": 103.11050499999965,
+    "inference_seconds": null,
+    "feature_note": "24 category embeddings + 7 masked-mean pooled lists + 20 shared numeric features; historical labels are source-domain observations only.",
+    "model_class": "DCNV2Model",
+    "model_options": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "numeric_dim": 20
+    },
+    "parameters": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "numeric_dim": 20,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048,
+      "max_epochs": 8,
+      "early_stopping_patience": 3,
+      "loss": "unweighted BCEWithLogitsLoss",
+      "seed": 42
+    },
+    "model": "dcn",
+    "seed": 42,
+    "validation_strategy": "random20",
+    "validation_day": null,
+    "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_random20_seed42",
+    "train_rows": 2021056,
+    "valid_rows": 505264,
+    "validation_clicks": 4271,
+    "scope": "Offline validation, never interpreted as measured final-test AUC.",
+    "experiment": "random20_original_features",
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\random20_original_features\\dcn\\seed42",
+    "max_reload_error": 1.1175870895385742e-08
+  },
+  {
+    "auc": 0.769227665997684,
+    "logloss": 0.04443999147413642,
+    "average_precision": 0.03707193963995874,
+    "mean_prediction": 0.007779447206832385,
+    "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "parameter_count": 646412,
+    "training_seconds": 216.66059999999925,
+    "inference_seconds": null,
+    "feature_note": "27 categorical fields, 12 masked-mean lists, 75 numeric inputs; rich_offline_same_day_source+oof_target_stats",
+    "model_class": "BoundedIDDCN",
+    "model_options": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "numeric_dim": 75,
+      "group_norm_caps": {
+        "user_id": 0.2,
+        "ad_task": 0.2,
+        "adv_id": 0.2
+      }
+    },
+    "parameters": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "numeric_dim": 75,
+      "group_norm_caps": {
+        "user_id": 0.2,
+        "ad_task": 0.2,
+        "adv_id": 0.2
+      },
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048,
+      "max_epochs": 8,
+      "early_stopping_patience": 3,
+      "loss": "unweighted BCEWithLogitsLoss",
+      "seed": 42
+    },
+    "model": "bounded",
+    "seed": 42,
+    "validation_strategy": "random20",
+    "validation_day": null,
+    "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20",
+    "train_rows": 2021056,
+    "valid_rows": 505264,
+    "validation_clicks": 4271,
+    "feature_availability_assumption": "A full source-day snapshot is available as auxiliary input; not an online pre-impression benchmark.",
+    "scope": "Offline validation, never interpreted as measured final-test AUC.",
+    "experiment": "random20_rich_oof_statistics",
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\random20_rich_oof_statistics\\bounded\\seed42",
+    "max_reload_error": 1.30385160446167e-08
+  },
+  {
+    "auc": 0.742153276521884,
+    "logloss": 0.045312383771497676,
+    "average_precision": 0.028547179156587547,
+    "mean_prediction": 0.008574022064964987,
+    "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "parameter_count": 588560,
+    "training_seconds": 168.81652779999968,
+    "inference_seconds": null,
+    "feature_note": "27 categorical fields, 12 masked-mean lists, 39 numeric inputs; rich_offline_same_day_source",
+    "model_class": "BoundedIDDCN",
+    "model_options": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "numeric_dim": 39,
+      "group_norm_caps": {
+        "user_id": 0.2,
+        "ad_task": 0.2,
+        "adv_id": 0.2
+      }
+    },
+    "parameters": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "numeric_dim": 39,
+      "group_norm_caps": {
+        "user_id": 0.2,
+        "ad_task": 0.2,
+        "adv_id": 0.2
+      },
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048,
+      "max_epochs": 8,
+      "early_stopping_patience": 3,
+      "loss": "unweighted BCEWithLogitsLoss",
+      "seed": 42
+    },
+    "model": "bounded",
+    "seed": 42,
+    "validation_strategy": "random20",
+    "validation_day": null,
+    "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_random20",
+    "train_rows": 2021056,
+    "valid_rows": 505264,
+    "validation_clicks": 4271,
+    "feature_availability_assumption": "A full source-day snapshot is available as auxiliary input; not an online pre-impression benchmark.",
+    "scope": "Offline validation, never interpreted as measured final-test AUC.",
+    "experiment": "random20_rich_same_day",
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\random20_rich_same_day\\bounded\\seed42",
+    "max_reload_error": 7.450580596923828e-09
+  },
+  {
+    "auc": 0.7338903234937643,
+    "logloss": 0.04835724033552041,
+    "average_precision": 0.023398502412053303,
+    "mean_prediction": 0.011160098778651675,
+    "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "parameter_count": 637028,
+    "training_seconds": 224.22047389999898,
+    "inference_seconds": null,
+    "feature_note": "27 categorical fields, 12 masked-mean lists, 75 numeric inputs; rich_offline_same_day_source+oof_target_stats",
+    "model_class": "BoundedIDDCN",
+    "model_options": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "numeric_dim": 75,
+      "group_norm_caps": {
+        "user_id": 0.2,
+        "ad_task": 0.2,
+        "adv_id": 0.2
+      }
+    },
+    "parameters": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "numeric_dim": 75,
+      "group_norm_caps": {
+        "user_id": 0.2,
+        "ad_task": 0.2,
+        "adv_id": 0.2
+      },
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048,
+      "max_epochs": 8,
+      "early_stopping_patience": 3,
+      "loss": "unweighted BCEWithLogitsLoss",
+      "seed": 42
+    },
+    "model": "bounded",
+    "seed": 42,
+    "validation_strategy": "time16",
+    "validation_day": 20191116,
+    "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_time16",
+    "train_rows": 2104337,
+    "valid_rows": 421983,
+    "validation_clicks": 3724,
+    "feature_availability_assumption": "A full source-day snapshot is available as auxiliary input; not an online pre-impression benchmark.",
+    "scope": "Offline validation, never interpreted as measured final-test AUC.",
+    "experiment": "time16_rich_oof_statistics",
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\time16_rich_oof_statistics\\bounded\\seed42",
+    "max_reload_error": 1.1175870895385742e-08
+  },
+  {
+    "auc": 0.7291271875186963,
+    "logloss": 0.04745458012496848,
+    "average_precision": 0.028303885239892954,
+    "mean_prediction": 0.009860751558148497,
+    "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "parameter_count": 579176,
+    "training_seconds": 169.20667380000032,
+    "inference_seconds": null,
+    "feature_note": "27 categorical fields, 12 masked-mean lists, 39 numeric inputs; rich_offline_same_day_source",
+    "model_class": "BoundedIDDCN",
+    "model_options": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "numeric_dim": 39,
+      "group_norm_caps": {
+        "user_id": 0.2,
+        "ad_task": 0.2,
+        "adv_id": 0.2
+      }
+    },
+    "parameters": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "numeric_dim": 39,
+      "group_norm_caps": {
+        "user_id": 0.2,
+        "ad_task": 0.2,
+        "adv_id": 0.2
+      },
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048,
+      "max_epochs": 8,
+      "early_stopping_patience": 3,
+      "loss": "unweighted BCEWithLogitsLoss",
+      "seed": 42
+    },
+    "model": "bounded",
+    "seed": 42,
+    "validation_strategy": "time16",
+    "validation_day": 20191116,
+    "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_time16",
+    "train_rows": 2104337,
+    "valid_rows": 421983,
+    "validation_clicks": 3724,
+    "feature_availability_assumption": "A full source-day snapshot is available as auxiliary input; not an online pre-impression benchmark.",
+    "scope": "Offline validation, never interpreted as measured final-test AUC.",
+    "experiment": "time16_rich_same_day",
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\time16_rich_same_day\\bounded\\seed42",
+    "max_reload_error": 7.450580596923828e-09
+  }
+]

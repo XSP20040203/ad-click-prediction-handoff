@@ -1,0 +1,131 @@
+{
+  "status": "verified",
+  "candidate_kind": "paststats",
+  "candidate_variant": "static",
+  "pairs": [
+    {
+      "day": 20191115,
+      "seed": 42,
+      "static_auc": 0.7247855404215537,
+      "candidate_auc": 0.725838892761221,
+      "auc_change": 0.0010533523396673017,
+      "static_new_task_auc": 0.6719367368913002,
+      "candidate_new_task_auc": 0.6719307406954276,
+      "static_new_pair_auc": 0.7055816114691327,
+      "candidate_new_pair_auc": 0.7068946862088753
+    },
+    {
+      "day": 20191115,
+      "seed": 2024,
+      "static_auc": 0.7277113458977074,
+      "candidate_auc": 0.7288722713434084,
+      "auc_change": 0.001160925445701011,
+      "static_new_task_auc": 0.6713450861897492,
+      "candidate_new_task_auc": 0.6717733356708732,
+      "static_new_pair_auc": 0.7085006845710254,
+      "candidate_new_pair_auc": 0.7098019443312624
+    },
+    {
+      "day": 20191115,
+      "seed": 2025,
+      "static_auc": 0.7250127593645093,
+      "candidate_auc": 0.7270119017188391,
+      "auc_change": 0.0019991423543298525,
+      "static_new_task_auc": 0.6722661760958116,
+      "candidate_new_task_auc": 0.674192771408138,
+      "static_new_pair_auc": 0.7055539390900462,
+      "candidate_new_pair_auc": 0.7080912522425847
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "static_auc": 0.7251277730772737,
+      "candidate_auc": 0.7265223579249455,
+      "auc_change": 0.0013945848476717426,
+      "static_new_task_auc": 0.6775639186584466,
+      "candidate_new_task_auc": 0.6785910480938628,
+      "static_new_pair_auc": 0.706383943611819,
+      "candidate_new_pair_auc": 0.7076861086000774
+    },
+    {
+      "day": 20191116,
+      "seed": 2024,
+      "static_auc": 0.7242093519808566,
+      "candidate_auc": 0.7261553832340493,
+      "auc_change": 0.0019460312531927038,
+      "static_new_task_auc": 0.6708958387789842,
+      "candidate_new_task_auc": 0.672947919389492,
+      "static_new_pair_auc": 0.7035613669597348,
+      "candidate_new_pair_auc": 0.7059986088085581
+    },
+    {
+      "day": 20191116,
+      "seed": 2025,
+      "static_auc": 0.7264649746430224,
+      "candidate_auc": 0.7278568774739093,
+      "auc_change": 0.0013919028308868597,
+      "static_new_task_auc": 0.6725519010368519,
+      "candidate_new_task_auc": 0.6739651669609974,
+      "static_new_pair_auc": 0.7066310870098204,
+      "candidate_new_pair_auc": 0.7084135093486896
+    }
+  ],
+  "seed_summary": [
+    {
+      "seed": 42,
+      "two_day_mean_change": 0.0012239685936695222
+    },
+    {
+      "seed": 2024,
+      "two_day_mean_change": 0.0015534783494468574
+    },
+    {
+      "seed": 2025,
+      "two_day_mean_change": 0.0016955225926083561
+    }
+  ],
+  "equal_weight_ensembles": [
+    {
+      "day": 20191115,
+      "static_auc": 0.7275545398757244,
+      "candidate_auc": 0.7286621730112008,
+      "auc_change": 0.0011076331354764601,
+      "static_logloss": 0.04518950516959762,
+      "candidate_logloss": 0.045165269238276025
+    },
+    {
+      "day": 20191116,
+      "static_auc": 0.726948470203178,
+      "candidate_auc": 0.728300677901619,
+      "auc_change": 0.0013522076984410214,
+      "static_logloss": 0.04747982414369613,
+      "candidate_logloss": 0.047427692639020885
+    }
+  ],
+  "ensemble_user_bootstrap": [
+    {
+      "day": 20191115,
+      "method": "paired bootstrap of users within one future-day validation; exploratory, reused holdout",
+      "users": 8503,
+      "draws": 200,
+      "auc_change": 0.0011076331354764601,
+      "interval_95": [
+        0.000405026206093595,
+        0.0019177689008388454
+      ]
+    },
+    {
+      "day": 20191116,
+      "method": "paired bootstrap of users within one future-day validation; exploratory, reused holdout",
+      "users": 8504,
+      "draws": 200,
+      "auc_change": 0.0013522076984410214,
+      "interval_95": [
+        0.0007073874243223589,
+        0.002113426591466905
+      ]
+    }
+  ],
+  "final_test_used": false,
+  "scope": "Exploratory reused chronological holdouts; checkpoints selected separately per seed; not final-test performance"
+}

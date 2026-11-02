@@ -1,0 +1,71 @@
+{
+  "status": "predicted",
+  "train_rows": 2526320,
+  "train_clicks": 21354,
+  "dcn_epochs": 1,
+  "tree_iterations": 2000,
+  "tree_depth": 6,
+  "seed": 42,
+  "ensemble": {
+    "dcn": 0.5,
+    "tree": 0.5
+  },
+  "budget_source": "Both chronological development dates selected DCN epoch1 and snapshot-exposure trees about2000; no final labels",
+  "advertisement_statistics": "strictly earlier dates for every training/test row",
+  "same_day_inputs": "Provided full current-day source, exposures and ad-history snapshots",
+  "full_training_refit": true,
+  "final_labels_available": false,
+  "final_auc": null,
+  "models": {
+    "tree": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\full_refit_models\\catboost.cbm",
+      "sha256": "88d764aefc534271be1e4d8df59a71e442c62d8d0c17501c0768f79df2fba528"
+    },
+    "dcn": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\full_refit_models\\dcn.pt",
+      "sha256": "3813c5357052b4256b28a59909db3978ef230eec3cbcad47661f4446fe40c2a6"
+    }
+  },
+  "full_cache_manifest_sha256": "e9d0c6c1b05e0aa93daaab640ba2aa0b160ed5ac78b5d2d7e5447415bcf4038e",
+  "input_sha256": {
+    "train.csv": "3f1b4dc73a754c60df3df8fd6f4c13f76ee57bd3be03ded365aba69f6dca34ad",
+    "train_feeds.csv": "c9eea8f2637fdd5e42a7c341c7ff0ddca12f9d0a054a5fa40a05ebe2263f7c85",
+    "final_test.csv": "9478dfd16937919a30b4efe7b19b805c70196ca5d0c2c8561e37bdb0fdd42b59",
+    "test_feeds.csv": "cce1b0fa2929190642cdc724cd2342edc755b1847a87fc5acc8c26469ddcdbd2"
+  },
+  "probability": {
+    "minimum": 0.00011817765633324747,
+    "maximum": 0.959636625087826,
+    "mean": 0.008959077901823624,
+    "quantiles": {
+      "0.01": 0.00033770106133457976,
+      "0.1": 0.0010573374750127377,
+      "0.5": 0.0057026116516818905,
+      "0.9": 0.0183297324048252,
+      "0.99": 0.05896537109487999
+    }
+  },
+  "development_evidence": {
+    "day15_dense_tree_equal_auc": 0.7858631196467175,
+    "day16_dense_tree_equal_auc": 0.7917860844136609,
+    "scope": "Repeated development dates, not final score"
+  },
+  "files": {
+    "submission.csv": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_exposure_v1\\submission.csv",
+      "sha256": "03733f7755d2bd4cf5cf80785498078ff79b3713767eddeabe31ee3455528a52",
+      "bytes": 6759993
+    },
+    "result_log_id.csv": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_exposure_v1\\result_log_id.csv",
+      "sha256": "b0bfb03d6e9e2f3837d5880442c5ca0e8de8484de771b89282a76d7dbafdf4e8",
+      "bytes": 6826989
+    },
+    "prediction_details.csv": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_exposure_v1\\prediction_details.csv",
+      "sha256": "67db12dac65bc73bb1e312be03994f108448bf43c9ee6273fb41cdd2bbae6149",
+      "bytes": 36688051
+    }
+  },
+  "elapsed_seconds": 389.1605039999995
+}

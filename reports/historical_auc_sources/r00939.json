@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "independent_process": true,
+  "verification_pid": 13752,
+  "rows": 404182,
+  "full_train_rows": 2526320,
+  "fields": 349,
+  "categorical_count": 24,
+  "budget_rounds": 378,
+  "num_threads": 3,
+  "full_final_model_reload": true,
+  "maximum_full_shared_lgb_reload_error": 0.0,
+  "maximum_ensemble_replay_error": 0.0,
+  "maximum_v3_component_replay_error": 0.0,
+  "maximum_csv_rounding_error": {
+    "result.csv": 4.999995676245768e-07,
+    "submission.csv": 4.999995676245768e-07
+  },
+  "maximum_detail_error": {
+    "pctr": 0.0,
+    "v3_pctr": 0.0,
+    "shared_lgb_pctr": 0.0,
+    "dcn_pctr": 0.0,
+    "tree_pctr": 0.0,
+    "lgb_pctr": 0.0,
+    "multiscale_dcn_pctr": 0.0
+  },
+  "original_ids_and_row_order": true,
+  "duplicate_log_id_rows_preserved": 858,
+  "submission_ids_are_zero_based_original_row_positions": true,
+  "features_equal_both_development_protocols": true,
+  "alignment_probes": {
+    "probe_rows": [
+      0,
+      2526319,
+      2526320,
+      2930501
+    ],
+    "feature_value_checks": 1396,
+    "maximum_error": 0.0,
+    "features_match_both_development_protocols": true,
+    "categorical_ids_unchanged": true,
+    "sequence_arrays_not_loaded": true,
+    "raw_exposure_snapshot_multiscale_used": true
+  },
+  "no_identity_categories": true,
+  "no_sequence_token_ids": true,
+  "utf8_no_bom": true,
+  "six_decimals": true,
+  "all_final_labels_forced_to_minus_one": true,
+  "input_model_source_and_export_hashes_match": true,
+  "entire_v2_v3_and_old_models_unchanged": true,
+  "final_labels_read": false,
+  "final_labels_available": false,
+  "final_auc": null,
+  "development_auc": {
+    "20191115": {
+      "shared_lgb_auc": 0.7767474673043586,
+      "shared_best_iteration": 320,
+      "v3_auc": 0.7876002210086661,
+      "v4_auc": 0.7880938883633664
+    },
+    "20191116": {
+      "shared_lgb_auc": 0.7813616401925747,
+      "shared_best_iteration": 435,
+      "v3_auc": 0.7948963507440203,
+      "v4_auc": 0.7957095722599832
+    }
+  },
+  "warnings": [
+    "开发日期15/16反复用于模型和固定融合权重选型，不是独立盲测；开发AUC不代表final AUC。",
+    "源域新闻数据、当前日曝光和广告历史快照采用所提供整日离线输入假设，不代表逐条在线曝光前可用。",
+    "final标签不读取且强制为-1；final_auc=None，不能声称final达标或AUC达到0.85。"
+  ],
+  "verification_seconds": 16.21556610000016
+}

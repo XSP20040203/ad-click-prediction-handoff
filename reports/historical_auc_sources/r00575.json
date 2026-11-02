@@ -1,0 +1,101 @@
+{
+  "status": "complete_and_verified",
+  "runs": [
+    {
+      "day": 20191115,
+      "variant": "ad_only",
+      "auc": 0.7194556625373446,
+      "logloss": 0.045525934324461795,
+      "best_epoch": 0.7500761962816215,
+      "training_seconds": 222.8976977000002,
+      "peak_cuda_mb": 111.94287109375,
+      "parameters": 2003761,
+      "replay_max_error": 0.0,
+      "new_ad_rows": 53160,
+      "new_ad_clicks": 486,
+      "new_ad_auc": 0.6648518506018306,
+      "unseen_pair_rows": 215950,
+      "unseen_pair_clicks": 2172,
+      "unseen_pair_auc": 0.701570630524666
+    },
+    {
+      "day": 20191115,
+      "variant": "cross_attention",
+      "auc": 0.7239042051248793,
+      "logloss": 0.045408857144292394,
+      "best_epoch": 0.7500761962816215,
+      "training_seconds": 634.8166237000005,
+      "peak_cuda_mb": 213.7197265625,
+      "parameters": 2003761,
+      "replay_max_error": 0.0,
+      "new_ad_rows": 53160,
+      "new_ad_clicks": 486,
+      "new_ad_auc": 0.6770302220772197,
+      "unseen_pair_rows": 215950,
+      "unseen_pair_clicks": 2172,
+      "unseen_pair_auc": 0.7059511020166925
+    },
+    {
+      "day": 20191116,
+      "variant": "ad_only",
+      "auc": 0.7244854761218533,
+      "logloss": 0.047716281652177804,
+      "best_epoch": 0.750182437363172,
+      "training_seconds": 315.3126534000003,
+      "peak_cuda_mb": 113.2978515625,
+      "parameters": 2447297,
+      "replay_max_error": 0.0,
+      "new_ad_rows": 31363,
+      "new_ad_clicks": 303,
+      "new_ad_auc": 0.6652589792140837,
+      "unseen_pair_rows": 192732,
+      "unseen_pair_clicks": 2012,
+      "unseen_pair_auc": 0.6995741534955534
+    },
+    {
+      "day": 20191116,
+      "variant": "cross_attention",
+      "auc": 0.7249465226718574,
+      "logloss": 0.0475398722336415,
+      "best_epoch": 1.0,
+      "training_seconds": 878.3601455000007,
+      "peak_cuda_mb": 218.4228515625,
+      "parameters": 2447297,
+      "replay_max_error": 0.0,
+      "new_ad_rows": 31363,
+      "new_ad_clicks": 303,
+      "new_ad_auc": 0.6687515274386422,
+      "unseen_pair_rows": 192732,
+      "unseen_pair_clicks": 2012,
+      "unseen_pair_auc": 0.702472201449441
+    }
+  ],
+  "comparisons": [
+    {
+      "day": 20191115,
+      "delta_auc": 0.004448542587534687,
+      "interval95": [
+        0.0013259227727771884,
+        0.008462472611205226
+      ],
+      "draws": 200,
+      "users": 8503,
+      "scope": "Exploratory paired user bootstrap on model-selection holdout"
+    },
+    {
+      "day": 20191116,
+      "delta_auc": 0.0004610465500041183,
+      "interval95": [
+        -0.002288183624730039,
+        0.003174316590626028
+      ],
+      "draws": 200,
+      "users": 8504,
+      "scope": "Exploratory paired user bootstrap on model-selection holdout"
+    }
+  ],
+  "seed": 42,
+  "previous_artifacts_used": false,
+  "final_test_used": false,
+  "source_setting": "offline raw source events at or before ad date"
+}

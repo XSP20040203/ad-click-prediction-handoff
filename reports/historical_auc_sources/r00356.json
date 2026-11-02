@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "runs": [
+    {
+      "day": 20191115,
+      "arm": "control",
+      "seed": 42,
+      "auc": 0.7383246728284034,
+      "logloss": 0.04485685488355315,
+      "rows": 424780,
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "arm": "din",
+      "seed": 42,
+      "auc": 0.7384324255059492,
+      "logloss": 0.04485034873387176,
+      "rows": 424780,
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "arm": "mean",
+      "seed": 42,
+      "auc": 0.7383619745144685,
+      "logloss": 0.04485211168035382,
+      "rows": 424780,
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191115,
+      "arm": "today_din",
+      "seed": 42,
+      "auc": 0.7384477803863129,
+      "logloss": 0.04485227610406716,
+      "rows": 424780,
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "arm": "control",
+      "seed": 42,
+      "auc": 0.7373452650943141,
+      "logloss": 0.04713856405174326,
+      "rows": 421983,
+      "maximum_replay_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "arm": "today_din",
+      "seed": 42,
+      "auc": 0.7371591848116332,
+      "logloss": 0.04714483728175857,
+      "rows": 421983,
+      "maximum_replay_error": 0.0
+    }
+  ],
+  "feature_audits": [
+    {
+      "day": 20191115,
+      "stat_probes": 720,
+      "maximum_stat_error": 2.409325770003079e-07,
+      "all_request_keys_match": true,
+      "normalized_topic_channels": true,
+      "train_rows": 1679557,
+      "valid_rows": 424780
+    },
+    {
+      "day": 20191116,
+      "stat_probes": 720,
+      "maximum_stat_error": 2.580038040989052e-07,
+      "all_request_keys_match": true,
+      "normalized_topic_channels": true,
+      "train_rows": 2104337,
+      "valid_rows": 421983
+    }
+  ],
+  "final_labels_available": false
+}

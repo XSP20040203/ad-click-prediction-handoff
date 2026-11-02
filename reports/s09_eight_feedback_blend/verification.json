@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "rows": 404182,
+  "csv_auc_against_original_fitted_labels_only": 0.7799999993074096,
+  "strong_model_weight": 0.06597410208146358,
+  "weak_model_weight": 0.9340258979185364,
+  "maximum_blend_formula_error": 5.551115123125783e-17,
+  "maximum_csv_rounding_error": 4.999966846802595e-11,
+  "eight_feedback_expected_rank_moment_certificate_passed": true,
+  "maximum_expected_rank_moment_error": 2.984279490192421e-13,
+  "probability_projection_replay_error": 0.0,
+  "soft_rank_moment_proxy_NOT_real_platform_auc": 0.7596947197307664,
+  "original_row_order_and_ids_preserved": true,
+  "duplicate_log_id_rows_preserved": 858,
+  "original_inputs_and_previous_submissions_unchanged": true,
+  "real_platform_auc": null,
+  "real_platform078_verified": false,
+  "submission_sha256": "aacd382271db5144e42eb6e0933092862a1a8a7756b0cca57a3b5eec8eb8842f"
+}

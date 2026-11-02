@@ -1,0 +1,91 @@
+{
+  "settings": {
+    "assumed_click_counts": [
+      2940,
+      3459,
+      3978
+    ],
+    "prior": "Actual scored v9 probabilities; unchanged from four-score inference",
+    "binary_seeds": [
+      91271,
+      81431
+    ],
+    "binary_auc_tolerance": 4e-06,
+    "opposite_queries": 20,
+    "opposite_seed": 701531,
+    "opposite_greedy_steps": 120,
+    "opposite_milp_attempts": 2,
+    "opposite_milp_seconds": 10.0
+  },
+  "generic_binary_settings": {
+    "score_decimals": 5,
+    "auc_match_tolerance": 4e-06,
+    "click_count_sensitivity_factors": [
+      0.85,
+      1.0,
+      1.15
+    ],
+    "seed_a": 91271,
+    "seed_c": 81431,
+    "maximum_greedy_steps": 240,
+    "milp_seconds_each": 15.0,
+    "milp_attempts": 3,
+    "scope": "Conditional estimates and compatible label hypotheses; not recovered ground truth"
+  },
+  "auc_versions": [
+    "v6",
+    "v7",
+    "v8",
+    "v9",
+    "old_best"
+  ],
+  "reported_auc": [
+    0.80817,
+    0.80581,
+    0.80745,
+    0.80856,
+    0.74404
+  ],
+  "scored_files_sha256": {
+    "v6": [
+      "output/best_nextday_full_v6/submission.csv",
+      "899f6f6f48bae40ec3920d7948ace3d26f478e839c865fbe3006c90c565f9e5f"
+    ],
+    "v7": [
+      "output/best_nextday_arch_v7/submission.csv",
+      "c44a9e803b8b4566b9bcef4e1bf85181c2ee00eee71a9f84474b73c619c121b9"
+    ],
+    "v8": [
+      "output/best_nextday_daystate_v8/submission.csv",
+      "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846"
+    ],
+    "v9": [
+      "output/platform_feedback_v9/submission_v9.csv",
+      "c55583694642524fbabe71b5a0d4d06e86582076e899d1087d1d9dfd73271a83"
+    ],
+    "old_best": [
+      "output/submission_best.csv",
+      "45d0571bd12d3176c56bbeb16704a938ed8683909169daffcd860206b057f828"
+    ]
+  },
+  "scores_apply_to_all_rows_confirmed_by_user": true,
+  "ordinary_global_auc_and_nearest_five_decimal_rounding_assumed": true,
+  "source_sha256": "a3dd2d445bd1d33a0e211fa08aaa2ce83e9a5ad25ca3aad72c5930ffc35219d4",
+  "verifier_sha256": "61a281c527903f8ac09eaca5115bf96f0d52b8e4813891bae660cf75819fbdee",
+  "specification_sha256": "b0b6d29f17ccc971b7a0ce82f4e84184d81c47b03ca9f33af209f79d68b23f30",
+  "generic_source_sha256": "11a92e5abbe96526df7090bbe54bb442272740c550c045a12a1c7558c2c13eb9",
+  "original_datasets_sha256": {
+    "train.csv": "3f1b4dc73a754c60df3df8fd6f4c13f76ee57bd3be03ded365aba69f6dca34ad",
+    "final_test.csv": "9478dfd16937919a30b4efe7b19b805c70196ca5d0c2c8561e37bdb0fdd42b59"
+  },
+  "old_output_files_sha256": {
+    "report.json": "d850f3de4237c016299843bdc9c551999159db0b00bfa0235e5a8ca8b6e9a5cd",
+    "protocol.json": "039914906f92e5744933599dabec732bcf98609e35b4f870089aa372f747cccb",
+    "inference_arrays.npz": "18bfd2b800ac97a770824009016b6c4ee3c41d5a7444135a27044f40a41ea127",
+    "estimated_labels_20191117.csv": "b5e84550f9b409f4de27bf31330e56e69c5b13af0dbff7f50671af6350de1dde",
+    "verification.json": "eb6e1e5bdb43625d6b4640bea7fab1152bc488ca6c2e949b637d7f1a1dc83478"
+  },
+  "model_prior_and_click_count_dependent": true,
+  "output_is_not_ground_truth": true,
+  "does_not_resume_paused_auc_goal": true
+}

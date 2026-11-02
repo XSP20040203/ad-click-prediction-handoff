@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "days": [
+    {
+      "day": 20191115,
+      "exact_auc_delta": 0.0002609763657807074,
+      "baseline": {
+        "auc": 0.7921069471244595,
+        "logloss": 0.04209056885646528,
+        "average_precision": 0.08257766982286839
+      },
+      "best_exact_blend": {
+        "candidate_weight": 0.05,
+        "auc": 0.7920961377953917,
+        "logloss": 0.04210289914400705,
+        "average_precision": 0.08221094789779224
+      },
+      "best_exact_blend_gain": -1.0809329067829054e-05,
+      "goal_met": false,
+      "seconds": 233.3960829000007,
+      "control_auc": 0.7759891108670615,
+      "exact_auc": 0.7762500872328422
+    }
+  ],
+  "day16_run": false,
+  "fixed_day15_blend_weight": 0.05,
+  "day16_fixed_weight_confirmation": null,
+  "persistent_bytes": 3426447,
+  "no_feature_cache_written": true,
+  "weights_saved": false,
+  "final_test_read": false,
+  "existing_best_preserved": true
+}

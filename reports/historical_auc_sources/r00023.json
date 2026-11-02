@@ -1,0 +1,24 @@
+{
+  "tag": "arch_recent1_day15",
+  "fixed_candidate_weights": [
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "blend_rule": "(1-weight)*count_corrected_baseline + weight*candidate_probability",
+  "baseline_path": "E:\\AI\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\nextday_goal_20261029\\duplicate_multiplicity\\day15_prediction.npy",
+  "baseline_auc": 0.7905480723412239,
+  "baseline_logloss": 0.04213764355222077,
+  "baseline_average_precision": 0.0827857924429125,
+  "validation_indices_exact_match": true,
+  "train_date_counts": {
+    "20191114": 382961
+  },
+  "training_rows": 382961,
+  "validation_rows": 424780,
+  "final_test_read": false,
+  "same_fixed_blend_weights_as_recent2": true
+}

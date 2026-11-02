@@ -1,0 +1,40 @@
+{
+  "baseline_auc": 0.7893219216708781,
+  "ranking_model_auc": 0.7714604891554537,
+  "baseline_path": "E:\\AI\\ml\\大作业上传\\analysis\\auc085_next\\evaluation\\day15_fixed_oof25_shared_blend.npy",
+  "blends": [
+    {
+      "rank_weight": 0.05,
+      "auc": 0.789513231028121,
+      "delta_from_baseline": 0.0001913093572428748
+    },
+    {
+      "rank_weight": 0.1,
+      "auc": 0.7894824767956496,
+      "delta_from_baseline": 0.0001605551247715331
+    },
+    {
+      "rank_weight": 0.2,
+      "auc": 0.7889982529484224,
+      "delta_from_baseline": -0.00032366872245570555
+    }
+  ],
+  "updated_baseline_auc": 0.7896107252197929,
+  "updated_blends": [
+    {
+      "rank_weight": 0.05,
+      "auc": 0.7897597055624472,
+      "delta_from_baseline": 0.0001489803426543146
+    },
+    {
+      "rank_weight": 0.1,
+      "auc": 0.7897012076998153,
+      "delta_from_baseline": 9.048248002241355e-05
+    },
+    {
+      "rank_weight": 0.2,
+      "auc": 0.7891883689805324,
+      "delta_from_baseline": -0.0004223562392605684
+    }
+  ]
+}

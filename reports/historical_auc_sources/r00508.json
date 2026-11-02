@@ -1,0 +1,42 @@
+{
+  "selection_date": 20191116,
+  "confirmation_date": 20191115,
+  "seed": 42,
+  "criteria": [
+    "highest primary-date validation AUC",
+    "lowest primary-date validation Logloss"
+  ],
+  "selected_variants": [
+    "B1",
+    "B4"
+  ],
+  "auc_winner": "B1",
+  "logloss_winner": "B4",
+  "primary_results": [
+    {
+      "variant": "B1",
+      "auc": 0.7221449104088776,
+      "logloss": 0.04767274314917787,
+      "parameter_count": 388129
+    },
+    {
+      "variant": "B2",
+      "auc": 0.7215974104682704,
+      "logloss": 0.04759605394524297,
+      "parameter_count": 320801
+    },
+    {
+      "variant": "B3",
+      "auc": 0.7218748748151412,
+      "logloss": 0.04758233491201174,
+      "parameter_count": 322436
+    },
+    {
+      "variant": "B4",
+      "auc": 0.7220317732785684,
+      "logloss": 0.047573202337539706,
+      "parameter_count": 326180
+    }
+  ],
+  "selection_uses_secondary_date_scores": false
+}

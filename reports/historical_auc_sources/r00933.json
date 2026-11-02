@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "independent_process": true,
+  "verification_pid": 20344,
+  "full_final_model_reload": true,
+  "rows": 404182,
+  "full_train_rows": 2526320,
+  "budget_rounds": 112,
+  "num_threads": 3,
+  "inference_batch_size": 25000,
+  "maximum_full_lgb_reload_error": 0.0,
+  "maximum_ensemble_replay_error": 0.0,
+  "maximum_csv_rounding_error": {
+    "result.csv": 4.999995828055756e-07,
+    "submission.csv": 4.999995828055756e-07
+  },
+  "maximum_detail_error": {
+    "pctr": 0.0,
+    "dcn_pctr": 0.0,
+    "tree_pctr": 0.0,
+    "lgb_pctr": 0.0
+  },
+  "original_ids_and_row_order": true,
+  "duplicate_log_id_rows_preserved": 858,
+  "submission_ids_are_zero_based_original_row_positions": true,
+  "utf8_no_bom": true,
+  "six_decimals": true,
+  "all_final_labels_forced_to_minus_one": true,
+  "final_labels_read": false,
+  "final_labels_available": false,
+  "final_auc": null,
+  "input_model_source_and_export_hashes_match": true,
+  "existing_dcn_tree_models_and_predictions_unchanged": true,
+  "development_auc": {
+    "20191115": {
+      "lgb_auc": 0.7667657472867364,
+      "dcn_tree_equal_auc": 0.7858631196467175,
+      "fixed_40_40_20_auc": 0.786473152710307,
+      "lgb_best_iteration": 117
+    },
+    "20191116": {
+      "lgb_auc": 0.7698131086471949,
+      "dcn_tree_equal_auc": 0.7917860844136609,
+      "fixed_40_40_20_auc": 0.79243244179162,
+      "lgb_best_iteration": 107
+    }
+  },
+  "warnings": [
+    "开发日期15/16已反复用于模型和权重选型，不是独立盲测；开发AUC不代表final AUC。",
+    "源域新闻数据、当前日曝光和广告历史快照采用所提供整日离线输入；不代表逐条在线曝光前可用。",
+    "final广告标签不可用且不读取，所有final标签强制为-1；final_auc=None，不能声称final达标或AUC达到0.85。"
+  ],
+  "verification_seconds": 8.792691500000046
+}

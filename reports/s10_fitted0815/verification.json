@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "rows": 404182,
+  "fitted_label_positives_assumed": 3459,
+  "exported_csv_auc_against_fitted_labels_only": 0.814999999671741,
+  "maximum_independent_formula_error": 1.1102230246251565e-16,
+  "maximum_csv_rounding_error": 4.995931446316604e-11,
+  "original_ids_and_final_row_order_preserved": true,
+  "duplicate_log_id_rows_preserved": 858,
+  "source_files_unchanged": true,
+  "same_fitted_labels_select_and_score_the_adjustment": true,
+  "real_platform_auc": null,
+  "real_platform0815_verified": false,
+  "submission_sha256": "78661ff46ac433de4fde6a4d6150ff0a9998287753163cef36c33682af2e83ef"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "validation_predictions_rescored",
+  "auc": 0.8501696992451522,
+  "logloss": 0.04060095032198841,
+  "average_precision": 0.07889447860247806,
+  "rows": 505264,
+  "clicks": 4271,
+  "members": {
+    "random20_catboost_aligned_lowalpha_d8": 0.5,
+    "random20_catboost_extra_d8": 0.5
+  },
+  "validation_strategy": "Original stratified random80/20 seed42, unchanged 505264 rows",
+  "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+  "valid_indices_sha256": "96c16a33ba7598469f8fd8bb38fd7272f843d89e88325fa0a3a4a496776bbd12",
+  "member_model_sha256": {
+    "random20_catboost_aligned_lowalpha_d8": "8dc40f4cbab0bc3c475057fd3e7fa9e12b623540ca3992d714510d8ee92ebdd7",
+    "random20_catboost_extra_d8": "df1b2098d4e0143d444111f83ee2e6334f01f945f8f71910bcd1e4d0c59324d6"
+  },
+  "threshold": 0.85,
+  "threshold_exceeded_on_this_holdout": true,
+  "selection_scope": "Exploratory blend selected on repeatedly used validation predictions",
+  "final_test_labels_available": false,
+  "final_test_auc": null,
+  "future_day_threshold_achieved": false,
+  "limitations": [
+    "Random holdout includes same-day target statistics unavailable on a new future date",
+    "This is not evidence final AUC exceeds .85",
+    "Chronological tree control scored .722531; existing chronological DCN about .734"
+  ]
+}

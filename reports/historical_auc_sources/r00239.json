@@ -1,0 +1,17 @@
+{
+  "status": "complete_and_verified",
+  "auc": 0.8459024124284442,
+  "logloss": 0.04094241204666097,
+  "average_precision": 0.07551476353318198,
+  "mean_prediction": 0.006816709948999833,
+  "best_iteration": 2402,
+  "trees": 2403,
+  "features": 177,
+  "categorical_fields": 39,
+  "elapsed_seconds": 305.58177389999946,
+  "maximum_reload_error": 0.0,
+  "model_sha256": "8811cf9e4596000ad874b0417d7cc16f0b68b2f52e56adb4a258b9456f5b1cff",
+  "validation_strategy": "random20",
+  "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+  "final_test_used": false
+}

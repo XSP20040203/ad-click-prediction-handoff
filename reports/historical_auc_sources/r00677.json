@@ -1,0 +1,13 @@
+{
+  "variant": "mse",
+  "day15_scores": {
+    "auc": 0.7926116246048903,
+    "logloss": 0.042130757140990856,
+    "average_precision": 0.0826038624208151,
+    "mean_probability": 0.00908532658460854
+  },
+  "rule": "Choose higher day15 AUC of real MSE/news teacher views before any day16 bridge results; permuted controls cannot be recommended",
+  "minimum_gain_each_day": 0.003,
+  "maximum_logloss_worsening_each_day": 0.0001,
+  "comparison_sha256": "75ae4f55786d93599054f88144d0af3f57772ad56e0c5715a825356f8fa4e732"
+}

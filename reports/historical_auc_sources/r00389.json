@@ -1,0 +1,17 @@
+{
+  "variant": "query_permuted",
+  "scores": {
+    "auc": 0.7848172690699573,
+    "logloss": 0.044910860150068774,
+    "average_precision": 0.07958469679424636,
+    "mean_probability": 0.010283376627302821
+  },
+  "rounded6_scores": {
+    "auc": 0.7848178276228245,
+    "logloss": 0.044910841023544014,
+    "average_precision": 0.07958405707636554,
+    "mean_probability": 0.010283375998559184
+  },
+  "auc_gain": -0.01642399828018104,
+  "prediction_sha256": "2deb535c37ecba12b468d02b3184d5e4d7e1277b71d7abe30f076649cec5a121"
+}

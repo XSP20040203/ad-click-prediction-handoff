@@ -1,0 +1,38 @@
+{
+  "goal": "Whole-next-day ROC AUC >0.85",
+  "goal_met": false,
+  "verified_fixed_development": {
+    "20191115": {"auc": 0.7921069471244595, "combination": "0.7*(0.9*(0.8*old+0.2*gated500)+0.1*allocated)+0.3*gated166"},
+    "20191116": {"auc": 0.7998466417345275, "combination": "same fixed formula"}
+  },
+  "latest_controls": {
+    "gated166_day15": 0.7869607186764833,
+    "gated166_day16": 0.792717644663761,
+    "gated500_scale01_day15": 0.7832809901242468,
+    "gated166_scale01_day15": 0.7833699167670409,
+    "gated166_maskclose_day15": 0.7853624018360453,
+    "gated_slowids_day15": 0.7812068579652834,
+    "set_allocated_day15": 0.7752708133639621,
+    "set_allocated_day16": 0.7817721155585841
+  },
+  "interrupted": {
+    "gated_dropout20_day15": "Recovered checkpoint CPU verified; training interrupted at1.25epochs, no normal completion metrics"
+  },
+  "completed_additional_controls": {
+    "gated166_seed2026_day15": 0.7847655007394301,
+    "gated166_seed2026_day16": 0.7896774359502997,
+    "gated166_transition_day15": 0.7849078440111881,
+    "gated166_transition_day16": 0.7906195570226866,
+    "transition_features_build_verified": true,
+    "seed_and_transition_fixed_blends_confirmed_gain": false
+  },
+  "piecewise_numeric_control": {"status": "complete_and_verified", "day15_auc": 0.7810974379342418, "adopted": false},
+  "running_training": [],
+  "domain_invariant_control": {"status": "complete_and_verified", "day15_auc": 0.7832660988281243, "adopted": false},
+  "final_verification": "independent strongest fixed blend and core166 checkpoint verification passed",
+  "remaining_gap_day16_to_085": 0.0501533582654725,
+  "current_final_submission": "output/best_nextday_full_v6/submission.csv",
+  "current_final_submission_unchanged": true,
+  "final_auc": null,
+  "scope": "Reused development dates; checkpoint selection on held labels; complete supplied same-day offline input assumption"
+}

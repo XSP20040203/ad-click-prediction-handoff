@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "models_independently_replayed": 9,
+  "rows": 404182,
+  "maximum_prediction_reload_error": 0.0,
+  "maximum_objective_gradient": 1.520171199327937e-10,
+  "maximum_csv_rounding_error": 4.999997464671946e-11,
+  "day16_real_auc_frozen_v9": 0.7999730088636126,
+  "day16_real_auc_true_only": 0.8012631979333472,
+  "day16_real_auc_selected_pseudo_arm": 0.8012519960592928,
+  "selected_pseudo_weight": 0.01,
+  "day17_auc_against_SYNTHETIC_TRAINING_LABELS_ONLY": 0.8074506370498551,
+  "real_day17_platform_auc": null,
+  "real083_target_verified": false,
+  "original_datasets_fitted_labels_and_best_submission_unchanged": true,
+  "duplicate_final_log_id_rows_preserved": 858,
+  "submission_sha256": "11a53775445f5288b0189fdbb315e81978b539ac5d7553a8b31eee7caf99240d"
+}

@@ -1,0 +1,80 @@
+{
+  "settings": {
+    "assumed_click_count": 3459,
+    "auc_tolerance": 4e-06,
+    "temperatures": [
+      0.5,
+      0.25,
+      0.125,
+      0.0625,
+      0.03125
+    ],
+    "iterations_per_temperature": 80,
+    "seeds": [
+      12071,
+      83519
+    ],
+    "maximum_repair_swaps": 180,
+    "preference": "Lowest actual v9 Bernoulli NLL among searched six-score feasible candidates",
+    "not_a_proven_global_optimum": true
+  },
+  "versions": [
+    "v6",
+    "v7",
+    "v8",
+    "v9",
+    "old_best",
+    "submission_3"
+  ],
+  "reported_auc": [
+    0.80817,
+    0.80581,
+    0.80745,
+    0.80856,
+    0.74404,
+    0.7059
+  ],
+  "scored_files": {
+    "v6": [
+      "output/best_nextday_full_v6/submission.csv",
+      "899f6f6f48bae40ec3920d7948ace3d26f478e839c865fbe3006c90c565f9e5f"
+    ],
+    "v7": [
+      "output/best_nextday_arch_v7/submission.csv",
+      "c44a9e803b8b4566b9bcef4e1bf85181c2ee00eee71a9f84474b73c619c121b9"
+    ],
+    "v8": [
+      "output/best_nextday_daystate_v8/submission.csv",
+      "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846"
+    ],
+    "v9": [
+      "output/platform_feedback_v9/submission_v9.csv",
+      "c55583694642524fbabe71b5a0d4d06e86582076e899d1087d1d9dfd73271a83"
+    ],
+    "old_best": [
+      "output/submission_best.csv",
+      "45d0571bd12d3176c56bbeb16704a938ed8683909169daffcd860206b057f828"
+    ],
+    "submission_3": [
+      "E:\\浏览器下载\\submission (3).csv",
+      "1ec5b7e1e47bdb108202bc12e2ce976625f4f06d7b20a45337f3797f670b2978"
+    ]
+  },
+  "original_datasets_sha256": {
+    "train.csv": "3f1b4dc73a754c60df3df8fd6f4c13f76ee57bd3be03ded365aba69f6dca34ad",
+    "final_test.csv": "9478dfd16937919a30b4efe7b19b805c70196ca5d0c2c8561e37bdb0fdd42b59"
+  },
+  "generic_source_sha256": "11a92e5abbe96526df7090bbe54bb442272740c550c045a12a1c7558c2c13eb9",
+  "source_sha256": "2822350342ef63dcdd8bbe590b3453a09b639c517b9e4b41c2b21573bb3502e0",
+  "verifier_sha256": "9be9b6035e2b89fb37fc1f6edcbeba36e04abb68b722d167c15fe039e346879e",
+  "specification_sha256": "5cae4b875f5c5cb164019ac062d6c64806c86084f03701f879faa195c78101c4",
+  "initial_checkpoint": "output\\fitted_labels_six_scores_20191117\\initial_checkpoint.npz",
+  "initial_checkpoint_sha256": "b6a7cccd338b7d022b828ee5f2612cface9232090b86bab1469515a8af01ae0a",
+  "six_score_input_binding": "output\\fitted_labels_six_scores_v2_20191117\\protocol.json",
+  "six_score_input_binding_sha256": "9c709b4bd6b8576b9c02d71775ed6dd197d72e0bde982d2805752467292ab394",
+  "all_final_rows_scored_confirmed_by_user": true,
+  "nearest_five_decimal_ordinary_auc_assumed": true,
+  "true_positive_count_unknown": true,
+  "labels_are_fitted_hypotheses_not_observations": true,
+  "paused_unbounded_goal_not_resumed": true
+}

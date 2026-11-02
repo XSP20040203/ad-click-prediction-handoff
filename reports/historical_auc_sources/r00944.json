@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "model_selection": "phase6_signed_contrast__replace_tabm32",
+  "validation_auc": 0.7769866189274209,
+  "validation_strategy": "stratified random 80/20, seed42; not a held-out future-day AUC",
+  "ensemble": {
+    "dcn": 0.5,
+    "signed": 0.5
+  },
+  "checkpoints": {
+    "dcn": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\random20_rich_oof_statistics\\bounded\\seed42\\model.pt",
+      "sha256": "bffe7c54f8d05ee0c58b669a01e142a37ff7a95ff72495047f9110d0cbc0f047",
+      "preprocessing_cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20",
+      "validation_metrics": {
+        "auc": 0.769227665997684,
+        "logloss": 0.04443999147413642,
+        "average_precision": 0.03707193963995874,
+        "mean_prediction": 0.007779447206832385
+      }
+    },
+    "signed": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\phase6_signed_contrast\\signed\\seed42\\model.pt",
+      "sha256": "54c9a2d2bf50ff8a24487178e0ffb236458764b3512982b2010d38eb4d0baeb0",
+      "preprocessing_cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+      "validation_metrics": {
+        "auc": 0.7722660814821017,
+        "logloss": 0.044190554423384036,
+        "average_precision": 0.03952908597567015,
+        "mean_prediction": 0.008193455625910619
+      }
+    }
+  },
+  "rows": 404182,
+  "test_day": 20191117,
+  "final_test_auc": null,
+  "final_test_auc_note": "No advertisement labels supplied; only predictions and file integrity verified",
+  "preprocessing_verification": {
+    "dcn": {
+      "rows": 2684,
+      "categories_exact": true,
+      "sequences_exact": true,
+      "maximum_numeric_error": 0.0,
+      "worst_numeric_field": "hist_click_task_match"
+    },
+    "signed": {
+      "rows": 2684,
+      "categories_exact": true,
+      "sequences_exact": true,
+      "maximum_numeric_error": 0.0,
+      "worst_numeric_field": "hist_click_task_match"
+    }
+  },
+  "checkpoint_replay": {
+    "dcn": {
+      "rows": 2048,
+      "maximum_probability_error": 1.043081283569336e-07,
+      "precision": "float32"
+    },
+    "signed": {
+      "rows": 2048,
+      "maximum_probability_error": 0.0,
+      "precision": "CUDA float16 autocast; residual and probability mean float32"
+    }
+  },
+  "preprocessing_rule": "Saved vocabulary, scalers, training-only target statistics, and frozen graph buffers; no refitting on final",
+  "source_rule": "Strict-past train_feeds features plus matched same-day test_feeds profiles supplied by the offline task",
+  "same_day_source_assumption": "Full source-day auxiliary snapshot is available, matching the selected validation experiment",
+  "submission_columns": [
+    "id",
+    "pctr"
+  ],
+  "id_rule": "0-based original final_test.csv row number, not log_id",
+  "raw_row_order_verified": true,
+  "identifier_columns_verified": [
+    "log_id",
+    "user_id",
+    "pt_d"
+  ],
+  "probability": {
+    "minimum": 0.00010509963613003492,
+    "maximum": 0.6330900192260742,
+    "mean": 0.01087667141109705,
+    "quantiles": {
+      "0.01": 0.0002966647403081879,
+      "0.1": 0.0009133582934737206,
+      "0.5": 0.00696569075807929,
+      "0.9": 0.023168718442320824,
+      "0.99": 0.06807362526655197
+    }
+  },
+  "files": {
+    "submission": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\submission_best.csv",
+    "detail": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\final_predictions_best_with_ids.csv",
+    "submission_sha256": "45d0571bd12d3176c56bbeb16704a938ed8683909169daffcd860206b057f828",
+    "detail_sha256": "b506314244dadc0db3b739cd23b9c142eb899029980235c5ca5a319f371096d2"
+  },
+  "inputs": {
+    "final_test.csv": {
+      "bytes": 82684329,
+      "sha256": "9478dfd16937919a30b4efe7b19b805c70196ca5d0c2c8561e37bdb0fdd42b59"
+    },
+    "test_feeds.csv": {
+      "bytes": 71755288,
+      "sha256": "cce1b0fa2929190642cdc724cd2342edc755b1847a87fc5acc8c26469ddcdbd2"
+    }
+  },
+  "elapsed_seconds": 40.52309369999966
+}

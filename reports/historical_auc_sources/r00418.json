@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "verified_model_count": 6,
+  "evaluator_sha256": "f34b70ebe27e244ce38103be21514712e506a3506073dada33645c6cd485a359",
+  "secondary_policy_sha256": "101172c57001757ba6845b2fdd796246a12672090b112141ac76a30991106452",
+  "goal_auc_both_days": 0.85,
+  "goal_met": false,
+  "best_common_model": "frozen_candidate",
+  "best_common_min_auc": 0.7926443086415286,
+  "highest_each_day": {
+    "20191115": 0.7927254574458098,
+    "20191116": 0.8004121944890122
+  },
+  "graph_checks": [
+    {
+      "run": "detached_cohort_v1_day15_seed42",
+      "status": "passed",
+      "task_day_nodes": 24506,
+      "edges": 821251,
+      "construction": "Independent pandas duplicate removal and MultiIndex lookup"
+    },
+    {
+      "run": "learned_cohort_v1_day15_seed42",
+      "status": "passed",
+      "task_day_nodes": 24506,
+      "edges": 821251,
+      "construction": "Independent pandas duplicate removal and MultiIndex lookup"
+    }
+  ],
+  "final_test_auc": null,
+  "limitations": "Repeated development dates and model selection; paired intervals are exploratory"
+}

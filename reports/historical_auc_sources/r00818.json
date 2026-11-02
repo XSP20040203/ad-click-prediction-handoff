@@ -1,0 +1,55 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191116,
+  "variant": "all",
+  "fixed_epoch": {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7908754978237253,
+    "logloss": 0.044402548826461684,
+    "average_precision": 0.08171218736843937,
+    "mean_probability": 0.009804867208003998,
+    "training_objective": 0.05292904352790748,
+    "seconds": 129.64454690000002
+  },
+  "best_checkpoint": {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7908754978237253,
+    "logloss": 0.044402548826461684,
+    "average_precision": 0.08171218736843937,
+    "mean_probability": 0.009804867208003998,
+    "training_objective": 0.05292904352790748,
+    "seconds": 129.64454690000002
+  },
+  "replacement_scores": {
+    "auc": 0.8009889227949454,
+    "logloss": 0.04391396527968552,
+    "average_precision": 0.08728368075493675,
+    "mean_probability": 0.00962016341148342
+  },
+  "reference_scores": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "auc_gain_vs_reference": -0.0002523445551929626,
+  "initial_backbone_sha256": "45548fa3a07fac44d6d18ccc30096a34c967c37f7e0e8f71b8f0f89fdcaa098f",
+  "initial_random_encoder_sha256": "92523dae7492807e6b9ce55f2a636352d735f980d43a0863a61ef4f871b59252",
+  "initial_encoder_sha256": "0182694e0af72ba731c2ea8631039c74fffaa418a03e1eb0ce3bb01821c77848",
+  "row_order_sha256": "f7b59138e9fd8fd7cf8def7c276c5500d1d03ad1c0c0726d80e9c64a94c4e3cb",
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "training_rows_seen": 2104337,
+  "ad_held_labels_fit": false,
+  "files_sha256": {
+    "best_model.pt": "e5f12924ff15692bfaec603c43ef45b4a5403d8d613561b478ae2153fffe507c",
+    "final_model.pt": "e5f12924ff15692bfaec603c43ef45b4a5403d8d613561b478ae2153fffe507c",
+    "best_prediction.npy": "00a1bb2f9d12990c178ac06c5ed4454690819847ccd249244ce3fc034ba63253",
+    "final_prediction.npy": "00a1bb2f9d12990c178ac06c5ed4454690819847ccd249244ce3fc034ba63253",
+    "replacement_prediction.npy": "60515260c7d3125381cb611c47947cfcc466d6dfe49d6bc68f64992393d164fd"
+  }
+}

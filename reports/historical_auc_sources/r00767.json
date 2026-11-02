@@ -1,0 +1,239 @@
+{
+  "status": "complete",
+  "evidence": "verified server checkpoints and saved holdout predictions",
+  "uncertainty_scope": "Exploratory paired user bootstrap on reused model-selection holdouts; one seed; not independent final-test evidence",
+  "paired_comparisons": [
+    {
+      "method": "paired bootstrap of users within one future-day validation; exploratory, reused holdout",
+      "users": 8503,
+      "draws": 200,
+      "auc_change": -0.00022564289129811677,
+      "interval_95": [
+        -0.0024588206365397216,
+        0.0023981267266176445
+      ],
+      "date": 20191115
+    },
+    {
+      "method": "paired bootstrap of users within one future-day validation; exploratory, reused holdout",
+      "users": 8504,
+      "draws": 200,
+      "auc_change": 0.0003182801161324411,
+      "interval_95": [
+        -0.00021072002526967282,
+        0.0007935022106733997
+      ],
+      "date": 20191116
+    }
+  ],
+  "slices": [
+    {
+      "date": 20191115,
+      "group": "seen_task",
+      "rows": 371620,
+      "clicks": 3037,
+      "static_auc": 0.7325514011370071,
+      "temporal_auc": 0.7322703556893037,
+      "auc_change": -0.0002810454477034652
+    },
+    {
+      "date": 20191115,
+      "group": "unseen_task",
+      "rows": 53160,
+      "clicks": 486,
+      "static_auc": 0.6719367368913002,
+      "temporal_auc": 0.6696379868032127,
+      "auc_change": -0.0022987500880874423
+    },
+    {
+      "date": 20191115,
+      "group": "seen_user_task_pair",
+      "rows": 208830,
+      "clicks": 1351,
+      "static_auc": 0.738484642514845,
+      "temporal_auc": 0.7404616059009248,
+      "auc_change": 0.0019769633860797775
+    },
+    {
+      "date": 20191115,
+      "group": "unseen_user_task_pair",
+      "rows": 215950,
+      "clicks": 2172,
+      "static_auc": 0.7055816114691327,
+      "temporal_auc": 0.703990543355875,
+      "auc_change": -0.0015910681132577098
+    },
+    {
+      "date": 20191115,
+      "group": "train_zero_click_user",
+      "rows": 103064,
+      "clicks": 935,
+      "static_auc": 0.7206496837411719,
+      "temporal_auc": 0.7237146760443423,
+      "auc_change": 0.0030649923031703663
+    },
+    {
+      "date": 20191115,
+      "group": "train_clicked_user",
+      "rows": 321716,
+      "clicks": 2588,
+      "static_auc": 0.7284750983863408,
+      "temporal_auc": 0.7263330684693843,
+      "auc_change": -0.002142029916956556
+    },
+    {
+      "date": 20191115,
+      "group": "recent_history_0_days",
+      "rows": 0,
+      "clicks": 0,
+      "static_auc": null,
+      "temporal_auc": null,
+      "auc_change": null
+    },
+    {
+      "date": 20191115,
+      "group": "recent_history_1_day",
+      "rows": 172,
+      "clicks": 2,
+      "static_auc": null,
+      "temporal_auc": null,
+      "auc_change": null
+    },
+    {
+      "date": 20191115,
+      "group": "recent_history_2plus_days",
+      "rows": 424608,
+      "clicks": 3521,
+      "static_auc": 0.72472309761902,
+      "temporal_auc": 0.7245348694443773,
+      "auc_change": -0.0001882281746427017
+    },
+    {
+      "date": 20191116,
+      "group": "seen_task",
+      "rows": 390620,
+      "clicks": 3421,
+      "static_auc": 0.7291067162002527,
+      "temporal_auc": 0.7294795933702575,
+      "auc_change": 0.0003728771700047817
+    },
+    {
+      "date": 20191116,
+      "group": "unseen_task",
+      "rows": 31363,
+      "clicks": 303,
+      "static_auc": 0.6775639186584466,
+      "temporal_auc": 0.6769595311108703,
+      "auc_change": -0.0006043875475763016
+    },
+    {
+      "date": 20191116,
+      "group": "seen_user_task_pair",
+      "rows": 229251,
+      "clicks": 1712,
+      "static_auc": 0.7390018109455859,
+      "temporal_auc": 0.739710055815429,
+      "auc_change": 0.000708244869843111
+    },
+    {
+      "date": 20191116,
+      "group": "unseen_user_task_pair",
+      "rows": 192732,
+      "clicks": 2012,
+      "static_auc": 0.706383943611819,
+      "temporal_auc": 0.7062551872594133,
+      "auc_change": -0.00012875635240572336
+    },
+    {
+      "date": 20191116,
+      "group": "train_zero_click_user",
+      "rows": 68667,
+      "clicks": 816,
+      "static_auc": 0.7160706320596948,
+      "temporal_auc": 0.716181285781619,
+      "auc_change": 0.0001106537219242032
+    },
+    {
+      "date": 20191116,
+      "group": "train_clicked_user",
+      "rows": 353316,
+      "clicks": 2908,
+      "static_auc": 0.7323516070768925,
+      "temporal_auc": 0.7327107600322353,
+      "auc_change": 0.0003591529553428341
+    },
+    {
+      "date": 20191116,
+      "group": "recent_history_0_days",
+      "rows": 0,
+      "clicks": 0,
+      "static_auc": null,
+      "temporal_auc": null,
+      "auc_change": null
+    },
+    {
+      "date": 20191116,
+      "group": "recent_history_1_day",
+      "rows": 71,
+      "clicks": 5,
+      "static_auc": null,
+      "temporal_auc": null,
+      "auc_change": null
+    },
+    {
+      "date": 20191116,
+      "group": "recent_history_2plus_days",
+      "rows": 421912,
+      "clicks": 3719,
+      "static_auc": 0.724989404615647,
+      "temporal_auc": 0.7253014405920782,
+      "auc_change": 0.00031203597643125747
+    }
+  ],
+  "trajectories": [
+    {
+      "date": 20191115,
+      "variant": "static",
+      "best_epoch": 1.0,
+      "best_auc": 0.7247855404215537,
+      "last_epoch": 2.0,
+      "last_auc": 0.7186751739954123,
+      "auc_drop_after_peak": -0.006110366426141489,
+      "train_logloss_at_peak": 0.0459247861090606,
+      "train_logloss_at_end": 0.0449664306946251
+    },
+    {
+      "date": 20191115,
+      "variant": "temporal",
+      "best_epoch": 0.7500761962816215,
+      "best_auc": 0.7245598975302556,
+      "last_epoch": 1.7500761962816216,
+      "last_auc": 0.7200163673402608,
+      "auc_drop_after_peak": -0.004543530189994871,
+      "train_logloss_at_peak": 0.0463565992269391,
+      "train_logloss_at_end": 0.0445898994977507
+    },
+    {
+      "date": 20191116,
+      "variant": "static",
+      "best_epoch": 0.750182437363172,
+      "best_auc": 0.7251277730772737,
+      "last_epoch": 1.750182437363172,
+      "last_auc": 0.7173255416423903,
+      "auc_drop_after_peak": -0.007802231434883455,
+      "train_logloss_at_peak": 0.0462448587819291,
+      "train_logloss_at_end": 0.0446473371996103
+    },
+    {
+      "date": 20191116,
+      "variant": "temporal",
+      "best_epoch": 0.750182437363172,
+      "best_auc": 0.7254460531934062,
+      "last_epoch": 1.750182437363172,
+      "last_auc": 0.7173749202839128,
+      "auc_drop_after_peak": -0.00807113290949335,
+      "train_logloss_at_peak": 0.0462408456700732,
+      "train_logloss_at_end": 0.0446165128079232
+    }
+  ]
+}

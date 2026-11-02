@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "validation_rows": 505264,
+  "maximum_probability_error": 0.0,
+  "persisted_feature_state_replayed": true,
+  "batch_size": 25000,
+  "model_sha256": "ae5dc96e3c0006ce851d9a5b650edf8133ccc3ac915d73945f18c4b26e492812",
+  "auc": 0.8493547499517282,
+  "logloss": 0.04057416844493422,
+  "final_test_used": false
+}

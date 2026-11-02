@@ -1,0 +1,10 @@
+{
+  "method": "paired bootstrap of users within one future-day validation; exploratory, reused holdout",
+  "users": 8504,
+  "draws": 200,
+  "auc_change": 0.0003182801161324411,
+  "interval_95": [
+    -0.00021072002526967282,
+    0.0007935022106733997
+  ]
+}

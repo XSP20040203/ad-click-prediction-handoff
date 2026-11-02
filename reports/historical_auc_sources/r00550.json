@@ -1,0 +1,75 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191116,
+  "leaves": 7,
+  "rounds": 499,
+  "early_stopping": false,
+  "train_user_days": 42832,
+  "valid_user_days": 8504,
+  "training_clicks": 17630,
+  "valid_rows": 421983,
+  "feature_count": 119,
+  "params": {
+    "objective": "poisson",
+    "metric": "poisson",
+    "learning_rate": 0.03,
+    "num_leaves": 7,
+    "min_data_in_leaf": 150,
+    "lambda_l2": 10.0,
+    "max_bin": 63,
+    "feature_fraction": 0.9,
+    "verbosity": -1,
+    "num_threads": 2,
+    "seed": 42,
+    "deterministic": true,
+    "force_col_wise": true,
+    "feature_pre_filter": false,
+    "cat_smooth": 20.0,
+    "cat_l2": 20.0
+  },
+  "uncorrected_group_model_row_metrics": {
+    "auc": 0.6448426958987882,
+    "logloss": 0.04931022154933034,
+    "average_precision": 0.016745402897358826,
+    "mean_prediction": 0.008619924721528194
+  },
+  "base_row_metrics": {
+    "auc": 0.797183233748322,
+    "logloss": 0.044074475418452594,
+    "average_precision": 0.08570812966676367,
+    "mean_prediction": 0.009469893574555535
+  },
+  "group_count_metrics": {
+    "poisson_deviance": 0.9984803373690447,
+    "mae": 0.5382662602656134,
+    "pearson_count_correlation": 0.3549653258210616,
+    "any_click_auc": 0.6755094016548697,
+    "actual_clicks": 3724,
+    "expected_clicks": 3637.4616937646315,
+    "user_days": 8504,
+    "click_user_days": 2622
+  },
+  "base_count_metrics": {
+    "poisson_deviance": 0.9187727620922144,
+    "mae": 0.5189099447870837,
+    "pearson_count_correlation": 0.4679743385781631,
+    "any_click_auc": 0.7268700538508284,
+    "actual_clicks": 3724,
+    "expected_clicks": 3996.134100271668,
+    "user_days": 8504,
+    "click_user_days": 2622
+  },
+  "corrections": {
+    "0.1": {
+      "auc": 0.7971520048649107,
+      "logloss": 0.0440832513107183,
+      "average_precision": 0.08563815803074634,
+      "mean_prediction": 0.009333054952393498
+    }
+  },
+  "maximum_reload_error": 0.0,
+  "model_sha256": "27120d23ab480fdbe927aab37cbc8d464eb547723fa4bfdfd071f27bb5e9d348",
+  "seconds": 3.540171900000132,
+  "validation_indices_sha256": "b01f617acbe53d3079eb1154fd4ad9f10330dd0b10d1d0e8cd1838d0f84681bf",
+  "final_labels_used": false
+}

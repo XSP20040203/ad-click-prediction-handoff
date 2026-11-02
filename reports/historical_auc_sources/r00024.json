@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "plan_path": "E:\\AI\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\architecture_goal_20261029\\recent2_day15_plan.json",
+  "candidate_metrics": {
+    "status": "complete_and_verified",
+    "day": 20191115,
+    "auc": 0.7618890553414612,
+    "logloss": 0.04344296558957718,
+    "average_precision": 0.061760483706557796,
+    "best_iteration": 141,
+    "seconds": 149.67032370000015,
+    "maximum_reload_error": 0.0,
+    "features": 524,
+    "train_rows": 795809,
+    "validation_rows": 424780,
+    "validation_clicks": 3523,
+    "goal_auc": 0.85,
+    "goal_met": false,
+    "final_auc": null,
+    "final_labels_available": false
+  },
+  "train_date_counts": {
+    "20191113": 412848,
+    "20191114": 382961
+  },
+  "validation_indices_exact_match": true,
+  "blend_results": [
+    {
+      "candidate_weight": 0.0,
+      "auc": 0.7905480723412239,
+      "auc_delta": 0.0,
+      "logloss": 0.04213764355222077,
+      "average_precision": 0.0827857924429125
+    },
+    {
+      "candidate_weight": 0.05,
+      "auc": 0.7902578551298989,
+      "auc_delta": -0.0002902172113250501,
+      "logloss": 0.042156148079543466,
+      "average_precision": 0.08260616439107238
+    },
+    {
+      "candidate_weight": 0.1,
+      "auc": 0.7898794713383149,
+      "auc_delta": -0.0006686010029089973,
+      "logloss": 0.042178714708209185,
+      "average_precision": 0.08245285065704944
+    },
+    {
+      "candidate_weight": 0.25,
+      "auc": 0.7882100990949655,
+      "auc_delta": -0.0023379732462583958,
+      "logloss": 0.04227047798102675,
+      "average_precision": 0.0812665497853321
+    },
+    {
+      "candidate_weight": 0.5,
+      "auc": 0.7834783998592924,
+      "auc_delta": -0.007069672481931577,
+      "logloss": 0.04250709978646478,
+      "average_precision": 0.0776599877589033
+    },
+    {
+      "candidate_weight": 0.75,
+      "auc": 0.7756605873125438,
+      "auc_delta": -0.014887485028680092,
+      "logloss": 0.0428694945300815,
+      "average_precision": 0.07133019088171531
+    },
+    {
+      "candidate_weight": 1.0,
+      "auc": 0.7618890553414612,
+      "auc_delta": -0.0286590169997627,
+      "logloss": 0.04344296558957718,
+      "average_precision": 0.061760483706557796
+    }
+  ],
+  "best_fixed_blend": {
+    "candidate_weight": 0.0,
+    "auc": 0.7905480723412239,
+    "auc_delta": 0.0,
+    "logloss": 0.04213764355222077,
+    "average_precision": 0.0827857924429125
+  },
+  "promising_gt_0_001": false,
+  "scope": "Reused development day; candidate early stopping selected on day15 labels; no blind-test claim",
+  "final_test_read": false
+}

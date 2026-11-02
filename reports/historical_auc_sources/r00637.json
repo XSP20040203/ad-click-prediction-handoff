@@ -1,0 +1,77 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191116,
+  "mode": "control",
+  "seed": 42,
+  "train_rows": 1653521,
+  "train_clicks": 13962,
+  "fixed_epochs_completed": 1,
+  "optimizer_rows_seen": 1653521,
+  "initial_backbone_sha256": "5377e364e79aa8efd73babbc03ef8796a5942257e1309bff0fffa47ab14e2c1f",
+  "batch_order_sha256": "712352cbd2e726653a9ad6bba985dfe7dc8491f0ecad4d9b7a48e8390fbd30ba",
+  "maximum_reload_error": 0.0,
+  "seconds": 185.58107630000086,
+  "model_sha256": "4dfd2ba30e524cc61a01c60792d8c2ccbe5046a5fb2710493aa802e6964c5293",
+  "prediction_sha256": "0bf55746af869b9267af372f21ba0ddf37a48ff23c2993baca7cf2622a9077e7",
+  "indices_sha256": "6badea422f678e4f56a8af3a68b4a264daf0549dcbc787630c9d24b3d2b10883",
+  "protocol_sha256": "cf3144b4c1d4d1d442c86654ee314825784341eca8d5d5a53df2bc92e04df64d",
+  "feature_manifest_sha256": "9cb5f7d3e76d88db087b66930a29e3b4f6f3f74b6f94c79e35f0f5bd48114c04",
+  "final_auc": null,
+  "final_labels_read": false,
+  "scores": {
+    "rows": 421983,
+    "clicks": 3724,
+    "ctr": 0.008825000059244094,
+    "auc": 0.7368710626982424,
+    "logloss": 0.04723875713509244,
+    "average_precision": 0.03119064569762307,
+    "mean_prediction": 0.009251087717214557
+  },
+  "slices": {
+    "seen_task": {
+      "rows": 390620,
+      "clicks": 3421,
+      "ctr": 0.00875787210076289,
+      "auc": 0.7411446033792316,
+      "logloss": 0.04676949377491757,
+      "average_precision": 0.03255536392693018,
+      "mean_prediction": 0.009020926963322578
+    },
+    "new_task": {
+      "rows": 31363,
+      "clicks": 303,
+      "ctr": 0.009661065586837993,
+      "auc": 0.6858090590127911,
+      "logloss": 0.05308334004334442,
+      "average_precision": 0.021586834370324576,
+      "mean_prediction": 0.012117694664422567
+    },
+    "prior_day_news_clicks0": {
+      "rows": 118945,
+      "clicks": 1125,
+      "ctr": 0.009458152927823784,
+      "auc": 0.7450400007544464,
+      "logloss": 0.04996552681361556,
+      "average_precision": 0.0283360961313499,
+      "mean_prediction": 0.00965964701779146
+    },
+    "prior_day_news_clicks1": {
+      "rows": 103022,
+      "clicks": 917,
+      "ctr": 0.008901011434450894,
+      "auc": 0.7415355939587283,
+      "logloss": 0.04712046700634438,
+      "average_precision": 0.04611391647840914,
+      "mean_prediction": 0.009331092283571785
+    },
+    "prior_day_news_clicks2plus": {
+      "rows": 200016,
+      "clicks": 1682,
+      "ctr": 0.008409327253819694,
+      "auc": 0.7281995796686758,
+      "logloss": 0.04567813631591771,
+      "average_precision": 0.024813387095338712,
+      "mean_prediction": 0.008966918868510584
+    }
+  }
+}

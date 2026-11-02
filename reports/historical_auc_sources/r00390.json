@@ -1,0 +1,17 @@
+{
+  "variant": "user_demographic",
+  "scores": {
+    "auc": 0.7970272581811554,
+    "logloss": 0.04413103117590418,
+    "average_precision": 0.08307334098813508,
+    "mean_probability": 0.009627641305799873
+  },
+  "rounded6_scores": {
+    "auc": 0.7970273926832538,
+    "logloss": 0.044131034084530986,
+    "average_precision": 0.08307269545353495,
+    "mean_probability": 0.009627641077958115
+  },
+  "auc_gain": -0.004214009168982957,
+  "prediction_sha256": "5427efd65b6b823f2dd85b4f625aa3664809f779574cc22c2ec4aabc63b9f4b0"
+}

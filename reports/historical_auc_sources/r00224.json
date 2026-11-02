@@ -1,0 +1,832 @@
+{
+  "status": "rescored",
+  "records": [
+    {
+      "experiment": "random20_catboost_aligned_lowalpha_d6",
+      "metrics": {
+        "rows": 505264,
+        "clicks": 4271,
+        "auc": 0.8493547499517282,
+        "logloss": 0.04057416844493422
+      },
+      "validation_strategy": "random20",
+      "protocol": {
+        "parameters": {
+          "iterations": 3000,
+          "depth": 6,
+          "learning_rate": 0.05,
+          "loss_function": "Logloss",
+          "eval_metric": "AUC",
+          "random_seed": 42,
+          "l2_leaf_reg": 10.0,
+          "max_ctr_complexity": 1,
+          "one_hot_max_size": 12,
+          "border_count": 64,
+          "task_type": "GPU",
+          "thread_count": 6,
+          "allow_writing_files": false,
+          "boosting_type": "Plain",
+          "gpu_ram_part": 0.65,
+          "gpu_cat_features_storage": "CpuPinnedMemory",
+          "pinned_memory_size": "512mb"
+        },
+        "extra": true,
+        "alphas": [
+          2.0,
+          20.0,
+          200.0
+        ],
+        "aligned_counts": true,
+        "no_same_day_target": false,
+        "interest_features": null,
+        "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+        "validation_strategy": "random20",
+        "train_rows": 2021056,
+        "valid_rows": 505264,
+        "target_statistics": "External extra statistics keep duplicate groups together in 5 training-only OOF folds; validation labels excluded",
+        "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+        "final_test_used": false
+      },
+      "by_date": {
+        "20191110": {
+          "rows": 58,
+          "clicks": 0,
+          "auc": null,
+          "logloss": 0.0060509838521431505
+        },
+        "20191111": {
+          "rows": 90045,
+          "clicks": 756,
+          "auc": 0.9106454808388976,
+          "logloss": 0.036193510962914704
+        },
+        "20191112": {
+          "rows": 86542,
+          "clicks": 725,
+          "auc": 0.8794057925184021,
+          "logloss": 0.038591335196172034
+        },
+        "20191113": {
+          "rows": 82810,
+          "clicks": 656,
+          "auc": 0.8653429152537442,
+          "logloss": 0.03770840278903894
+        },
+        "20191114": {
+          "rows": 76546,
+          "clicks": 662,
+          "auc": 0.8454779862760795,
+          "logloss": 0.041828530058054425
+        },
+        "20191115": {
+          "rows": 85061,
+          "clicks": 738,
+          "auc": 0.8168323076444953,
+          "logloss": 0.04323417525385918
+        },
+        "20191116": {
+          "rows": 84202,
+          "clicks": 734,
+          "auc": 0.7475456256694631,
+          "logloss": 0.04631146510584522
+        }
+      },
+      "slices": {
+        "raw_predictor_overlap": {
+          "rows": 272003,
+          "clicks": 1758,
+          "auc": 0.8636695379709699,
+          "logloss": 0.0321030183792059
+        },
+        "raw_predictor_no_overlap": {
+          "rows": 233261,
+          "clicks": 2513,
+          "auc": 0.8291825708424123,
+          "logloss": 0.05045228022242082
+        },
+        "unknown_task_code": {
+          "rows": 213,
+          "clicks": 2,
+          "auc": 0.8009478672985781,
+          "logloss": 0.05228974581571193
+        },
+        "known_task_code": {
+          "rows": 505051,
+          "clicks": 4269,
+          "auc": 0.8493690538880303,
+          "logloss": 0.040569227522175975
+        }
+      },
+      "not_final_test_auc": true
+    },
+    {
+      "experiment": "random20_catboost_aligned_lowalpha_d8",
+      "metrics": {
+        "rows": 505264,
+        "clicks": 4271,
+        "auc": 0.8493599480104954,
+        "logloss": 0.040575492746644785
+      },
+      "validation_strategy": "random20",
+      "protocol": {
+        "parameters": {
+          "iterations": 2600,
+          "depth": 8,
+          "learning_rate": 0.05,
+          "loss_function": "Logloss",
+          "eval_metric": "AUC",
+          "random_seed": 42,
+          "l2_leaf_reg": 10.0,
+          "max_ctr_complexity": 1,
+          "one_hot_max_size": 12,
+          "border_count": 64,
+          "task_type": "GPU",
+          "thread_count": 6,
+          "allow_writing_files": false,
+          "boosting_type": "Plain",
+          "gpu_ram_part": 0.65,
+          "gpu_cat_features_storage": "CpuPinnedMemory",
+          "pinned_memory_size": "512mb"
+        },
+        "extra": true,
+        "alphas": [
+          2.0,
+          20.0,
+          200.0
+        ],
+        "aligned_counts": true,
+        "no_same_day_target": false,
+        "interest_features": null,
+        "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+        "validation_strategy": "random20",
+        "train_rows": 2021056,
+        "valid_rows": 505264,
+        "target_statistics": "External extra statistics keep duplicate groups together in 5 training-only OOF folds; validation labels excluded",
+        "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+        "final_test_used": false
+      },
+      "by_date": {
+        "20191110": {
+          "rows": 58,
+          "clicks": 0,
+          "auc": null,
+          "logloss": 0.006171991152195067
+        },
+        "20191111": {
+          "rows": 90045,
+          "clicks": 756,
+          "auc": 0.9098191556921076,
+          "logloss": 0.03621519740591824
+        },
+        "20191112": {
+          "rows": 86542,
+          "clicks": 725,
+          "auc": 0.8792344415321617,
+          "logloss": 0.038628895058535805
+        },
+        "20191113": {
+          "rows": 82810,
+          "clicks": 656,
+          "auc": 0.8643516366793595,
+          "logloss": 0.03773060673710372
+        },
+        "20191114": {
+          "rows": 76546,
+          "clicks": 662,
+          "auc": 0.8452045525520666,
+          "logloss": 0.04187282469993635
+        },
+        "20191115": {
+          "rows": 85061,
+          "clicks": 738,
+          "auc": 0.8167097469155497,
+          "logloss": 0.043230398014431584
+        },
+        "20191116": {
+          "rows": 84202,
+          "clicks": 734,
+          "auc": 0.7503892728424435,
+          "logloss": 0.04619924510339112
+        }
+      },
+      "slices": {
+        "raw_predictor_overlap": {
+          "rows": 272003,
+          "clicks": 1758,
+          "auc": 0.864560399423512,
+          "logloss": 0.03208475095300305
+        },
+        "raw_predictor_no_overlap": {
+          "rows": 233261,
+          "clicks": 2513,
+          "auc": 0.8284053488538402,
+          "logloss": 0.050476450215299805
+        },
+        "unknown_task_code": {
+          "rows": 213,
+          "clicks": 2,
+          "auc": 0.8886255924170616,
+          "logloss": 0.0452601856531683
+        },
+        "known_task_code": {
+          "rows": 505051,
+          "clicks": 4269,
+          "auc": 0.8493517263385167,
+          "logloss": 0.040573517026194605
+        }
+      },
+      "not_final_test_auc": true
+    },
+    {
+      "experiment": "random20_catboost_extra_d6",
+      "metrics": {
+        "rows": 505264,
+        "clicks": 4271,
+        "auc": 0.8463790556067101,
+        "logloss": 0.04089591024201647
+      },
+      "validation_strategy": "random20",
+      "protocol": {
+        "parameters": {
+          "iterations": 1800,
+          "depth": 6,
+          "learning_rate": 0.05,
+          "loss_function": "Logloss",
+          "eval_metric": "AUC",
+          "random_seed": 42,
+          "l2_leaf_reg": 10,
+          "max_ctr_complexity": 1,
+          "one_hot_max_size": 12,
+          "border_count": 64,
+          "task_type": "GPU",
+          "thread_count": 6,
+          "allow_writing_files": false,
+          "boosting_type": "Plain",
+          "gpu_ram_part": 0.65,
+          "gpu_cat_features_storage": "CpuPinnedMemory",
+          "pinned_memory_size": "512mb"
+        },
+        "extra": true,
+        "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+        "validation_strategy": "random20",
+        "train_rows": 2021056,
+        "valid_rows": 505264,
+        "target_statistics": "External extra statistics keep duplicate groups together in 5 training-only OOF folds; validation labels excluded",
+        "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+        "final_test_used": false
+      },
+      "by_date": {
+        "20191110": {
+          "rows": 58,
+          "clicks": 0,
+          "auc": null,
+          "logloss": 0.0050283068020510946
+        },
+        "20191111": {
+          "rows": 90045,
+          "clicks": 756,
+          "auc": 0.9088562874219562,
+          "logloss": 0.036471259463404855
+        },
+        "20191112": {
+          "rows": 86542,
+          "clicks": 725,
+          "auc": 0.8754808728919155,
+          "logloss": 0.03917677821977885
+        },
+        "20191113": {
+          "rows": 82810,
+          "clicks": 656,
+          "auc": 0.8628871799808451,
+          "logloss": 0.038100650699866755
+        },
+        "20191114": {
+          "rows": 76546,
+          "clicks": 662,
+          "auc": 0.8421491058621674,
+          "logloss": 0.042166967487331126
+        },
+        "20191115": {
+          "rows": 85061,
+          "clicks": 738,
+          "auc": 0.8153208270932133,
+          "logloss": 0.04343729593633933
+        },
+        "20191116": {
+          "rows": 84202,
+          "clicks": 734,
+          "auc": 0.7448002393255115,
+          "logloss": 0.046445462628763354
+        }
+      },
+      "slices": {
+        "raw_predictor_overlap": {
+          "rows": 272003,
+          "clicks": 1758,
+          "auc": 0.8612953682045266,
+          "logloss": 0.032304833888800406
+        },
+        "raw_predictor_no_overlap": {
+          "rows": 233261,
+          "clicks": 2513,
+          "auc": 0.8253348091682746,
+          "logloss": 0.050913866699820544
+        },
+        "unknown_task_code": {
+          "rows": 213,
+          "clicks": 2,
+          "auc": 0.8127962085308057,
+          "logloss": 0.049795281317152836
+        },
+        "known_task_code": {
+          "rows": 505051,
+          "clicks": 4269,
+          "auc": 0.8463819686034468,
+          "logloss": 0.04089215702493741
+        }
+      },
+      "not_final_test_auc": true
+    },
+    {
+      "experiment": "random20_catboost_extra_d6_lr003",
+      "metrics": {
+        "rows": 505264,
+        "clicks": 4271,
+        "auc": 0.8459024124284442,
+        "logloss": 0.04094241204666097
+      },
+      "validation_strategy": "random20",
+      "protocol": {
+        "parameters": {
+          "iterations": 4200,
+          "depth": 6,
+          "learning_rate": 0.03,
+          "loss_function": "Logloss",
+          "eval_metric": "AUC",
+          "random_seed": 2026,
+          "l2_leaf_reg": 3.0,
+          "max_ctr_complexity": 1,
+          "one_hot_max_size": 12,
+          "border_count": 64,
+          "task_type": "GPU",
+          "thread_count": 6,
+          "allow_writing_files": false,
+          "boosting_type": "Plain",
+          "gpu_ram_part": 0.65,
+          "gpu_cat_features_storage": "CpuPinnedMemory",
+          "pinned_memory_size": "512mb"
+        },
+        "extra": true,
+        "no_same_day_target": false,
+        "interest_features": null,
+        "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+        "validation_strategy": "random20",
+        "train_rows": 2021056,
+        "valid_rows": 505264,
+        "target_statistics": "External extra statistics keep duplicate groups together in 5 training-only OOF folds; validation labels excluded",
+        "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+        "final_test_used": false
+      },
+      "by_date": {
+        "20191110": {
+          "rows": 58,
+          "clicks": 0,
+          "auc": null,
+          "logloss": 0.005198464364581773
+        },
+        "20191111": {
+          "rows": 90045,
+          "clicks": 756,
+          "auc": 0.9068519167383529,
+          "logloss": 0.036547206045654264
+        },
+        "20191112": {
+          "rows": 86542,
+          "clicks": 725,
+          "auc": 0.8754541440024943,
+          "logloss": 0.03923754968613674
+        },
+        "20191113": {
+          "rows": 82810,
+          "clicks": 656,
+          "auc": 0.8607734370222017,
+          "logloss": 0.03816513552326118
+        },
+        "20191114": {
+          "rows": 76546,
+          "clicks": 662,
+          "auc": 0.8400427345697464,
+          "logloss": 0.04239779900706973
+        },
+        "20191115": {
+          "rows": 85061,
+          "clicks": 738,
+          "auc": 0.8156600665777777,
+          "logloss": 0.04341382231040615
+        },
+        "20191116": {
+          "rows": 84202,
+          "clicks": 734,
+          "auc": 0.7484984863914954,
+          "logloss": 0.04633115889255002
+        }
+      },
+      "slices": {
+        "raw_predictor_overlap": {
+          "rows": 272003,
+          "clicks": 1758,
+          "auc": 0.8605780988645305,
+          "logloss": 0.032337805338562814
+        },
+        "raw_predictor_no_overlap": {
+          "rows": 233261,
+          "clicks": 2513,
+          "auc": 0.8249163617309325,
+          "logloss": 0.050976146097457355
+        },
+        "unknown_task_code": {
+          "rows": 213,
+          "clicks": 2,
+          "auc": 0.8459715639810428,
+          "logloss": 0.04746944716348346
+        },
+        "known_task_code": {
+          "rows": 505051,
+          "clicks": 4269,
+          "auc": 0.8458988202886384,
+          "logloss": 0.04093965933756844
+        }
+      },
+      "not_final_test_auc": true
+    },
+    {
+      "experiment": "random20_catboost_extra_d8",
+      "metrics": {
+        "rows": 505264,
+        "clicks": 4271,
+        "auc": 0.8473489659370255,
+        "logloss": 0.04084305373257631
+      },
+      "validation_strategy": "random20",
+      "protocol": {
+        "parameters": {
+          "iterations": 2600,
+          "depth": 8,
+          "learning_rate": 0.05,
+          "loss_function": "Logloss",
+          "eval_metric": "AUC",
+          "random_seed": 42,
+          "l2_leaf_reg": 10,
+          "max_ctr_complexity": 1,
+          "one_hot_max_size": 12,
+          "border_count": 64,
+          "task_type": "GPU",
+          "thread_count": 6,
+          "allow_writing_files": false,
+          "boosting_type": "Plain",
+          "gpu_ram_part": 0.65,
+          "gpu_cat_features_storage": "CpuPinnedMemory",
+          "pinned_memory_size": "512mb"
+        },
+        "extra": true,
+        "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+        "validation_strategy": "random20",
+        "train_rows": 2021056,
+        "valid_rows": 505264,
+        "target_statistics": "External extra statistics keep duplicate groups together in 5 training-only OOF folds; validation labels excluded",
+        "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+        "final_test_used": false
+      },
+      "by_date": {
+        "20191110": {
+          "rows": 58,
+          "clicks": 0,
+          "auc": null,
+          "logloss": 0.005329092670377068
+        },
+        "20191111": {
+          "rows": 90045,
+          "clicks": 756,
+          "auc": 0.9092973674865061,
+          "logloss": 0.0363530978309845
+        },
+        "20191112": {
+          "rows": 86542,
+          "clicks": 725,
+          "auc": 0.8793981901343395,
+          "logloss": 0.03894714752930941
+        },
+        "20191113": {
+          "rows": 82810,
+          "clicks": 656,
+          "auc": 0.8629843539675933,
+          "logloss": 0.038026799790388637
+        },
+        "20191114": {
+          "rows": 76546,
+          "clicks": 662,
+          "auc": 0.8406253339291438,
+          "logloss": 0.04227445986071909
+        },
+        "20191115": {
+          "rows": 85061,
+          "clicks": 738,
+          "auc": 0.8155502006142531,
+          "logloss": 0.043414769828632696
+        },
+        "20191116": {
+          "rows": 84202,
+          "clicks": 734,
+          "auc": 0.7455448670697471,
+          "logloss": 0.04648812435043171
+        }
+      },
+      "slices": {
+        "raw_predictor_overlap": {
+          "rows": 272003,
+          "clicks": 1758,
+          "auc": 0.8603692713755653,
+          "logloss": 0.032375241951826436
+        },
+        "raw_predictor_no_overlap": {
+          "rows": 233261,
+          "clicks": 2513,
+          "auc": 0.8282922165462117,
+          "logloss": 0.05071727277390471
+        },
+        "unknown_task_code": {
+          "rows": 213,
+          "clicks": 2,
+          "auc": 0.8175355450236967,
+          "logloss": 0.04904772949245771
+        },
+        "known_task_code": {
+          "rows": 505051,
+          "clicks": 4269,
+          "auc": 0.8473510820971057,
+          "logloss": 0.04083959349601238
+        }
+      },
+      "not_final_test_auc": true
+    },
+    {
+      "experiment": "random20_catboost_extra_interest_d6",
+      "metrics": {
+        "rows": 505264,
+        "clicks": 4271,
+        "auc": 0.8450793941681832,
+        "logloss": 0.0409429020082097
+      },
+      "validation_strategy": "random20",
+      "protocol": {
+        "parameters": {
+          "iterations": 2600,
+          "depth": 6,
+          "learning_rate": 0.05,
+          "loss_function": "Logloss",
+          "eval_metric": "AUC",
+          "random_seed": 42,
+          "l2_leaf_reg": 10,
+          "max_ctr_complexity": 1,
+          "one_hot_max_size": 12,
+          "border_count": 64,
+          "task_type": "GPU",
+          "thread_count": 6,
+          "allow_writing_files": false,
+          "boosting_type": "Plain",
+          "gpu_ram_part": 0.65,
+          "gpu_cat_features_storage": "CpuPinnedMemory",
+          "pinned_memory_size": "512mb"
+        },
+        "extra": true,
+        "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+        "validation_strategy": "random20",
+        "train_rows": 2021056,
+        "valid_rows": 505264,
+        "target_statistics": "External extra statistics keep duplicate groups together in 5 training-only OOF folds; validation labels excluded",
+        "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+        "final_test_used": false
+      },
+      "by_date": {
+        "20191110": {
+          "rows": 58,
+          "clicks": 0,
+          "auc": null,
+          "logloss": 0.005141679167685303
+        },
+        "20191111": {
+          "rows": 90045,
+          "clicks": 756,
+          "auc": 0.9053368021242003,
+          "logloss": 0.03668501138882762
+        },
+        "20191112": {
+          "rows": 86542,
+          "clicks": 725,
+          "auc": 0.8748836115985379,
+          "logloss": 0.03918779241024755
+        },
+        "20191113": {
+          "rows": 82810,
+          "clicks": 656,
+          "auc": 0.8607919180783027,
+          "logloss": 0.038172600379994676
+        },
+        "20191114": {
+          "rows": 76546,
+          "clicks": 662,
+          "auc": 0.8406881384864575,
+          "logloss": 0.0422033990890618
+        },
+        "20191115": {
+          "rows": 85061,
+          "clicks": 738,
+          "auc": 0.8133674401506892,
+          "logloss": 0.0434977609511658
+        },
+        "20191116": {
+          "rows": 84202,
+          "clicks": 734,
+          "auc": 0.7467888622231705,
+          "logloss": 0.04632249795971489
+        }
+      },
+      "slices": {
+        "raw_predictor_overlap": {
+          "rows": 272003,
+          "clicks": 1758,
+          "auc": 0.8599373517533104,
+          "logloss": 0.03231994140201812
+        },
+        "raw_predictor_no_overlap": {
+          "rows": 233261,
+          "clicks": 2513,
+          "auc": 0.8239356121307,
+          "logloss": 0.050998038330895126
+        },
+        "unknown_task_code": {
+          "rows": 213,
+          "clicks": 2,
+          "auc": 0.8459715639810427,
+          "logloss": 0.04839440573938963
+        },
+        "known_task_code": {
+          "rows": 505051,
+          "clicks": 4269,
+          "auc": 0.8450749530428249,
+          "logloss": 0.04093975941410585
+        }
+      },
+      "not_final_test_auc": true
+    },
+    {
+      "experiment": "time16_catboost_aligned_lowalpha_d6",
+      "metrics": {
+        "rows": 421983,
+        "clicks": 3724,
+        "auc": 0.7254072007053719,
+        "logloss": 0.04813352453520005
+      },
+      "validation_strategy": "time20191116",
+      "protocol": {
+        "parameters": {
+          "iterations": 2200,
+          "depth": 6,
+          "learning_rate": 0.05,
+          "loss_function": "Logloss",
+          "eval_metric": "AUC",
+          "random_seed": 42,
+          "l2_leaf_reg": 10.0,
+          "max_ctr_complexity": 1,
+          "one_hot_max_size": 12,
+          "border_count": 64,
+          "task_type": "GPU",
+          "thread_count": 6,
+          "allow_writing_files": false,
+          "boosting_type": "Plain",
+          "gpu_ram_part": 0.65,
+          "gpu_cat_features_storage": "CpuPinnedMemory",
+          "pinned_memory_size": "512mb"
+        },
+        "extra": true,
+        "alphas": [
+          2.0,
+          20.0,
+          200.0
+        ],
+        "aligned_counts": true,
+        "no_same_day_target": true,
+        "interest_features": null,
+        "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_time16",
+        "validation_strategy": "time20191116",
+        "train_rows": 2104337,
+        "valid_rows": 421983,
+        "target_statistics": "External extra statistics keep duplicate groups together in 5 training-only OOF folds; validation labels excluded",
+        "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+        "final_test_used": false
+      },
+      "by_date": {
+        "20191116": {
+          "rows": 421983,
+          "clicks": 3724,
+          "auc": 0.7254072007053719,
+          "logloss": 0.04813352453520005
+        }
+      },
+      "slices": {
+        "raw_predictor_no_overlap": {
+          "rows": 421983,
+          "clicks": 3724,
+          "auc": 0.7254072007053719,
+          "logloss": 0.04813352453520005
+        },
+        "unknown_task_code": {
+          "rows": 30136,
+          "clicks": 287,
+          "auc": 0.6788887341547111,
+          "logloss": 0.05287697260930715
+        },
+        "known_task_code": {
+          "rows": 391847,
+          "clicks": 3437,
+          "auc": 0.7288916492855015,
+          "logloss": 0.047768717477442095
+        }
+      },
+      "not_final_test_auc": true
+    },
+    {
+      "experiment": "time16_catboost_extra_noday_d6",
+      "metrics": {
+        "rows": 421983,
+        "clicks": 3724,
+        "auc": 0.7225313660755518,
+        "logloss": 0.04871574620637084
+      },
+      "validation_strategy": "time20191116",
+      "protocol": {
+        "parameters": {
+          "iterations": 2200,
+          "depth": 6,
+          "learning_rate": 0.05,
+          "loss_function": "Logloss",
+          "eval_metric": "AUC",
+          "random_seed": 42,
+          "l2_leaf_reg": 10,
+          "max_ctr_complexity": 1,
+          "one_hot_max_size": 12,
+          "border_count": 64,
+          "task_type": "GPU",
+          "thread_count": 6,
+          "allow_writing_files": false,
+          "boosting_type": "Plain",
+          "gpu_ram_part": 0.65,
+          "gpu_cat_features_storage": "CpuPinnedMemory",
+          "pinned_memory_size": "512mb"
+        },
+        "extra": true,
+        "no_same_day_target": true,
+        "interest_features": null,
+        "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_time16",
+        "validation_strategy": "time20191116",
+        "train_rows": 2104337,
+        "valid_rows": 421983,
+        "target_statistics": "External extra statistics keep duplicate groups together in 5 training-only OOF folds; validation labels excluded",
+        "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+        "final_test_used": false
+      },
+      "by_date": {
+        "20191116": {
+          "rows": 421983,
+          "clicks": 3724,
+          "auc": 0.7225313660755518,
+          "logloss": 0.04871574620637084
+        }
+      },
+      "slices": {
+        "raw_predictor_no_overlap": {
+          "rows": 421983,
+          "clicks": 3724,
+          "auc": 0.7225313660755518,
+          "logloss": 0.04871574620637084
+        },
+        "unknown_task_code": {
+          "rows": 30136,
+          "clicks": 287,
+          "auc": 0.6754722930037051,
+          "logloss": 0.05330322917827161
+        },
+        "known_task_code": {
+          "rows": 391847,
+          "clicks": 3437,
+          "auc": 0.7260437543849927,
+          "logloss": 0.04836293404539679
+        }
+      },
+      "not_final_test_auc": true
+    }
+  ],
+  "goal": "AUC greater than 0.85",
+  "final_test_labels_available": false,
+  "warning": "Same-date target encodings and future training dates in random split differ from predicting day17"
+}

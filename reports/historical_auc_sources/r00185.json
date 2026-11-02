@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "goal_auc": 0.85,
+  "goal_met": false,
+  "final_auc": null,
+  "final_labels_available": false,
+  "days": [
+    {
+      "day": 20191115,
+      "rows": 424780,
+      "positive": 3523,
+      "raw_labels_and_day_indices_match": true,
+      "strict_train_validation_date_boundary": true,
+      "baseline_auc": 0.7858631196467175,
+      "new_blend_auc": 0.7880938883633664,
+      "auc_gain": 0.0022307687166488455,
+      "positive_resample_95_percent_interval": [
+        0.7809182867475406,
+        0.7953618548773912
+      ],
+      "uncertainty_scope": "Only positives resampled; negatives fixed; exploratory development uncertainty, not independent test guarantee",
+      "goal_met": false,
+      "prediction_sha256": "604f70bf7e7bed49904f689df9ff964e968f52222e32c93d2be5d655ab868001"
+    },
+    {
+      "day": 20191116,
+      "rows": 421983,
+      "positive": 3724,
+      "raw_labels_and_day_indices_match": true,
+      "strict_train_validation_date_boundary": true,
+      "baseline_auc": 0.7917860844136609,
+      "new_blend_auc": 0.7957095722599832,
+      "auc_gain": 0.003923487846322238,
+      "positive_resample_95_percent_interval": [
+        0.7888045907053762,
+        0.8021936409653603
+      ],
+      "uncertainty_scope": "Only positives resampled; negatives fixed; exploratory development uncertainty, not independent test guarantee",
+      "goal_met": false,
+      "prediction_sha256": "c12c0b823b709d5a0518430121264070eeafff99b0d6678c31c96086824337bd"
+    }
+  ],
+  "source_sha256": "deadc679cb9e327661a8870f9ed82bb72648f924d2c6addfe3d3c57d776c88e0"
+}

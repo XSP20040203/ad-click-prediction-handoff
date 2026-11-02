@@ -1,0 +1,12 @@
+[
+  {
+    "group": "user_id__zero_train_click",
+    "positive_weight": 0.2191192266380236,
+    "weighted_auc_change": -0.05251073924461706
+  },
+  {
+    "group": "user_id__has_train_click",
+    "positive_weight": 0.7808807733619764,
+    "weighted_auc_change": 0.0025459099704354493
+  }
+]

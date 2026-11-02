@@ -1,0 +1,27 @@
+{
+  "name": "phase5_collaborative_neighbors__replace_tabm32",
+  "auc": 0.77674767927286,
+  "logloss": 0.04400279938141741,
+  "average_precision": 0.04159720313303085,
+  "mean_prediction": 0.00854792368000462,
+  "model_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\phase5_collaborative_neighbors\\collaborative\\seed42",
+  "max_neighbors": 16,
+  "combination": "replace_tabm32",
+  "weights": {
+    "baseline": 0.5,
+    "collaborative": 0.5
+  },
+  "weight_fitting": "none; fixed before training",
+  "validated_rows": 505264,
+  "prediction_file": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_collaborative_ensembles\\phase5_collaborative_neighbors__replace_tabm32.npy",
+  "auc_change_from_previous_best": 0.00274922676007483,
+  "members": {
+    "baseline": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\random20_rich_oof_statistics\\bounded\\seed42",
+    "collaborative": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\phase5_collaborative_neighbors\\collaborative\\seed42"
+  },
+  "baseline_kind": "DCN",
+  "member_cache_dirs": {
+    "baseline_DCN": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20",
+    "collaborative": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned"
+  }
+}

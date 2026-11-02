@@ -1,0 +1,24 @@
+{
+  "goal_auc": 0.85,
+  "goal_met": false,
+  "final_labels_available": false,
+  "final_auc": null,
+  "best_confirmed_development": {
+    "20191115": 0.7885934138596276,
+    "20191116": 0.7959509216698839
+  },
+  "preferred_export_development": {
+    "20191115": 0.7880938883633664,
+    "20191116": 0.7957095722599832
+  },
+  "unfinished_experiments": {
+    "goal085_day15_posweight100": "stopped_before_metric_due_to_memory_pressure",
+    "goal085_day15_recent3_multi": "stopped_before_metric_due_to_memory_pressure"
+  },
+  "running": [
+    "day15_category_pair_ctr",
+    "day15_original_oof_exposure",
+    "new_group_oof_feature_preparation"
+  ],
+  "preferred_export": "output/chronological_shared_lgb_v4/result.csv"
+}

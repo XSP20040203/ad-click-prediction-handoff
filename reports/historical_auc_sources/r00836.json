@@ -1,0 +1,802 @@
+{
+  "status": "complete_and_verified",
+  "protocol": {
+    "name": "user_centered_joint_dcn_v1",
+    "created": "2026-10-28",
+    "development_day": 20191115,
+    "confirmation_day": 20191116,
+    "seeds": [
+      42,
+      2026
+    ],
+    "arms": {
+      "control": {
+        "mode": "control",
+        "rank": 0
+      },
+      "bias": {
+        "mode": "bias",
+        "rank": 0
+      },
+      "rank4": {
+        "mode": "interaction",
+        "rank": 4
+      },
+      "rank8": {
+        "mode": "interaction",
+        "rank": 8
+      }
+    },
+    "backbone": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "group_norm_caps": {
+        "user_id": 0.2,
+        "ad_task": 0.2,
+        "adv_id": 0.2
+      }
+    },
+    "residual": {
+      "confidence_alpha": 200.0,
+      "residual_limit": 0.5
+    },
+    "regularization": {
+      "bias_l2": 0.001,
+      "factor_l2": 0.001
+    },
+    "learning_rate": 0.001,
+    "personal_learning_rate": 0.01,
+    "weight_decay": 1e-05,
+    "batch_size": 2048,
+    "max_epochs": 4,
+    "patience_checkpoints": 4,
+    "validation_frequency": "quarter epoch",
+    "checkpoint_rule": "largest full chronological validation AUC; minimum increase 0.00001",
+    "residual_formula": "n_user/(n_user+200) * 0.5 * tanh(user_bias + dot(user_factor,category_factor)/sqrt(rank))",
+    "personalization_rule": "Keep original user embedding; train backbone and residual jointly; no teacher logits",
+    "source_rule": "Preserve strongest DCN inputs: past source history plus matching provided same-day source snapshot",
+    "target_statistics_rule": "Five duplicate-group inner folds inside each outer date training range; not per-row chronological statistics",
+    "development_selection": "Choose a noncontrol arm only if AUC gain >=0.0002, logloss no worse, and zero-click-user logloss degradation <=0.0002; otherwise stop personalization at control",
+    "confirmation_selection": "Freeze selected arm before day16; retain only if both dates improve AUC and day16 logloss/zero-click-user loss pass same guards",
+    "additional_seed_rule": "If both-date seed42 candidate passes, compare control and frozen candidate on both dates at seed2026",
+    "reporting": [
+      "global AUC/logloss",
+      "within-user pair/row/macro AUC and eligible counts",
+      "zero/1-2/3+ training clicks",
+      "new/seen tasks",
+      "full validation checkpoint replay",
+      "paired user bootstrap"
+    ],
+    "limitations": "Both dates have previously been used for development; no independent final labels; no guarantee of improvement"
+  },
+  "selection": {
+    "candidate": "rank8",
+    "day15_passed": false,
+    "frozen_before_day16": true,
+    "diagnostic_only": true,
+    "recommendation": "control; personalization not confirmed",
+    "day16_passed": false
+  },
+  "runs": [
+    {
+      "day": 20191115,
+      "arm": "control",
+      "seed": 42,
+      "model_class": "PersonalizedDCN",
+      "model_options": {
+        "embedding_dim": 8,
+        "hidden_dims": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "unknown_dropout": 0.01,
+        "cross_layers": 2,
+        "group_norm_caps": {
+          "user_id": 0.2,
+          "ad_task": 0.2,
+          "adv_id": 0.2
+        },
+        "mode": "control",
+        "rank": 0,
+        "numeric_dim": 75,
+        "confidence_alpha": 200.0,
+        "residual_limit": 0.5
+      },
+      "best_fractional_epoch": 0.7503045066991474,
+      "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\user_personalization\\cache_day15_stats",
+      "train_rows": 1679557,
+      "parameter_count": 618276,
+      "personal_parameter_count": 0,
+      "rows": 424780,
+      "clicks": 3523,
+      "ctr": 0.008293704976693819,
+      "auc": 0.7344456276466402,
+      "logloss": 0.045526639300649895,
+      "average_precision": 0.023338732827597304,
+      "mean_prediction": 0.010815732320362991,
+      "status": "complete_and_verified",
+      "training_seconds": 69.0069368000004,
+      "checkpoints_completed": 7,
+      "final_fractional_epoch": 1.7503045066991474,
+      "maximum_reload_error": 0.0,
+      "checkpoint_sha256": "897f8b528fc9d6acfa73b3cf7838b1676ed16bd9c9f9324697fdeea112993b9a",
+      "backbone_initial_sha256": "fa1a804aebc1ca916f9c2858eba20bc9b7fe27c2d3ef2bff4c4bf124702732dd",
+      "validation_strategy": "earlier advertisement dates train; one whole following date validates",
+      "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+      "final_test_used": false,
+      "diagnostics": {
+        "global": {
+          "rows": 424780,
+          "clicks": 3523,
+          "ctr": 0.008293704976693819,
+          "auc": 0.7344456276466402,
+          "logloss": 0.045526639300649895,
+          "average_precision": 0.023338732827597304,
+          "mean_prediction": 0.010815732320362991
+        },
+        "within_user": {
+          "eligible_users": 2513,
+          "eligible_rows": 163309,
+          "pair_weighted_auc": 0.6843400419600136,
+          "row_weighted_auc": 0.6807869963049386,
+          "macro_auc": 0.6641256927066026,
+          "scope": "Only validation users with both labels; not directly comparable with global AUC"
+        },
+        "slices": {
+          "zero_train_clicks": {
+            "rows": 103064,
+            "clicks": 935,
+            "ctr": 0.009072032911588916,
+            "auc": 0.733711035372429,
+            "logloss": 0.04873334664613891,
+            "average_precision": 0.026634744849475086,
+            "mean_prediction": 0.010312114243230816
+          },
+          "one_or_two_train_clicks": {
+            "rows": 210677,
+            "clicks": 1395,
+            "ctr": 0.0066215106537495785,
+            "auc": 0.7252884456735658,
+            "logloss": 0.03859414638129418,
+            "average_precision": 0.017084372430017248,
+            "mean_prediction": 0.010204991327807934
+          },
+          "three_plus_train_clicks": {
+            "rows": 111039,
+            "clicks": 1193,
+            "ctr": 0.010743972838372104,
+            "auc": 0.7390635085416161,
+            "logloss": 0.05570343056241937,
+            "average_precision": 0.030527534027617445,
+            "mean_prediction": 0.012441953500219366
+          },
+          "new_task": {
+            "rows": 53160,
+            "clicks": 486,
+            "ctr": 0.009142212189616254,
+            "auc": 0.694339872350951,
+            "logloss": 0.05266811208210807,
+            "average_precision": 0.022816027057468435,
+            "mean_prediction": 0.01830668621492542
+          },
+          "seen_task": {
+            "rows": 371620,
+            "clicks": 3037,
+            "ctr": 0.008172326570152306,
+            "auc": 0.7440887724389182,
+            "logloss": 0.04450505625059254,
+            "average_precision": 0.024308263232836663,
+            "mean_prediction": 0.009744156223718733
+          }
+        }
+      }
+    },
+    {
+      "day": 20191115,
+      "arm": "bias",
+      "seed": 42,
+      "model_class": "PersonalizedDCN",
+      "model_options": {
+        "embedding_dim": 8,
+        "hidden_dims": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "unknown_dropout": 0.01,
+        "cross_layers": 2,
+        "group_norm_caps": {
+          "user_id": 0.2,
+          "ad_task": 0.2,
+          "adv_id": 0.2
+        },
+        "mode": "bias",
+        "rank": 0,
+        "numeric_dim": 75,
+        "confidence_alpha": 200.0,
+        "residual_limit": 0.5
+      },
+      "best_fractional_epoch": 0.7503045066991474,
+      "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\user_personalization\\cache_day15_stats",
+      "train_rows": 1679557,
+      "parameter_count": 626834,
+      "personal_parameter_count": 8558,
+      "rows": 424780,
+      "clicks": 3523,
+      "ctr": 0.008293704976693819,
+      "auc": 0.7347355463582284,
+      "logloss": 0.04555719336880167,
+      "average_precision": 0.023365720156669625,
+      "mean_prediction": 0.01092182410607506,
+      "status": "complete_and_verified",
+      "training_seconds": 72.99541020000015,
+      "checkpoints_completed": 7,
+      "final_fractional_epoch": 1.7503045066991474,
+      "maximum_reload_error": 0.0,
+      "checkpoint_sha256": "736e92ec2a16af657bf7e006c5c00c769b7f1b5eb35763e81d4c68653c8955a0",
+      "backbone_initial_sha256": "fa1a804aebc1ca916f9c2858eba20bc9b7fe27c2d3ef2bff4c4bf124702732dd",
+      "validation_strategy": "earlier advertisement dates train; one whole following date validates",
+      "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+      "final_test_used": false,
+      "diagnostics": {
+        "global": {
+          "rows": 424780,
+          "clicks": 3523,
+          "ctr": 0.008293704976693819,
+          "auc": 0.7347355463582284,
+          "logloss": 0.04555719336880167,
+          "average_precision": 0.023365720156669625,
+          "mean_prediction": 0.01092182410607506
+        },
+        "within_user": {
+          "eligible_users": 2513,
+          "eligible_rows": 163309,
+          "pair_weighted_auc": 0.6841783383502915,
+          "row_weighted_auc": 0.6807482119656321,
+          "macro_auc": 0.6640123705370433,
+          "scope": "Only validation users with both labels; not directly comparable with global AUC"
+        },
+        "slices": {
+          "zero_train_clicks": {
+            "rows": 103064,
+            "clicks": 935,
+            "ctr": 0.009072032911588916,
+            "auc": 0.7343470245740904,
+            "logloss": 0.048732295189935854,
+            "average_precision": 0.02677176612704734,
+            "mean_prediction": 0.010312778357515633
+          },
+          "one_or_two_train_clicks": {
+            "rows": 210677,
+            "clicks": 1395,
+            "ctr": 0.0066215106537495785,
+            "auc": 0.7254309931286143,
+            "logloss": 0.03862706166888997,
+            "average_precision": 0.017136025844924768,
+            "mean_prediction": 0.010287655747852831
+          },
+          "three_plus_train_clicks": {
+            "rows": 111039,
+            "clicks": 1193,
+            "ctr": 0.010743972838372104,
+            "auc": 0.7390787970338234,
+            "logloss": 0.055758840196032874,
+            "average_precision": 0.03045031270459403,
+            "mean_prediction": 0.012690350283676743
+          },
+          "new_task": {
+            "rows": 53160,
+            "clicks": 486,
+            "ctr": 0.009142212189616254,
+            "auc": 0.6945088205408498,
+            "logloss": 0.052755122767898115,
+            "average_precision": 0.02278314285101445,
+            "mean_prediction": 0.01845147915474518
+          },
+          "seen_task": {
+            "rows": 371620,
+            "clicks": 3037,
+            "ctr": 0.008172326570152306,
+            "auc": 0.7442786456297411,
+            "logloss": 0.04452753423620395,
+            "average_precision": 0.024326714173406833,
+            "mean_prediction": 0.009844711834433858
+          }
+        }
+      }
+    },
+    {
+      "day": 20191115,
+      "arm": "rank4",
+      "seed": 42,
+      "model_class": "PersonalizedDCN",
+      "model_options": {
+        "embedding_dim": 8,
+        "hidden_dims": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "unknown_dropout": 0.01,
+        "cross_layers": 2,
+        "group_norm_caps": {
+          "user_id": 0.2,
+          "ad_task": 0.2,
+          "adv_id": 0.2
+        },
+        "mode": "interaction",
+        "rank": 4,
+        "numeric_dim": 75,
+        "confidence_alpha": 200.0,
+        "residual_limit": 0.5
+      },
+      "best_fractional_epoch": 0.7503045066991474,
+      "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\user_personalization\\cache_day15_stats",
+      "train_rows": 1679557,
+      "parameter_count": 661154,
+      "personal_parameter_count": 42878,
+      "rows": 424780,
+      "clicks": 3523,
+      "ctr": 0.008293704976693819,
+      "auc": 0.7345250821448536,
+      "logloss": 0.04555680178898397,
+      "average_precision": 0.023339585864696262,
+      "mean_prediction": 0.010922881386648866,
+      "status": "complete_and_verified",
+      "training_seconds": 69.37046569999984,
+      "checkpoints_completed": 7,
+      "final_fractional_epoch": 1.7503045066991474,
+      "maximum_reload_error": 0.0,
+      "checkpoint_sha256": "da0f88e31f9bdd884b9af4bd0e543e73b466f96ce7eeaf6c70e534c057d744bb",
+      "backbone_initial_sha256": "fa1a804aebc1ca916f9c2858eba20bc9b7fe27c2d3ef2bff4c4bf124702732dd",
+      "validation_strategy": "earlier advertisement dates train; one whole following date validates",
+      "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+      "final_test_used": false,
+      "diagnostics": {
+        "global": {
+          "rows": 424780,
+          "clicks": 3523,
+          "ctr": 0.008293704976693819,
+          "auc": 0.7345250821448536,
+          "logloss": 0.04555680178898397,
+          "average_precision": 0.023339585864696262,
+          "mean_prediction": 0.010922881386648866
+        },
+        "within_user": {
+          "eligible_users": 2513,
+          "eligible_rows": 163309,
+          "pair_weighted_auc": 0.6839710260301349,
+          "row_weighted_auc": 0.6806153360998604,
+          "macro_auc": 0.6641404150328392,
+          "scope": "Only validation users with both labels; not directly comparable with global AUC"
+        },
+        "slices": {
+          "zero_train_clicks": {
+            "rows": 103064,
+            "clicks": 935,
+            "ctr": 0.009072032911588916,
+            "auc": 0.7340418532229581,
+            "logloss": 0.04874039313331587,
+            "average_precision": 0.026680534705732978,
+            "mean_prediction": 0.010338119666691768
+          },
+          "one_or_two_train_clicks": {
+            "rows": 210677,
+            "clicks": 1395,
+            "ctr": 0.0066215106537495785,
+            "auc": 0.7252905898881647,
+            "logloss": 0.03862281600602836,
+            "average_precision": 0.017116242647660065,
+            "mean_prediction": 0.010282848901103326
+          },
+          "three_plus_train_clicks": {
+            "rows": 111039,
+            "clicks": 1193,
+            "ctr": 0.010743972838372104,
+            "auc": 0.7388224524774372,
+            "logloss": 0.05575788126991872,
+            "average_precision": 0.030418511895766026,
+            "mean_prediction": 0.012679993805375043
+          },
+          "new_task": {
+            "rows": 53160,
+            "clicks": 486,
+            "ctr": 0.009142212189616254,
+            "auc": 0.6945373366515148,
+            "logloss": 0.052776838105655415,
+            "average_precision": 0.02280487261750849,
+            "mean_prediction": 0.01851667121518239
+          },
+          "seen_task": {
+            "rows": 371620,
+            "clicks": 3037,
+            "ctr": 0.008172326570152306,
+            "auc": 0.7441647296660308,
+            "logloss": 0.04452398027616374,
+            "average_precision": 0.024309093807680045,
+            "mean_prediction": 0.009836594676340373
+          }
+        }
+      }
+    },
+    {
+      "day": 20191115,
+      "arm": "rank8",
+      "seed": 42,
+      "model_class": "PersonalizedDCN",
+      "model_options": {
+        "embedding_dim": 8,
+        "hidden_dims": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "unknown_dropout": 0.01,
+        "cross_layers": 2,
+        "group_norm_caps": {
+          "user_id": 0.2,
+          "ad_task": 0.2,
+          "adv_id": 0.2
+        },
+        "mode": "interaction",
+        "rank": 8,
+        "numeric_dim": 75,
+        "confidence_alpha": 200.0,
+        "residual_limit": 0.5
+      },
+      "best_fractional_epoch": 0.7503045066991474,
+      "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\user_personalization\\cache_day15_stats",
+      "train_rows": 1679557,
+      "parameter_count": 695474,
+      "personal_parameter_count": 77198,
+      "rows": 424780,
+      "clicks": 3523,
+      "ctr": 0.008293704976693819,
+      "auc": 0.7350160869223309,
+      "logloss": 0.04555326887303776,
+      "average_precision": 0.02334947655123244,
+      "mean_prediction": 0.010932844707458216,
+      "status": "complete_and_verified",
+      "training_seconds": 71.71466770000006,
+      "checkpoints_completed": 7,
+      "final_fractional_epoch": 1.7503045066991474,
+      "maximum_reload_error": 0.0,
+      "checkpoint_sha256": "7368a4372becae8befa23fccecd0d6626470ae22dcccaf4b3ba0d2cd99a5776c",
+      "backbone_initial_sha256": "fa1a804aebc1ca916f9c2858eba20bc9b7fe27c2d3ef2bff4c4bf124702732dd",
+      "validation_strategy": "earlier advertisement dates train; one whole following date validates",
+      "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+      "final_test_used": false,
+      "diagnostics": {
+        "global": {
+          "rows": 424780,
+          "clicks": 3523,
+          "ctr": 0.008293704976693819,
+          "auc": 0.7350160869223309,
+          "logloss": 0.04555326887303776,
+          "average_precision": 0.02334947655123244,
+          "mean_prediction": 0.010932844707458216
+        },
+        "within_user": {
+          "eligible_users": 2513,
+          "eligible_rows": 163309,
+          "pair_weighted_auc": 0.6842529707855478,
+          "row_weighted_auc": 0.6808444726100046,
+          "macro_auc": 0.6642823428561871,
+          "scope": "Only validation users with both labels; not directly comparable with global AUC"
+        },
+        "slices": {
+          "zero_train_clicks": {
+            "rows": 103064,
+            "clicks": 935,
+            "ctr": 0.009072032911588916,
+            "auc": 0.7346141607738101,
+            "logloss": 0.04872015720881186,
+            "average_precision": 0.02674005474251321,
+            "mean_prediction": 0.010300893293928947
+          },
+          "one_or_two_train_clicks": {
+            "rows": 210677,
+            "clicks": 1395,
+            "ctr": 0.0066215106537495785,
+            "auc": 0.7257771930168891,
+            "logloss": 0.038622188133846595,
+            "average_precision": 0.017155936308676734,
+            "mean_prediction": 0.010296704837584776
+          },
+          "three_plus_train_clicks": {
+            "rows": 111039,
+            "clicks": 1193,
+            "ctr": 0.010743972838372104,
+            "auc": 0.739232479384115,
+            "logloss": 0.05576433991521536,
+            "average_precision": 0.03034242671695127,
+            "mean_prediction": 0.01272637202533128
+          },
+          "new_task": {
+            "rows": 53160,
+            "clicks": 486,
+            "ctr": 0.009142212189616254,
+            "auc": 0.6949432420020903,
+            "logloss": 0.0527660994118676,
+            "average_precision": 0.022721683386843897,
+            "mean_prediction": 0.018474501445508648
+          },
+          "seen_task": {
+            "rows": 371620,
+            "clicks": 3037,
+            "ctr": 0.008172326570152306,
+            "auc": 0.7445299850751916,
+            "logloss": 0.044521478142064745,
+            "average_precision": 0.024321083120037418,
+            "mean_prediction": 0.009854015601934399
+          }
+        }
+      }
+    },
+    {
+      "day": 20191116,
+      "arm": "control",
+      "seed": 42,
+      "model_class": "PersonalizedDCN",
+      "model_options": {
+        "embedding_dim": 8,
+        "hidden_dims": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "unknown_dropout": 0.01,
+        "cross_layers": 2,
+        "group_norm_caps": {
+          "user_id": 0.2,
+          "ad_task": 0.2,
+          "adv_id": 0.2
+        },
+        "mode": "control",
+        "rank": 0,
+        "numeric_dim": 75,
+        "confidence_alpha": 200.0,
+        "residual_limit": 0.5
+      },
+      "best_fractional_epoch": 0.5,
+      "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_time16",
+      "train_rows": 2104337,
+      "parameter_count": 637028,
+      "personal_parameter_count": 0,
+      "rows": 421983,
+      "clicks": 3724,
+      "ctr": 0.008825000059244094,
+      "auc": 0.7340545309745673,
+      "logloss": 0.047604874435725766,
+      "average_precision": 0.0262153399253119,
+      "mean_prediction": 0.009888703760459347,
+      "status": "complete_and_verified",
+      "training_seconds": 77.85369880000053,
+      "checkpoints_completed": 6,
+      "final_fractional_epoch": 1.5,
+      "maximum_reload_error": 0.0,
+      "checkpoint_sha256": "f656eb1feef5102ba081ad4f47d7425bab71a4f39ac18543c8be055864837cac",
+      "backbone_initial_sha256": "760a831e801a0d6ff69fa4d1bcd19bcd3639fcc17c60b2f5916f409643c48f62",
+      "validation_strategy": "earlier advertisement dates train; one whole following date validates",
+      "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+      "final_test_used": false,
+      "diagnostics": {
+        "global": {
+          "rows": 421983,
+          "clicks": 3724,
+          "ctr": 0.008825000059244094,
+          "auc": 0.7340545309745673,
+          "logloss": 0.047604874435725766,
+          "average_precision": 0.0262153399253119,
+          "mean_prediction": 0.009888703760459347
+        },
+        "within_user": {
+          "eligible_users": 2621,
+          "eligible_rows": 169270,
+          "pair_weighted_auc": 0.682780203387718,
+          "row_weighted_auc": 0.6802502903032817,
+          "macro_auc": 0.6567366196774994,
+          "scope": "Only validation users with both labels; not directly comparable with global AUC"
+        },
+        "slices": {
+          "zero_train_clicks": {
+            "rows": 68667,
+            "clicks": 816,
+            "ctr": 0.011883437459041461,
+            "auc": 0.7312102249854857,
+            "logloss": 0.06164808133584613,
+            "average_precision": 0.02838152925879947,
+            "mean_prediction": 0.009141590430175454
+          },
+          "one_or_two_train_clicks": {
+            "rows": 213598,
+            "clicks": 1411,
+            "ctr": 0.006605867096133859,
+            "auc": 0.7277739768456448,
+            "logloss": 0.03817713792749839,
+            "average_precision": 0.016837031740793904,
+            "mean_prediction": 0.009125011803728121
+          },
+          "three_plus_train_clicks": {
+            "rows": 139718,
+            "clicks": 1497,
+            "ctr": 0.010714439084441517,
+            "auc": 0.7396793355197092,
+            "logloss": 0.05511600953981962,
+            "average_precision": 0.042658831740558255,
+            "mean_prediction": 0.011423402980491701
+          },
+          "new_task": {
+            "rows": 31363,
+            "clicks": 303,
+            "ctr": 0.009661065586837993,
+            "auc": 0.6881767748571379,
+            "logloss": 0.052798577671732114,
+            "average_precision": 0.021605537916171428,
+            "mean_prediction": 0.011073645429969603
+          },
+          "seen_task": {
+            "rows": 390620,
+            "clicks": 3421,
+            "ctr": 0.00875787210076289,
+            "auc": 0.7376967408704912,
+            "logloss": 0.047187870404721555,
+            "average_precision": 0.02674458413534561,
+            "mean_prediction": 0.00979356442918893
+          }
+        }
+      }
+    },
+    {
+      "day": 20191116,
+      "arm": "rank8",
+      "seed": 42,
+      "model_class": "PersonalizedDCN",
+      "model_options": {
+        "embedding_dim": 8,
+        "hidden_dims": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "unknown_dropout": 0.01,
+        "cross_layers": 2,
+        "group_norm_caps": {
+          "user_id": 0.2,
+          "ad_task": 0.2,
+          "adv_id": 0.2
+        },
+        "mode": "interaction",
+        "rank": 8,
+        "numeric_dim": 75,
+        "confidence_alpha": 200.0,
+        "residual_limit": 0.5
+      },
+      "best_fractional_epoch": 0.5,
+      "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_time16",
+      "train_rows": 2104337,
+      "parameter_count": 714226,
+      "personal_parameter_count": 77198,
+      "rows": 421983,
+      "clicks": 3724,
+      "ctr": 0.008825000059244094,
+      "auc": 0.7335491648595855,
+      "logloss": 0.04763265539192618,
+      "average_precision": 0.025806288417284093,
+      "mean_prediction": 0.010033139488541419,
+      "status": "complete_and_verified",
+      "training_seconds": 71.38911650000045,
+      "checkpoints_completed": 6,
+      "final_fractional_epoch": 1.5,
+      "maximum_reload_error": 0.0,
+      "checkpoint_sha256": "711cde4ccf356cb1a3157e4f7885549baf4f0cf19fc52012515211f321f0a826",
+      "backbone_initial_sha256": "760a831e801a0d6ff69fa4d1bcd19bcd3639fcc17c60b2f5916f409643c48f62",
+      "validation_strategy": "earlier advertisement dates train; one whole following date validates",
+      "source_rule": "Original strictly-past features plus separately matched same-day source profiles supplied by the offline task",
+      "final_test_used": false,
+      "diagnostics": {
+        "global": {
+          "rows": 421983,
+          "clicks": 3724,
+          "ctr": 0.008825000059244094,
+          "auc": 0.7335491648595855,
+          "logloss": 0.04763265539192618,
+          "average_precision": 0.025806288417284093,
+          "mean_prediction": 0.010033139488541419
+        },
+        "within_user": {
+          "eligible_users": 2621,
+          "eligible_rows": 169270,
+          "pair_weighted_auc": 0.6831229479145164,
+          "row_weighted_auc": 0.6803260465438885,
+          "macro_auc": 0.6568167915870022,
+          "scope": "Only validation users with both labels; not directly comparable with global AUC"
+        },
+        "slices": {
+          "zero_train_clicks": {
+            "rows": 68667,
+            "clicks": 816,
+            "ctr": 0.011883437459041461,
+            "auc": 0.7311663355634217,
+            "logloss": 0.061605943938800214,
+            "average_precision": 0.028329905637818724,
+            "mean_prediction": 0.009152368602729994
+          },
+          "one_or_two_train_clicks": {
+            "rows": 213598,
+            "clicks": 1411,
+            "ctr": 0.006605867096133859,
+            "auc": 0.7278504441696401,
+            "logloss": 0.03821066171404683,
+            "average_precision": 0.016884327554068053,
+            "mean_prediction": 0.009270715363603453
+          },
+          "three_plus_train_clicks": {
+            "rows": 139718,
+            "clicks": 1497,
+            "ctr": 0.010714439084441517,
+            "auc": 0.7388531219428991,
+            "logloss": 0.05516937364554761,
+            "average_precision": 0.041727621647353434,
+            "mean_prediction": 0.011631588955714674
+          },
+          "new_task": {
+            "rows": 31363,
+            "clicks": 303,
+            "ctr": 0.009661065586837993,
+            "auc": 0.6877661462218341,
+            "logloss": 0.052813944672885305,
+            "average_precision": 0.021399521240422874,
+            "mean_prediction": 0.011194204063193896
+          },
+          "seen_task": {
+            "rows": 390620,
+            "clicks": 3421,
+            "ctr": 0.00875787210076289,
+            "auc": 0.7371762785034951,
+            "logloss": 0.047216648081192684,
+            "average_precision": 0.02628902539971463,
+            "mean_prediction": 0.009939917256564497
+          }
+        }
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "day": 20191115,
+      "seed": 42,
+      "candidate": "rank8",
+      "delta_auc": 0.0005704592756906601,
+      "interval95": [
+        2.6195467303938305e-05,
+        0.0010352397939125792
+      ],
+      "draws": 200,
+      "users": 8503,
+      "scope": "Exploratory paired user bootstrap on development/confirmation dates"
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "candidate": "rank8",
+      "delta_auc": -0.0005053661149817534,
+      "interval95": [
+        -0.001026570295779819,
+        8.895509817227478e-05
+      ],
+      "draws": 200,
+      "users": 8504,
+      "scope": "Exploratory paired user bootstrap on development/confirmation dates"
+    }
+  ],
+  "final_test_used": false,
+  "final_prediction_changed": false
+}

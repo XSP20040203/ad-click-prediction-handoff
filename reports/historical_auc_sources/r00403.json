@@ -1,0 +1,42 @@
+{
+  "status": "verified_development_reference",
+  "development": {
+    "20191115": {
+      "auc": 0.7926443086415286,
+      "logloss": 0.04206889930685819,
+      "average_precision": 0.08304818908487585,
+      "mean_probability": 0.008691792693130172
+    },
+    "20191116": {
+      "auc": 0.8004121944890122,
+      "logloss": 0.04399045524110917,
+      "average_precision": 0.08609959292726262,
+      "mean_probability": 0.00962371761984687
+    }
+  },
+  "formula": "v7 + .30 * (.50*cold_seed42_best + .50*fullcount_seed42_best - original_core)",
+  "input_predictions_sha256": {
+    "20191115": {
+      "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\fixed_gated20_allocated10_core30_day15.npy": "113b93a9dd6c02d395902140e88c5757c91a0ce81575c036e9af325ebc20360d",
+      "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\results\\gated166_day15\\validation_prediction.npy": "10b6fbb4fd5d4c5bc7b151bb6fab591826dc8793dfa6a0fa8e98b5cfb692d412",
+      "E:\\AI\\ml\\大作业上传\\analysis\\auc85_goal_20261031\\runs\\audience_cold_neural_v1_day15_seed42\\audience_cold\\best_prediction.npy": "c21353c291f5d4e7f5cdc4a38280ea4213f352fb3a3f9efeb740adb9c2b115a1",
+      "E:\\AI\\ml\\大作业上传\\analysis\\auc85_goal_20261031\\runs\\statistics_alignment_v1_day15_seed42\\full_counts\\control\\best_prediction.npy": "f40211f37815f6de42affda866b2f9704737122ff9fa9c235736f8b34fd5e7ad"
+    },
+    "20191116": {
+      "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\fixed_gated20_allocated10_core30_day16.npy": "32a1315341af205c6f422e7ad70be52924a3ac5cd28f270d1c11adb4778c73a5",
+      "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\results\\gated166_day16\\validation_prediction.npy": "8865466cabf686a7cc4ff584c02de04c9b0d99e704735d284928b1b7eaad96dc",
+      "E:\\AI\\ml\\大作业上传\\analysis\\auc85_goal_20261031\\runs\\audience_cold_neural_v1_day16_seed42\\audience_cold\\best_prediction.npy": "495c98d66d39799ae67bfabb6068d22e5245ef5a10366e9d93c980b575e19bb4",
+      "E:\\AI\\ml\\大作业上传\\analysis\\auc85_goal_20261031\\runs\\statistics_alignment_v1_day16_seed42\\full_counts\\control\\best_prediction.npy": "a6d4da37e62603aea26b04d637f8b9a91de8c0ccd0c6db713d11e9bf4c8b4070"
+    }
+  },
+  "source_sha256": "b853a54f3aad9946a5d76f15b18c09712062dce6cccd1638c6721b776da08ec7",
+  "files_sha256": {
+    "day15_indices.npy": "d82f9999fec7aaa235312227f3d73826687f51a3e5e1981a40d26a0255e76a24",
+    "day15_prediction.npy": "786788b3f28f6ad7bc39d8d2a7cfeb0f65dcf17f8fe21e0938c70ea9989041b8",
+    "day16_indices.npy": "4476f254ab1c3b9062d9d9a58a80bb00f72e88388792467b2a9925b8cc6b1738",
+    "day16_prediction.npy": "f3d9e3f73ede07468acd100a75b38d31c436d214cc70d5a557d6d9ee729c8fb1"
+  },
+  "final_submission_exported": false,
+  "final_test_auc": null,
+  "original_v7_submission_sha256": "c44a9e803b8b4566b9bcef4e1bf85181c2ee00eee71a9f84474b73c619c121b9"
+}

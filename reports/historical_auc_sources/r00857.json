@@ -1,0 +1,80 @@
+{
+  "status": "complete_and_verified",
+  "recommended_model": "user_bias",
+  "validation_auc": 0.7301850454579698,
+  "train_auc": 0.7733548558201658,
+  "auc_gap": 0.043169810362196026,
+  "full_raw_replay_rows": 504204,
+  "maximum_probability_error": 0.0,
+  "comparisons": [
+    {
+      "baseline": "shared_C0.01",
+      "delta_auc": 0.010576007761481154,
+      "interval95": [
+        0.008428798823808963,
+        0.012616289094233117
+      ],
+      "draws": 200,
+      "users": 8553,
+      "scope": "Exploratory paired user bootstrap on model-selection holdout"
+    },
+    {
+      "baseline": "stronger_C0.1",
+      "delta_auc": 0.006300097169142371,
+      "interval95": [
+        0.00403826786431512,
+        0.009109437867238423
+      ],
+      "draws": 200,
+      "users": 8553,
+      "scope": "Exploratory paired user bootstrap on model-selection holdout"
+    }
+  ],
+  "per_day": [
+    {
+      "day": 20191110,
+      "rows": 57,
+      "clicks": 2,
+      "auc": 0.509090909090909
+    },
+    {
+      "day": 20191111,
+      "rows": 89090,
+      "clicks": 754,
+      "auc": 0.7364211871648016
+    },
+    {
+      "day": 20191112,
+      "rows": 86560,
+      "clicks": 705,
+      "auc": 0.7221397366746093
+    },
+    {
+      "day": 20191113,
+      "rows": 83443,
+      "clicks": 699,
+      "auc": 0.7346559244660644
+    },
+    {
+      "day": 20191114,
+      "rows": 77102,
+      "clicks": 653,
+      "auc": 0.7331156642738355
+    },
+    {
+      "day": 20191115,
+      "rows": 84308,
+      "clicks": 722,
+      "auc": 0.7358077235031142
+    },
+    {
+      "day": 20191116,
+      "rows": 83644,
+      "clicks": 662,
+      "auc": 0.7215325916784194
+    }
+  ],
+  "final_test_used": false,
+  "finding": "User click-propensity adjustment wins this holdout; extra per-user group weights have no demonstrated advantage",
+  "scope": "Within-seen-date grouped holdout; exploratory model selection; not an independent future-day test"
+}

@@ -1,0 +1,55 @@
+{
+  "status": "fixed_before_training",
+  "day": 20191116,
+  "seed": 42,
+  "variants": [
+    "disabled",
+    "permuted",
+    "actual"
+  ],
+  "hypothesis": "Small target-trained source semantic-ID tables add useful source information beyond the protected strong backbone",
+  "source_encoder": "Previously verified frozen target-inclusive news autoencoder; no new pretraining",
+  "source_code_manifest_sha256": "3e7ea983b4d8f2089fa8ca1f5cc33654a43c5a02ddd73b089f833ce2aca5a711",
+  "epochs": 1,
+  "batch_size": 1024,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "auxiliary_weight": 0.02,
+  "clip": "Original backbone and head groups separately, norm5",
+  "support_rule": "Training user-day counts only; n/(n+4); unseen semantic states contribute zero embedding",
+  "checks": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "ensemble_rule": "original_v7 + .30 * (new_core - original_gated166)",
+  "minimum_auc_gain_each_day": 0.003,
+  "maximum_logloss_worsening_each_day": 0.0001,
+  "actual_must_outperform_permuted_each_day": true,
+  "second_seed_required_before_promotion": true,
+  "reference": {
+    "manifest_path": "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\reference_day_state_protected_seed42_v1\\manifest.json",
+    "manifest_sha256": "c6a0c256c3cda8d2b94dcca1bfcb5c14a3e40aa358039b7cf08f84fd075d940f"
+  },
+  "sources_sha256": {
+    "E:\\AI\\ml\\大作业上传\\analysis\\semantic_id_20261101\\sid_model.py": "185e0fd21c4df787a601aaf60ba6f35cf4279edfa851a014b569baf551b344bf",
+    "E:\\AI\\ml\\大作业上传\\analysis\\semantic_id_20261101\\make_codes.py": "92523a2ce636cb0d243ef313944a13bfd1c0f7fee8d8b0bad18a33af7a61b5c2",
+    "E:\\AI\\ml\\大作业上传\\analysis\\semantic_id_20261101\\run_sid.py": "d1a722cb8f2dd6cfea9c217fc63fdc14f9ba7b21524118ce1e379a39d7227107",
+    "E:\\AI\\ml\\大作业上传\\analysis\\semantic_id_20261101\\test_sid.py": "99b85288a0f7c950c7fac1bcb8ce7b0efb0d86d98bae9b7d31f408b010cca9e8",
+    "E:\\AI\\ml\\大作业上传\\analysis\\semantic_id_20261101\\evaluate_sid.py": "a096510e3a3bfc8d81877331cc2aa46b426b4b99b0142355337fa771dd4f596e",
+    "E:\\AI\\ml\\大作业上传\\analysis\\transductive_interest_20261101\\run_transductive.py": "92ff9f4053596c7f88708309245e31387c82634a164b1dfb9e1777df4c91e316",
+    "E:\\AI\\ml\\大作业上传\\analysis\\transductive_interest_20261101\\interest_model.py": "36558f7cc8188635126c35bb239731cef53f6e9631f79a0e99b2e04684118d2d",
+    "E:\\AI\\ml\\大作业上传\\analysis\\transductive_interest_20261101\\topic_data.py": "2a4ae89c75879eb949900f5041ebae0d1dfcbafb40f4d5742bc45497c9d7c5b0",
+    "E:\\AI\\ml\\大作业上传\\analysis\\transductive_interest_20261101\\pretrain.py": "cde0207fa4ac9fd33791f23279bcc8df48d680125606bcbc7467be259a124cd3",
+    "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\protected_day_model.py": "94093704489e11f3acd834b1a0ad332c26e201c2d46836c04166f71a96a12967",
+    "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\day_model.py": "cda70b86e260877f94c1350678880a9173118af4cef9481fd4b1b1aeba5e4209",
+    "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\day_context.py": "aa7f11fbeb9c839f230a3a1b8aa757de882ce17a63b581f2b9cc56adb0522f0a",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\model.py": "4832bae4c1d83dc33af3ffa0849d87df3f04b342968cad0ff74d060acaf78b18",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\features.py": "bd4ddb907511f5e03935d5ca5f285f80f8c877a1125c56586262414fc6e97a8d",
+    "E:\\AI\\ml\\大作业上传\\analysis\\strong_interest_control_20261031\\experiment.py": "b29758da89f150f38ee9533795742c949f436c292ba90cd18679ab874062c886"
+  },
+  "large_row_matrices_saved": false,
+  "held_advertisement_labels_fit": false,
+  "simplified_probe_not_full_paper_reproduction": true
+}

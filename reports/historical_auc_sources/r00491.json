@@ -1,0 +1,59 @@
+{
+  "model": "dcnv2",
+  "auc": 0.7250986060243602,
+  "logloss": 0.047499226830555116,
+  "average_precision": 0.028071907712602442,
+  "mean_prediction": 0.009553232642301526,
+  "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+  "best_epoch": 1,
+  "epochs_completed": 4,
+  "parameter_count": 465253,
+  "training_seconds": 97.51986880000004,
+  "inference_seconds": null,
+  "feature_note": "24 categorical fields, seven masked-mean history fields, 20 numeric inputs. Parallel full-matrix two-layer CrossNet + DNN; concatenate outputs before logistic head.",
+  "model_class": "DCNV2Model",
+  "model_options": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "cross_layers": 2
+  },
+  "parameters": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "cross_layers": 2,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "batch_size": 2048,
+    "max_epochs": 10,
+    "early_stopping_patience": 3,
+    "loss": "unweighted BCEWithLogitsLoss",
+    "seed": 42
+  },
+  "train_rows": 2104337,
+  "valid_rows": 421983,
+  "validation_day": 20191116,
+  "validation_clicks": 3724,
+  "seed": 42,
+  "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\cache",
+  "python": "3.10.0",
+  "new_task_rows": 31363,
+  "new_task_clicks": 303,
+  "new_task_metrics": {
+    "auc": 0.6722235150108701,
+    "logloss": 0.05290913242325003,
+    "average_precision": 0.020584144896911738,
+    "mean_prediction": 0.010854596506355804
+  },
+  "experiment_scope": "Same raw inputs, frozen preprocessing, date boundaries, batch order and optimizer. Architecture and its input representation vary."
+}

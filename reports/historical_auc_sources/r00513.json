@@ -1,0 +1,12 @@
+{
+  "validation_day": 20191116,
+  "training_day": 20191115,
+  "base_auc": 0.7973019647534959,
+  "residual_auc": 0.7968772424372834,
+  "base_logloss": 0.0440794574022895,
+  "residual_logloss": 0.04407993920549172,
+  "rounds_fixed_before_day16": 10,
+  "maximum_reload_error": 0.0,
+  "goal_met": false,
+  "final_auc": null
+}

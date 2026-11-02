@@ -1,0 +1,227 @@
+{
+  "status": "complete_and_verified",
+  "version": "chronological_duplicate_v5",
+  "source_version": "chronological_shared_lgb_v4",
+  "source_prediction": {
+    "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\ensemble_final_prediction.npy",
+    "bytes": 3233584,
+    "sha256": "2300b0c3efd94fa12dab84927cfe19ebce1f515e3211fb7459710af30734b4a1"
+  },
+  "source_manifest": {
+    "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\manifest.json",
+    "bytes": 38486,
+    "sha256": "b43ff864a70a20ed748b86a5bce48665c9f65ce0187bdb3b6d6f382b746bc06a"
+  },
+  "source_verification": {
+    "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\verification.json",
+    "bytes": 2497,
+    "sha256": "a53e990f80fc4574229ebd82fc1433f759f16313b5d35745048157624de72509"
+  },
+  "source_export_script": {
+    "path": "E:\\AI\\ml\\大作业上传\\analysis\\nextday_goal_20261029\\export_count_corrected.py",
+    "bytes": 19137,
+    "sha256": "0518ff77deda28d1440f390a82f6a817f62784e4e663377d9e169258c15b201b"
+  },
+  "multiplicity_selection": {
+    "path": "E:\\AI\\ml\\大作业上传\\analysis\\nextday_goal_20261029\\duplicate_multiplicity\\selection_frozen.json",
+    "bytes": 1666,
+    "sha256": "ef7555e899a9433a2c46dc69956eee20e3d8590c5b9455288c6060dfbbb0c8d7"
+  },
+  "final_input": {
+    "path": "E:\\AI\\ml\\大作业上传\\2026ml\\final_test.csv",
+    "bytes": 82684329,
+    "sha256": "9478dfd16937919a30b4efe7b19b805c70196ca5d0c2c8561e37bdb0fdd42b59"
+  },
+  "final_rows": 404182,
+  "full_training_refit": false,
+  "model_training": "No training; use existing verified v4 full-data ensemble unchanged",
+  "base_expanded_weights": {
+    "dcn": 0.24,
+    "tree": 0.24,
+    "lgb_v2": 0.12,
+    "multiscale_dcn": 0.2,
+    "shared_lgb": 0.2
+  },
+  "exponent": 0.1,
+  "exponent_source": "Day15 .1 selected on stronger analysis blend; inherited unchanged for v4-only export, no final outcomes",
+  "input_fields": [
+    "user_id",
+    "age",
+    "sex",
+    "residence",
+    "city",
+    "city_rank",
+    "series_dev",
+    "series_group",
+    "device_dev",
+    "device_name",
+    "device_size",
+    "net_type",
+    "task_id",
+    "adv_id",
+    "creat_type_cd",
+    "adv_prim_id",
+    "inter_type_cd",
+    "slot_id",
+    "site_id",
+    "spread_app_id",
+    "hispace_app_tags",
+    "app_second_class",
+    "app_score",
+    "ad_click_list_v001",
+    "ad_click_list_v002",
+    "ad_click_list_v003",
+    "ad_close_list_v001",
+    "ad_close_list_v002",
+    "ad_close_list_v003",
+    "pt_d",
+    "u_newsCatInterestsST",
+    "u_refreshTimes",
+    "u_feedLifeCycle"
+  ],
+  "input_dtype": "str",
+  "keep_default_na": false,
+  "formula": "clip(v4_probability,1e-7,1-1e-7) odds multiplied by float32(context_count)**0.1, then convert odds to probability",
+  "multiplicity": {
+    "groups": 261475,
+    "repeated_groups": 63680,
+    "repeated_rows_beyond_first": 142707,
+    "maximum_count": 86,
+    "rows_in_repeated_groups": 206387,
+    "all_hash_counts_equal_direct_raw_groupby": true,
+    "no_observed_raw_key_hash_collisions": true,
+    "date_isolation": "pt_d in all 33-field keys; final inputs contain only 20191117"
+  },
+  "row_alignment": {
+    "full_source_detail_ids_users_dates_equal_raw_final": true,
+    "full_cache_final_suffix_logid_date_user_equal_raw": true,
+    "source_detail_probability_max_error": 0.0,
+    "duplicate_log_id_rows": 858
+  },
+  "development": {
+    "20191115": {
+      "v4_auc": 0.7880938883633664,
+      "v4_plus_count_auc": 0.7890897966859739,
+      "v4_plus_count_logloss": 0.04221394438210472,
+      "rows": 424780,
+      "clicks": 3523,
+      "stronger_analysis_fullblend_plus_count_auc": 0.7905480723412239,
+      "stronger_analysis_blend_is_exported": false
+    },
+    "20191116": {
+      "v4_auc": 0.7957095722599832,
+      "v4_plus_count_auc": 0.7972595635287103,
+      "v4_plus_count_logloss": 0.04415659283339845,
+      "rows": 421983,
+      "clicks": 3724,
+      "stronger_analysis_fullblend_plus_count_auc": 0.7987435691593445,
+      "stronger_analysis_blend_is_exported": false
+    }
+  },
+  "export_matching_development": "v4_plus_count_auc only; stronger analysis fullblend+count scores are NOT this exported model",
+  "same_day_input_assumption": "Complete supplied final-day raw advertisement predictors and source snapshots available offline; count includes the row itself and all same-day exposures",
+  "advertisement_statistics": "Inherited source v4 statistics use strictly earlier calendar dates; multiplicity uses no outcomes",
+  "final_labels_read": false,
+  "final_labels_available": false,
+  "final_auc": null,
+  "goal_auc": 0.85,
+  "goal_met": false,
+  "final_id_rule": "Preserve final_test.csv original row order and repeated log_id; submission.id is zero-based row position",
+  "probability": {
+    "minimum": 0.0003352562587745843,
+    "maximum": 0.886826016774644,
+    "mean": 0.009107295892332576
+  },
+  "protected_prior_export": {
+    "ensemble_final_prediction.npy": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\ensemble_final_prediction.npy",
+      "bytes": 3233584,
+      "sha256": "2300b0c3efd94fa12dab84927cfe19ebce1f515e3211fb7459710af30734b4a1"
+    },
+    "manifest.json": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\manifest.json",
+      "bytes": 38486,
+      "sha256": "b43ff864a70a20ed748b86a5bce48665c9f65ce0187bdb3b6d6f382b746bc06a"
+    },
+    "prediction_details.csv": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\prediction_details.csv",
+      "bytes": 75435122,
+      "sha256": "ac9fd14d224ecfd9b057e4f057ccb420e8569d077083694d5817ae9061eadbf2"
+    },
+    "protocol.json": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\protocol.json",
+      "bytes": 34266,
+      "sha256": "f90123fd9d867194f1c5b7fa9ca35555ddc82602f42e0d92969689fef468cb89"
+    },
+    "result.csv": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\result.csv",
+      "bytes": 6826989,
+      "sha256": "6eff912865f8a6165110009beb9ff48b13e804da05cbe36cb302d3f36970c436"
+    },
+    "run.log": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\run.log",
+      "bytes": 6889,
+      "sha256": "2af66c650c7d0b8b1f680ec6a9d07026fe5fc76a5a969c4931894da17b3c05d9"
+    },
+    "shared_lgb_final_prediction.npy": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\shared_lgb_final_prediction.npy",
+      "bytes": 3233584,
+      "sha256": "013e273134063aefc127206dedaec4ad006e17905a235407106f77d0f7dcc2e8"
+    },
+    "shared_lgb_model.txt": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\shared_lgb_model.txt",
+      "bytes": 1114625,
+      "sha256": "28aac65a2a49e1d293f75d34215b210628cb5d66b89d6f778a0e49d164b4da47"
+    },
+    "submission.csv": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\submission.csv",
+      "bytes": 6759993,
+      "sha256": "fcb43be76b994e0ac71eac641cff7b8ce880d006f2a46eb9640dd136ff27c34b"
+    },
+    "verification.json": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_shared_lgb_v4\\verification.json",
+      "bytes": 2497,
+      "sha256": "a53e990f80fc4574229ebd82fc1433f759f16313b5d35745048157624de72509"
+    }
+  },
+  "files": {
+    "submission.csv": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_duplicate_v5\\submission.csv",
+      "bytes": 6355810,
+      "sha256": "e7d434ebd5896cc80fd2bc259f6a9152509ec5ee6e96cef609450c6b4da102a1"
+    },
+    "result.csv": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_duplicate_v5\\result.csv",
+      "bytes": 6422806,
+      "sha256": "93ccc1d2402397c1fbc0d0109c1741411aaf7c2379f25566375bd26d7c3665d5"
+    },
+    "prediction_details.csv": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_duplicate_v5\\prediction_details.csv",
+      "bytes": 36261636,
+      "sha256": "ba9913b0f63afe5ce5ff427ad5e5b1ee24fa357ba02a3668381473bfc82678a2"
+    },
+    "ensemble_final_prediction.npy": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_duplicate_v5\\ensemble_final_prediction.npy",
+      "bytes": 3233584,
+      "sha256": "c1a441a56a3d9d0f0b5247bf2dd1302ad37c4d98552af8be901a718f89ac2cb0"
+    },
+    "context_count.npy": {
+      "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_duplicate_v5\\context_count.npy",
+      "bytes": 1616856,
+      "sha256": "56207aa1e8d0c8d03f79712fc1cf697cc6cd1f99e58519f03ff5195906ea97fb"
+    }
+  },
+  "warnings": [
+    "Development dates15/16 repeatedly used; neither development AUC nor verification proves final performance.",
+    "The analysis-only fullblend+count .790548/.798744 includes models absent from this export.",
+    "Full-day inputs do not establish online pre-exposure availability.",
+    "Final advertisement AUC is unknown; goal remains unmet."
+  ],
+  "seconds_before_verification": 14.245605899999646,
+  "verification": {
+    "path": "E:\\AI\\ml\\大作业上传\\output\\chronological_duplicate_v5\\verification.json",
+    "bytes": 2186,
+    "sha256": "39f4b087d1b9b02a211ab48a321ca60b289d8d36d4799f09d66f6ff3cd56e278"
+  },
+  "elapsed_seconds": 28.71157889999995
+}

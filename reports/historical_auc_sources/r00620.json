@@ -1,0 +1,19 @@
+{
+  "name": "with_ids_C0.01",
+  "include_ids": true,
+  "C": 0.01,
+  "train_auc": 0.7409596765489085,
+  "valid_auc": 0.7196090376964887,
+  "auc_gap": 0.021350638852419834,
+  "train_logloss": 0.04562216423339564,
+  "valid_logloss": 0.04543439770004855,
+  "logloss_gap": -0.0001877665333470946,
+  "parameters": 16640,
+  "iterations": 73,
+  "converged": true,
+  "convergence_warnings": [],
+  "coefficient_l2_norm": 4.240449370414458,
+  "seconds": 13.653186300000016,
+  "maximum_replay_error": 0.0,
+  "model_sha256": "b5510a7ba8f12c290e1690c00f27860ef84862ab51752adb76bf0253ccd0f481"
+}

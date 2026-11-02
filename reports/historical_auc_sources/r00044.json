@@ -1,0 +1,74 @@
+[
+  {
+    "fractional_epoch": 0.25,
+    "auc": 0.7767252815940429,
+    "logloss": 0.04539798472105236,
+    "average_precision": 0.06394225788954189,
+    "mean_probability": 0.01034497655928135,
+    "train_loss": 0.043857017541050564,
+    "seconds": 122.13549970000031
+  },
+  {
+    "fractional_epoch": 0.5,
+    "auc": 0.7851762981858135,
+    "logloss": 0.0448437181784559,
+    "average_precision": 0.07019039594357071,
+    "mean_probability": 0.008778626099228859,
+    "train_loss": 0.04350102162405356,
+    "seconds": 184.00212030000012
+  },
+  {
+    "fractional_epoch": 0.75,
+    "auc": 0.791348971212003,
+    "logloss": 0.04444823871221841,
+    "average_precision": 0.0758785447971452,
+    "mean_probability": 0.0093978401273489,
+    "train_loss": 0.043445149384047616,
+    "seconds": 215.35211170000002
+  },
+  {
+    "fractional_epoch": 1.0,
+    "auc": 0.792717644663761,
+    "logloss": 0.04430697627095909,
+    "average_precision": 0.08120767660639405,
+    "mean_probability": 0.009570570662617683,
+    "train_loss": 0.04285436717107178,
+    "seconds": 244.40659230000028
+  },
+  {
+    "fractional_epoch": 1.25,
+    "auc": 0.7721721499407873,
+    "logloss": 0.04599324399556665,
+    "average_precision": 0.06836696832607227,
+    "mean_probability": 0.006880005355924368,
+    "train_loss": 0.03985131046723879,
+    "seconds": 272.6340167000003
+  },
+  {
+    "fractional_epoch": 1.5,
+    "auc": 0.7786542554772894,
+    "logloss": 0.045592654197238174,
+    "average_precision": 0.06899546434068293,
+    "mean_probability": 0.009670599363744259,
+    "train_loss": 0.039837450835426204,
+    "seconds": 301.91124290000016
+  },
+  {
+    "fractional_epoch": 1.75,
+    "auc": 0.7790775310131728,
+    "logloss": 0.04525267267758819,
+    "average_precision": 0.07276625793989566,
+    "mean_probability": 0.008755899965763092,
+    "train_loss": 0.03980752231792369,
+    "seconds": 329.9849981000002
+  },
+  {
+    "fractional_epoch": 2.0,
+    "auc": 0.7810215119921339,
+    "logloss": 0.045321977826714356,
+    "average_precision": 0.06933017279282017,
+    "mean_probability": 0.008025944232940674,
+    "train_loss": 0.04000154567120266,
+    "seconds": 358.6012303000002
+  }
+]

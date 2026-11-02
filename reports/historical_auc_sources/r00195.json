@@ -1,0 +1,42 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "mode": "control",
+  "fixed_endpoint": {
+    "fractional_epoch": 1.0,
+    "auc": 0.7829869675466388,
+    "logloss": 0.04252863178943528,
+    "average_precision": 0.07479646603491716,
+    "mean_probability": 0.00802402850240469,
+    "train_loss": 0.04312129716273301,
+    "seconds": 154.48580889999903
+  },
+  "best_checkpoint": {
+    "fractional_epoch": 0.7501523461304083,
+    "auc": 0.7850251567660816,
+    "logloss": 0.04239552336370976,
+    "average_precision": 0.07694565668754617,
+    "mean_probability": 0.008751853369176388,
+    "train_loss": 0.043708331895815127,
+    "seconds": 116.19420929999978
+  },
+  "fixed_v7_component_replacement": {
+    "auc": 0.7917321473511594,
+    "logloss": 0.04210320279340888,
+    "average_precision": 0.0823221295456638,
+    "mean_probability": 0.008722932103571288
+  },
+  "initial_backbone_sha256": "793c76b6ef2d2c463b974a99579e4165d71921be218998bad9494a9017b03f9e",
+  "row_order_sha256": "3d0d2924edcfac5f30b93da94792474189960945b14d33163917f4fcb59655c0",
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "seconds": 167.22215200000028,
+  "files_sha256": {
+    "best_model.pt": "043c1ab11cea9f7c055616709243506c8711dada3a668615af08a24ac180dc35",
+    "final_model.pt": "77eca82fe71728531a30a0720867ac528d8237e27f7a57c47ea81edbb5883e7b",
+    "best_prediction.npy": "dffd9895d37c924c20e87fb71b32741e0123534d655623154e07f0490a7337ba",
+    "final_prediction.npy": "f09ca02f35c839f21ea79c6ed5e93105ed0b117a964eb2a7b1bef26c3943cdf4"
+  }
+}

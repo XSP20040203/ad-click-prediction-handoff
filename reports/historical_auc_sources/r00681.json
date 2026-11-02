@@ -1,0 +1,29 @@
+{
+  "mode": "ensemble_teacher",
+  "core_scores": {
+    "auc": 0.7918540461732773,
+    "logloss": 0.04431218650117759,
+    "average_precision": 0.08247294441721396,
+    "mean_probability": 0.009966621175408363
+  },
+  "candidate_scores": {
+    "auc": 0.8011263987059407,
+    "logloss": 0.043911875173869436,
+    "average_precision": 0.08751699895264996,
+    "mean_probability": 0.009668690207172355
+  },
+  "rounded6_scores": {
+    "auc": 0.8011265386651648,
+    "logloss": 0.043911868249067856,
+    "average_precision": 0.08751618383523552,
+    "mean_probability": 0.00966868970787923
+  },
+  "auc_gain": -0.00011486864419762988,
+  "past_retention_scores": {
+    "auc": 0.8469343122824119,
+    "logloss": 0.03738946718507939,
+    "average_precision": 0.1394527088728805,
+    "mean_probability": 0.008520503528416157
+  },
+  "candidate_prediction_sha256": "7dc60fb0d46f2b38fb83f2932b52447aa5c74e10161986c5e09c2bae2ed3c0a7"
+}

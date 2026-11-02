@@ -1,0 +1,29 @@
+{
+  "mode": "rehearsal_only",
+  "core_scores": {
+    "auc": 0.7900848444116576,
+    "logloss": 0.044556198152696416,
+    "average_precision": 0.08135282365542193,
+    "mean_probability": 0.010413255542516708
+  },
+  "candidate_scores": {
+    "auc": 0.8011851693818247,
+    "logloss": 0.04391077067982304,
+    "average_precision": 0.08726575700608799,
+    "mean_probability": 0.00980268029843047
+  },
+  "rounded6_scores": {
+    "auc": 0.8011850541401698,
+    "logloss": 0.043910769007199424,
+    "average_precision": 0.0872655582996206,
+    "mean_probability": 0.00980268104639286
+  },
+  "auc_gain": -5.609796831362868e-05,
+  "past_retention_scores": {
+    "auc": 0.8466603111371432,
+    "logloss": 0.037337009624060676,
+    "average_precision": 0.13904857581816066,
+    "mean_probability": 0.008655762299895287
+  },
+  "candidate_prediction_sha256": "b10190500935cbbd4694e2ba5cfa26189fedc42389a5d0f5ff2f8a8119cfb3fe"
+}

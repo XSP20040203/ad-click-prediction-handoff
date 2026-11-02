@@ -1,0 +1,155 @@
+{
+  "status": "passed",
+  "verified_ad_models": 6,
+  "component_rescores": [
+    {
+      "day": 20191115,
+      "variant": "disabled",
+      "endpoint": "best",
+      "auc": 0.7848113938947806
+    },
+    {
+      "day": 20191115,
+      "variant": "disabled",
+      "endpoint": "final",
+      "auc": 0.7826394158130785
+    },
+    {
+      "day": 20191115,
+      "variant": "permuted",
+      "endpoint": "best",
+      "auc": 0.7840505985866093
+    },
+    {
+      "day": 20191115,
+      "variant": "permuted",
+      "endpoint": "final",
+      "auc": 0.7836468160386436
+    },
+    {
+      "day": 20191115,
+      "variant": "actual",
+      "endpoint": "best",
+      "auc": 0.7833982961409972
+    },
+    {
+      "day": 20191115,
+      "variant": "actual",
+      "endpoint": "final",
+      "auc": 0.7825191561313257
+    },
+    {
+      "day": 20191116,
+      "variant": "disabled",
+      "endpoint": "best",
+      "auc": 0.7918529024239293
+    },
+    {
+      "day": 20191116,
+      "variant": "disabled",
+      "endpoint": "final",
+      "auc": 0.7918529024239293
+    },
+    {
+      "day": 20191116,
+      "variant": "permuted",
+      "endpoint": "best",
+      "auc": 0.790981911454147
+    },
+    {
+      "day": 20191116,
+      "variant": "permuted",
+      "endpoint": "final",
+      "auc": 0.790981911454147
+    },
+    {
+      "day": 20191116,
+      "variant": "actual",
+      "endpoint": "best",
+      "auc": 0.7897104326214351
+    },
+    {
+      "day": 20191116,
+      "variant": "actual",
+      "endpoint": "final",
+      "auc": 0.7897104326214351
+    }
+  ],
+  "records": [
+    {
+      "day": 20191115,
+      "variant": "disabled",
+      "auc": 0.7934700801999591,
+      "logloss": 0.04204855010744797,
+      "reference_auc": 0.7934700801999591,
+      "gain": 0.0,
+      "logloss_change": 0.0
+    },
+    {
+      "day": 20191115,
+      "variant": "permuted",
+      "auc": 0.7933214610217719,
+      "logloss": 0.04205331091206405,
+      "reference_auc": 0.7934700801999591,
+      "gain": -0.00014861917818720372,
+      "logloss_change": 4.760804616081582e-06
+    },
+    {
+      "day": 20191115,
+      "variant": "actual",
+      "auc": 0.7922956690347741,
+      "logloss": 0.04214555060636241,
+      "reference_auc": 0.7934700801999591,
+      "gain": -0.0011744111651850186,
+      "logloss_change": 9.70004989144374e-05
+    },
+    {
+      "day": 20191116,
+      "variant": "disabled",
+      "auc": 0.8012412673501383,
+      "logloss": 0.04389861132045347,
+      "reference_auc": 0.8012412673501383,
+      "gain": 0.0,
+      "logloss_change": 0.0
+    },
+    {
+      "day": 20191116,
+      "variant": "permuted",
+      "auc": 0.801059247168989,
+      "logloss": 0.04391989875682069,
+      "reference_auc": 0.8012412673501383,
+      "gain": -0.00018202018114932272,
+      "logloss_change": 2.1287436367214974e-05
+    },
+    {
+      "day": 20191116,
+      "variant": "actual",
+      "auc": 0.8006409289503058,
+      "logloss": 0.043929614061918885,
+      "reference_auc": 0.8012412673501383,
+      "gain": -0.000600338399832534,
+      "logloss_change": 3.10027414654121e-05
+    }
+  ],
+  "decisions": [
+    {
+      "day": 20191115,
+      "actual_gain": -0.0011744111651850186,
+      "actual_minus_permuted": -0.001025791986997815,
+      "gate_passed": false
+    },
+    {
+      "day": 20191116,
+      "actual_gain": -0.000600338399832534,
+      "actual_minus_permuted": -0.0004183182186832113,
+      "gate_passed": false
+    }
+  ],
+  "proceed_to_second_seed": false,
+  "second_seed_required_before_recommendation": true,
+  "final_advertisement_labels_read": false,
+  "final_auc": null,
+  "existing_submission_preserved": true,
+  "submission_sha256": "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846",
+  "evaluator_sha256": "a096510e3a3bfc8d81877331cc2aa46b426b4b99b0142355337fa771dd4f596e"
+}

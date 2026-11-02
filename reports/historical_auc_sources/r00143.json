@@ -1,0 +1,10 @@
+{
+  "loaded_base_tensors": 51,
+  "trainable_adapter_parameters": 24816,
+  "frozen_base_parameters": 1756579,
+  "teacher_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\random20_architecture_capacity32\\tabm_ple_clip\\seed42",
+  "teacher_checkpoint_sha256": "8dde12dd7bc3cec6b472267efa54da33d9f81b92fd41b10ee65f00b64f67dc79",
+  "initial_teacher_replay_max_error": 0.0,
+  "initial_teacher_replay_auc": 0.7701322296373161,
+  "frozen_function_eval_mode": true
+}

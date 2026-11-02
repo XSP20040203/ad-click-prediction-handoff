@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "scores": [
+    {
+      "version": "v6",
+      "auc": 0.80817,
+      "path": "E:/浏览器下载/submission.csv",
+      "sha256": "899f6f6f48bae40ec3920d7948ace3d26f478e839c865fbe3006c90c565f9e5f",
+      "archive": "E:\\AI\\ml\\大作业上传\\analysis\\platform_delta_blend_20261101\\scored_inputs\\v6_auc080817_899f6f6f48ba.csv",
+      "source_csv_array_rounding_error": 4.999978005862382e-07
+    },
+    {
+      "version": "v7",
+      "auc": 0.80581,
+      "path": "E:/浏览器下载/submission (1).csv",
+      "sha256": "c44a9e803b8b4566b9bcef4e1bf85181c2ee00eee71a9f84474b73c619c121b9",
+      "archive": "E:\\AI\\ml\\大作业上传\\analysis\\platform_delta_blend_20261101\\scored_inputs\\v7_auc080581_c44a9e803b8b.csv",
+      "source_csv_array_rounding_error": 4.999946392322471e-07
+    },
+    {
+      "version": "v8",
+      "auc": 0.80745,
+      "path": "E:/浏览器下载/submission (2).csv",
+      "sha256": "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846",
+      "archive": "E:\\AI\\ml\\大作业上传\\analysis\\platform_delta_blend_20261101\\scored_inputs\\v8_auc080745_1b43ee597613.csv",
+      "source_csv_array_rounding_error": 4.9999972044634244e-11
+    }
+  ],
+  "file_bindings_override_earlier_ambiguous_version_names": true,
+  "platform_scores_are_human_reported": true,
+  "platform_labels_available": false
+}

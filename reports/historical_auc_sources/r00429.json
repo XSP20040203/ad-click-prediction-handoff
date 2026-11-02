@@ -1,0 +1,35 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "auc": 0.7539975238038565,
+  "logloss": 0.04451243022186366,
+  "average_precision": 0.029456060647891753,
+  "maximum_reload_error": 0.0,
+  "row_alignment_recovered": true,
+  "row_note": "Filtered training dataframe indices differed from originalCSV positions; saved prediction preserves original held-day order, now bound to raw indices and labels",
+  "baseline_auc": 0.7921069471244595,
+  "blends": [
+    {
+      "weight": 0.05,
+      "auc": 0.7920691151465371
+    },
+    {
+      "weight": 0.1,
+      "auc": 0.7919383884333829
+    },
+    {
+      "weight": 0.2,
+      "auc": 0.7913878848421249
+    },
+    {
+      "weight": 0.3,
+      "auc": 0.7904537740507968
+    },
+    {
+      "weight": 0.5,
+      "auc": 0.7872396663435706
+    }
+  ],
+  "goal_met": false,
+  "final_auc": null
+}

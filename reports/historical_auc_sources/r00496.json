@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "runs_verified": 15,
+  "paired_cells": 4,
+  "all_predictions_rescored": true,
+  "all_checkpoints_reloaded": true,
+  "time_boundaries_checked": true,
+  "source_provenance_checked": true,
+  "maximum_reload_probability_error": 1.862645149230957e-08,
+  "candidate_frozen_before_confirmation": true,
+  "mean_auc_delta": 0.002304499930635695,
+  "confirmation_mean_auc_delta": 0.0023158704540745534,
+  "auc_wins": 4,
+  "seeds": [
+    42,
+    2026
+  ],
+  "validation_days": [
+    20191115,
+    20191116
+  ],
+  "final_test_used": false
+}

@@ -1,0 +1,61 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "mode": "mixup",
+  "initial_backbone_sha256": "793c76b6ef2d2c463b974a99579e4165d71921be218998bad9494a9017b03f9e",
+  "row_order_sha256": "3d0d2924edcfac5f30b93da94792474189960945b14d33163917f4fcb59655c0",
+  "augmentation_draws_sha256": "a6b67dc2857d648553997cbc20b0c081bc71acfaa7b28211b2e4fbe6042b394d",
+  "fixed_endpoint": {
+    "fractional_epoch": 1.0,
+    "auc": 0.7866103015475943,
+    "logloss": 0.042315035102448224,
+    "average_precision": 0.07840722719379226,
+    "mean_probability": 0.008135378360748291,
+    "train_objective": 0.04336892055655311,
+    "train_bce": 0.04317043031217692,
+    "train_augmented_bce": 0.0440305499668453,
+    "train_rank": 0.0,
+    "seconds": 140.14488429999983
+  },
+  "best_checkpoint": {
+    "fractional_epoch": 0.7501523461304083,
+    "auc": 0.7871262849582349,
+    "logloss": 0.042344396589853645,
+    "average_precision": 0.07779912280535324,
+    "mean_probability": 0.00909990631043911,
+    "train_objective": 0.04389515513846247,
+    "train_bce": 0.04371043411556368,
+    "train_augmented_bce": 0.044510887097491666,
+    "train_rank": 0.0,
+    "seconds": 104.97736749999967
+  },
+  "v7_replace30": {
+    "auc": 0.7921151103847545,
+    "logloss": 0.04209389654060855,
+    "average_precision": 0.08247771265313378,
+    "mean_probability": 0.008827347724902294
+  },
+  "candidate_blend10": {
+    "auc": 0.7926192373588988,
+    "logloss": 0.04207111049155359,
+    "average_precision": 0.0827981557491826,
+    "mean_probability": 0.008732604015795963
+  },
+  "cold_core_replace30": {
+    "auc": 0.7926811986270542,
+    "logloss": 0.042066034320697186,
+    "average_precision": 0.08312639055467666,
+    "mean_probability": 0.00871954373065897
+  },
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "seconds": 152.00400189999982,
+  "files_sha256": {
+    "best_model.pt": "c80b29b6bb678cbbccfb19241e06defba4f97887a6300937d9a29c0285b8df4f",
+    "final_model.pt": "cde90680cf03c4fde46da3b11f851f2527398077c24512bacdaf7a892370688a",
+    "best_prediction.npy": "d57effb14d2e53624df17e611f585c57ed1b6bac24eea4ef030e4a58e8a1d546",
+    "final_prediction.npy": "8c0bc2e2a58c4aee1b77c6ae08db141d754c985e433a86d23f5f4ab6c523b60c"
+  }
+}

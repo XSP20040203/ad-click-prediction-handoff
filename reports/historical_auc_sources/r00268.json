@@ -1,0 +1,292 @@
+{
+  "status": "passed",
+  "day": 20191116,
+  "seed": 42,
+  "verified_new_ad_models": 4,
+  "records": [
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "disabled",
+      "endpoint": "best",
+      "auc": 0.8012412673501383,
+      "logloss": 0.04389861132045347,
+      "average_precision": 0.08749928332848086,
+      "mean_probability": 0.009657048985881815,
+      "gain_vs_reference": 0.0,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "disabled",
+      "endpoint": "final",
+      "auc": 0.8012412673501383,
+      "logloss": 0.04389861132045347,
+      "average_precision": 0.08749928332848086,
+      "mean_probability": 0.009657048985881815,
+      "gain_vs_reference": 0.0,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "row_only",
+      "endpoint": "best",
+      "auc": 0.8011851071063901,
+      "logloss": 0.043902984712466904,
+      "average_precision": 0.08733697324499348,
+      "mean_probability": 0.009631339966176256,
+      "gain_vs_reference": -5.61602437482156e-05,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "row_only",
+      "endpoint": "final",
+      "auc": 0.8011851071063901,
+      "logloss": 0.043902984712466904,
+      "average_precision": 0.08733697324499348,
+      "mean_probability": 0.009631339966176256,
+      "gain_vs_reference": -5.61602437482156e-05,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "permuted",
+      "endpoint": "best",
+      "auc": 0.8012423879869542,
+      "logloss": 0.04390008217440906,
+      "average_precision": 0.08742883632938345,
+      "mean_probability": 0.009640049518262334,
+      "gain_vs_reference": 1.1206368158989122e-06,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "permuted",
+      "endpoint": "final",
+      "auc": 0.8012423879869542,
+      "logloss": 0.04390008217440906,
+      "average_precision": 0.08742883632938345,
+      "mean_probability": 0.009640049518262334,
+      "gain_vs_reference": 1.1206368158989122e-06,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "actual",
+      "endpoint": "best",
+      "auc": 0.8011676077092612,
+      "logloss": 0.04390494686962365,
+      "average_precision": 0.08732889325595773,
+      "mean_probability": 0.009636245660974489,
+      "gain_vs_reference": -7.365964087713284e-05,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "variant": "actual",
+      "endpoint": "final",
+      "auc": 0.8011676077092612,
+      "logloss": 0.04390494686962365,
+      "average_precision": 0.08732889325595773,
+      "mean_probability": 0.009636245660974489,
+      "gain_vs_reference": -7.365964087713284e-05,
+      "independent_reload_error": 0.0
+    }
+  ],
+  "comparisons": {
+    "disabled": {
+      "versus_reference": {
+        "auc_delta": 0.0,
+        "user_cluster_approximate_95_interval": [
+          0.0,
+          0.0
+        ],
+        "logloss_delta": 0.0
+      },
+      "versus_row_only": {
+        "auc_delta": 5.61602437482156e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.0001045642915235683,
+          0.0002168847790199995
+        ],
+        "logloss_delta": -4.3733920134306214e-06
+      },
+      "versus_permuted": {
+        "auc_delta": -1.1206368160099345e-06,
+        "user_cluster_approximate_95_interval": [
+          -0.00013710258143402568,
+          0.00013486130780200582
+        ],
+        "logloss_delta": -1.4708539555832734e-06
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8050835956173258,
+          "logloss": 0.043416575987711016,
+          "average_precision": 0.09011972030426907,
+          "mean_probability": 0.009457051068948001
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7528808289714999,
+          "logloss": 0.0499022666364585,
+          "average_precision": 0.06390433460360662,
+          "mean_probability": 0.012147983727860797
+        }
+      }
+    },
+    "row_only": {
+      "versus_reference": {
+        "auc_delta": -5.61602437482156e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.0002168847790199995,
+          0.0001045642915235683
+        ],
+        "logloss_delta": 4.3733920134306214e-06
+      },
+      "versus_row_only": {
+        "auc_delta": 0.0,
+        "user_cluster_approximate_95_interval": [
+          0.0,
+          0.0
+        ],
+        "logloss_delta": 0.0
+      },
+      "versus_permuted": {
+        "auc_delta": -5.7280880564225534e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.0001971059329961439,
+          8.254417186769284e-05
+        ],
+        "logloss_delta": 2.902538057847348e-06
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8050216504881329,
+          "logloss": 0.04342151198281245,
+          "average_precision": 0.08992928186326656,
+          "mean_probability": 0.009430298877689992
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7529435203662027,
+          "logloss": 0.049899632917600856,
+          "average_precision": 0.06398987520867115,
+          "mean_probability": 0.012135267204785605
+        }
+      }
+    },
+    "permuted": {
+      "versus_reference": {
+        "auc_delta": 1.1206368160099345e-06,
+        "user_cluster_approximate_95_interval": [
+          -0.00013486130780200582,
+          0.00013710258143402568
+        ],
+        "logloss_delta": 1.4708539555832734e-06
+      },
+      "versus_row_only": {
+        "auc_delta": 5.7280880564225534e-05,
+        "user_cluster_approximate_95_interval": [
+          -8.254417186769284e-05,
+          0.0001971059329961439
+        ],
+        "logloss_delta": -2.902538057847348e-06
+      },
+      "versus_permuted": {
+        "auc_delta": 0.0,
+        "user_cluster_approximate_95_interval": [
+          0.0,
+          0.0
+        ],
+        "logloss_delta": 0.0
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.805102060328456,
+          "logloss": 0.04341808921556931,
+          "average_precision": 0.09003645087610582,
+          "mean_probability": 0.009440645670254206
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7526608778070338,
+          "logloss": 0.04990320973178506,
+          "average_precision": 0.06410343012572912,
+          "mean_probability": 0.012123585248547494
+        }
+      }
+    },
+    "actual": {
+      "versus_reference": {
+        "auc_delta": -7.365964087702181e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.00027454770874289433,
+          0.0001272284269888507
+        ],
+        "logloss_delta": 6.335549170177757e-06
+      },
+      "versus_row_only": {
+        "auc_delta": -1.7499397128806216e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.00016828614736598852,
+          0.0001332873531083761
+        ],
+        "logloss_delta": 1.962157156747135e-06
+      },
+      "versus_permuted": {
+        "auc_delta": -7.478027769303175e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.00023514435457974885,
+          8.558379919368535e-05
+        ],
+        "logloss_delta": 4.864695214594483e-06
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.805053073374711,
+          "logloss": 0.0434224047433229,
+          "average_precision": 0.08996052442267807,
+          "mean_probability": 0.009439590203929525
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7521708223623392,
+          "logloss": 0.04991491419977688,
+          "average_precision": 0.06382680489120239,
+          "mean_probability": 0.012085550722062497
+        }
+      }
+    }
+  },
+  "reference_scores": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "original_row_matrices_reconstructed_exactly": true,
+  "history_inputs_reused_exactly": true,
+  "within_userday_multisets_preserved": true,
+  "held_ad_labels_fit": false,
+  "response_columns_row_local_not_pooled": true,
+  "existing_submission_unchanged": true,
+  "submission_sha256": "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846",
+  "final_auc": null,
+  "platform_goal_proven": false,
+  "second_seed_confirmed": false,
+  "evaluator_sha256": "eb09a4f05c179874fe4c2e08a4ef42c6de9cbd06751eabe8884f12278725e29a",
+  "limitations": "Repeated chronological development; approximate paired user-cluster intervals, not blind final evidence"
+}

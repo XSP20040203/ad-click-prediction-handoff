@@ -1,0 +1,164 @@
+{
+  "status": "selected_and_confirmed",
+  "selected_rule": "v6_75_v8_25",
+  "development": {
+    "15": {
+      "rows": 424780,
+      "clicks": 3523,
+      "baselines": {
+        "v6": {
+          "auc": 0.7905480723412239,
+          "logloss": 0.04213764355222077,
+          "average_precision": 0.0827857924429125,
+          "mean_probability": 0.008885367834888977
+        },
+        "v7": {
+          "auc": 0.7921069471244595,
+          "logloss": 0.04209056885646528,
+          "average_precision": 0.08257766982286839,
+          "mean_probability": 0.008746868038826431
+        },
+        "v8": {
+          "auc": 0.7934700801999591,
+          "logloss": 0.04204855010744797,
+          "average_precision": 0.0823399607498202,
+          "mean_probability": 0.008615116633256282
+        }
+      },
+      "candidates": {
+        "delta_odds_cap075": {
+          "auc": 0.7916917488145524,
+          "logloss": 0.04210110392459571,
+          "average_precision": 0.08258037914352609,
+          "mean_probability": 0.0087586691659523,
+          "versus_v6": {
+            "auc_delta": 0.0011436764733283589,
+            "user_cluster_approximate_95_interval": [
+              0.00022739126424039299,
+              0.0020599616824163247
+            ]
+          }
+        },
+        "half_delta_odds_cap075": {
+          "auc": 0.791326885780796,
+          "logloss": 0.04211113309235987,
+          "average_precision": 0.0827673418573146,
+          "mean_probability": 0.008814262450190642,
+          "versus_v6": {
+            "auc_delta": 0.0007788134395722013,
+            "user_cluster_approximate_95_interval": [
+              0.00032003627603841765,
+              0.0012375906031059849
+            ]
+          }
+        },
+        "v6_75_v8_25": {
+          "auc": 0.7917734252154336,
+          "logloss": 0.042094141292958936,
+          "average_precision": 0.08301497813500834,
+          "mean_probability": 0.008817805034480803,
+          "versus_v6": {
+            "auc_delta": 0.001225352874209662,
+            "user_cluster_approximate_95_interval": [
+              0.0008475288444291183,
+              0.0016031769039902056
+            ]
+          }
+        }
+      },
+      "additive_diagnostic": {
+        "raw_additive_delta_auc": 0.7915571618192497,
+        "outside_probability_range": 9,
+        "not_an_export_candidate": true
+      },
+      "development_arrays_sha256": {
+        "E:\\AI\\ml\\大作业上传\\analysis\\nextday_goal_20261029\\development_candidate_day15_prediction.npy": "28a1ab71aa9df9e445cf6fca93a09c7efe13d892f48a12b8eb580395e0ffcc95",
+        "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\fixed_gated20_allocated10_core30_day15.npy": "113b93a9dd6c02d395902140e88c5757c91a0ce81575c036e9af325ebc20360d",
+        "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\reference_day_state_protected_seed42_v1\\day15_prediction.npy": "e259c0d3a52df8376ec663ed085b2ee59519cbe4624a1c7e393a781d954eac61"
+      }
+    },
+    "16": {
+      "rows": 421983,
+      "clicks": 3724,
+      "baselines": {
+        "v6": {
+          "auc": 0.7987435691593445,
+          "logloss": 0.04407908248111689,
+          "average_precision": 0.08655781610631355,
+          "mean_probability": 0.009875823612777914
+        },
+        "v7": {
+          "auc": 0.7998466417345275,
+          "logloss": 0.043975461945036654,
+          "average_precision": 0.08617978296537275,
+          "mean_probability": 0.009549874827916052
+        },
+        "v8": {
+          "auc": 0.8012412673501383,
+          "logloss": 0.04389861132045347,
+          "average_precision": 0.08749928332848086,
+          "mean_probability": 0.009657048985881815
+        }
+      },
+      "candidates": {
+        "delta_odds_cap075": {
+          "auc": 0.8000669086627566,
+          "logloss": 0.04400668918799083,
+          "average_precision": 0.08782100224829475,
+          "mean_probability": 0.0099879939618919,
+          "versus_v6": {
+            "auc_delta": 0.0013233395034121243,
+            "user_cluster_approximate_95_interval": [
+              0.0003417927576672142,
+              0.0023048862491570343
+            ]
+          }
+        },
+        "half_delta_odds_cap075": {
+          "auc": 0.799713326079371,
+          "logloss": 0.04402937477556943,
+          "average_precision": 0.08747355586211662,
+          "mean_probability": 0.009919444672204751,
+          "versus_v6": {
+            "auc_delta": 0.0009697569200264322,
+            "user_cluster_approximate_95_interval": [
+              0.0004683605660153979,
+              0.0014711532740374665
+            ]
+          }
+        },
+        "v6_75_v8_25": {
+          "auc": 0.7999730088636126,
+          "logloss": 0.044007093697901276,
+          "average_precision": 0.08730907321488096,
+          "mean_probability": 0.00982112995605389,
+          "versus_v6": {
+            "auc_delta": 0.0012294397042680316,
+            "user_cluster_approximate_95_interval": [
+              0.0007976529396201075,
+              0.0016612264689159558
+            ]
+          }
+        }
+      },
+      "additive_diagnostic": {
+        "raw_additive_delta_auc": 0.799966277980555,
+        "outside_probability_range": 1,
+        "not_an_export_candidate": true
+      },
+      "development_arrays_sha256": {
+        "E:\\AI\\ml\\大作业上传\\analysis\\nextday_goal_20261029\\development_candidate_day16_prediction.npy": "cf5010a1028e4c211b6e7e9e47080438190fcfe63b29431714d9513250ddf3c1",
+        "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\fixed_gated20_allocated10_core30_day16.npy": "32a1315341af205c6f422e7ad70be52924a3ac5cd28f270d1c11adb4778c73a5",
+        "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\reference_day_state_protected_seed42_v1\\day16_prediction.npy": "8689af8c3631e83ded6f1e1dad82c0b9ad00a6c875277f7f7a42e569119349ac"
+      }
+    }
+  },
+  "final_prediction_min": 0.0002718228682055275,
+  "final_prediction_max": 0.9063599591700386,
+  "final_prediction_mean": 0.00915242708266459,
+  "final_rows": 404182,
+  "final_auc": null,
+  "platform_improvement_verified": false,
+  "selection_day15_sha256": "02d9fb2f550f12c990d23428b77c2093de6748a232fb789e63b126bc44451fc5",
+  "models_trained": 0
+}

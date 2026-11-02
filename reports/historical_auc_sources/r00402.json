@@ -1,0 +1,233 @@
+{
+  "status": "passed",
+  "verified_new_history_aux_models": 4,
+  "records": [
+    {
+      "mode": "disabled",
+      "core_scores": {
+        "auc": 0.7900335670113942,
+        "logloss": 0.04456240893089751,
+        "average_precision": 0.0812977111007263,
+        "mean_probability": 0.010426119901239872
+      },
+      "candidate_scores": {
+        "auc": 0.801176241524156,
+        "logloss": 0.04391161284612295,
+        "average_precision": 0.08725012444741073,
+        "mean_probability": 0.009806540212389617
+      },
+      "rounded6_scores": {
+        "auc": 0.8011760710692293,
+        "logloss": 0.043911625859569405,
+        "average_precision": 0.08724920167974723,
+        "mean_probability": 0.009806538005085512
+      },
+      "reload_error": 0.0,
+      "retention_reload_error": 0.0,
+      "fusion_reconstruction_error": 0.0,
+      "versus_reference": {
+        "auc_delta": -6.502582598211237e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.0004932568549220978,
+          0.0003632052029578731
+        ],
+        "logloss_delta": 1.3001525669478764e-05
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8050644971336833,
+          "logloss": 0.04343144796319933,
+          "average_precision": 0.08967405538220562,
+          "mean_probability": 0.00962088930879062
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7518067872466577,
+          "logloss": 0.04989197207730726,
+          "average_precision": 0.06438502044090909,
+          "mean_probability": 0.012118785723464457
+        }
+      }
+    },
+    {
+      "mode": "csv_positive",
+      "core_scores": {
+        "auc": 0.7900274299920174,
+        "logloss": 0.04456301033974884,
+        "average_precision": 0.08129446434135562,
+        "mean_probability": 0.01042686216533184
+      },
+      "candidate_scores": {
+        "auc": 0.8011719701997587,
+        "logloss": 0.04391177469009697,
+        "average_precision": 0.08724631548114212,
+        "mean_probability": 0.009806762908509719
+      },
+      "rounded6_scores": {
+        "auc": 0.8011718135481499,
+        "logloss": 0.04391178229484494,
+        "average_precision": 0.08724553280183331,
+        "mean_probability": 0.00980676332932843
+      },
+      "reload_error": 0.0,
+      "retention_reload_error": 0.0,
+      "fusion_reconstruction_error": 0.0,
+      "versus_reference": {
+        "auc_delta": -6.929715037951034e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.0004981382548854207,
+          0.0003595439541264
+        ],
+        "logloss_delta": 1.31633696434999e-05
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8050603366568331,
+          "logloss": 0.043431629463251666,
+          "average_precision": 0.08966642481846192,
+          "mean_probability": 0.009621140604854073
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7518013681599969,
+          "logloss": 0.049891889108689434,
+          "average_precision": 0.06440986611565426,
+          "mean_probability": 0.012118652212912044
+        }
+      }
+    },
+    {
+      "mode": "snapshot_positive",
+      "core_scores": {
+        "auc": 0.7900314554247501,
+        "logloss": 0.04456312588964357,
+        "average_precision": 0.08129732852484506,
+        "mean_probability": 0.010428594425320625
+      },
+      "candidate_scores": {
+        "auc": 0.8011744438827442,
+        "logloss": 0.04391171822456531,
+        "average_precision": 0.0872454757890141,
+        "mean_probability": 0.009807282272718527
+      },
+      "rounded6_scores": {
+        "auc": 0.8011740480806262,
+        "logloss": 0.0439117318201568,
+        "average_precision": 0.08724467643295891,
+        "mean_probability": 0.009807282196202218
+      },
+      "reload_error": 0.0,
+      "retention_reload_error": 0.0,
+      "fusion_reconstruction_error": 0.0,
+      "versus_reference": {
+        "auc_delta": -6.682346739383949e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.0004958843371652917,
+          0.00036223740237761274
+        ],
+        "logloss_delta": 1.310690411183979e-05
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8050637021813837,
+          "logloss": 0.043431514800134755,
+          "average_precision": 0.08966712376870814,
+          "mean_probability": 0.00962161953390741
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7517805418661634,
+          "logloss": 0.049892557482642166,
+          "average_precision": 0.06439597873207346,
+          "mean_probability": 0.012119675189033877
+        }
+      }
+    },
+    {
+      "mode": "permuted_snapshot",
+      "core_scores": {
+        "auc": 0.7900302997981282,
+        "logloss": 0.04456306548559175,
+        "average_precision": 0.08129675604258926,
+        "mean_probability": 0.010428321547806263
+      },
+      "candidate_scores": {
+        "auc": 0.801174090132595,
+        "logloss": 0.043911719899932346,
+        "average_precision": 0.08724632742364466,
+        "mean_probability": 0.009807199882865764
+      },
+      "rounded6_scores": {
+        "auc": 0.8011741174182236,
+        "logloss": 0.04391171554273456,
+        "average_precision": 0.08724602737788463,
+        "mean_probability": 0.009807199204707299
+      },
+      "reload_error": 0.0,
+      "retention_reload_error": 0.0,
+      "fusion_reconstruction_error": 0.0,
+      "versus_reference": {
+        "auc_delta": -6.717721754323502e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.0004962105232496973,
+          0.0003618560881632273
+        ],
+        "logloss_delta": 1.3108579478872395e-05
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8050635481735307,
+          "logloss": 0.043431514674562716,
+          "average_precision": 0.08966800777252759,
+          "mean_probability": 0.009621536410637207
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7517773541681277,
+          "logloss": 0.04989258158835159,
+          "average_precision": 0.06438226466024703,
+          "mean_probability": 0.012119601933751169
+        }
+      }
+    }
+  ],
+  "relations_and_negative_pools_reconstructed_independently": true,
+  "all_source_dates_before_query": true,
+  "effective_aux_weight": 0.001423327265247633,
+  "gradients_reach_shared_tables_without_optimizer_probe_steps": true,
+  "snapshot_vs_disabled": {
+    "auc_delta": -1.7976414117271133e-06,
+    "user_cluster_approximate_95_interval": [
+      -8.674815048226124e-06,
+      5.079532224771898e-06
+    ],
+    "logloss_delta": 1.05378442361026e-07
+  },
+  "snapshot_vs_csv": {
+    "auc_delta": 2.4736829856708553e-06,
+    "user_cluster_approximate_95_interval": [
+      -3.753656586356118e-06,
+      8.70102255769783e-06
+    ],
+    "logloss_delta": -5.646553166011037e-08
+  },
+  "snapshot_vs_permuted": {
+    "auc_delta": 3.537501493955375e-07,
+    "user_cluster_approximate_95_interval": [
+      -1.573895172692649e-06,
+      2.281395471483724e-06
+    ],
+    "logloss_delta": -1.6753670326052905e-09
+  },
+  "held_ad_outcomes_fit": false,
+  "original_inference_forward_preserved": true,
+  "v8_preserved": true,
+  "source_sha256": "72fe0011965eb4cf7d87e1824aa91efa3969a4c3b39eefe3d9adb58a3c2f9f71",
+  "final_auc": null,
+  "goal_met": false,
+  "limitation": "Reused chronological development and base selection; contrastive absence is not an observed exposure label"
+}

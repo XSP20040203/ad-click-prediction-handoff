@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "days": {
+    "20191115": {
+      "reference": {
+        "auc": 0.7934700801999591,
+        "logloss": 0.04204855010744797,
+        "average_precision": 0.0823399607498202,
+        "mean_probability": 0.008615116633256282
+      },
+      "actual": {
+        "auc": 0.7938319656483054,
+        "logloss": 0.042034408506586234,
+        "average_precision": 0.0824929615396982,
+        "mean_probability": 0.008617185857370329
+      },
+      "cold_backoff": {
+        "auc": 0.7938755445884282,
+        "logloss": 0.042032286115910214,
+        "average_precision": 0.08254782352134868,
+        "mean_probability": 0.008609743615553283
+      },
+      "cold_backoff_minus_reference": {
+        "auc_delta": 0.00040546438846900124,
+        "user_cluster_approximate_95_interval": [
+          0.00023305516619939284,
+          0.0005778736107386097
+        ],
+        "logloss_delta": -1.626399153775715e-05
+      },
+      "cold_backoff_minus_actual": {
+        "auc_delta": 4.357894012285701e-05,
+        "user_cluster_approximate_95_interval": [
+          -1.093885100616887e-05,
+          9.80967312518829e-05
+        ],
+        "logloss_delta": -2.1223906760195477e-06
+      },
+      "seen_task_rows": 371620,
+      "cold_task_rows": 53160,
+      "prediction_sha256": "0fdff1a19a9b2df2a6c3dc3aaa210eec5fa1ba6a5ca7d3046cc4ac6d4a4127b2",
+      "seen_mask_sha256": "12669377f3af31e18eedd81d205fbd885499d6964a0dbec941d793ba90202e42",
+      "parent_verification_sha256": "4cdc49c08b01256b9b24c8bcebd2c39fe981cc53c2db381f3442726133962f79"
+    },
+    "20191116": {
+      "reference": {
+        "auc": 0.8012412673501383,
+        "logloss": 0.04389861132045347,
+        "average_precision": 0.08749928332848086,
+        "mean_probability": 0.009657048985881815
+      },
+      "actual": {
+        "auc": 0.801288169740616,
+        "logloss": 0.043893294360788385,
+        "average_precision": 0.08769378180012624,
+        "mean_probability": 0.009679826709068143
+      },
+      "cold_backoff": {
+        "auc": 0.8012323125278485,
+        "logloss": 0.04389732990787131,
+        "average_precision": 0.0875789228549199,
+        "mean_probability": 0.009675732672369741
+      },
+      "cold_backoff_minus_reference": {
+        "auc_delta": -8.95482228979727e-06,
+        "user_cluster_approximate_95_interval": [
+          -0.0003404952067461341,
+          0.00032258556216653957
+        ],
+        "logloss_delta": -1.2814125821616895e-06
+      },
+      "cold_backoff_minus_actual": {
+        "auc_delta": -5.5857212767462805e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.00013976302844017306,
+          2.804860290524747e-05
+        ],
+        "logloss_delta": 4.035547082927027e-06
+      },
+      "seen_task_rows": 390620,
+      "cold_task_rows": 31363,
+      "prediction_sha256": "46ebff164037d3e8887329f3b73db5c34dfbcf5c769c92fa706cc3c862c462ec",
+      "seen_mask_sha256": "56038aa2979be39a972896fcf724454d6a6eb667360ce0c898c5083a009cb427",
+      "parent_verification_sha256": "f96636be79c86cc9e350d9baff7d5999c0f48ace5bcb1f71bf062a29239c9dcc"
+    }
+  },
+  "models_trained": 0,
+  "support_is_label_free": true,
+  "held_labels_used_only_for_scores": true,
+  "second_seed_confirmed": false,
+  "promoted": false,
+  "final_auc": null,
+  "specification_sha256": "7e7bc4cfbf4918c9b76ff306dd85ae091e94a7003e932ef1be5311a698e541d0",
+  "source_sha256": "ce540ff0a15d657b9c5afdab183c9f4c06ecdd55a66a7516fd061b7550817b25",
+  "limitations": "Inference candidate motivated by day15 development slices; day16 policy specified before actual model outcomes. It is separate from, and does not alter, the original failed0.0005 screen."
+}

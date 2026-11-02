@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "runs_verified": 6,
+  "device": "cuda",
+  "full_validation_replay": true,
+  "records": [
+    {
+      "day": 20191115,
+      "arm": "bias",
+      "seed": 42,
+      "auc": 0.7347355463582284,
+      "maximum_reload_error": 0.0,
+      "maximum_absolute_personal_residual": 0.37690624594688416,
+      "source_hashes_match": true,
+      "checkpoint_hash_matches": true,
+      "training_support_recomputed": true,
+      "within_user_metrics_recomputed": true
+    },
+    {
+      "day": 20191115,
+      "arm": "control",
+      "seed": 42,
+      "auc": 0.7344456276466402,
+      "maximum_reload_error": 0.0,
+      "maximum_absolute_personal_residual": 0.0,
+      "source_hashes_match": true,
+      "checkpoint_hash_matches": true,
+      "training_support_recomputed": true,
+      "within_user_metrics_recomputed": true
+    },
+    {
+      "day": 20191115,
+      "arm": "rank4",
+      "seed": 42,
+      "auc": 0.7345250821448536,
+      "maximum_reload_error": 0.0,
+      "maximum_absolute_personal_residual": 0.38470906019210815,
+      "source_hashes_match": true,
+      "checkpoint_hash_matches": true,
+      "training_support_recomputed": true,
+      "within_user_metrics_recomputed": true
+    },
+    {
+      "day": 20191115,
+      "arm": "rank8",
+      "seed": 42,
+      "auc": 0.7350160869223309,
+      "maximum_reload_error": 0.0,
+      "maximum_absolute_personal_residual": 0.38808977603912354,
+      "source_hashes_match": true,
+      "checkpoint_hash_matches": true,
+      "training_support_recomputed": true,
+      "within_user_metrics_recomputed": true
+    },
+    {
+      "day": 20191116,
+      "arm": "control",
+      "seed": 42,
+      "auc": 0.7340545309745673,
+      "maximum_reload_error": 0.0,
+      "maximum_absolute_personal_residual": 0.0,
+      "source_hashes_match": true,
+      "checkpoint_hash_matches": true,
+      "training_support_recomputed": true,
+      "within_user_metrics_recomputed": true
+    },
+    {
+      "day": 20191116,
+      "arm": "rank8",
+      "seed": 42,
+      "auc": 0.7335491648595855,
+      "maximum_reload_error": 0.0,
+      "maximum_absolute_personal_residual": 0.3757353723049164,
+      "source_hashes_match": true,
+      "checkpoint_hash_matches": true,
+      "training_support_recomputed": true,
+      "within_user_metrics_recomputed": true
+    }
+  ],
+  "final_test_used": false
+}

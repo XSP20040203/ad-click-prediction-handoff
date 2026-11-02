@@ -1,0 +1,13 @@
+{
+  "reported_auc": 0.70590,
+  "test_day": 20191117,
+  "source": "User reported platform score for random CatBoost final submission in this conversation",
+  "local_final_labels_available": false,
+  "locally_rescored_final_auc": null,
+  "submission": "submission.csv",
+  "model": "random20_aligned_CatBoost_d6_d8_equal_ensemble",
+  "random_development_auc": 0.8504187550768378,
+  "random_minus_reported_final": 0.14451875507683787,
+  "selection_status": "Not recommended for future-day deployment based on chronological controls and reported final score",
+  "diagnostic": "analysis/auc_goal085/final_070590_diagnosis.json"
+}

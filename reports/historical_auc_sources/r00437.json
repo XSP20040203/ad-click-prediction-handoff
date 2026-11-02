@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "days": [
+    {
+      "day": 20191115,
+      "control_auc": 0.7681140631856872,
+      "pretrained_auc": 0.7679196704541882,
+      "transfer_auc_delta": -0.0001943927314990157,
+      "baseline_auc": 0.7921069471244595,
+      "goal_met": false
+    }
+  ],
+  "day16_run": false,
+  "gate": "day15 pretrained AUC strictly exceeds matched control",
+  "persistent_bytes": 3427716,
+  "no_feature_cache_written": true,
+  "final_test_read": false
+}

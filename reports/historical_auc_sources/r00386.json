@@ -1,0 +1,17 @@
+{
+  "variant": "all_entities",
+  "scores": {
+    "auc": 0.786842002348187,
+    "logloss": 0.04486968961025945,
+    "average_precision": 0.0774324367611572,
+    "mean_probability": 0.010123115248362036
+  },
+  "rounded6_scores": {
+    "auc": 0.7868421606048328,
+    "logloss": 0.04486967630880306,
+    "average_precision": 0.07743151245206091,
+    "mean_probability": 0.010123115876705932
+  },
+  "auc_gain": -0.014399265001951322,
+  "prediction_sha256": "880e316c3e2b061340186f2fe7c0e810685a5de90c7c78fe8b7da69af05b6aac"
+}

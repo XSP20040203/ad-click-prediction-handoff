@@ -1,0 +1,19 @@
+{
+  "json_sources_with_auc_fields": 978,
+  "auc_numeric_fields": 24470,
+  "skipped_or_unreadable_files": [
+    {
+      "source": "analysis\\raw_cross_attention\\raw_cache_20191115\\vocabularies.json",
+      "reason": "larger_than4MiB_metadata_limit"
+    },
+    {
+      "source": "analysis\\raw_cross_attention\\raw_cache_20191116\\vocabularies.json",
+      "reason": "larger_than4MiB_metadata_limit"
+    },
+    {
+      "source": "analysis\\raw_cross_attention\\raw_cache_everyday_seed42_val20\\vocabularies.json",
+      "reason": "larger_than4MiB_metadata_limit"
+    }
+  ],
+  "this_index_includes_targets_and_expected_moments_and_is_not_a_platform_leaderboard": true
+}

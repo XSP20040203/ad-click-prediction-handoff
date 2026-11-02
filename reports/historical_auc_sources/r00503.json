@@ -1,0 +1,58 @@
+{
+  "model": "B2",
+  "variant": "B2",
+  "auc": 0.7215974104682704,
+  "logloss": 0.04759605394524297,
+  "average_precision": 0.027538861084762573,
+  "mean_prediction": 0.009265490734649249,
+  "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+  "best_epoch": 1,
+  "epochs_completed": 4,
+  "parameter_count": 320801,
+  "training_seconds": 102.84416620000047,
+  "inference_seconds": null,
+  "feature_note": "24 category embeddings + 7 masked-mean pooled lists + 20 shared numeric features; historical labels are source-domain observations only.",
+  "model_class": "CTRModel",
+  "model_options": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01
+  },
+  "parameters": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "batch_size": 2048,
+    "max_epochs": 10,
+    "early_stopping_patience": 3,
+    "loss": "unweighted BCEWithLogitsLoss",
+    "seed": 42
+  },
+  "train_rows": 2104337,
+  "valid_rows": 421983,
+  "validation_day": 20191116,
+  "validation_clicks": 3724,
+  "seed": 42,
+  "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\cache",
+  "python": "3.10.0",
+  "new_task_rows": 31363,
+  "new_task_clicks": 303,
+  "new_task_metrics": {
+    "auc": 0.6629072549882161,
+    "logloss": 0.05298288506849416,
+    "average_precision": 0.0203244867856143,
+    "mean_prediction": 0.01045468162710279
+  },
+  "experiment_scope": "Architecture-only; same frozen preprocessing, numeric features, training settings, row order and seed for this date."
+}

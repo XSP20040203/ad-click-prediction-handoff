@@ -1,0 +1,16 @@
+{
+  "submissions": 11,
+  "user_reported_platform_scores": 9,
+  "final_rows": 404182,
+  "duplicate_final_log_id_rows": 858,
+  "train_rows": 2526320,
+  "observed_training_ad_clicks": 21354,
+  "final_ad_label_column_present": false,
+  "distinct_final_binary_hypotheses": 37,
+  "hypothesis_locations_in_csv_and_arrays": 46,
+  "all_submission_ids_complete_zero_based_and_ordered": true,
+  "all_label_csv_rows_aligned_to_original_final": true,
+  "all_known_submission_and_label_hash_bindings_checked": true,
+  "latest_user_reported_platform_score": 0.75832,
+  "latest_feedback_incorporated_in_nine_score_label_inference": false
+}

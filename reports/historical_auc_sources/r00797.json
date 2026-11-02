@@ -1,0 +1,59 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "seed": 42,
+  "variant": "disabled",
+  "fixed_epoch": {
+    "step": 1641,
+    "fractional_epoch": 1.0,
+    "auc": 0.7826394158130785,
+    "logloss": 0.04260309748936343,
+    "average_precision": 0.0747022322149063,
+    "mean_probability": 0.0076379026286304,
+    "objective": 0.05316149405317897,
+    "seconds": 101.76321500000086
+  },
+  "best_checkpoint": {
+    "step": 1231,
+    "fractional_epoch": 0.7501523461304083,
+    "auc": 0.7848113938947806,
+    "logloss": 0.042430001237551994,
+    "average_precision": 0.07538026313681984,
+    "mean_probability": 0.00839246902614832,
+    "objective": 0.053941811832117416,
+    "seconds": 75.26105149999967
+  },
+  "replacement_scores": {
+    "auc": 0.7934700801999591,
+    "logloss": 0.04204855010744797,
+    "average_precision": 0.0823399607498202,
+    "mean_probability": 0.008615116633256282
+  },
+  "reference_scores": {
+    "auc": 0.7934700801999591,
+    "logloss": 0.04204855010744797,
+    "average_precision": 0.0823399607498202,
+    "mean_probability": 0.008615116633256282
+  },
+  "auc_gain": 0.0,
+  "training_rows_seen": 1679557,
+  "initial_full_sha256": "daa12fb66f27353b2c0484033f2f725b2ed6f45d70401f11a21cd3cfee1e4067",
+  "initial_backbone_sha256": "793c76b6ef2d2c463b974a99579e4165d71921be218998bad9494a9017b03f9e",
+  "row_order_sha256": "3d0d2924edcfac5f30b93da94792474189960945b14d33163917f4fcb59655c0",
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "disabled_original_training_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "files_sha256": {
+    "best_model.pt": "532de16003df01cf599ba9d4477af68beb106b8ebd0bfffe7778e8d9a288878b",
+    "final_model.pt": "6a7849685d48938df2f629fd177a6d99805075cb831e2a92c2d52f2f48dcb0c6",
+    "best_prediction.npy": "5d89548e0d55bcee74c5ab6eb305c64515c7267fac175893e387538926e1bd15",
+    "final_prediction.npy": "83e8367958cea40f75d22413e65dac38c72dc52394199ca50b6360dc03ebf346",
+    "replacement_prediction.npy": "e259c0d3a52df8376ec663ed085b2ee59519cbe4624a1c7e393a781d954eac61",
+    "history.json": "cd09027808eb90e8211b31b08d847be9c676dbb7be2cfba859a314dc6f79939d"
+  }
+}

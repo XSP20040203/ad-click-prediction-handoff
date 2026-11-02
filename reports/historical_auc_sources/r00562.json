@@ -1,0 +1,224 @@
+{
+  "status": "passed",
+  "days": {
+    "20191115": {
+      "training_max_date": 20191114,
+      "slices": {
+        "all": {
+          "rows": 424780,
+          "clicks": 3523,
+          "ctr": 0.008293704976693819,
+          "mean_prediction": 0.008615116633256282,
+          "auc": 0.7934700801999591,
+          "logloss": 0.04204855010744797
+        },
+        "past_pair_unseen": {
+          "rows": 215950,
+          "clicks": 2172,
+          "ctr": 0.010057883769391063,
+          "mean_prediction": 0.009880518071767416,
+          "auc": 0.7771762780900384,
+          "logloss": 0.049771092153391226
+        },
+        "past_pair_n1": {
+          "rows": 39167,
+          "clicks": 340,
+          "ctr": 0.008680777184875022,
+          "mean_prediction": 0.00930491072247907,
+          "auc": 0.760386230624838,
+          "logloss": 0.04513489897851092
+        },
+        "past_pair_n2_4": {
+          "rows": 54220,
+          "clicks": 406,
+          "ctr": 0.007488011803762449,
+          "mean_prediction": 0.00864735006307497,
+          "auc": 0.8204623258986756,
+          "logloss": 0.037518771626153885
+        },
+        "past_pair_n5plus": {
+          "rows": 115443,
+          "clicks": 605,
+          "ctr": 0.005240681548469807,
+          "mean_prediction": 0.00599886183821597,
+          "auc": 0.8094167219967359,
+          "logloss": 0.028682981023150103
+        },
+        "past_pair_seen_no_click": {
+          "rows": 196840,
+          "clicks": 1193,
+          "ctr": 0.0060607600081284295,
+          "mean_prediction": 0.006890248453841638,
+          "auc": 0.8067770785548125,
+          "logloss": 0.03213899268383266
+        },
+        "past_pair_has_click": {
+          "rows": 11990,
+          "clicks": 158,
+          "ctr": 0.01317764804003336,
+          "mean_prediction": 0.014141356148643931,
+          "auc": 0.7334478586283923,
+          "logloss": 0.06564440735874036
+        },
+        "past_click_missing_from_supplied_task_click_slots": {
+          "rows": 521,
+          "clicks": 9,
+          "ctr": 0.01727447216890595,
+          "mean_prediction": 0.02923387381140214,
+          "auc": 0.7711588541666667,
+          "logloss": 0.08066059248265268
+        },
+        "past_click_present_in_supplied_task_click_slots": {
+          "rows": 11469,
+          "clicks": 149,
+          "ctr": 0.012991542418693871,
+          "mean_prediction": 0.01345575132675039,
+          "auc": 0.7316965873787559,
+          "logloss": 0.06496227008002745
+        },
+        "supplied_task_click_match_without_click_in_observed_window": {
+          "rows": 6249,
+          "clicks": 68,
+          "ctr": 0.010881741078572572,
+          "mean_prediction": 0.012096164965515653,
+          "auc": 0.7788229108177813,
+          "logloss": 0.05354662007221509
+        }
+      },
+      "prior_pair_exposure_quantiles": {
+        "0": 0.0,
+        "0.5": 0.0,
+        "0.9": 19.0,
+        "0.99": 88.0,
+        "1.0": 224.0
+      },
+      "missing_snapshot_fraction_of_historical_click_pair_rows": 0.043452877397831526,
+      "prior_pair_click_rows": 11990
+    },
+    "20191116": {
+      "training_max_date": 20191115,
+      "slices": {
+        "all": {
+          "rows": 421983,
+          "clicks": 3724,
+          "ctr": 0.008825000059244094,
+          "mean_prediction": 0.009657048985881815,
+          "auc": 0.8012412673501383,
+          "logloss": 0.04389861132045347
+        },
+        "past_pair_unseen": {
+          "rows": 192732,
+          "clicks": 2012,
+          "ctr": 0.010439366581574414,
+          "mean_prediction": 0.01134548226556774,
+          "auc": 0.7838135003423252,
+          "logloss": 0.05100492471139896
+        },
+        "past_pair_n1": {
+          "rows": 40911,
+          "clicks": 402,
+          "ctr": 0.009826208110288186,
+          "mean_prediction": 0.010384859060281935,
+          "auc": 0.8082991569099134,
+          "logloss": 0.047247566994012245
+        },
+        "past_pair_n2_4": {
+          "rows": 59284,
+          "clicks": 477,
+          "ctr": 0.008046015788408339,
+          "mean_prediction": 0.00951050781261386,
+          "auc": 0.7860360218244387,
+          "logloss": 0.04149105020424608
+        },
+        "past_pair_n5plus": {
+          "rows": 129056,
+          "clicks": 833,
+          "ctr": 0.006454562360525664,
+          "mean_prediction": 0.006972144650568515,
+          "auc": 0.8258103316196042,
+          "logloss": 0.033330383072162566
+        },
+        "past_pair_seen_no_click": {
+          "rows": 213722,
+          "clicks": 1508,
+          "ctr": 0.007055895041221774,
+          "mean_prediction": 0.007841090426043924,
+          "auc": 0.8164122087335943,
+          "logloss": 0.03612020838672617
+        },
+        "past_pair_has_click": {
+          "rows": 15529,
+          "clicks": 204,
+          "ctr": 0.01313671195827162,
+          "mean_prediction": 0.013694345171421523,
+          "auc": 0.7573500623740523,
+          "logloss": 0.06275377516476786
+        },
+        "past_click_missing_from_supplied_task_click_slots": {
+          "rows": 966,
+          "clicks": 22,
+          "ctr": 0.022774327122153208,
+          "mean_prediction": 0.02122821231444833,
+          "auc": 0.7007656009244994,
+          "logloss": 0.10130599684603302
+        },
+        "past_click_present_in_supplied_task_click_slots": {
+          "rows": 14563,
+          "clicks": 182,
+          "ctr": 0.012497424981116528,
+          "mean_prediction": 0.013194605031329243,
+          "auc": 0.759625986974572,
+          "logloss": 0.060196510442931554
+        },
+        "supplied_task_click_match_without_click_in_observed_window": {
+          "rows": 6752,
+          "clicks": 99,
+          "ctr": 0.014662322274881517,
+          "mean_prediction": 0.011500238681627998,
+          "auc": 0.7869177267944741,
+          "logloss": 0.06754173727417936
+        }
+      },
+      "prior_pair_exposure_quantiles": {
+        "0": 0.0,
+        "0.5": 1.0,
+        "0.9": 23.0,
+        "0.99": 97.0,
+        "1.0": 270.0
+      },
+      "missing_snapshot_fraction_of_historical_click_pair_rows": 0.06220619486122738,
+      "prior_pair_click_rows": 15529
+    }
+  },
+  "models_trained": 0,
+  "original18_contains_exact_user_task_stat": false,
+  "temporal10_contains_exact_user_task_stat": false,
+  "existing_day_context_contains_pooled_pair_history": true,
+  "existing_context_pair_history_columns": [
+    "mean__past3_pair_log_count",
+    "mean__past3_pair_seen",
+    "max__past3_pair_log_count",
+    "max__past3_pair_seen"
+  ],
+  "row166_has_explicit_past_pair_count": false,
+  "held_label_poisoning_contract_passed": true,
+  "source_row_permutation_contract_passed": true,
+  "held_labels_used_only_for_metrics": true,
+  "snapshot_slots_assumed_ordered_in_time": false,
+  "source_sha256": "a96d14b8d5b97e7b1f51ab82568d59faa0bc74bcc8119d22581752a39cef8aaa",
+  "input_sha256": "3f1b4dc73a754c60df3df8fd6f4c13f76ee57bd3be03ded365aba69f6dca34ad",
+  "metadata_sha256": {
+    "E:\\AI\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_time16\\manifest.json": "3396dc4f81b64ec43cc50422fca8a79dcf6d61952cb4b344479602fff14f612b",
+    "E:\\AI\\ml\\大作业上传\\analysis\\temporal_response_20261101\\temporal_features.py": "4d5d3abb18a6a0536f634e31846b6ba46b90d0861eb623782e08992c3bf60bc5",
+    "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\runs\\protected_day_aux_v1_day16_seed42\\context_manifest.json": "ae2e724e8345edf2b76d7647499f4889982cfa28ae8b21dc6bcc8f9f8e429d5b",
+    "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\cache\\day16_oof\\manifest.json": "287eff5a086e6a066d30df7db5a15c9bb2a6999492c3302541ab73545abdae13",
+    "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\day_context.py": "aa7f11fbeb9c839f230a3a1b8aa757de882ce17a63b581f2b9cc56adb0522f0a"
+  },
+  "reference": {
+    "manifest_path": "E:\\AI\\ml\\大作业上传\\analysis\\userday_aux_20261101\\reference_day_state_protected_seed42_v1\\manifest.json",
+    "manifest_sha256": "c6a0c256c3cda8d2b94dcca1bfcb5c14a3e40aa358039b7cf08f84fd075d940f"
+  },
+  "final_test_read": false,
+  "final_auc": null,
+  "interpretation": "Missing dedicated features and descriptive slices do not prove incremental AUC. Earlier history/negative-memory models exist; this audit describes the current strong feature interface, not universal novelty."
+}

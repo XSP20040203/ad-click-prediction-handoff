@@ -1,0 +1,57 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "variant": "news",
+  "seed": 42,
+  "fixed_epoch": {
+    "step": 1641,
+    "fractional_epoch": 1.0,
+    "auc": 0.783141168602522,
+    "logloss": 0.042576936499622096,
+    "average_precision": 0.0741781082919577,
+    "mean_probability": 0.007765407208353281,
+    "objective": 0.05316796617958957,
+    "seconds": 117.12359350000042
+  },
+  "best_checkpoint": {
+    "step": 821,
+    "fractional_epoch": 0.5003046922608165,
+    "auc": 0.7843653810460218,
+    "logloss": 0.04266995445259644,
+    "average_precision": 0.07390763251439729,
+    "mean_probability": 0.00990655180066824,
+    "objective": 0.05385484037541951,
+    "seconds": 60.64187149999998
+  },
+  "replacement_scores": {
+    "auc": 0.7925708440155727,
+    "logloss": 0.04213422311059308,
+    "average_precision": 0.08253160319415548,
+    "mean_probability": 0.009069341274375439
+  },
+  "reference_scores": {
+    "auc": 0.7934700801999591,
+    "logloss": 0.04204855010744797,
+    "average_precision": 0.0823399607498202,
+    "mean_probability": 0.008615116633256282
+  },
+  "auc_gain": -0.000899236184386476,
+  "initial_full_sha256": "8e5877524514634701fba2c5895d4715526165193664f16ebee38da4159baf46",
+  "initial_backbone_sha256": "793c76b6ef2d2c463b974a99579e4165d71921be218998bad9494a9017b03f9e",
+  "row_order_sha256": "3d0d2924edcfac5f30b93da94792474189960945b14d33163917f4fcb59655c0",
+  "extra_parameters": 2241,
+  "training_rows_seen": 1679557,
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "frozen_teacher_value_sha256": "9b5037e019781b8e944cd6dbd695db8752ab303c73dfd5e370eeac18ff9623e9",
+  "ad_held_labels_fit": false,
+  "files_sha256": {
+    "best_model.pt": "fc37e860547fa419b4c44cdf67ae25d1cd1a516acf3c0a17a1af5b279fc808ae",
+    "final_model.pt": "b5c7f048bb1acf0844b8122bcc4d7d8a96eb6e901fd7d92148e26ade591bcfe9",
+    "best_prediction.npy": "014ee97617f36905046f434ecb6fd3ce668dba1e4548caf9c60935d4ca14b8ce",
+    "final_prediction.npy": "b5e2b6adfdb7a72f688eb2e9c822d96a572a3471730ce7af6dfe177e58aa28c2",
+    "replacement_prediction.npy": "662a15222bd75c055b646db6df529a99ee57c8faa9c22f384258adf044e8a968"
+  }
+}

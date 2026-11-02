@@ -1,0 +1,41 @@
+{
+  "variant": "baseline",
+  "model_class": "IDRegularizedDCN",
+  "seed": 42,
+  "validation_day": 20191116,
+  "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\cache_window3_day16",
+  "model_options": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "cross_layers": 2,
+    "group_dropout_rates": {}
+  },
+  "best_fractional_epoch": 1.0,
+  "train_rows": 2104337,
+  "valid_rows": 421983,
+  "valid_clicks": 3724,
+  "parameter_count": 465253,
+  "new_task_metrics": {
+    "auc": 0.6734342558531449,
+    "logloss": 0.05291471805905255,
+    "average_precision": 0.02006587754278843,
+    "mean_prediction": 0.01104156729100463
+  },
+  "zero_train_click_user_mean_prediction": 0.006915154401212931,
+  "zero_train_click_user_actual_ctr": 0.011883437459041461,
+  "auc": 0.724539805339421,
+  "logloss": 0.04751430298593949,
+  "average_precision": 0.028027735397705165,
+  "mean_prediction": 0.009528818219186119,
+  "training_seconds": 60.33893810000063,
+  "checkpoints_completed": 8,
+  "final_fractional_epoch": 2.0,
+  "final_auc": 0.6752620622194562,
+  "first_epoch_auc": 0.724539805339421,
+  "second_epoch_auc": 0.6752620622194562
+}

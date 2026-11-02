@@ -1,0 +1,34 @@
+{
+  "auc": 0.761633151886974,
+  "logloss": 0.044804523032409824,
+  "average_precision": 0.039654750327070595,
+  "mean_prediction": 0.006461323677662576,
+  "family": "tabm_cin",
+  "model_class": "InteractionExpertTabM",
+  "model_options": {
+    "numeric_dim": 75,
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "cin_widths": [
+      32,
+      32
+    ],
+    "embedding_dim": 8,
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 8
+  },
+  "seed": 42,
+  "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20",
+  "validation_day": null,
+  "validation_strategy": "random20",
+  "best_epoch": 2,
+  "train_rows": 2021056,
+  "valid_rows": 505264,
+  "parameter_count": 629409,
+  "batch_size": 1024,
+  "amp": true,
+  "ensemble_members": 8,
+  "auxiliary_weight": 0.0,
+  "source_cache_dir": null
+}

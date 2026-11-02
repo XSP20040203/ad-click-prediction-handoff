@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "teacher_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\results_modern\\random20_architecture_capacity32\\tabm_ple_clip\\seed42",
+  "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\\u5927\u4f5c\u4e1a\u4e0a\u4f20\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+  "teacher_checkpoint_sha256": "8dde12dd7bc3cec6b472267efa54da33d9f81b92fd41b10ee65f00b64f67dc79",
+  "cache_manifest_sha256": "0c17db6fbc9742650fc1ebda2bb2c7c76d456fa6f66417a2f8b890521a7fd622",
+  "train_indices_sha256": "670be37dbaa1cc437a0634f696cd053eea6f6327bc65fc79fb151fcd191aeb32",
+  "valid_indices_sha256": "96c16a33ba7598469f8fd8bb38fd7272f843d89e88325fa0a3a4a496776bbd12",
+  "base_logits_sha256": "3f48dfc94302b79dd015e9605cd37430149a61a575327f1e2db34ef102bc1e50",
+  "ensemble_members": 32,
+  "dtype": "float32, no downcast beyond original inference",
+  "inference_batch_size": 2048,
+  "validation_replay_max_probability_error": 2.9802322387695312e-08,
+  "validation_auc": 0.7701322261322191,
+  "scope": "Frozen teacher inference only; labels used only for validation scoring, never input fitting"
+}

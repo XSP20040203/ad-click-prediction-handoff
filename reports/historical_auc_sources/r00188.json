@@ -1,0 +1,24 @@
+{
+  "status": "active",
+  "goal_auc_both_days": 0.85,
+  "verification_status_for_completed_artifacts": "passed",
+  "verified_model_count": 14,
+  "goal_met_by_common_configuration": false,
+  "best_both_day_min_auc": 0.7926443086415286,
+  "best_both_day_configuration": "cold_plus_fullcount_half/v7_replace30",
+  "highest_each_day": {
+    "20191115": 0.7926443086415286,
+    "20191116": 0.8004121944890122
+  },
+  "original_v7_submission_sha256_unchanged": "c44a9e803b8b4566b9bcef4e1bf85181c2ee00eee71a9f84474b73c619c121b9",
+  "final_test_auc": null,
+  "completed_arm_scores_independently_verified_against_raw_labels": true,
+  "feature_manifests": [
+    "E:\\AI\\ml\\大作业上传\\analysis\\auc85_goal_20261031\\runs\\audience_cold_neural_v1_day15_seed42\\feature_manifest.json",
+    "E:\\AI\\ml\\大作业上传\\analysis\\auc85_goal_20261031\\runs\\audience_tree_v1_day15_seed42\\feature_manifest.json",
+    "E:\\AI\\ml\\大作业上传\\analysis\\auc85_goal_20261031\\runs\\statistics_alignment_v1_day15_seed42\\feature_manifest.json",
+    "E:\\AI\\ml\\大作业上传\\analysis\\auc85_goal_20261031\\runs\\audience_cold_neural_v1_day16_seed42\\feature_manifest.json",
+    "E:\\AI\\ml\\大作业上传\\analysis\\auc85_goal_20261031\\runs\\statistics_alignment_v1_day16_seed42\\feature_manifest.json"
+  ],
+  "limitations": "Repeated development dates; no blind-test claim; candidate selection is exploratory"
+}

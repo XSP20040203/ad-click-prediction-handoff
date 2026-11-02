@@ -1,0 +1,116 @@
+{
+  "day": 20191115,
+  "arm": "mean",
+  "seed": 42,
+  "model_class": "DailyInterestDCN",
+  "model_options": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "cross_layers": 2,
+    "group_norm_caps": {
+      "user_id": 0.2,
+      "ad_task": 0.2,
+      "adv_id": 0.2
+    },
+    "interest_dim": 8,
+    "interest_hidden": 32,
+    "interest_mode": "mean",
+    "time_mode": "both",
+    "numeric_dim": 75,
+    "n_topics": 214,
+    "context_dim": 7
+  },
+  "best_fractional_epoch": 0.7501523461304083,
+  "cache": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\user_personalization\\cache_day15_stats",
+  "features": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\cache_day15",
+  "initial_backbone_sha256": "fa1a804aebc1ca916f9c2858eba20bc9b7fe27c2d3ef2bff4c4bf124702732dd",
+  "parameter_count": 631469,
+  "rows": 424780,
+  "clicks": 3523,
+  "ctr": 0.008293704976693819,
+  "auc": 0.7383619745144685,
+  "logloss": 0.044852111626708345,
+  "average_precision": 0.024946227884031457,
+  "mean_prediction": 0.00849849458824828,
+  "status": "complete_and_verified",
+  "maximum_reload_error": 0.0,
+  "training_seconds": 264.23526540000057,
+  "checkpoints_completed": 7,
+  "last_fractional_epoch": 1.7501523461304083,
+  "model_sha256": "f78c4c6fd58342cf38a8c63c20f1d676a273f9b4df1f40c1d3a51b747b6f5191",
+  "validation_strategy": "whole future date",
+  "same_day_source_available": true,
+  "advertisement_statistics": "strict per-row past dates",
+  "diagnostics": {
+    "global": {
+      "rows": 424780,
+      "clicks": 3523,
+      "ctr": 0.008293704976693819,
+      "auc": 0.7383619745144685,
+      "logloss": 0.044852111626708345,
+      "average_precision": 0.024946227884031457,
+      "mean_prediction": 0.00849849458824828
+    },
+    "within_user": {
+      "eligible_users": 2513,
+      "eligible_rows": 163309,
+      "pair_weighted_auc": 0.6886231144944481,
+      "row_weighted_auc": 0.6865376474475549,
+      "macro_auc": 0.6698899457021977,
+      "scope": "Only validation users with both labels; not directly comparable with global AUC"
+    },
+    "slices": {
+      "zero_train_clicks": {
+        "rows": 103064,
+        "clicks": 935,
+        "ctr": 0.009072032911588916,
+        "auc": 0.7370296704026883,
+        "logloss": 0.048479418873449726,
+        "average_precision": 0.02937650235830931,
+        "mean_prediction": 0.007053948363767998
+      },
+      "one_or_two_train_clicks": {
+        "rows": 210677,
+        "clicks": 1395,
+        "ctr": 0.0066215106537495785,
+        "auc": 0.7316103901103891,
+        "logloss": 0.03763696213868222,
+        "average_precision": 0.017831185763361686,
+        "mean_prediction": 0.00803797361243596
+      },
+      "three_plus_train_clicks": {
+        "rows": 111039,
+        "clicks": 1193,
+        "ctr": 0.010743972838372104,
+        "auc": 0.7431765822452432,
+        "logloss": 0.055174802344480724,
+        "average_precision": 0.03262858262777128,
+        "mean_prediction": 0.010713048841267923
+      },
+      "new_task": {
+        "rows": 53160,
+        "clicks": 486,
+        "ctr": 0.009142212189616254,
+        "auc": 0.6896070573701959,
+        "logloss": 0.049914676059429765,
+        "average_precision": 0.02950159557996921,
+        "mean_prediction": 0.010931583760642214
+      },
+      "seen_task": {
+        "rows": 371620,
+        "clicks": 3037,
+        "ctr": 0.008172326570152306,
+        "auc": 0.7455449789382903,
+        "logloss": 0.04412791506774093,
+        "average_precision": 0.02530272280581211,
+        "mean_prediction": 0.008150442760024662
+      }
+    }
+  },
+  "final_labels_used": false
+}

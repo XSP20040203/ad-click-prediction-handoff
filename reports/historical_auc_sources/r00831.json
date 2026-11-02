@@ -1,0 +1,39 @@
+{
+  "variant": "global_topics_only",
+  "scores": {
+    "auc": 0.8011632426507045,
+    "logloss": 0.04382817843747455,
+    "average_precision": 0.08752428775373018,
+    "mean_probability": 0.009414311136328247
+  },
+  "rounded6_scores": {
+    "auc": 0.8011632448977564,
+    "logloss": 0.043828176698300546,
+    "average_precision": 0.08752348276446614,
+    "mean_probability": 0.009414310659434147
+  },
+  "auc_from_logit": 0.8011632426507045,
+  "auc_gain": -7.802469943385404e-05,
+  "maximum_reload_error": 0.0,
+  "fit": {
+    "initial_objective": 0.04204855010744797,
+    "objective": 0.04199768352312492,
+    "projected_gradient_max": 4.15859940532237e-08,
+    "iterations": 22,
+    "optimizer_success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "convergence_verified": true,
+    "slope": 1.0872989275946394,
+    "intercept": 0.3261387998029406,
+    "beta_norm": 0.04821047704766868,
+    "training_rows": 424780,
+    "model_sha256": "29336c1b0748dcdcc2a6c0c39189259f88c37d0c6e789ed6787ee0096abcc21a",
+    "role": "Training15; not a validated15 score"
+  },
+  "files_sha256": {
+    "model.npz": "29336c1b0748dcdcc2a6c0c39189259f88c37d0c6e789ed6787ee0096abcc21a",
+    "fit.json": "4bb34e8e0ca19d1e756127886d637a47321937a1074028d05403f80ac323474b",
+    "validation_prediction.npy": "bfa06d5afd02e19252556b519c158454eec3cded2303f656260b4a97da6c111f",
+    "validation_logit.npy": "827ec8b8e7c77850d07f3e75a0b9aeb1a67bd7592f7de2a79fc88572c0295af8"
+  }
+}

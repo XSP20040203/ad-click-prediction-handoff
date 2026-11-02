@@ -1,0 +1,107 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "domain": {
+    "input_only_domain_auc": 0.6006722575226152,
+    "features": [
+      "category__age",
+      "category__sex",
+      "category__residence",
+      "category__city",
+      "category__city_rank",
+      "category__series_dev",
+      "category__series_group",
+      "category__device_dev",
+      "category__device_name",
+      "category__device_size",
+      "category__net_type",
+      "category__creat_type_cd",
+      "category__inter_type_cd",
+      "category__slot_id",
+      "category__site_id",
+      "category__hispace_app_tags",
+      "category__app_second_class",
+      "category__app_score",
+      "category__u_refreshTimes",
+      "category__u_feedLifeCycle"
+    ],
+    "excluded_target_derived_columns": true,
+    "group_exclusion": "Two folds of raw user ID, fixed multiplicative hash",
+    "domain_fit_sample_per_fold": 500000,
+    "domain_rounds": 180,
+    "domain_scope": "stable",
+    "weight_clip_before_mean_normalization": [
+      0.2,
+      5.0
+    ],
+    "train_mean_normalized": true,
+    "train_weight_mean": 0.9999999999999996,
+    "train_weight_quantiles": {
+      "0.01": 0.2834457455692114,
+      "0.1": 0.5144603242474349,
+      "0.5": 0.8941395528810787,
+      "0.9": 1.5379601342666578,
+      "0.99": 3.2529413435651593
+    }
+  },
+  "arms": {
+    "control": {
+      "auc": 0.7663172962409179,
+      "logloss": 0.04389098352582405,
+      "best_iteration": 278,
+      "maximum_reload_error": 0.0,
+      "blends": [
+        {
+          "weight": 0.05,
+          "auc": 0.7922366617685285
+        },
+        {
+          "weight": 0.1,
+          "auc": 0.792275450562763
+        },
+        {
+          "weight": 0.2,
+          "auc": 0.7921018726289346
+        },
+        {
+          "weight": 0.3,
+          "auc": 0.7915797500961685
+        }
+      ],
+      "model_saved": false,
+      "model_sha256": "be6b7f84b9968019664c0cbc5f8aedd3172b7ff83776dcf63ecae5a63f6d5a49"
+    },
+    "date_weighted": {
+      "auc": 0.7583268699886101,
+      "logloss": 0.044301160479551065,
+      "best_iteration": 229,
+      "maximum_reload_error": 0.0,
+      "blends": [
+        {
+          "weight": 0.05,
+          "auc": 0.7921395476081242
+        },
+        {
+          "weight": 0.1,
+          "auc": 0.7920664751420932
+        },
+        {
+          "weight": 0.2,
+          "auc": 0.7916416325280504
+        },
+        {
+          "weight": 0.3,
+          "auc": 0.7908363577269387
+        }
+      ],
+      "model_saved": false,
+      "model_sha256": "0575ea0002f5e3003e42f7efd3e8e9da6a41d998151fe326f7e0ac2fd78883b2"
+    }
+  },
+  "baseline_auc": 0.7921069471244595,
+  "weighting_delta": -0.007990426252307836,
+  "goal_met": false,
+  "final_auc": null,
+  "seconds": 201.6225157000008,
+  "no_training_arrays_saved": true
+}

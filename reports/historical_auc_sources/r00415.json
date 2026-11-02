@@ -1,0 +1,68 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "mode": "graph",
+  "initial_backbone_sha256": "793c76b6ef2d2c463b974a99579e4165d71921be218998bad9494a9017b03f9e",
+  "row_order_sha256": "3d0d2924edcfac5f30b93da94792474189960945b14d33163917f4fcb59655c0",
+  "fixed_endpoint": {
+    "fractional_epoch": 1.0,
+    "auc": 0.7830914596367667,
+    "logloss": 0.04246887316807573,
+    "average_precision": 0.07720873780008429,
+    "mean_probability": 0.007926492020487785,
+    "train_loss": 0.04316930538271509,
+    "seconds": 170.2461244000001
+  },
+  "best_checkpoint": {
+    "fractional_epoch": 0.7501523461304083,
+    "auc": 0.7866828834768119,
+    "logloss": 0.04233186481903916,
+    "average_precision": 0.07799257092306307,
+    "mean_probability": 0.00889245979487896,
+    "train_loss": 0.043721920918071054,
+    "seconds": 128.2408362000001
+  },
+  "v7_replace30": {
+    "auc": 0.7920297327219005,
+    "logloss": 0.042092731926631016,
+    "average_precision": 0.08260614111715225,
+    "mean_probability": 0.008765114135664743
+  },
+  "current_candidate_blend10": {
+    "auc": 0.7925925590291534,
+    "logloss": 0.042070761726774646,
+    "average_precision": 0.08282026518230881,
+    "mean_probability": 0.008711859486050109
+  },
+  "slices": {
+    "known": {
+      "auc": 0.7914915288902461,
+      "logloss": 0.041659812501131294,
+      "average_precision": 0.07836214274468392,
+      "mean_probability": 0.008679839899338104
+    },
+    "cold": {
+      "auc": 0.7535078331802839,
+      "logloss": 0.04702990960367106,
+      "average_precision": 0.07706124617968602,
+      "mean_probability": 0.010378805864581085
+    }
+  },
+  "prior_output_weight_norm": 0.2824517488479614,
+  "reload_errors": {
+    "best": 4.470348358154297e-08,
+    "final": 5.960464477539063e-08
+  },
+  "seconds": 183.28336880000006,
+  "sources": {
+    "E:\\AI\\ml\\大作业上传\\analysis\\learned_audience_20261101\\run.py": "2d3fb6d6ddfbad54c452870390a8d080d9e2ab74dd2d3b5fe307f540e6602e92",
+    "E:\\AI\\ml\\大作业上传\\analysis\\learned_audience_20261101\\cohort_graph.py": "9b47174b3860f295d70e6dc5b57d3b646612f1a973ca84a238374e88f13e6060",
+    "E:\\AI\\ml\\大作业上传\\analysis\\learned_audience_20261101\\cohort_model.py": "26c9e68f684d71a152890a3e9b381849c31a641c4860e75ecc69773fea572ee1"
+  },
+  "files_sha256": {
+    "best_model.pt": "536b4b6c5a81bcd87cfb9ce0f867035a9718ab8b1fefb8817c9958d73e37418d",
+    "final_model.pt": "80ce0d8d0417178e34f5e0e707326c777e74fc239cfa1f11963a90fb3a823a7f",
+    "best_prediction.npy": "43efa94d40c7b44ec1e6a38ef002d8036f75cbc179d253c32037c2421fa25635",
+    "final_prediction.npy": "8dedcd452d2acfcc6bd305121b05b15da82dabb2265818300eabd9dc31aa7aac"
+  }
+}

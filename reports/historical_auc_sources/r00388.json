@@ -1,0 +1,100 @@
+{
+  "status": "complete",
+  "reference": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "records": [
+    {
+      "variant": "base_only",
+      "scores": {
+        "auc": 0.8012412673501383,
+        "logloss": 0.04382852485624043,
+        "average_precision": 0.08749928332848086,
+        "mean_probability": 0.009425949958917657
+      },
+      "rounded6_scores": {
+        "auc": 0.8012415042535959,
+        "logloss": 0.04382851473301119,
+        "average_precision": 0.08749850462725667,
+        "mean_probability": 0.009425950277617822
+      },
+      "auc_gain": 0.0,
+      "prediction_sha256": "884314d468ea3be7d43bc4452d5cc44a5898977047fb061c415ed6995faab176"
+    },
+    {
+      "variant": "user_demographic",
+      "scores": {
+        "auc": 0.7970272581811554,
+        "logloss": 0.04413103117590418,
+        "average_precision": 0.08307334098813508,
+        "mean_probability": 0.009627641305799873
+      },
+      "rounded6_scores": {
+        "auc": 0.7970273926832538,
+        "logloss": 0.044131034084530986,
+        "average_precision": 0.08307269545353495,
+        "mean_probability": 0.009627641077958115
+      },
+      "auc_gain": -0.004214009168982957,
+      "prediction_sha256": "5427efd65b6b823f2dd85b4f625aa3664809f779574cc22c2ec4aabc63b9f4b0"
+    },
+    {
+      "variant": "ad_context",
+      "scores": {
+        "auc": 0.7901417323791704,
+        "logloss": 0.044552777417413036,
+        "average_precision": 0.0803495170599629,
+        "mean_probability": 0.009939155673399605
+      },
+      "rounded6_scores": {
+        "auc": 0.7901411712582438,
+        "logloss": 0.04455280006371235,
+        "average_precision": 0.08034892694681853,
+        "mean_probability": 0.009939156977887732
+      },
+      "auc_gain": -0.01109953497096794,
+      "prediction_sha256": "a2bbe1b541dbea2f213510ed12742413e53961a1ea4ad2460c6b0c643305eb6c"
+    },
+    {
+      "variant": "all_entities",
+      "scores": {
+        "auc": 0.786842002348187,
+        "logloss": 0.04486968961025945,
+        "average_precision": 0.0774324367611572,
+        "mean_probability": 0.010123115248362036
+      },
+      "rounded6_scores": {
+        "auc": 0.7868421606048328,
+        "logloss": 0.04486967630880306,
+        "average_precision": 0.07743151245206091,
+        "mean_probability": 0.010123115876705932
+      },
+      "auc_gain": -0.014399265001951322,
+      "prediction_sha256": "880e316c3e2b061340186f2fe7c0e810685a5de90c7c78fe8b7da69af05b6aac"
+    },
+    {
+      "variant": "query_permuted",
+      "scores": {
+        "auc": 0.7848172690699573,
+        "logloss": 0.044910860150068774,
+        "average_precision": 0.07958469679424636,
+        "mean_probability": 0.010283376627302821
+      },
+      "rounded6_scores": {
+        "auc": 0.7848178276228245,
+        "logloss": 0.044910841023544014,
+        "average_precision": 0.07958405707636554,
+        "mean_probability": 0.010283375998559184
+      },
+      "auc_gain": -0.01642399828018104,
+      "prediction_sha256": "2deb535c37ecba12b468d02b3184d5e4d7e1277b71d7abe30f076649cec5a121"
+    }
+  ],
+  "query_permutation_sha256": "1caeb209c21ecc1cf412ca1b4448f355140984fa6759c45b2c2584aff1fa2d59",
+  "final_auc": null,
+  "goal_met": false,
+  "training15_is_not_validated15": true
+}

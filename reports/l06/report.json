@@ -1,0 +1,267 @@
+{
+  "status": "complete_single_bounded_six_score_fit",
+  "rows": 404182,
+  "assumed_clicks_not_observed": 3459,
+  "zero_labels": 400723,
+  "one_labels": 3459,
+  "actual_auc": {
+    "v6": 0.8081682478896266,
+    "v7": 0.8058076776010534,
+    "v8": 0.80744778516503,
+    "v9": 0.8085581076875418,
+    "old_best": 0.7440391655424825,
+    "submission_3": 0.7058986332478691
+  },
+  "all_six_displayed_auc_match": true,
+  "search_records": [
+    {
+      "name": "initial_six_score_feasible",
+      "candidate_column": 0,
+      "objective": 13645.966762989343,
+      "valid": true
+    },
+    {
+      "seed": 12071,
+      "swaps": 64,
+      "valid": true,
+      "rank_auc": [
+        0.8081669615474446,
+        0.8058070715845465,
+        0.8074462762560717,
+        0.808556748118366,
+        0.7440381580400395,
+        0.7058978003358957
+      ],
+      "temperature": 0.5,
+      "name": "temperature_0.5_seed_12071",
+      "candidate_column": 1,
+      "objective": 12627.860535545919
+    },
+    {
+      "seed": 83519,
+      "swaps": 42,
+      "valid": true,
+      "rank_auc": [
+        0.8081700071411179,
+        0.805809223303871,
+        0.8074499657422838,
+        0.8085599733526462,
+        0.7440373236851698,
+        0.7058976917579382
+      ],
+      "temperature": 0.5,
+      "name": "temperature_0.5_seed_83519",
+      "candidate_column": 2,
+      "objective": 12602.988645963878
+    },
+    {
+      "seed": 12171,
+      "swaps": 62,
+      "valid": true,
+      "rank_auc": [
+        0.8081704244989147,
+        0.8058106478033871,
+        0.807450758974604,
+        0.8085605324750191,
+        0.7440412566601562,
+        0.7059008838056007
+      ],
+      "temperature": 0.25,
+      "name": "temperature_0.25_seed_12071",
+      "candidate_column": 3,
+      "objective": 11422.537221515096
+    },
+    {
+      "seed": 83619,
+      "swaps": 66,
+      "valid": true,
+      "rank_auc": [
+        0.8081707581687185,
+        0.8058109280860222,
+        0.8074509505191079,
+        0.8085608336796521,
+        0.7440396052651747,
+        0.7059011038473084
+      ],
+      "temperature": 0.25,
+      "name": "temperature_0.25_seed_83519",
+      "candidate_column": 4,
+      "objective": 11404.232515225494
+    },
+    {
+      "seed": 12271,
+      "swaps": 103,
+      "valid": true,
+      "rank_auc": [
+        0.8081722486807468,
+        0.8058126350325174,
+        0.8074535260892628,
+        0.808562580666524,
+        0.7440434307443758,
+        0.7059024839777586
+      ],
+      "temperature": 0.125,
+      "name": "temperature_0.125_seed_12071",
+      "candidate_column": 5,
+      "objective": 10798.631172492642
+    },
+    {
+      "seed": 83719,
+      "swaps": 111,
+      "valid": true,
+      "rank_auc": [
+        0.8081722411055405,
+        0.8058121448084499,
+        0.8074523385854879,
+        0.808562271886685,
+        0.7440419258033834,
+        0.705900840879432
+      ],
+      "temperature": 0.125,
+      "name": "temperature_0.125_seed_83519",
+      "candidate_column": 6,
+      "objective": 10827.618440265262
+    },
+    {
+      "seed": 12371,
+      "swaps": 99,
+      "valid": true,
+      "rank_auc": [
+        0.8081720221460051,
+        0.8058122688975445,
+        0.8074520471204061,
+        0.8085620467948395,
+        0.7440432218851148,
+        0.7059026711935725
+      ],
+      "temperature": 0.0625,
+      "name": "temperature_0.0625_seed_12071",
+      "candidate_column": 7,
+      "objective": 10663.941453784324
+    },
+    {
+      "seed": 83819,
+      "swaps": 78,
+      "valid": true,
+      "rank_auc": [
+        0.8081727374619176,
+        0.8058129326299093,
+        0.8074530019571289,
+        0.8085628010689567,
+        0.7440428892974845,
+        0.7059027880681847
+      ],
+      "temperature": 0.0625,
+      "name": "temperature_0.0625_seed_83519",
+      "candidate_column": 8,
+      "objective": 10650.518994652779
+    },
+    {
+      "seed": 12471,
+      "swaps": 71,
+      "valid": true,
+      "rank_auc": [
+        0.8081727086039885,
+        0.8058126595617563,
+        0.807452851895899,
+        0.8085627548962696,
+        0.7440420888506815,
+        0.7059011525450636
+      ],
+      "temperature": 0.03125,
+      "name": "temperature_0.03125_seed_12071",
+      "candidate_column": 9,
+      "objective": 10627.307300606259
+    },
+    {
+      "seed": 83919,
+      "swaps": 79,
+      "valid": true,
+      "rank_auc": [
+        0.8081682478896269,
+        0.8058076776010542,
+        0.8074477851650299,
+        0.8085581076875425,
+        0.7440391655424821,
+        0.7058986332478691
+      ],
+      "temperature": 0.03125,
+      "name": "temperature_0.03125_seed_83519",
+      "candidate_column": 10,
+      "objective": 10627.260339533068
+    }
+  ],
+  "annealing_fits": [
+    {
+      "temperature": 0.5,
+      "optimizer_success": true,
+      "message": "Optimization terminated successfully.",
+      "expected_count_error": 1.5370460459962487e-10,
+      "expected_rank_moment_error": 1.6986412276764895e-14,
+      "valid_integer_objective_lower_bound": 6500.658941371511
+    },
+    {
+      "temperature": 0.25,
+      "optimizer_success": true,
+      "message": "Optimization terminated successfully.",
+      "expected_count_error": 1.7426009435439482e-07,
+      "expected_rank_moment_error": 9.71844826835877e-12,
+      "valid_integer_objective_lower_bound": 9168.272330372438
+    },
+    {
+      "temperature": 0.125,
+      "optimizer_success": true,
+      "message": "Optimization terminated successfully.",
+      "expected_count_error": 2.9941020329715684e-07,
+      "expected_rank_moment_error": 2.0184742766105046e-11,
+      "valid_integer_objective_lower_bound": 10027.162162876319
+    },
+    {
+      "temperature": 0.0625,
+      "optimizer_success": true,
+      "message": "Optimization terminated successfully.",
+      "expected_count_error": 2.861547727661673e-07,
+      "expected_rank_moment_error": 2.1039503472763954e-11,
+      "valid_integer_objective_lower_bound": 10329.664294609753
+    },
+    {
+      "temperature": 0.03125,
+      "optimizer_success": true,
+      "message": "Optimization terminated successfully.",
+      "expected_count_error": 5.361471266951412e-10,
+      "expected_rank_moment_error": 2.0650148258027912e-14,
+      "valid_integer_objective_lower_bound": 10458.984545625255
+    }
+  ],
+  "retained_candidates": 11,
+  "selected_candidate": 10,
+  "candidate_objectives": [
+    13645.966762989343,
+    12627.860535545919,
+    12602.988645963878,
+    11422.537221515096,
+    11404.232515225494,
+    10798.631172492642,
+    10827.618440265262,
+    10663.941453784324,
+    10650.518994652779,
+    10627.307300606259,
+    10627.260339533068
+  ],
+  "selected_prior_nll": 14391.731331181008,
+  "initial_prior_nll": 17410.437754637285,
+  "objective_lower_bound": 10458.984545625255,
+  "absolute_objective_gap": 168.27579390781284,
+  "global_optimality_proven": false,
+  "actual_final_labels_recovered": false,
+  "positive_count_is_an_assumption": true,
+  "new_supervised_models_trained": 0,
+  "previous_files_unchanged": true,
+  "soft_probability_is_temperature_one_conditional_estimate_not_hard_label_confidence": true,
+  "seconds": 49.92511190000005,
+  "files_sha256": {
+    "fitted_labels_20191117.csv": "001b8b5457b1ae3cdb28437f8df501f0dafb0a3f7b33c136ec71efb9f5b7d7b6",
+    "six_auc_fit_check.csv": "5423d685b3a6c3ba0595543606b2b8f334de7433318c73583147941118018126",
+    "fit_arrays.npz": "ab1386449b02c45463adbf998fb1263410019e881f0856687105a091912b45e4"
+  }
+}

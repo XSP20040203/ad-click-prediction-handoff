@@ -1,0 +1,262 @@
+{
+  "status": "passed",
+  "fit_date": 20191115,
+  "evaluation_date": 20191116,
+  "verified_new_offset_models": 4,
+  "deep_base_models_retrained": 0,
+  "records": [
+    {
+      "mode": "base_only",
+      "auc": 0.8012412673501383,
+      "logloss": 0.04382810524065784,
+      "average_precision": 0.08749928332848086,
+      "mean_probability": 0.009408496329042384,
+      "auc_gain": 0.0,
+      "rounded6_auc": 0.801240950836847,
+      "independent_reload_error": 0.0,
+      "logit_reload_error": 0.0
+    },
+    {
+      "mode": "exposure_only",
+      "auc": 0.8010911970350093,
+      "logloss": 0.043831229528934985,
+      "average_precision": 0.08747784443296097,
+      "mean_probability": 0.009387476294395252,
+      "auc_gain": -0.00015007031512903612,
+      "rounded6_auc": 0.8010916448403252,
+      "independent_reload_error": 0.0,
+      "logit_reload_error": 0.0
+    },
+    {
+      "mode": "history_permuted",
+      "auc": 0.8011401050796906,
+      "logloss": 0.04383075289244356,
+      "average_precision": 0.08755575846968147,
+      "mean_probability": 0.0094072009179381,
+      "auc_gain": -0.00010116227044776327,
+      "rounded6_auc": 0.8011398572619817,
+      "independent_reload_error": 0.0,
+      "logit_reload_error": 0.0
+    },
+    {
+      "mode": "full_response",
+      "auc": 0.8011416279387722,
+      "logloss": 0.04382886262748691,
+      "average_precision": 0.08751862392293205,
+      "mean_probability": 0.009386061999670351,
+      "auc_gain": -9.963941136614807e-05,
+      "rounded6_auc": 0.8011414619779491,
+      "independent_reload_error": 0.0,
+      "logit_reload_error": 0.0
+    }
+  ],
+  "comparisons": {
+    "base_only": {
+      "versus_reference": {
+        "auc_delta": 0.0,
+        "user_cluster_approximate_95_interval": [
+          0.0,
+          0.0
+        ],
+        "logloss_delta": -7.050607979563334e-05
+      },
+      "versus_exposure_only": {
+        "auc_delta": 0.0001500703151289251,
+        "user_cluster_approximate_95_interval": [
+          -5.736119561102355e-05,
+          0.00035750182586887375
+        ],
+        "logloss_delta": -3.124288277145393e-06
+      },
+      "versus_permuted": {
+        "auc_delta": 0.00010116227044765225,
+        "user_cluster_approximate_95_interval": [
+          -7.167697550764527e-05,
+          0.00027400151640294976
+        ],
+        "logloss_delta": -2.647651785717131e-06
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8050835956173258,
+          "logloss": 0.043336344255431924,
+          "average_precision": 0.09011972030426907,
+          "mean_probability": 0.009201538456424138
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7528808289714999,
+          "logloss": 0.04995289164658006,
+          "average_precision": 0.06390433460360662,
+          "mean_probability": 0.011986115950958026
+        }
+      }
+    },
+    "exposure_only": {
+      "versus_reference": {
+        "auc_delta": -0.0001500703151289251,
+        "user_cluster_approximate_95_interval": [
+          -0.00035750182586887375,
+          5.736119561102355e-05
+        ],
+        "logloss_delta": -6.738179151848794e-05
+      },
+      "versus_exposure_only": {
+        "auc_delta": 0.0,
+        "user_cluster_approximate_95_interval": [
+          0.0,
+          0.0
+        ],
+        "logloss_delta": 0.0
+      },
+      "versus_permuted": {
+        "auc_delta": -4.8908044681272855e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.0003092671035791453,
+          0.0002114510142165996
+        ],
+        "logloss_delta": 4.766364914282617e-07
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8049386840419576,
+          "logloss": 0.043337900729824005,
+          "average_precision": 0.09014155993287343,
+          "mean_probability": 0.0091691018527523
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7528808289714999,
+          "logloss": 0.04997554274861212,
+          "average_precision": 0.06390433460360662,
+          "mean_probability": 0.012107287039367714
+        }
+      }
+    },
+    "history_permuted": {
+      "versus_reference": {
+        "auc_delta": -0.00010116227044765225,
+        "user_cluster_approximate_95_interval": [
+          -0.00027400151640294976,
+          7.167697550764527e-05
+        ],
+        "logloss_delta": -6.78584280099162e-05
+      },
+      "versus_exposure_only": {
+        "auc_delta": 4.8908044681272855e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.0002114510142165996,
+          0.0003092671035791453
+        ],
+        "logloss_delta": -4.766364914282617e-07
+      },
+      "versus_permuted": {
+        "auc_delta": 0.0,
+        "user_cluster_approximate_95_interval": [
+          0.0,
+          0.0
+        ],
+        "logloss_delta": 0.0
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8049799487097834,
+          "logloss": 0.043339253012303354,
+          "average_precision": 0.09018989662722465,
+          "mean_probability": 0.009199629632850247
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7528536804098955,
+          "logloss": 0.04995228728584866,
+          "average_precision": 0.06406389427032172,
+          "mean_probability": 0.01199246047158469
+        }
+      }
+    },
+    "full_response": {
+      "versus_reference": {
+        "auc_delta": -9.963941136592602e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.0003581611772361334,
+          0.00015888235450428135
+        ],
+        "logloss_delta": -6.974869296656055e-05
+      },
+      "versus_exposure_only": {
+        "auc_delta": 5.043090376299908e-05,
+        "user_cluster_approximate_95_interval": [
+          -0.00013757134048084866,
+          0.00023843314800684682
+        ],
+        "logloss_delta": -2.3669014480726114e-06
+      },
+      "versus_permuted": {
+        "auc_delta": 1.5228590817262244e-06,
+        "user_cluster_approximate_95_interval": [
+          -0.00028638630066746826,
+          0.0002894320188309207
+        ],
+        "logloss_delta": -1.8902649566443497e-06
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.804991751071394,
+          "logloss": 0.043335478212380374,
+          "average_precision": 0.09019104211254891,
+          "mean_probability": 0.009168684196816317
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7528808289714999,
+          "logloss": 0.04997386853345626,
+          "average_precision": 0.06390433460360662,
+          "mean_probability": 0.0120934598044353
+        }
+      }
+    }
+  },
+  "training_solver_checks": [
+    {
+      "mode": "base_only",
+      "objective": 0.04200169445191236,
+      "projected_gradient_max": 1.8361624964631854e-11
+    },
+    {
+      "mode": "exposure_only",
+      "objective": 0.041998501223128676,
+      "projected_gradient_max": 4.260605552307913e-08
+    },
+    {
+      "mode": "history_permuted",
+      "objective": 0.04199882329530771,
+      "projected_gradient_max": 9.197912563412328e-08
+    },
+    {
+      "mode": "full_response",
+      "objective": 0.0419968413002272,
+      "projected_gradient_max": 7.822403580208471e-08
+    }
+  ],
+  "reference_scores": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "evaluation_labels_fit": false,
+  "history_cutoff_and_row_local_p0_reconstructed": true,
+  "normalizer_fit_date": 20191115,
+  "all_weights_match_pre_evaluation_lock": true,
+  "training15_not_validated15": true,
+  "existing_submission_unchanged": true,
+  "submission_sha256": "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846",
+  "final_auc": null,
+  "platform_goal_proven": false,
+  "evaluator_sha256": "771b9a37cf86efcff7d05cffb7caa28cc540567b4a6aab3cbf3077b73dfb40f9",
+  "limitations": "Previously reused development/reference selection;15 is residual training,16 is chronological evaluation, not a new blind benchmark"
+}

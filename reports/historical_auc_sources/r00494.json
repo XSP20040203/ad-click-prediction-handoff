@@ -1,0 +1,379 @@
+[
+  {
+    "model": "mlp",
+    "auc": 0.7220471880633802,
+    "logloss": 0.04528496085389563,
+    "average_precision": 0.021569865205489765,
+    "mean_prediction": 0.00803957251090271,
+    "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "parameter_count": 302065,
+    "training_seconds": 83.09247929999992,
+    "inference_seconds": null,
+    "feature_note": "24 categorical fields, seven masked-mean history fields, 20 numeric inputs. B2-size embedding + MLP control, same dimensions and dropout.",
+    "model_class": "CTRModel",
+    "model_options": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01
+    },
+    "parameters": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048,
+      "max_epochs": 10,
+      "early_stopping_patience": 3,
+      "loss": "unweighted BCEWithLogitsLoss",
+      "seed": 42
+    },
+    "train_rows": 1679557,
+    "valid_rows": 424780,
+    "validation_day": 20191115,
+    "validation_clicks": 3523,
+    "seed": 42,
+    "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\cache_day15",
+    "python": "3.10.0",
+    "new_task_rows": 53160,
+    "new_task_clicks": 486,
+    "new_task_metrics": {
+      "auc": 0.668690392539498,
+      "logloss": 0.05047058498290743,
+      "average_precision": 0.02285625656264735,
+      "mean_prediction": 0.011164922244759706
+    },
+    "experiment_scope": "Same raw inputs, frozen preprocessing, date boundaries, batch order and optimizer. Architecture and its input representation vary.",
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\results_mainstream\\20191115\\mlp\\seed42",
+    "new_task_auc": 0.668690392539498,
+    "actual_ctr": 0.008293704976693819,
+    "reload_max_abs_error": 2.2351741790771484e-08,
+    "reload_rows": 144
+  },
+  {
+    "model": "deepfm",
+    "auc": 0.7141542458955297,
+    "logloss": 0.04551730137994457,
+    "average_precision": 0.02115372992130167,
+    "mean_prediction": 0.007512316807468375,
+    "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "parameter_count": 380093,
+    "training_seconds": 122.77015299999994,
+    "inference_seconds": null,
+    "feature_note": "24 categorical fields, seven masked-mean history fields, 20 numeric inputs. Linear + second-order FM + DNN; FM/DNN share all field embeddings; numeric fields use x_i*v_i.",
+    "model_class": "DeepFMModel",
+    "model_options": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01
+    },
+    "parameters": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048,
+      "max_epochs": 10,
+      "early_stopping_patience": 3,
+      "loss": "unweighted BCEWithLogitsLoss",
+      "seed": 42
+    },
+    "train_rows": 1679557,
+    "valid_rows": 424780,
+    "validation_day": 20191115,
+    "validation_clicks": 3523,
+    "seed": 42,
+    "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\cache_day15",
+    "python": "3.10.0",
+    "new_task_rows": 53160,
+    "new_task_clicks": 486,
+    "new_task_metrics": {
+      "auc": 0.6608203170960256,
+      "logloss": 0.05053757344352836,
+      "average_precision": 0.020395794271687986,
+      "mean_prediction": 0.010380494072790363
+    },
+    "experiment_scope": "Same raw inputs, frozen preprocessing, date boundaries, batch order and optimizer. Architecture and its input representation vary.",
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\results_mainstream\\20191115\\deepfm\\seed42",
+    "new_task_auc": 0.6608203170960256,
+    "actual_ctr": 0.008293704976693819,
+    "reload_max_abs_error": 1.4901161193847656e-08,
+    "reload_rows": 144
+  },
+  {
+    "model": "dcnv2",
+    "auc": 0.7219110795953786,
+    "logloss": 0.04529959429707193,
+    "average_precision": 0.02159173831746455,
+    "mean_prediction": 0.007975065203834862,
+    "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "parameter_count": 446517,
+    "training_seconds": 87.7102003,
+    "inference_seconds": null,
+    "feature_note": "24 categorical fields, seven masked-mean history fields, 20 numeric inputs. Parallel full-matrix two-layer CrossNet + DNN; concatenate outputs before logistic head.",
+    "model_class": "DCNV2Model",
+    "model_options": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2
+    },
+    "parameters": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048,
+      "max_epochs": 10,
+      "early_stopping_patience": 3,
+      "loss": "unweighted BCEWithLogitsLoss",
+      "seed": 42
+    },
+    "train_rows": 1679557,
+    "valid_rows": 424780,
+    "validation_day": 20191115,
+    "validation_clicks": 3523,
+    "seed": 42,
+    "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\cache_day15",
+    "python": "3.10.0",
+    "new_task_rows": 53160,
+    "new_task_clicks": 486,
+    "new_task_metrics": {
+      "auc": 0.6669697772977696,
+      "logloss": 0.05044796826705204,
+      "average_precision": 0.022726384312882715,
+      "mean_prediction": 0.010950969272083182
+    },
+    "experiment_scope": "Same raw inputs, frozen preprocessing, date boundaries, batch order and optimizer. Architecture and its input representation vary.",
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\results_mainstream\\20191115\\dcnv2\\seed42",
+    "new_task_auc": 0.6669697772977696,
+    "actual_ctr": 0.008293704976693819,
+    "reload_max_abs_error": 1.4901161193847656e-08,
+    "reload_rows": 144
+  },
+  {
+    "model": "mlp",
+    "variant": "B2",
+    "auc": 0.7215974104682704,
+    "logloss": 0.04759605394524297,
+    "average_precision": 0.027538861084762573,
+    "mean_prediction": 0.009265490734649249,
+    "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "parameter_count": 320801,
+    "training_seconds": 102.84416620000047,
+    "inference_seconds": null,
+    "feature_note": "24 category embeddings + 7 masked-mean pooled lists + 20 shared numeric features; historical labels are source-domain observations only.",
+    "model_class": "CTRModel",
+    "model_options": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01
+    },
+    "parameters": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048,
+      "max_epochs": 10,
+      "early_stopping_patience": 3,
+      "loss": "unweighted BCEWithLogitsLoss",
+      "seed": 42
+    },
+    "train_rows": 2104337,
+    "valid_rows": 421983,
+    "validation_day": 20191116,
+    "validation_clicks": 3724,
+    "seed": 42,
+    "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\cache",
+    "python": "3.10.0",
+    "new_task_rows": 31363,
+    "new_task_clicks": 303,
+    "new_task_metrics": {
+      "auc": 0.6629072549882161,
+      "logloss": 0.05298288506849416,
+      "average_precision": 0.0203244867856143,
+      "mean_prediction": 0.01045468162710279
+    },
+    "experiment_scope": "Architecture-only; same frozen preprocessing, numeric features, training settings, row order and seed for this date.",
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\results_v2\\20191116\\B2\\seed42",
+    "new_task_auc": 0.6629072549882161,
+    "actual_ctr": 0.008825000059244094,
+    "reload_max_abs_error": 7.450580596923828e-09,
+    "reload_rows": 144
+  },
+  {
+    "model": "deepfm",
+    "auc": 0.7111677315795948,
+    "logloss": 0.04781487669051526,
+    "average_precision": 0.027244237370526884,
+    "mean_prediction": 0.009490913863011237,
+    "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "parameter_count": 403409,
+    "training_seconds": 172.66498460000003,
+    "inference_seconds": null,
+    "feature_note": "24 categorical fields, seven masked-mean history fields, 20 numeric inputs. Linear + second-order FM + DNN; FM/DNN share all field embeddings; numeric fields use x_i*v_i.",
+    "model_class": "DeepFMModel",
+    "model_options": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01
+    },
+    "parameters": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048,
+      "max_epochs": 10,
+      "early_stopping_patience": 3,
+      "loss": "unweighted BCEWithLogitsLoss",
+      "seed": 42
+    },
+    "train_rows": 2104337,
+    "valid_rows": 421983,
+    "validation_day": 20191116,
+    "validation_clicks": 3724,
+    "seed": 42,
+    "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\cache",
+    "python": "3.10.0",
+    "new_task_rows": 31363,
+    "new_task_clicks": 303,
+    "new_task_metrics": {
+      "auc": 0.6621944857074246,
+      "logloss": 0.05309188499038432,
+      "average_precision": 0.019230766536503643,
+      "mean_prediction": 0.010919155423177397
+    },
+    "experiment_scope": "Same raw inputs, frozen preprocessing, date boundaries, batch order and optimizer. Architecture and its input representation vary.",
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\results_mainstream\\20191116\\deepfm\\seed42",
+    "new_task_auc": 0.6621944857074246,
+    "actual_ctr": 0.008825000059244094,
+    "reload_max_abs_error": 1.30385160446167e-08,
+    "reload_rows": 144
+  },
+  {
+    "model": "dcnv2",
+    "auc": 0.7250986060243602,
+    "logloss": 0.047499226830555116,
+    "average_precision": 0.028071907712602442,
+    "mean_prediction": 0.009553232642301526,
+    "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+    "best_epoch": 1,
+    "epochs_completed": 4,
+    "parameter_count": 465253,
+    "training_seconds": 97.51986880000004,
+    "inference_seconds": null,
+    "feature_note": "24 categorical fields, seven masked-mean history fields, 20 numeric inputs. Parallel full-matrix two-layer CrossNet + DNN; concatenate outputs before logistic head.",
+    "model_class": "DCNV2Model",
+    "model_options": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2
+    },
+    "parameters": {
+      "embedding_dim": 8,
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "unknown_dropout": 0.01,
+      "cross_layers": 2,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048,
+      "max_epochs": 10,
+      "early_stopping_patience": 3,
+      "loss": "unweighted BCEWithLogitsLoss",
+      "seed": 42
+    },
+    "train_rows": 2104337,
+    "valid_rows": 421983,
+    "validation_day": 20191116,
+    "validation_clicks": 3724,
+    "seed": 42,
+    "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\cache",
+    "python": "3.10.0",
+    "new_task_rows": 31363,
+    "new_task_clicks": 303,
+    "new_task_metrics": {
+      "auc": 0.6722235150108701,
+      "logloss": 0.05290913242325003,
+      "average_precision": 0.020584144896911738,
+      "mean_prediction": 0.010854596506355804
+    },
+    "experiment_scope": "Same raw inputs, frozen preprocessing, date boundaries, batch order and optimizer. Architecture and its input representation vary.",
+    "results_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\results_mainstream\\20191116\\dcnv2\\seed42",
+    "new_task_auc": 0.6722235150108701,
+    "actual_ctr": 0.008825000059244094,
+    "reload_max_abs_error": 7.450580596923828e-09,
+    "reload_rows": 144
+  }
+]

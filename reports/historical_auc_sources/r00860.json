@@ -1,0 +1,14 @@
+{
+  "status": "fixed_after_verified_day15_before_day16_training",
+  "selection_day": 20191115,
+  "day15_frozen_candidate_auc": 0.7926443086415286,
+  "candidate_modes": ["context", "both"],
+  "checkpoint": "Fixed final full epoch, not the selected best quarter checkpoint",
+  "formula": ".90 * frozen_candidate + .10 * new_prediction",
+  "weights_searched_on_day16": false,
+  "all_four_matched_arms_run_on_day16": true,
+  "protected_variant_not_selected_in_this_protocol": true,
+  "data_availability": "Original same-day offline auxiliary/exposure inputs; no held advertisement labels fitted",
+  "purpose": "Check whether the small full-epoch complementary day15 gain repeats",
+  "goal": "Both full advertisement-row development days must reach at least 0.85; no blind-test claim"
+}

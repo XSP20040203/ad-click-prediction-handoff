@@ -1,0 +1,39 @@
+{
+  "variant": "full_weighted_conditional",
+  "scores": {
+    "auc": 0.8010146919845833,
+    "logloss": 0.04383827180139606,
+    "average_precision": 0.0873524421771467,
+    "mean_probability": 0.009366152074627244
+  },
+  "rounded6_scores": {
+    "auc": 0.8010143741872622,
+    "logloss": 0.0438382770123897,
+    "average_precision": 0.0873518917494709,
+    "mean_probability": 0.009366151904223631
+  },
+  "auc_from_logit": 0.8010146919845833,
+  "auc_gain": -0.00022657536555503732,
+  "maximum_reload_error": 0.0,
+  "fit": {
+    "initial_objective": 0.04204855010744797,
+    "objective": 0.04197996563953192,
+    "projected_gradient_max": 2.7962312281994616e-07,
+    "iterations": 38,
+    "optimizer_success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "convergence_verified": true,
+    "slope": 1.0893657414853832,
+    "intercept": 0.3375367185663834,
+    "beta_norm": 0.10718660417508119,
+    "training_rows": 424780,
+    "model_sha256": "35d713e7b2f91f4ec50b812def17119b67503159a9942cf8e298a94315f50d27",
+    "role": "Training15; not a validated15 score"
+  },
+  "files_sha256": {
+    "model.npz": "35d713e7b2f91f4ec50b812def17119b67503159a9942cf8e298a94315f50d27",
+    "fit.json": "f8bbc0e36acb62fc986483b42e56dd4f53e168f20159dd939ca0e41e2d7411b4",
+    "validation_prediction.npy": "620a6c68206e26613a2bf8e8dc1b65a35a14fd3fe41d1cd691db83b5a028bcd9",
+    "validation_logit.npy": "ad24a89211a0f759240d45969b98442e6121f6d7ed5594be347531581ff4b212"
+  }
+}

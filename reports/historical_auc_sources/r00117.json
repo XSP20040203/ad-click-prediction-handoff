@@ -1,0 +1,84 @@
+[
+  {
+    "name": "dcn_tabm32",
+    "weights": {
+      "dcn": 0.5,
+      "tabm32": 0.5
+    },
+    "members": {
+      "dcn": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\random20_rich_oof_statistics\\bounded\\seed42",
+      "tabm32": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\random20_architecture_capacity32\\tabm_ple_clip\\seed42"
+    },
+    "auc": 0.7739984525127852,
+    "logloss": 0.044238131189961,
+    "average_precision": 0.039724957243227894,
+    "mean_prediction": 0.007297875845554577,
+    "validation_strategy": "random20",
+    "seed": 42,
+    "weight_fitting": "none; weights fixed before scoring",
+    "validated_rows": 505264
+  },
+  {
+    "name": "tabm32_attention",
+    "weights": {
+      "tabm32": 0.5,
+      "attention": 0.5
+    },
+    "members": {
+      "tabm32": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\random20_architecture_capacity32\\tabm_ple_clip\\seed42",
+      "attention": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\random20_attentive_transfer_aux005\\joint_attention\\seed42"
+    },
+    "auc": 0.7731592117291772,
+    "logloss": 0.04415593181245807,
+    "average_precision": 0.041589983377604695,
+    "mean_prediction": 0.008086024521183108,
+    "validation_strategy": "random20",
+    "seed": 42,
+    "weight_fitting": "none; weights fixed before scoring",
+    "validated_rows": 505264
+  },
+  {
+    "name": "three_architectures",
+    "weights": {
+      "dcn": 0.3333333333333333,
+      "tabm32": 0.3333333333333333,
+      "attention": 0.3333333333333333
+    },
+    "members": {
+      "dcn": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\random20_rich_oof_statistics\\bounded\\seed42",
+      "tabm32": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\random20_architecture_capacity32\\tabm_ple_clip\\seed42",
+      "attention": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\random20_attentive_transfer_aux005\\joint_attention\\seed42"
+    },
+    "auc": 0.7735426534450228,
+    "logloss": 0.044138061284156815,
+    "average_precision": 0.0404661672067369,
+    "mean_prediction": 0.007983832083066201,
+    "validation_strategy": "random20",
+    "seed": 42,
+    "weight_fitting": "none; weights fixed before scoring",
+    "validated_rows": 505264
+  },
+  {
+    "name": "four_architectures",
+    "weights": {
+      "dcn": 0.25,
+      "tabm32": 0.25,
+      "attention": 0.25,
+      "transformer": 0.25
+    },
+    "members": {
+      "dcn": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results\\random20_rich_oof_statistics\\bounded\\seed42",
+      "tabm32": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\random20_architecture_capacity32\\tabm_ple_clip\\seed42",
+      "attention": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\random20_attentive_transfer_aux005\\joint_attention\\seed42",
+      "transformer": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\results_modern\\random20_architecture\\transformer\\seed42"
+    },
+    "auc": 0.7728134610217844,
+    "logloss": 0.04423214801273359,
+    "average_precision": 0.04024750617169322,
+    "mean_prediction": 0.0077005031885159425,
+    "validation_strategy": "random20",
+    "seed": 42,
+    "weight_fitting": "none; weights fixed before scoring",
+    "validated_rows": 505264
+  }
+]

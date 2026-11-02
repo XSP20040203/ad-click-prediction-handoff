@@ -1,0 +1,46 @@
+[
+  {
+    "fractional_epoch": 0.25,
+    "auc": 0.7523759237145085,
+    "logloss": 0.04622773722183472,
+    "average_precision": 0.05634297094652834,
+    "mean_probability": 0.008725767955183983,
+    "train_objective": 0.05272246681240746,
+    "train_row_bce": 0.043193627007537545,
+    "train_auxiliary_bce": 0.47644199720848396,
+    "seconds": 28.93644949999907
+  },
+  {
+    "fractional_epoch": 0.5,
+    "auc": 0.7609954794608695,
+    "logloss": 0.04637214835892533,
+    "average_precision": 0.06252184502128501,
+    "mean_probability": 0.007439605891704559,
+    "train_objective": 0.051031299518848904,
+    "train_row_bce": 0.042476266285527774,
+    "train_auxiliary_bce": 0.42775166863829245,
+    "seconds": 56.532616500000586
+  },
+  {
+    "fractional_epoch": 0.75,
+    "auc": 0.7704709950057439,
+    "logloss": 0.04560463034332046,
+    "average_precision": 0.06724389509689949,
+    "mean_probability": 0.006948533467948437,
+    "train_objective": 0.04972824580416605,
+    "train_row_bce": 0.042190460933930446,
+    "train_auxiliary_bce": 0.3768892475390558,
+    "seconds": 91.07784720000018
+  },
+  {
+    "fractional_epoch": 1.0,
+    "auc": 0.7695159864494716,
+    "logloss": 0.0458521362469466,
+    "average_precision": 0.07401575693873837,
+    "mean_probability": 0.0066741700284183025,
+    "train_objective": 0.048035478321514946,
+    "train_row_bce": 0.04142791779635045,
+    "train_auxiliary_bce": 0.3303780300016802,
+    "seconds": 125.57374859999982
+  }
+]

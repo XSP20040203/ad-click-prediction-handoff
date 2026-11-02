@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "independent_process": true,
+  "rows": 404182,
+  "unique_dates": [
+    20191117
+  ],
+  "input_fields": 33,
+  "all_counts_verified_against_exact_raw_groups": {
+    "groups": 261475,
+    "repeated_groups": 63680,
+    "repeated_rows_beyond_first": 142707,
+    "maximum_count": 86,
+    "rows_in_repeated_groups": 206387,
+    "all_hash_counts_equal_direct_raw_groupby": true,
+    "no_observed_raw_key_hash_collisions": true,
+    "date_isolation": "pt_d in all 33-field keys; final inputs contain only 20191117"
+  },
+  "row_alignment": {
+    "full_source_detail_ids_users_dates_equal_raw_final": true,
+    "full_cache_final_suffix_logid_date_user_equal_raw": true,
+    "source_detail_probability_max_error": 0.0,
+    "duplicate_log_id_rows": 858
+  },
+  "maximum_correction_replay_error": 1.1102230246251565e-16,
+  "maximum_detail_probability_error": 0.0,
+  "maximum_csv_rounding_error": {
+    "submission.csv": 4.999995676241431e-07,
+    "result.csv": 4.999995676241431e-07
+  },
+  "csv_headers_six_decimals_utf8_without_bom": true,
+  "all_output_hashes_match": true,
+  "prior_v4_export_unchanged": true,
+  "original_row_order_and_duplicate_logids_preserved": true,
+  "submission_id_zero_based_original_row_position": true,
+  "final_label_column_read": false,
+  "final_details_label_source": "constructed constant -1",
+  "final_labels_available": false,
+  "final_auc": null,
+  "goal_met": false,
+  "development": {
+    "20191115": {
+      "v4_auc": 0.7880938883633664,
+      "v4_plus_count_auc": 0.7890897966859739,
+      "v4_plus_count_logloss": 0.04221394438210472,
+      "rows": 424780,
+      "clicks": 3523,
+      "stronger_analysis_fullblend_plus_count_auc": 0.7905480723412239,
+      "stronger_analysis_blend_is_exported": false
+    },
+    "20191116": {
+      "v4_auc": 0.7957095722599832,
+      "v4_plus_count_auc": 0.7972595635287103,
+      "v4_plus_count_logloss": 0.04415659283339845,
+      "rows": 421983,
+      "clicks": 3724,
+      "stronger_analysis_fullblend_plus_count_auc": 0.7987435691593445,
+      "stronger_analysis_blend_is_exported": false
+    }
+  },
+  "seconds": 11.767091900001105
+}

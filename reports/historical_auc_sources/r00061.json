@@ -1,0 +1,206 @@
+{
+  "status": "recovered_checkpoint_verified",
+  "training_interrupted": true,
+  "training_resumed": false,
+  "training_completed": false,
+  "day": 20191115,
+  "model": "GatedCrossCTR",
+  "last_fractional_epoch": 1.25,
+  "last_fractional_epoch_exact": 1.2504570383912248,
+  "planned_epochs": 3,
+  "best_checkpoint_record": {
+    "fractional_epoch": 0.7501523461304083,
+    "auc": 0.781509953789404,
+    "logloss": 0.042539488570444726,
+    "average_precision": 0.0736440612306526,
+    "mean_probability": 0.008602254092693329,
+    "train_loss": 0.044010198385334424,
+    "seconds": 82.90567569999985
+  },
+  "best_fractional_epoch": 0.7501523461304083,
+  "best_checkpoint_score": 0.781509953789404,
+  "train_rows": 1679557,
+  "valid_rows": 424780,
+  "validation_clicks": 3523,
+  "auc": 0.7815099504203324,
+  "logloss": 0.04253948872188302,
+  "average_precision": 0.0736440674258352,
+  "mean_probability": 0.008602255024015903,
+  "saved_validation_metrics": {
+    "auc": 0.781509953789404,
+    "logloss": 0.042539488570444726,
+    "average_precision": 0.0736440612306526,
+    "mean_probability": 0.008602254092693329
+  },
+  "device": "cpu",
+  "threads": 2,
+  "interop_threads": 2,
+  "chunk_size": 2048,
+  "strict_state_dict_load": true,
+  "complete_day_validation_verified": true,
+  "source_verification": {
+    "model_snapshot_sha256": "eef8ad2cf3812cfc6085e84c1f8201dbb78df7a5624c50442d6431c5e663b34d",
+    "model_snapshot_matches_protocol": true,
+    "trainer_snapshot_sha256": "593abf404ca93b4828257d108aa12f160a2f852c069336299ca518ed8d9cb557",
+    "trainer_snapshot_matches_protocol": true,
+    "shared_dependency_sha256": {
+      "id_regularized_models.py": "716321c3e7c09c2cea6d195c0f7dcebd2eadef59866cdbce48961f0b6b1aaa52",
+      "mainstream_models.py": "aaa61357fc823ef19bd9c582a1c54f8b272be877daf9ac479f6d9728dd87bd9f",
+      "benchmark_core.py": "efae0caa806e54eb834adcf5986772e798685c26e8cdd07a84ebf9d658d96291"
+    },
+    "shared_dependencies_note": "Current shared dependencies are hashed for traceability; no saved dependency hash is available."
+  },
+  "input_verification": {
+    "input_cache": "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\cache\\day15_oof",
+    "manifest_sha256": "e5888b50ee839783a298dd0d40acf3e1158c031705b031ed26d68ac7c8ceb324",
+    "numeric_source": "Existing read-only float32 memmap, validated against input manifest schema and split; saved scalers are not refitted.",
+    "numeric_shape": [
+      2104337,
+      500
+    ],
+    "numeric_columns": 500,
+    "numeric_row_order": "train_indices followed by valid_indices; validation starts at train_rows",
+    "tensor_cache": "E:\\AI\\ml\\大作业上传\\analysis\\user_personalization\\cache_day15_stats",
+    "checkpoint_manifest_matches_cache": true,
+    "complete_chronological_split_verified": true
+  },
+  "backend_rounding": {
+    "reference_backend": "Original GPU training validation prediction",
+    "replay_backend": "CPU float32; chunk size differs from original batch size 1024",
+    "absolute_tolerance": 2e-06,
+    "relative_tolerance": 0.0,
+    "maximum_absolute_error": 7.152557373046875e-07,
+    "mean_absolute_error": 1.6918710175472538e-09,
+    "nonidentical_prediction_rows": 230825,
+    "within_tolerance": true,
+    "auc_delta_vs_saved": -3.3690715772749513e-09,
+    "interpretation": "Observed differences are within the allowed CPU/GPU float32 replay tolerance."
+  },
+  "baseline_auc": 0.7905480723412239,
+  "baseline_metrics": {
+    "auc": 0.7905480723412239,
+    "logloss": 0.04213764355222077,
+    "average_precision": 0.0827857924429125,
+    "mean_probability": 0.008885367834888977
+  },
+  "baseline_name": "duplicate_multiplicity",
+  "fixed_blends": [
+    {
+      "weight": 0.05,
+      "auc": 0.7908580990192775,
+      "logloss": 0.042125221721706886,
+      "average_precision": 0.08285649985969445,
+      "mean_probability": 0.008871212184703102,
+      "auc_delta_vs_baseline": 0.00031002667805357653
+    },
+    {
+      "weight": 0.1,
+      "auc": 0.7910812831621795,
+      "logloss": 0.04211615773415748,
+      "average_precision": 0.08289309879848705,
+      "mean_probability": 0.008857056534517226,
+      "auc_delta_vs_baseline": 0.0005332108209555875
+    },
+    {
+      "weight": 0.2,
+      "auc": 0.7912716006647665,
+      "logloss": 0.0421077517006996,
+      "average_precision": 0.08282885780001135,
+      "mean_probability": 0.008828745234145475,
+      "auc_delta_vs_baseline": 0.0007235283235426104
+    },
+    {
+      "weight": 0.3,
+      "auc": 0.7911650120014313,
+      "logloss": 0.04211199718926378,
+      "average_precision": 0.0824530604383107,
+      "mean_probability": 0.008800433992602467,
+      "auc_delta_vs_baseline": 0.0006169396602073718
+    }
+  ],
+  "best_fixed_blend": {
+    "weight": 0.2,
+    "auc": 0.7912716006647665,
+    "logloss": 0.0421077517006996,
+    "average_precision": 0.08282885780001135,
+    "mean_probability": 0.008828745234145475,
+    "auc_delta_vs_baseline": 0.0007235283235426104
+  },
+  "goal_auc": 0.85,
+  "goal_met": false,
+  "any_blend_goal_met": false,
+  "final_auc": null,
+  "scope": "Previously reused development day; recovered checkpoint evaluation does not establish training completion or blind-test improvement.",
+  "finalmlp_completed_summary": {
+    "source": "E:\\AI\\ml\\大作业上传\\analysis\\architecture_goal_20261029\\results\\finalmlp_oof_day15\\metrics.json",
+    "source_sha256": "ddfaaf86816a9ccc65558a19ab4de7974604389a2947ab10c860190d834da4b6",
+    "evaluation": "Existing completed metrics only; no duplicate replay",
+    "metrics": {
+      "status": "complete_and_verified",
+      "day": 20191115,
+      "model": "FinalMLPCTR",
+      "auc": 0.7704501777151873,
+      "logloss": 0.04322125338960927,
+      "average_precision": 0.05776267868958316,
+      "mean_probability": 0.008298750966787338,
+      "best_fractional_epoch": 0.7501523461304083,
+      "maximum_reload_error": 0.0,
+      "train_rows": 1679557,
+      "valid_rows": 424780,
+      "validation_clicks": 3523,
+      "seconds": 300.35360779999974,
+      "baseline_auc": 0.7905480723412239,
+      "fixed_blends": [
+        {
+          "weight": 0.05,
+          "auc": 0.7905571930916453,
+          "logloss": 0.04214604380177145,
+          "average_precision": 0.0825764473439292,
+          "mean_probability": 0.00885603694666091
+        },
+        {
+          "weight": 0.1,
+          "auc": 0.790466259156039,
+          "logloss": 0.04215834157242228,
+          "average_precision": 0.08232970834664388,
+          "mean_probability": 0.008826706058432847
+        },
+        {
+          "weight": 0.2,
+          "auc": 0.7900193909000209,
+          "logloss": 0.042194590580775085,
+          "average_precision": 0.0815806753264515,
+          "mean_probability": 0.00876804428197672
+        },
+        {
+          "weight": 0.3,
+          "auc": 0.7892128607828608,
+          "logloss": 0.04224662542442316,
+          "average_precision": 0.0804354218706824,
+          "mean_probability": 0.008709382562738911
+        }
+      ],
+      "goal_met": false,
+      "final_auc": null
+    },
+    "best_fixed_blend": {
+      "weight": 0.05,
+      "auc": 0.7905571930916453,
+      "logloss": 0.04214604380177145,
+      "average_precision": 0.0825764473439292,
+      "mean_probability": 0.00885603694666091
+    },
+    "best_blend_auc_delta_vs_baseline": 9.120750421365287e-06
+  },
+  "original_artifact_sha256": {
+    "protocol.json": "cc3c9ec66f11f472c5c321bf738a7f937754d9bbf141e0a7633d78cc2fd571a2",
+    "history.json": "f67a72cb0d157b1ae4933c75c0aebd890356a43af40ec92252d35d1465b5e945",
+    "model.pt": "48a5af77793eeb827c6ffef7d316a5bb1d924ffb0872b14341590006e8418b7a",
+    "model_snapshot.py": "eef8ad2cf3812cfc6085e84c1f8201dbb78df7a5624c50442d6431c5e663b34d",
+    "trainer_snapshot.py": "593abf404ca93b4828257d108aa12f160a2f852c069336299ca518ed8d9cb557",
+    "valid_indices.npy": "bf38a3e804996759a8c6afa29d9b9da29878f17d6913f2520227100c29a78838",
+    "validation_prediction.npy": "b179112dd83e50e2daae635618071c7b225b6d58af3cc38c784038517d513e4d"
+  },
+  "original_artifacts_unchanged": true,
+  "seconds": 25.231752400000005
+}

@@ -1,0 +1,17 @@
+{
+  "variant": "ad_context",
+  "scores": {
+    "auc": 0.7901417323791704,
+    "logloss": 0.044552777417413036,
+    "average_precision": 0.0803495170599629,
+    "mean_probability": 0.009939155673399605
+  },
+  "rounded6_scores": {
+    "auc": 0.7901411712582438,
+    "logloss": 0.04455280006371235,
+    "average_precision": 0.08034892694681853,
+    "mean_probability": 0.009939156977887732
+  },
+  "auc_gain": -0.01109953497096794,
+  "prediction_sha256": "a2bbe1b541dbea2f213510ed12742413e53961a1ea4ad2460c6b0c643305eb6c"
+}

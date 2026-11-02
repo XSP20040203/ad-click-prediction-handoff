@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "day": 20191115,
+  "control_auc": 0.7296377601051155,
+  "audience_auc": 0.7301331824091712,
+  "auc_delta": 0.0004954223040557482,
+  "logloss_delta": -3.705630778823299e-05,
+  "prediction_max_difference": 0.2158735633420732,
+  "goal_met": false,
+  "final_test_auc": null
+}

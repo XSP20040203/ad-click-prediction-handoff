@@ -1,0 +1,144 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191116,
+  "arm": "exposure",
+  "seed": 42,
+  "rounds": 300,
+  "features": 102,
+  "train_rows": 2104337,
+  "train_clicks": 17630,
+  "scores": {
+    "rows": 421983,
+    "clicks": 3724,
+    "ctr": 0.008825000059244094,
+    "auc": 0.7688772989012,
+    "logloss": 0.04591702335250407,
+    "average_precision": 0.040755110588834194,
+    "mean_prediction": 0.008211014832956207
+  },
+  "slices": {
+    "all": {
+      "rows": 421983,
+      "clicks": 3724,
+      "ctr": 0.008825000059244094,
+      "auc": 0.7688772989012,
+      "logloss": 0.04591702335250407,
+      "average_precision": 0.040755110588834194,
+      "mean_prediction": 0.008211014832956207
+    },
+    "task_id_seen": {
+      "rows": 390620,
+      "clicks": 3421,
+      "ctr": 0.00875787210076289,
+      "auc": 0.7733301821414109,
+      "logloss": 0.04544727829867817,
+      "average_precision": 0.04215453591089827,
+      "mean_prediction": 0.008122931974102599
+    },
+    "task_id_unseen": {
+      "rows": 31363,
+      "clicks": 303,
+      "ctr": 0.009661065586837993,
+      "auc": 0.7114430390237994,
+      "logloss": 0.05176760566049359,
+      "average_precision": 0.027258796052189102,
+      "mean_prediction": 0.009308069525600276
+    },
+    "adv_id_seen": {
+      "rows": 390395,
+      "clicks": 3417,
+      "ctr": 0.00875267357420049,
+      "auc": 0.7732100901445929,
+      "logloss": 0.0454310599634788,
+      "average_precision": 0.0420994528940955,
+      "mean_prediction": 0.008122536562275729
+    },
+    "adv_id_unseen": {
+      "rows": 31588,
+      "clicks": 307,
+      "ctr": 0.009718880587564899,
+      "auc": 0.7136218330699334,
+      "logloss": 0.05192302807766926,
+      "average_precision": 0.027910326152373214,
+      "mean_prediction": 0.00930451472159447
+    },
+    "adv_prim_id_seen": {
+      "rows": 416144,
+      "clicks": 3656,
+      "ctr": 0.008785420431389135,
+      "auc": 0.7704380125034709,
+      "logloss": 0.045696938322358875,
+      "average_precision": 0.040903956804260844,
+      "mean_prediction": 0.008188308695838963
+    },
+    "adv_prim_id_unseen": {
+      "rows": 5839,
+      "clicks": 68,
+      "ctr": 0.011645829765370782,
+      "auc": 0.6531185338456991,
+      "logloss": 0.0616024257818145,
+      "average_precision": 0.03944664046416878,
+      "mean_prediction": 0.009829275275586552
+    },
+    "user_task_seen": {
+      "rows": 229251,
+      "clicks": 1712,
+      "ctr": 0.007467797305137164,
+      "auc": 0.7826598730758818,
+      "logloss": 0.03970964567115658,
+      "average_precision": 0.03645385605624005,
+      "mean_prediction": 0.007165344779493532
+    },
+    "user_task_unseen": {
+      "rows": 192732,
+      "clicks": 2012,
+      "ctr": 0.010439366581574414,
+      "auc": 0.7494705386076994,
+      "logloss": 0.05330057948654819,
+      "average_precision": 0.0453703579709738,
+      "mean_prediction": 0.009454819211193203
+    },
+    "news_clicks_0": {
+      "rows": 110609,
+      "clicks": 996,
+      "ctr": 0.009004692204070193,
+      "auc": 0.7643939821944581,
+      "logloss": 0.046890279798274995,
+      "average_precision": 0.036497312125204406,
+      "mean_prediction": 0.008863339171705398
+    },
+    "news_clicks_1": {
+      "rows": 102180,
+      "clicks": 832,
+      "ctr": 0.008142493638676845,
+      "auc": 0.765280544699755,
+      "logloss": 0.0429544161288414,
+      "average_precision": 0.047567290341094234,
+      "mean_prediction": 0.008261877617190086
+    },
+    "news_clicks_2to4": {
+      "rows": 149359,
+      "clicks": 1398,
+      "ctr": 0.009359998393133322,
+      "auc": 0.7787193497292751,
+      "logloss": 0.047910245315512426,
+      "average_precision": 0.044316009479337864,
+      "mean_prediction": 0.008107623338241362
+    },
+    "news_clicks_5plus": {
+      "rows": 59835,
+      "clicks": 498,
+      "ctr": 0.00832288794184006,
+      "auc": 0.7568534752116646,
+      "logloss": 0.044201683580307356,
+      "average_precision": 0.03790373083667512,
+      "mean_prediction": 0.007176375377476775
+    }
+  },
+  "maximum_reload_error": 0.0,
+  "model_sha256": "e3a1e253226ca7da927e977ce8eb23d23cf39a1f477f68a619c24f3278f28d8e",
+  "prediction_sha256": "a314c85c547763c83a2f86cb1c67a8b9de4e4ff4d3b47788ee9dbc2980717e0d",
+  "valid_indices_sha256": "6badea422f678e4f56a8af3a68b4a264daf0549dcbc787630c9d24b3d2b10883",
+  "protocol_sha256": "9a3aae951800f1f771beee8c78c9c8bc244cd419cef8c9cb4fb697de3864e580",
+  "seconds": 117.79620109999996
+}

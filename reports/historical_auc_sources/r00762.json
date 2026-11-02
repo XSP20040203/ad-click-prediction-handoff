@@ -1,0 +1,17 @@
+{
+  "name": "day16_static_base_seed42",
+  "kind": "base",
+  "variant": "static",
+  "day": 20191116,
+  "seed": 42,
+  "auc": 0.7251277730772737,
+  "logloss": 0.04754801467061043,
+  "best_epoch": 0.750182437363172,
+  "new_task_auc": 0.6775639186584466,
+  "new_pair_auc": 0.706383943611819,
+  "full_replay_rows": 421983,
+  "maximum_probability_error": 0.0,
+  "checkpoint_sha256": "e91479b1975e25658282d9e5d74fa6baa30f4c03081adfd66083f887e5739fab",
+  "parameter_count": 411834,
+  "output": "/dev/shm/ctr_temporal_20261027/analysis/temporal_interest/runs/day16_static_seed42"
+}

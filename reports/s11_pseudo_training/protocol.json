@@ -1,0 +1,45 @@
+{
+  "settings": {
+    "pseudo_weights": [
+      0.0,
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0
+    ],
+    "permuted_weight": 0.1,
+    "ridge": 0.0003,
+    "correction_log_odds_cap": 0.5,
+    "feature_cap": 8.0,
+    "optimizer_steps": 80,
+    "pseudo_seed": 617231,
+    "day16_temperatures": [
+      0.125,
+      0.03125
+    ],
+    "day16_assumed_auc_source": "Actual day15 rounded AUCs only",
+    "desired_real_platform_auc": 0.83,
+    "fitted_label_auc_is_not_real_platform_auc": true
+  },
+  "source_sha256": {
+    "analysis\\pseudo_training_083_20261101\\common.py": "29d49b7b61bc79dc26b59c82b4c69b81bf7aabd08a22a6cbb7863fae2015027a",
+    "analysis\\pseudo_training_083_20261101\\run_training.py": "751eae2a26df889e33df670809e2d4dfe2b502dc932a266fd44c6f8f875fb993",
+    "analysis\\pseudo_training_083_20261101\\verify_training.py": "06140d5437d79e8f4bcc74fd8183edc7e3159fae2e3eca38dabada28c07e5b7c",
+    "analysis\\pseudo_training_083_20261101\\PROTOCOL.md": "8d5f067a23e1e3f104d83636425cf60915e400e1d2e870f37f4bd8a3f346fa15",
+    "analysis\\platform_delta_blend_20261101\\blend_rules.py": "e87de98b05bbab3c0158ff9a2942d342a8921388b08d52e7ce07944390b32774",
+    "analysis\\auc_label_inference_20261101\\infer_labels.py": "11a92e5abbe96526df7090bbe54bb442272740c550c045a12a1c7558c2c13eb9",
+    "analysis\\auc_label_fit_six_bounded_20261101\\fit_labels.py": "2822350342ef63dcdd8bbe590b3453a09b639c517b9e4b41c2b21573bb3502e0"
+  },
+  "explicit_user_authorized_fitted_label_training": true,
+  "fitted_labels_path": "output\\fitted_labels_six_scores_final_20191117\\fitted_labels_20191117.csv",
+  "fitted_labels_sha256": "001b8b5457b1ae3cdb28437f8df501f0dafb0a3f7b33c136ec71efb9f5b7d7b6",
+  "base_v9_frozen_sha256": "c55583694642524fbabe71b5a0d4d06e86582076e899d1087d1d9dfd73271a83",
+  "raw_dataset_sha256": {
+    "train.csv": "3f1b4dc73a754c60df3df8fd6f4c13f76ee57bd3be03ded365aba69f6dca34ad",
+    "final_test.csv": "9478dfd16937919a30b4efe7b19b805c70196ca5d0c2c8561e37bdb0fdd42b59"
+  },
+  "all_development_weights_locked_before_real_day16_evaluation": true,
+  "real_platform_auc_unknown": true,
+  "unbounded_085_goal_remains_paused": true
+}

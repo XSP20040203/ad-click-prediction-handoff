@@ -1,0 +1,48 @@
+{
+  "status": "exported",
+  "selected_rule": "v6_75_v8_25",
+  "formula": ".75*p6+.25*p8",
+  "probability_transform": "sigmoid after logit formula; weighted average for blend rule",
+  "rows": 404182,
+  "columns": [
+    "id",
+    "pctr"
+  ],
+  "id_rule": "Original final row index starting at0",
+  "duplicate_log_id_rows_preserved": 858,
+  "minimum": 0.0002718228682055275,
+  "maximum": 0.9063599591700386,
+  "mean": 0.00915242708266459,
+  "source_predictions_sha256": {
+    "E:\\AI\\ml\\大作业上传\\output\\best_nextday_full_v6\\ensemble_final_prediction.npy": "f527dc891756d365c6b681d95ee8719618c5c5a9272bcc2cc5e252e1876f0e21",
+    "E:\\AI\\ml\\大作业上传\\output\\best_nextday_arch_v7\\ensemble_final_prediction.npy": "3edae903e51d2719e1b6e82bdcfdf08008c62b5c3aaf60bb4bedfcff462d75bb",
+    "E:\\AI\\ml\\大作业上传\\output\\best_nextday_daystate_v8\\ensemble_final_prediction.npy": "fbbf4cdec47561abb55927548769a0af6358f5d36d866a8ed8669872cfd34b84"
+  },
+  "feedback": {
+    "v6": {
+      "reported_platform_auc": 0.80817,
+      "submission_sha256": "899f6f6f48bae40ec3920d7948ace3d26f478e839c865fbe3006c90c565f9e5f"
+    },
+    "v7": {
+      "reported_platform_auc": 0.80581,
+      "submission_sha256": "c44a9e803b8b4566b9bcef4e1bf85181c2ee00eee71a9f84474b73c619c121b9"
+    },
+    "v8": {
+      "reported_platform_auc": 0.80745,
+      "submission_sha256": "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846"
+    }
+  },
+  "feedback_is_human_reported": true,
+  "analysis_protocol_sha256": "1260c3573e13c420d4baab12d469b3c95dd3124dbd4981953ab9c659116dfa62",
+  "selection_sha256": "02d9fb2f550f12c990d23428b77c2093de6748a232fb789e63b126bc44451fc5",
+  "comparison_sha256": "8ae5b5251d23c9e9b5bbd95b4aba87f3cec6291911b1a5613aa9db8696b39c5e",
+  "files_sha256": {
+    "submission_v9.csv": "c55583694642524fbabe71b5a0d4d06e86582076e899d1087d1d9dfd73271a83",
+    "prediction.npy": "221f1a0e2ea55fb7c727c6091af958b1f3e1651a717bd5d37c2d46d14e18a840"
+  },
+  "final_label_column_read": false,
+  "models_trained": 0,
+  "final_auc": null,
+  "platform_improvement_verified": false,
+  "caveat": "Development lift and prior feedback do not guarantee a higher platform AUC"
+}

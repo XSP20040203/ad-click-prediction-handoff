@@ -1,0 +1,71 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191115,
+  "mode": "id",
+  "fixed_endpoint": {
+    "fractional_epoch": 1.0,
+    "auc": 0.7856183256052663,
+    "logloss": 0.0423502250645529,
+    "average_precision": 0.07872006034157873,
+    "mean_probability": 0.008019798435270786,
+    "train_loss": 0.04317819322668883,
+    "seconds": 203.48185400000057
+  },
+  "best_checkpoint": {
+    "fractional_epoch": 0.7501523461304083,
+    "auc": 0.7868349889702091,
+    "logloss": 0.04232777033776077,
+    "average_precision": 0.07801286009058457,
+    "mean_probability": 0.008898940868675709,
+    "train_loss": 0.0437233571037287,
+    "seconds": 152.10074540000005
+  },
+  "initial_backbone_sha256": "793c76b6ef2d2c463b974a99579e4165d71921be218998bad9494a9017b03f9e",
+  "initial_full_weights_sha256": "94324d7283f7f295fbfb2b33b4fec5cf7822865cacd7e6c4dc8e4d9e83f40336",
+  "row_order_sha256": "3d0d2924edcfac5f30b93da94792474189960945b14d33163917f4fcb59655c0",
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "v7_replace30": {
+    "auc": 0.7920551085685958,
+    "logloss": 0.0420900754268315,
+    "average_precision": 0.0825733057600249,
+    "mean_probability": 0.008767057922346813
+  },
+  "candidate_blend10": {
+    "auc": 0.7925962434457688,
+    "logloss": 0.04206996109684841,
+    "average_precision": 0.08284340715041505,
+    "mean_probability": 0.008712507414944134
+  },
+  "cold_core_replace30": {
+    "auc": 0.7927360464376001,
+    "logloss": 0.042064211688194166,
+    "average_precision": 0.08311631414691452,
+    "mean_probability": 0.008717336201816443
+  },
+  "slices": {
+    "seen": {
+      "auc": 0.7916045774145705,
+      "logloss": 0.04165919691490968,
+      "average_precision": 0.07835032426949698,
+      "mean_probability": 0.008703398916649072
+    },
+    "cold": {
+      "auc": 0.753626546139614,
+      "logloss": 0.047001496246549486,
+      "average_precision": 0.07739256817502571,
+      "mean_probability": 0.010265887699474568
+    }
+  },
+  "source_projection_change": 4.1286139488220215,
+  "prior_head_norm": 2.122487783432007,
+  "seconds": 219.0988526000001,
+  "files_sha256": {
+    "best_model.pt": "1a8e0e40a0bc5176a99c2fc3ce7c71cf143a49baf93981bc00ead1938235d4d7",
+    "final_model.pt": "0c627d9308804829d63f0c5dd0266bea2ac7dc12fc7d011c531e06f69b971edb",
+    "best_prediction.npy": "e2236faaf85fafa876c7bafe2d3a3c9aa30f39089202fd3fc06968d8df93d8a4",
+    "final_prediction.npy": "398c2fb752cd7fac32edbca6e51a3569e6eaaa6c7c1e5cfb8f1729221c2bb60f"
+  }
+}

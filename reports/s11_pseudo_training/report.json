@@ -1,0 +1,79 @@
+{
+  "status": "complete_and_independently_verified_experimental_pseudo_training",
+  "selected_weight": 0.01,
+  "development_real_day16_scores": {
+    "weight_0": {
+      "auc": 0.8012631979333472,
+      "logloss": 0.04381535357890653
+    },
+    "weight_0.01": {
+      "auc": 0.8012519960592928,
+      "logloss": 0.04381681694398386
+    },
+    "weight_0.03": {
+      "auc": 0.8012195877947125,
+      "logloss": 0.043835795272605706
+    },
+    "weight_0.1": {
+      "auc": 0.8010672460312565,
+      "logloss": 0.043931245362628844
+    },
+    "weight_0.3": {
+      "auc": 0.8004535736262521,
+      "logloss": 0.04420934156125182
+    },
+    "weight_1": {
+      "auc": 0.7985833241938247,
+      "logloss": 0.044582284239818366
+    },
+    "permuted_01": {
+      "auc": 0.800774240111359,
+      "logloss": 0.044000435208514134
+    },
+    "v9_frozen": {
+      "auc": 0.7999730088636126,
+      "logloss": 0.044007093697901276
+    }
+  },
+  "development_gain_vs_frozen_v9": 0.0012789871956802035,
+  "development_gain_vs_true_only": -1.1201874054456162e-05,
+  "development_supports_promotion_vs_both_controls": false,
+  "day17_SYNTHETIC_LABEL_IN_SAMPLE_TRAINING_DIAGNOSTIC_ONLY": {
+    "v9_frozen": {
+      "auc": 0.8085581091304381,
+      "logloss": 0.03560705655220601
+    },
+    "true_only_residual": {
+      "auc": 0.8073387260015236,
+      "logloss": 0.03523743567361223
+    },
+    "pseudo_trained_residual": {
+      "auc": 0.8074506370498551,
+      "logloss": 0.03489043003023638
+    }
+  },
+  "desired_real_platform_auc": 0.83,
+  "real_day17_platform_auc": null,
+  "real_083_target_verified": false,
+  "synthetic_metric_is_not_real_platform_auc": true,
+  "pseudo_rows": 404182,
+  "pseudo_ones_assumed": 3459,
+  "true_source_rows": 421983,
+  "residual_models_trained": 9,
+  "frozen_base_models_retrained": 0,
+  "final_prediction_array_hashes": {
+    "E:\\AI\\ml\\大作业上传\\output\\best_nextday_full_v6\\ensemble_final_prediction.npy": "f527dc891756d365c6b681d95ee8719618c5c5a9272bcc2cc5e252e1876f0e21",
+    "E:\\AI\\ml\\大作业上传\\output\\best_nextday_arch_v7\\ensemble_final_prediction.npy": "3edae903e51d2719e1b6e82bdcfdf08008c62b5c3aaf60bb4bedfcff462d75bb",
+    "E:\\AI\\ml\\大作业上传\\output\\best_nextday_daystate_v8\\ensemble_final_prediction.npy": "fbbf4cdec47561abb55927548769a0af6358f5d36d866a8ed8669872cfd34b84"
+  },
+  "original_best_submission_preserved": true,
+  "files_sha256": {
+    "simulation_day16_labels.npy": "89c7fe26e25974b358626e0deb2b68e064b9439ad63870d499e97e22c6870c62",
+    "final_pseudo_model.json": "23067f3598cd616c624e5141e51507eb87ac8e9768c145881f36adf0b82e91fa",
+    "final_true_only_model.json": "62b63ef5802f23f891d50de0e699e258ca08cf36985789a227c67c43fae8774a",
+    "final_prediction.npy": "d69e27b151fff57939a1883a60d244c1622bcf412fa3c9e4e4d9d7d904d00ee6",
+    "final_true_only_prediction.npy": "8ae84ea3530656139df465e8d244314c7cd9a9a5020a5b8e427663dd1a5a799a",
+    "submission_pseudo_experimental.csv": "11a53775445f5288b0189fdbb315e81978b539ac5d7553a8b31eee7caf99240d",
+    "development_predictions.npz": "995205569c6866d9bb5ff1b57c80d504a4fd74654498f5c7113220446bb91462"
+  }
+}

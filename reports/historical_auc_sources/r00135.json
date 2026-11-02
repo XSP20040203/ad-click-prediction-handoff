@@ -1,0 +1,41 @@
+{
+  "auc": 0.7684767737529413,
+  "logloss": 0.04431372946379741,
+  "average_precision": 0.039030724198027306,
+  "mean_prediction": 0.009340832941841258,
+  "family": "hierarchical",
+  "model_class": "HierarchicalIDTabM",
+  "model_options": {
+    "numeric_dim": 75,
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "hierarchy_mode": "raw",
+    "support_temperature": 200.0,
+    "prior_width": 32,
+    "clip_numeric": true,
+    "embedding_dim": 8,
+    "n_blocks": 3,
+    "d_block": 256,
+    "k": 8,
+    "group_norm_caps": {
+      "user_id": 0.2,
+      "ad_task": 0.2,
+      "adv_id": 0.2
+    }
+  },
+  "seed": 42,
+  "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085\\cache_rich_stats_random20_aligned",
+  "validation_day": null,
+  "validation_strategy": "random20",
+  "best_epoch": 1,
+  "train_rows": 2021056,
+  "valid_rows": 505264,
+  "parameter_count": 545675,
+  "batch_size": 2048,
+  "amp": true,
+  "ensemble_members": 8,
+  "auxiliary_weight": 0.0,
+  "ranking_weight": 0.0,
+  "ranking_negative_cap": 128,
+  "source_cache_dir": null
+}

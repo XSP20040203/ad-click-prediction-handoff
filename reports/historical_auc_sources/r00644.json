@@ -1,0 +1,236 @@
+{
+  "status": "not_promoted",
+  "selected_submission": "output/best_nextday_arch_v7/submission.csv",
+  "selected_submission_sha256": "c44a9e803b8b4566b9bcef4e1bf85181c2ee00eee71a9f84474b73c619c121b9",
+  "fixed_budget_interest_gain_rule_passed": false,
+  "v7_replacement_both_day_gain": false,
+  "confirmation_seed": 2026,
+  "paired_interest_changes": [
+    {
+      "day": 20191115,
+      "endpoint": "final",
+      "auc_delta": 6.083161847425522e-05,
+      "user_cluster_approximate_95_interval": [
+        -0.00025069254887144786,
+        0.0003723557858199583
+      ],
+      "logloss_delta": 9.387673155364373e-07
+    },
+    {
+      "day": 20191115,
+      "endpoint": "best",
+      "auc_delta": 0.00013780951221242788,
+      "user_cluster_approximate_95_interval": [
+        -0.0001080065973891688,
+        0.00038362562181402455
+      ],
+      "logloss_delta": -2.914518518061515e-06
+    },
+    {
+      "day": 20191116,
+      "endpoint": "final",
+      "auc_delta": -0.0001483079845308044,
+      "user_cluster_approximate_95_interval": [
+        -0.00043475826619195453,
+        0.00013814229713034572
+      ],
+      "logloss_delta": -4.315073983476858e-07
+    },
+    {
+      "day": 20191116,
+      "endpoint": "best",
+      "auc_delta": -0.0001483079845308044,
+      "user_cluster_approximate_95_interval": [
+        -0.00043475826619195453,
+        0.00013814229713034572
+      ],
+      "logloss_delta": -4.315073983476858e-07
+    }
+  ],
+  "paired_ensemble_interest_changes": [
+    {
+      "day": 20191115,
+      "endpoint": "final",
+      "auc_delta": 2.9658610412930386e-05,
+      "user_cluster_approximate_95_interval": [
+        -6.784752280085887e-05,
+        0.00012716474362671964
+      ],
+      "logloss_delta": -7.535081088874684e-07
+    },
+    {
+      "day": 20191115,
+      "endpoint": "best",
+      "auc_delta": -3.5840182839308454e-06,
+      "user_cluster_approximate_95_interval": [
+        -7.327094494881509e-05,
+        6.61029083809534e-05
+      ],
+      "logloss_delta": 6.636533546183765e-07
+    },
+    {
+      "day": 20191116,
+      "endpoint": "final",
+      "auc_delta": -2.3117668555561188e-05,
+      "user_cluster_approximate_95_interval": [
+        -0.00011436190707360477,
+        6.81265699624824e-05
+      ],
+      "logloss_delta": 5.61881128409436e-07
+    },
+    {
+      "day": 20191116,
+      "endpoint": "best",
+      "auc_delta": -2.3117668555561188e-05,
+      "user_cluster_approximate_95_interval": [
+        -0.00011436190707360477,
+        6.81265699624824e-05
+      ],
+      "logloss_delta": 5.61881128409436e-07
+    }
+  ],
+  "fixed_v7_replacement_changes": [
+    {
+      "day": 20191115,
+      "mode": "control",
+      "endpoint": "final",
+      "auc": 0.7920685949618941,
+      "logloss": 0.042080774158181795,
+      "average_precision": 0.08304829525282466,
+      "mean_probability": 0.008555892722532226,
+      "auc_delta": -3.835216256553586e-05,
+      "user_cluster_approximate_95_interval": [
+        -0.000867906467202542,
+        0.0007912021420714702
+      ],
+      "logloss_delta": -9.794698283487058e-06
+    },
+    {
+      "day": 20191115,
+      "mode": "attention",
+      "endpoint": "final",
+      "auc": 0.7920982535723069,
+      "logloss": 0.04208002065007291,
+      "average_precision": 0.08312289176637858,
+      "mean_probability": 0.008557433395612588,
+      "auc_delta": -8.693552152605477e-06,
+      "user_cluster_approximate_95_interval": [
+        -0.0008445359154348254,
+        0.0008271488111296144
+      ],
+      "logloss_delta": -1.0548206392374526e-05
+    },
+    {
+      "day": 20191115,
+      "mode": "control",
+      "endpoint": "best",
+      "auc": 0.7921083176627541,
+      "logloss": 0.042089236602856274,
+      "average_precision": 0.08261462180706516,
+      "mean_probability": 0.008741239975804563,
+      "auc_delta": 1.3705382946316291e-06,
+      "user_cluster_approximate_95_interval": [
+        -3.928706110473059e-05,
+        4.2028137693993846e-05
+      ],
+      "logloss_delta": -1.3322536090085157e-06
+    },
+    {
+      "day": 20191115,
+      "mode": "attention",
+      "endpoint": "best",
+      "auc": 0.7921047336444701,
+      "logloss": 0.04208990025621089,
+      "average_precision": 0.08260428355181194,
+      "mean_probability": 0.008737885754022512,
+      "auc_delta": -2.2134799892992163e-06,
+      "user_cluster_approximate_95_interval": [
+        -7.739325187611919e-05,
+        7.296629189752075e-05
+      ],
+      "logloss_delta": -6.686002543901393e-07
+    },
+    {
+      "day": 20191116,
+      "mode": "control",
+      "endpoint": "final",
+      "auc": 0.7998759901566189,
+      "logloss": 0.043975112663712984,
+      "average_precision": 0.08613239182632829,
+      "mean_probability": 0.009552727320744667,
+      "auc_delta": 2.9348422091679538e-05,
+      "user_cluster_approximate_95_interval": [
+        -2.543426955380913e-05,
+        8.413111373716821e-05
+      ],
+      "logloss_delta": -3.492813236694037e-07
+    },
+    {
+      "day": 20191116,
+      "mode": "attention",
+      "endpoint": "final",
+      "auc": 0.7998528724880635,
+      "logloss": 0.043975674544841394,
+      "average_precision": 0.08609313883740452,
+      "mean_probability": 0.009543861137280825,
+      "auc_delta": 6.23075353611835e-06,
+      "user_cluster_approximate_95_interval": [
+        -8.227907997839958e-05,
+        9.474058705063628e-05
+      ],
+      "logloss_delta": 2.1259980474003237e-07
+    },
+    {
+      "day": 20191116,
+      "mode": "control",
+      "endpoint": "best",
+      "auc": 0.7998759901566189,
+      "logloss": 0.043975112663712984,
+      "average_precision": 0.08613239182632829,
+      "mean_probability": 0.009552727320744667,
+      "auc_delta": 2.9348422091679538e-05,
+      "user_cluster_approximate_95_interval": [
+        -2.543426955380913e-05,
+        8.413111373716821e-05
+      ],
+      "logloss_delta": -3.492813236694037e-07
+    },
+    {
+      "day": 20191116,
+      "mode": "attention",
+      "endpoint": "best",
+      "auc": 0.7998528724880635,
+      "logloss": 0.043975674544841394,
+      "average_precision": 0.08609313883740452,
+      "mean_probability": 0.009543861137280825,
+      "auc_delta": 6.23075353611835e-06,
+      "user_cluster_approximate_95_interval": [
+        -8.227907997839958e-05,
+        9.474058705063628e-05
+      ],
+      "logloss_delta": 2.1259980474003237e-07
+    }
+  ],
+  "original_control_reproduction": [
+    {
+      "day": 20191115,
+      "original_checkpoint_replay_error": 0.0,
+      "new_control_best_auc": 0.7869851484878956,
+      "old_control_best_auc": 0.7869607186764833,
+      "new_control_best_max_probability_difference": 0.018657051026821136
+    },
+    {
+      "day": 20191116,
+      "original_checkpoint_replay_error": 0.0,
+      "new_control_best_auc": 0.792762956141589,
+      "old_control_best_auc": 0.792717644663761,
+      "new_control_best_max_probability_difference": 0.029912352561950684
+    }
+  ],
+  "final_test_auc": null,
+  "limitations": [
+    "Two previously reused development dates, not an untouched blind test",
+    "Approximate paired AUC interval clusters by user, without shared-ad or model-selection adjustment",
+    "Only this controlled interest pooling change was tested; no general attention impossibility claim"
+  ]
+}

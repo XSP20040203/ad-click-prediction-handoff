@@ -1,0 +1,63 @@
+{
+  "status": "complete_and_verified",
+  "day": 20191116,
+  "seed": 42,
+  "mode": "adapt",
+  "fixed_epoch": {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7915451763889282,
+    "logloss": 0.044381066843648065,
+    "average_precision": 0.08144894720149819,
+    "mean_probability": 0.009944102726876736,
+    "objective": 0.05293257857989425,
+    "mean_source_anchor_mse": 0.08128105530461344,
+    "seconds": 145.55987649999952
+  },
+  "best_checkpoint": {
+    "step": 2056,
+    "fractional_epoch": 1.0,
+    "auc": 0.7915451763889282,
+    "logloss": 0.044381066843648065,
+    "average_precision": 0.08144894720149819,
+    "mean_probability": 0.009944102726876736,
+    "objective": 0.05293257857989425,
+    "mean_source_anchor_mse": 0.08128105530461344,
+    "seconds": 145.55987649999952
+  },
+  "replacement_scores": {
+    "auc": 0.8011585353982649,
+    "logloss": 0.04391305088404343,
+    "average_precision": 0.08711214924548555,
+    "mean_probability": 0.009661934533033321
+  },
+  "reference_scores": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "auc_gain": -8.273195187347149e-05,
+  "initial_full_sha256": "f42f18dfb6d4c40661b38afa0c2a21ae62110f3a57a85385d6af492c93cd2626",
+  "initial_bridge_sha256": "617dac332bd6f77152472ba254cc733396c2bc406d1d872052d0d7ba22ccfcaa",
+  "initial_backbone_sha256": "45548fa3a07fac44d6d18ccc30096a34c967c37f7e0e8f71b8f0f89fdcaa098f",
+  "initial_source_sha256": "1252e4addb1ed665430b840e40daf16bf1ce993e42d340fa846dad3eb0874814",
+  "final_source_sha256": "f14c28c43bbc1dd2c3a26f1cd287521491adbd47df42ec95765efdec82a200ba",
+  "row_order_sha256": "f7b59138e9fd8fd7cf8def7c276c5500d1d03ad1c0c0726d80e9c64a94c4e3cb",
+  "source_trainable": true,
+  "anchor_weight": 0.0,
+  "training_rows_seen": 2104337,
+  "reload_errors": {
+    "best": 0.0,
+    "final": 0.0
+  },
+  "old_frozen_training_errors": {},
+  "files_sha256": {
+    "best_model.pt": "6405d1299ec2c5f8f37a652a1eaed003ca9086eb2cb64b1db7cc5653219d6bf8",
+    "final_model.pt": "6405d1299ec2c5f8f37a652a1eaed003ca9086eb2cb64b1db7cc5653219d6bf8",
+    "best_prediction.npy": "013ceeeffdcead012f9952942f267227b031961ac7a1264db39f0acde750d7a1",
+    "final_prediction.npy": "013ceeeffdcead012f9952942f267227b031961ac7a1264db39f0acde750d7a1",
+    "replacement_prediction.npy": "e6bac64efb8fa32e3f6a3cb5d38b173e34bc819529ee94a1c82657034aa9b356",
+    "history.json": "eb305362ac97373b40be2216b12e1796757c223213c8f80db733382cc0a32e32"
+  }
+}

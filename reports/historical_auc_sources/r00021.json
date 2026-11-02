@@ -1,0 +1,16 @@
+{
+  "selected_initial_candidate": "gated166_day15",
+  "numeric_width": 166,
+  "numeric_scale": 1.0,
+  "statistics": "oof inside outer training, held day excluded",
+  "day15_single_auc": 0.7869607186764833,
+  "day15_old_baseline_auc": 0.7905480723412239,
+  "day15_blend_auc": 0.791801246334239,
+  "blend_weight": 0.3,
+  "confirmation_day": 20191116,
+  "day16_labels_used_to_select_this_weight": false,
+  "remaining_controls": ["500 columns scaled 0.1", "166 columns scaled 0.1"],
+  "target_auc": 0.85,
+  "goal_met": false,
+  "scope": "Reused chronological development days; no blind final score"
+}

@@ -1,0 +1,55 @@
+{
+  "train_rows": 2526320,
+  "train_clicks": 21354,
+  "final_rows": 404182,
+  "final_has_label_column": false,
+  "final_users_unseen_in_training": 0,
+  "final_tasks_unseen_in_training": 46705,
+  "final_repeated_predictor_rows": 142707,
+  "daily_training": {
+    "20191110": {
+      "rows": 274,
+      "clicks": 2,
+      "ctr": 0.0072992700729927005
+    },
+    "20191111": {
+      "rows": 450542,
+      "clicks": 3666,
+      "ctr": 0.008136866263300646
+    },
+    "20191112": {
+      "rows": 432932,
+      "clicks": 3578,
+      "ctr": 0.008264577347019856
+    },
+    "20191113": {
+      "rows": 412848,
+      "clicks": 3574,
+      "ctr": 0.008656939115606712
+    },
+    "20191114": {
+      "rows": 382961,
+      "clicks": 3287,
+      "ctr": 0.00858311942991584
+    },
+    "20191115": {
+      "rows": 424780,
+      "clicks": 3523,
+      "ctr": 0.008293704976693819
+    },
+    "20191116": {
+      "rows": 421983,
+      "clicks": 3724,
+      "ctr": 0.008825000059244094
+    }
+  },
+  "recent_two_complete_day_ctr": 0.008558475039651,
+  "click_count_assumptions_low_central_high": [
+    2940,
+    3459,
+    3978
+  ],
+  "unique_four_score_vectors": 261470,
+  "rows_in_nonunique_score_groups": 206399,
+  "maximum_equal_score_group_size": 86
+}

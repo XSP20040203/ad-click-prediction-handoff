@@ -1,0 +1,17 @@
+{
+  "name": "day16_static_base_seed2024",
+  "kind": "base",
+  "variant": "static",
+  "day": 20191116,
+  "seed": 2024,
+  "auc": 0.7242093519808566,
+  "logloss": 0.04756652191281319,
+  "best_epoch": 1.0,
+  "new_task_auc": 0.6708958387789842,
+  "new_pair_auc": 0.7035613669597348,
+  "full_replay_rows": 421983,
+  "maximum_probability_error": 0.0,
+  "checkpoint_sha256": "f79d184dd6173c68b76566a706477f941f87c119a38ea6be533d24dd058d7ab9",
+  "parameter_count": 411834,
+  "output": "/dev/shm/ctr_temporal_20261027/analysis/temporal_interest/runs/day16_static_seed2024"
+}

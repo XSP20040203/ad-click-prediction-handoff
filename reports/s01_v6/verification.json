@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "independent_process": true,
+  "rows": 404182,
+  "source_date": 20191117,
+  "source_order_verified_against_final_csv_and_full_cache": true,
+  "duplicate_log_ids_preserved": 858,
+  "formula": {
+    "v4": 0.675,
+    "oof": 0.225,
+    "tabm": 0.1
+  },
+  "multiplicity_exponent": 0.1,
+  "input_count_fields": 33,
+  "counts_independently_recomputed_from_raw_predictors": true,
+  "maximum_prediction_replay_error": 0.0,
+  "maximum_submission_rounding_error": 4.999978005862382e-07,
+  "probabilities_finite_and_in_range": true,
+  "file_hashes_match": true,
+  "final_label_column_read": false,
+  "final_auc": null,
+  "development": {
+    "20191115": {
+      "auc": 0.7905480723412239,
+      "logloss": 0.04213764355222077,
+      "rows": 424780,
+      "clicks": 3523,
+      "development_formula_replay_error": 0.0,
+      "scope": "Previously reused development day, not independent final score"
+    },
+    "20191116": {
+      "auc": 0.7987435691593445,
+      "logloss": 0.04407908248111689,
+      "rows": 421983,
+      "clicks": 3724,
+      "development_formula_replay_error": 0.0,
+      "scope": "Previously reused development day, not independent final score"
+    }
+  },
+  "goal_auc_085_met": false
+}

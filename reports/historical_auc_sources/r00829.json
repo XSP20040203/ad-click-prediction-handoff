@@ -1,0 +1,211 @@
+{
+  "status": "complete_and_reloaded",
+  "fit_date": 20191115,
+  "evaluation_date": 20191116,
+  "records": [
+    {
+      "variant": "base_only",
+      "scores": {
+        "auc": 0.8012412673501383,
+        "logloss": 0.04382810524065784,
+        "average_precision": 0.08749928332848086,
+        "mean_probability": 0.009408496329042384
+      },
+      "rounded6_scores": {
+        "auc": 0.801240950836847,
+        "logloss": 0.043828118830970854,
+        "average_precision": 0.08749843583321332,
+        "mean_probability": 0.009408496093444522
+      },
+      "auc_from_logit": 0.8012412673501383,
+      "auc_gain": 0.0,
+      "maximum_reload_error": 0.0,
+      "fit": {
+        "initial_objective": 0.04204855010744797,
+        "objective": 0.04200169445191236,
+        "projected_gradient_max": 1.8361624964631854e-11,
+        "iterations": 12,
+        "optimizer_success": true,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "convergence_verified": true,
+        "slope": 1.0857817850759002,
+        "intercept": 0.3188301343783015,
+        "beta_norm": 0.0,
+        "training_rows": 424780,
+        "model_sha256": "927434770cdddef4cc0318a5a8adc1ab9527f9aaf9479da594218694545a9365",
+        "role": "Training15; not a validated15 score"
+      },
+      "files_sha256": {
+        "model.npz": "927434770cdddef4cc0318a5a8adc1ab9527f9aaf9479da594218694545a9365",
+        "fit.json": "c7edd000614dcdd125a830332949061ba997f06303d247b43b0bd030069a1c94",
+        "validation_prediction.npy": "cfbf333ecfc76e3804ee41523d39bbae2d6e53f4489d2335432185ccd210872c",
+        "validation_logit.npy": "6c318b0032bde7bc8e48bca227baef0a126c7ed5a6c9494414a1c6e354ddfabf"
+      }
+    },
+    {
+      "variant": "global_topics_only",
+      "scores": {
+        "auc": 0.8011632426507045,
+        "logloss": 0.04382817843747455,
+        "average_precision": 0.08752428775373018,
+        "mean_probability": 0.009414311136328247
+      },
+      "rounded6_scores": {
+        "auc": 0.8011632448977564,
+        "logloss": 0.043828176698300546,
+        "average_precision": 0.08752348276446614,
+        "mean_probability": 0.009414310659434147
+      },
+      "auc_from_logit": 0.8011632426507045,
+      "auc_gain": -7.802469943385404e-05,
+      "maximum_reload_error": 0.0,
+      "fit": {
+        "initial_objective": 0.04204855010744797,
+        "objective": 0.04199768352312492,
+        "projected_gradient_max": 4.15859940532237e-08,
+        "iterations": 22,
+        "optimizer_success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "convergence_verified": true,
+        "slope": 1.0872989275946394,
+        "intercept": 0.3261387998029406,
+        "beta_norm": 0.04821047704766868,
+        "training_rows": 424780,
+        "model_sha256": "29336c1b0748dcdcc2a6c0c39189259f88c37d0c6e789ed6787ee0096abcc21a",
+        "role": "Training15; not a validated15 score"
+      },
+      "files_sha256": {
+        "model.npz": "29336c1b0748dcdcc2a6c0c39189259f88c37d0c6e789ed6787ee0096abcc21a",
+        "fit.json": "4bb34e8e0ca19d1e756127886d637a47321937a1074028d05403f80ac323474b",
+        "validation_prediction.npy": "bfa06d5afd02e19252556b519c158454eec3cded2303f656260b4a97da6c111f",
+        "validation_logit.npy": "827ec8b8e7c77850d07f3e75a0b9aeb1a67bd7592f7de2a79fc88572c0295af8"
+      }
+    },
+    {
+      "variant": "uniform_top5_conditional",
+      "scores": {
+        "auc": 0.8004946542266149,
+        "logloss": 0.043854392932205305,
+        "average_precision": 0.08723481179705847,
+        "mean_probability": 0.009358139900846312
+      },
+      "rounded6_scores": {
+        "auc": 0.8004946314350898,
+        "logloss": 0.043854388636938205,
+        "average_precision": 0.08723402429830387,
+        "mean_probability": 0.009358140368213889
+      },
+      "auc_from_logit": 0.8004946542266149,
+      "auc_gain": -0.0007466131235234208,
+      "maximum_reload_error": 0.0,
+      "fit": {
+        "initial_objective": 0.04204855010744797,
+        "objective": 0.04198073317322173,
+        "projected_gradient_max": 3.912257096519542e-08,
+        "iterations": 37,
+        "optimizer_success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "convergence_verified": true,
+        "slope": 1.0906527345552375,
+        "intercept": 0.34837601281887964,
+        "beta_norm": 0.09252926924180213,
+        "training_rows": 424780,
+        "model_sha256": "ed0a3fdc5df622852d84795b27a9e62c78dd2c17a99669cbbc4edfc70425a75d",
+        "role": "Training15; not a validated15 score"
+      },
+      "files_sha256": {
+        "model.npz": "ed0a3fdc5df622852d84795b27a9e62c78dd2c17a99669cbbc4edfc70425a75d",
+        "fit.json": "8e7900cdea52c444c1ec64a6275579fef778ef55f10e8687923e956dc9b6d6fd",
+        "validation_prediction.npy": "13b1a18190b270599340f44cd84c91d61e788b4b6a375cfa067ad4839462da3c",
+        "validation_logit.npy": "84bb700c8f51307fe582e132d2b2fee3238467f8c0fcc55b2fb1f2f0f144953a"
+      }
+    },
+    {
+      "variant": "full_weighted_conditional",
+      "scores": {
+        "auc": 0.8010146919845833,
+        "logloss": 0.04383827180139606,
+        "average_precision": 0.0873524421771467,
+        "mean_probability": 0.009366152074627244
+      },
+      "rounded6_scores": {
+        "auc": 0.8010143741872622,
+        "logloss": 0.0438382770123897,
+        "average_precision": 0.0873518917494709,
+        "mean_probability": 0.009366151904223631
+      },
+      "auc_from_logit": 0.8010146919845833,
+      "auc_gain": -0.00022657536555503732,
+      "maximum_reload_error": 0.0,
+      "fit": {
+        "initial_objective": 0.04204855010744797,
+        "objective": 0.04197996563953192,
+        "projected_gradient_max": 2.7962312281994616e-07,
+        "iterations": 38,
+        "optimizer_success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "convergence_verified": true,
+        "slope": 1.0893657414853832,
+        "intercept": 0.3375367185663834,
+        "beta_norm": 0.10718660417508119,
+        "training_rows": 424780,
+        "model_sha256": "35d713e7b2f91f4ec50b812def17119b67503159a9942cf8e298a94315f50d27",
+        "role": "Training15; not a validated15 score"
+      },
+      "files_sha256": {
+        "model.npz": "35d713e7b2f91f4ec50b812def17119b67503159a9942cf8e298a94315f50d27",
+        "fit.json": "f8bbc0e36acb62fc986483b42e56dd4f53e168f20159dd939ca0e41e2d7411b4",
+        "validation_prediction.npy": "620a6c68206e26613a2bf8e8dc1b65a35a14fd3fe41d1cd691db83b5a028bcd9",
+        "validation_logit.npy": "ad24a89211a0f759240d45969b98442e6121f6d7ed5594be347531581ff4b212"
+      }
+    },
+    {
+      "variant": "profile_permuted",
+      "scores": {
+        "auc": 0.8011136515022867,
+        "logloss": 0.043848847532840164,
+        "average_precision": 0.0872408780613217,
+        "mean_probability": 0.00938364496601496
+      },
+      "rounded6_scores": {
+        "auc": 0.8011137124936918,
+        "logloss": 0.04384885525690814,
+        "average_precision": 0.08724015594413348,
+        "mean_probability": 0.009383645265330594
+      },
+      "auc_from_logit": 0.8011136515022867,
+      "auc_gain": -0.00012761584785159208,
+      "maximum_reload_error": 0.0,
+      "fit": {
+        "initial_objective": 0.04204855010744797,
+        "objective": 0.041967295694957864,
+        "projected_gradient_max": 3.0245184074222857e-07,
+        "iterations": 38,
+        "optimizer_success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "convergence_verified": true,
+        "slope": 1.088771058371577,
+        "intercept": 0.33348067749365223,
+        "beta_norm": 0.1256939153118654,
+        "training_rows": 424780,
+        "model_sha256": "0e990daf8d3d948c55fbf94458b4d5e4b0f1cce3589766244c7e83c09761b49d",
+        "role": "Training15; not a validated15 score"
+      },
+      "files_sha256": {
+        "model.npz": "0e990daf8d3d948c55fbf94458b4d5e4b0f1cce3589766244c7e83c09761b49d",
+        "fit.json": "9970c62d28f56d383c1de6008865f218f54d2faf59f89517002fb2ff6247726a",
+        "validation_prediction.npy": "bc9109b677937ff2aa37e9141adb9fc773d476a2a91509bcd0af849b864c1aad",
+        "validation_logit.npy": "3ddd3759c48d40e9e8b5fe8bb1b0c8bbf7e3df284a257c51fded30e502f90684"
+      }
+    }
+  ],
+  "reference_scores": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "fit15_not_validated15": true,
+  "final_auc": null,
+  "platform_goal_proven": false
+}

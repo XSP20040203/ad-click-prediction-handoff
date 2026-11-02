@@ -1,0 +1,38 @@
+{
+  "model": "neural",
+  "auc": 0.7214146217954175,
+  "logloss": 0.047662737696658804,
+  "average_precision": 0.02772496744904932,
+  "mean_prediction": 0.009889413447605504,
+  "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+  "best_epoch": 1,
+  "epochs_completed": 4,
+  "parameter_count": 729665,
+  "training_seconds": 110.81738499999847,
+  "inference_seconds": null,
+  "feature_note": "24 category embeddings + 7 masked-mean pooled lists + 20 shared numeric features; historical labels are source-domain observations only.",
+  "parameters": {
+    "embedding_dim": 16,
+    "hidden_dims": [
+      256,
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "batch_size": 2048,
+    "max_epochs": 10,
+    "early_stopping_patience": 3,
+    "loss": "unweighted BCEWithLogitsLoss",
+    "seed": 42
+  },
+  "train_rows": 2104337,
+  "valid_rows": 421983,
+  "validation_date": "2019-11-16",
+  "validation_clicks": 3724,
+  "seed": 42,
+  "python": "3.10.0"
+}

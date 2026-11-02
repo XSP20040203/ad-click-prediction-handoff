@@ -1,0 +1,68 @@
+{
+  "assumed_clicks": 3558,
+  "past_feedback_auc": [
+    0.79055,
+    0.79211,
+    0.79347,
+    0.79177
+  ],
+  "past_dates_used": [
+    20191114,
+    20191115
+  ],
+  "no_actual_day16_labels_used": true,
+  "projection": {
+    "assumed_positive_count": 3558,
+    "expected_positive_count": 3558.0000000096925,
+    "expected_rank_moments_not_binary_auc": [
+      0.7905500000006421,
+      0.7921100000008013,
+      0.7934700000008901,
+      0.7917700000007373
+    ],
+    "maximum_expected_rank_moment_error": 8.90065798841988e-13,
+    "theta": [
+      -0.29369264220000957,
+      0.09335178765645018,
+      0.04627435629255176,
+      -0.13483140662050047,
+      -0.1307556395269788
+    ],
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "probability_min": 0.0001319392902352612,
+    "probability_max": 0.9148391880213118,
+    "rows_probability_at_least_half": 88
+  },
+  "repairs": [
+    {
+      "seed": 617231,
+      "swaps": 65,
+      "valid": true,
+      "rank_auc": [
+        0.7905490244322415,
+        0.7921090085841129,
+        0.7934692293294642,
+        0.7917690738003003
+      ]
+    },
+    {
+      "seed": 617232,
+      "swaps": 63,
+      "valid": true,
+      "rank_auc": [
+        0.7905490368587229,
+        0.7921093011101925,
+        0.7934693949039267,
+        0.7917691305590916
+      ]
+    }
+  ],
+  "pseudo_rank_auc": [
+    0.7905490368587229,
+    0.7921093011101925,
+    0.7934693949039267,
+    0.7917691305590916
+  ],
+  "retained_candidates": 2
+}

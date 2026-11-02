@@ -1,0 +1,57 @@
+{
+  "model": "deepfm",
+  "auc": 0.7111677315795948,
+  "logloss": 0.04781487669051526,
+  "average_precision": 0.027244237370526884,
+  "mean_prediction": 0.009490913863011237,
+  "device": "cuda / NVIDIA GeForce RTX 3050 Laptop GPU",
+  "best_epoch": 1,
+  "epochs_completed": 4,
+  "parameter_count": 403409,
+  "training_seconds": 172.66498460000003,
+  "inference_seconds": null,
+  "feature_note": "24 categorical fields, seven masked-mean history fields, 20 numeric inputs. Linear + second-order FM + DNN; FM/DNN share all field embeddings; numeric fields use x_i*v_i.",
+  "model_class": "DeepFMModel",
+  "model_options": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01
+  },
+  "parameters": {
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "batch_size": 2048,
+    "max_epochs": 10,
+    "early_stopping_patience": 3,
+    "loss": "unweighted BCEWithLogitsLoss",
+    "seed": 42
+  },
+  "train_rows": 2104337,
+  "valid_rows": 421983,
+  "validation_day": 20191116,
+  "validation_clicks": 3724,
+  "seed": 42,
+  "cache_dir": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\cache",
+  "python": "3.10.0",
+  "new_task_rows": 31363,
+  "new_task_clicks": 303,
+  "new_task_metrics": {
+    "auc": 0.6621944857074246,
+    "logloss": 0.05309188499038432,
+    "average_precision": 0.019230766536503643,
+    "mean_prediction": 0.010919155423177397
+  },
+  "experiment_scope": "Same raw inputs, frozen preprocessing, date boundaries, batch order and optimizer. Architecture and its input representation vary."
+}

@@ -1,0 +1,201 @@
+{
+  "status": "passed",
+  "day": 20191116,
+  "seed": 42,
+  "verified_new_ad_models": 3,
+  "records": [
+    {
+      "day": 20191116,
+      "seed": 42,
+      "mode": "any",
+      "endpoint": "best",
+      "auc": 0.8012412673501383,
+      "logloss": 0.04389861132045347,
+      "average_precision": 0.08749928332848086,
+      "mean_probability": 0.009657048985881815,
+      "gain_vs_reference": 0.0,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "mode": "any",
+      "endpoint": "final",
+      "auc": 0.8012412673501383,
+      "logloss": 0.04389861132045347,
+      "average_precision": 0.08749928332848086,
+      "mean_probability": 0.009657048985881815,
+      "gain_vs_reference": 0.0,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "mode": "count",
+      "endpoint": "best",
+      "auc": 0.8006591018209493,
+      "logloss": 0.04392731721516509,
+      "average_precision": 0.08697933001595831,
+      "mean_probability": 0.009539096726323498,
+      "gain_vs_reference": -0.0005821655291889938,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "mode": "count",
+      "endpoint": "final",
+      "auc": 0.8006591018209493,
+      "logloss": 0.04392731721516509,
+      "average_precision": 0.08697933001595831,
+      "mean_probability": 0.009539096726323498,
+      "gain_vs_reference": -0.0005821655291889938,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "mode": "dual",
+      "endpoint": "best",
+      "auc": 0.8007266430608784,
+      "logloss": 0.043915456959676746,
+      "average_precision": 0.08741171494655868,
+      "mean_probability": 0.00956019066444444,
+      "gain_vs_reference": -0.0005146242892599684,
+      "independent_reload_error": 0.0
+    },
+    {
+      "day": 20191116,
+      "seed": 42,
+      "mode": "dual",
+      "endpoint": "final",
+      "auc": 0.8007266430608784,
+      "logloss": 0.043915456959676746,
+      "average_precision": 0.08741171494655868,
+      "mean_probability": 0.00956019066444444,
+      "gain_vs_reference": -0.0005146242892599684,
+      "independent_reload_error": 0.0
+    }
+  ],
+  "comparisons": {
+    "any": {
+      "versus_reference": {
+        "auc_delta": 0.0,
+        "user_cluster_approximate_95_interval": [
+          0.0,
+          0.0
+        ],
+        "logloss_delta": 0.0
+      },
+      "versus_any": {
+        "auc_delta": 0.0,
+        "user_cluster_approximate_95_interval": [
+          0.0,
+          0.0
+        ],
+        "logloss_delta": 0.0
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8050835956173258,
+          "logloss": 0.043416575987711016,
+          "average_precision": 0.09011972030426907,
+          "mean_probability": 0.009457051068948001
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7528808289714999,
+          "logloss": 0.0499022666364585,
+          "average_precision": 0.06390433460360662,
+          "mean_probability": 0.012147983727860797
+        }
+      }
+    },
+    "count": {
+      "versus_reference": {
+        "auc_delta": -0.0005821655291887717,
+        "user_cluster_approximate_95_interval": [
+          -0.0012909584668251602,
+          0.0001266274084476167
+        ],
+        "logloss_delta": 2.870589471161422e-05
+      },
+      "versus_any": {
+        "auc_delta": -0.0005821655291887717,
+        "user_cluster_approximate_95_interval": [
+          -0.0012909584668251602,
+          0.0001266274084476167
+        ],
+        "logloss_delta": 2.870589471161422e-05
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8044080514946153,
+          "logloss": 0.04345257120973194,
+          "average_precision": 0.08948740338877503,
+          "mean_probability": 0.009353565414500588
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7534044615021709,
+          "logloss": 0.049840185392389755,
+          "average_precision": 0.06345495019459296,
+          "mean_probability": 0.011849852745335232
+        }
+      }
+    },
+    "dual": {
+      "versus_reference": {
+        "auc_delta": -0.0005146242892597463,
+        "user_cluster_approximate_95_interval": [
+          -0.0011255767818498983,
+          9.63282033304057e-05
+        ],
+        "logloss_delta": 1.684563922327298e-05
+      },
+      "versus_any": {
+        "auc_delta": -0.0005146242892597463,
+        "user_cluster_approximate_95_interval": [
+          -0.0011255767818498983,
+          9.63282033304057e-05
+        ],
+        "logloss_delta": 1.684563922327298e-05
+      },
+      "slices": {
+        "seen_task": {
+          "rows": 390620,
+          "auc": 0.8045013440163407,
+          "logloss": 0.043441498989404324,
+          "average_precision": 0.089814346259486,
+          "mean_probability": 0.00937131426610546
+        },
+        "cold_task": {
+          "rows": 31363,
+          "auc": 0.7529555273621373,
+          "logloss": 0.04981851031387819,
+          "average_precision": 0.06510144095163847,
+          "mean_probability": 0.011912609078472892
+        }
+      }
+    }
+  },
+  "reference_scores": {
+    "auc": 0.8012412673501383,
+    "logloss": 0.04389861132045347,
+    "average_precision": 0.08749928332848086,
+    "mean_probability": 0.009657048985881815
+  },
+  "training_counts_reconstructed_independently": true,
+  "held_count_targets_missing": true,
+  "count_targets_in_inputs": false,
+  "held_ad_labels_fit": false,
+  "existing_submission_unchanged": true,
+  "submission_sha256": "1b43ee597613ec6a48d448a2cb00b824aca3440e38a32d47e21ceadccd833846",
+  "final_auc": null,
+  "platform_goal_proven": false,
+  "second_seed_confirmed": false,
+  "evaluator_sha256": "630a94ecaa358a05c217fd39546cc83cf4f588471a38b138c6e7dd381dd89e42",
+  "limitations": "Repeated chronological development; user-cluster intervals are approximate, not blind final evidence"
+}

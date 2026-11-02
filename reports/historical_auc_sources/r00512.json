@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "independent_process": true,
+  "device": "cpu",
+  "validation_labels_used_for_inference": false,
+  "results": {
+    "20191115": {
+      "rows": 424780,
+      "auc": 0.7800543016301472,
+      "maximum_cpu_vs_saved_gpu_error": 1.7881393432617188e-07,
+      "strict_state_dict_load": true,
+      "saved_trainer_sha256": "bf3db9f9d68ca018b756d5bc31f75a67a87dc8f03ebfd7fa41abb63f7b773fd9",
+      "current_trainer_sha256": "1d28cc595a9863de730a42714421801f767df1a1e444d582fb4fc3dd77465199",
+      "source_changed_after_experiment": true,
+      "source_note": "Later CLI binning/model variants added after original response runs; original checkpoint rebuilt from saved options with ClippedTabMFieldModel",
+      "checkpoint_sha256": "4bd7dab1c5e952c2f7cf3ec1018250b26fa4c08c125078825b21bdadaed18d62",
+      "status": "passed"
+    },
+    "20191116": {
+      "rows": 421983,
+      "auc": 0.7851220601343459,
+      "maximum_cpu_vs_saved_gpu_error": 2.384185791015625e-07,
+      "strict_state_dict_load": true,
+      "saved_trainer_sha256": "bf3db9f9d68ca018b756d5bc31f75a67a87dc8f03ebfd7fa41abb63f7b773fd9",
+      "current_trainer_sha256": "1d28cc595a9863de730a42714421801f767df1a1e444d582fb4fc3dd77465199",
+      "source_changed_after_experiment": true,
+      "source_note": "Later CLI binning/model variants added after original response runs; original checkpoint rebuilt from saved options with ClippedTabMFieldModel",
+      "checkpoint_sha256": "f97663750d7cfa2aa1bd2d23d0bf47961e1e824702a54674075edd2e27875f5d",
+      "status": "passed"
+    }
+  },
+  "seconds": 99.90899209999952
+}

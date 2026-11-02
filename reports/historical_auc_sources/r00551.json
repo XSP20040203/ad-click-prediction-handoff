@@ -1,0 +1,9 @@
+{
+  "selection_day": 20191115,
+  "leaves": 7,
+  "rounds": 499,
+  "exponent": 0.1,
+  "best_day15_candidate_auc": 0.7894751591723064,
+  "day15_base_auc": 0.7893219216708781,
+  "day16_labels_used_for_selection": false
+}

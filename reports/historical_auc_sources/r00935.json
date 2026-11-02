@@ -1,0 +1,200 @@
+{
+  "status": "fixed_before_features_training_and_final_inference",
+  "seed": 42,
+  "shuffle_seed": 43,
+  "batch_size": 2048,
+  "fixed_epoch_fraction": 0.75,
+  "full_epoch_batches": 1234,
+  "fixed_optimizer_steps": 926,
+  "fixed_training_rows_seen": 1896448,
+  "actual_fractional_epoch_by_batches": 0.7504051863857374,
+  "budget_rule": "ceil(ceil(full_train_rows/2048)*0.75), exactly the development .75 evaluation checkpoint rule",
+  "full_train_rows": 2526320,
+  "final_rows": 404182,
+  "options": {
+    "numeric_dim": 325,
+    "embedding_dim": 8,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.1,
+    "unknown_dropout": 0.01,
+    "cross_layers": 2,
+    "group_norm_caps": {
+      "user_id": 0.2,
+      "ad_task": 0.2,
+      "adv_id": 0.2
+    }
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "pos_weight": 1.0,
+    "gradient_clip_norm": 5.0
+  },
+  "ensemble": {
+    "dcn": 0.3,
+    "tree": 0.3,
+    "lgb": 0.15,
+    "multiscale_dcn": 0.25
+  },
+  "weights_source": "Day15 chose 20% LGB inside old blend and 25% multiscale; day16 confirmed direction; fixed .3/.3/.15/.25",
+  "development_auc": {
+    "20191115": {
+      "fixed_v3_auc": 0.7876002210086661,
+      "fixed_v2_auc": 0.786473152710307,
+      "multiscale_dcn_auc": 0.7761320006022201,
+      "best_fractional_epoch": 0.7503045066991474
+    },
+    "20191116": {
+      "fixed_v3_auc": 0.7948963507440203,
+      "fixed_v2_auc": 0.79243244179162,
+      "multiscale_dcn_auc": 0.7857505309802582,
+      "best_fractional_epoch": 0.75
+    }
+  },
+  "development_evidence_files": {
+    "20191115": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\dense_results\\goal085_day15_multiscale_dcn\\metrics.json",
+      "sha256": "b807f3a31a1e5e8c9043814ed600107366187201ac850b773cce7dd2793e62e2",
+      "bytes": 36702
+    },
+    "20191116": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\dense_results\\goal085_day16_multiscale_dcn\\metrics.json",
+      "sha256": "5877222f0e7e861218fd3ee2544c7790dc1a8633f4370d667db6147cd8e9d74c",
+      "bytes": 36723
+    },
+    "round_results_at_start": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085_next\\round_results.json",
+      "sha256": "305a47c716dee491a70e308c5590745fb173528a32f85839e84a187d181c8e09",
+      "bytes": 12152
+    }
+  },
+  "source_files": {
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085_next\\refit_multiscale_export.py": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085_next\\refit_multiscale_export.py",
+      "sha256": "280d7873cfc970b1a6d7de709ebdb3e4b7b8fa31edbf1e450a596e2bec357882",
+      "bytes": 34517
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085_next\\prepare_multiscale_stats.py": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\auc085_next\\prepare_multiscale_stats.py",
+      "sha256": "bf342e6889b49c09714a943518e27431c9a3c64848c94680a21e4d8773b863f4",
+      "bytes": 15447
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\train_dense_signals.py": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\train_dense_signals.py",
+      "sha256": "bf4ad21f31ff96718eae6d31a890419374ef5dc94eb1a034bbb319d91daef58b",
+      "bytes": 7881
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\bounded_id_models.py": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\bounded_id_models.py",
+      "sha256": "5d0d66825eb004a7dbe2e1da712cf51302a0192c2bce4e86176a3fb2e37bdeb9",
+      "bytes": 1712
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\id_regularized_models.py": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\id_regularized_models.py",
+      "sha256": "716321c3e7c09c2cea6d195c0f7dcebd2eadef59866cdbce48961f0b6b1aaa52",
+      "bytes": 2594
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\mainstream_models.py": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\model_comparison\\mainstream_models.py",
+      "sha256": "aaa61357fc823ef19bd9c582a1c54f8b272be877daf9ac479f6d9728dd87bd9f",
+      "bytes": 7565
+    }
+  },
+  "protected_files": {
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\full_refit_models\\dcn.pt": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\full_refit_models\\dcn.pt",
+      "sha256": "3813c5357052b4256b28a59909db3978ef230eec3cbcad47661f4446fe40c2a6",
+      "bytes": 3318692
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\full_refit_models\\catboost.cbm": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\full_refit_models\\catboost.cbm",
+      "sha256": "88d764aefc534271be1e4d8df59a71e442c62d8d0c17501c0768f79df2fba528",
+      "bytes": 7507260
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\full_refit_models\\dcn_final_prediction.npy": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\full_refit_models\\dcn_final_prediction.npy",
+      "sha256": "ce48cff53de1be6c8b54d0c1b5948324b533d3718d7c80c12633a4b2bf72feac",
+      "bytes": 3233584
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\full_refit_models\\tree_final_prediction.npy": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\full_refit_models\\tree_final_prediction.npy",
+      "sha256": "0d08ea57fc5e4ebb9aed05136d162f6d9e7c49609a974a400e3315b1b5521b6a",
+      "bytes": 3233584
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\ensemble_final_prediction.npy": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\ensemble_final_prediction.npy",
+      "sha256": "3d1aa893abdba2eb200c2391db18a21e4e6e9baf44d01cefc5aa1119984466f9",
+      "bytes": 3233584
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\lgb_final_prediction.npy": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\lgb_final_prediction.npy",
+      "sha256": "f03f474d4e419f16cd607a2290f755b29f506a8534f1fbe8a695a82a569dd8e7",
+      "bytes": 3233584
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\lgb_model.txt": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\lgb_model.txt",
+      "sha256": "0cdd8c7df04c4452300ff7230e152a5d87fe066d077e10491876d38468019d7a",
+      "bytes": 2830650
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\manifest.json": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\manifest.json",
+      "sha256": "2b31eeb9df4cf85653b8c8431a5782dfd107539964f7955018e243f8965634ec",
+      "bytes": 23061
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\prediction_details.csv": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\prediction_details.csv",
+      "sha256": "41dffe1a61a038bf5423b1c9f924fa2c6178978b46b241f571c90a347a1b5dbe",
+      "bytes": 49077204
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\protocol.json": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\protocol.json",
+      "sha256": "a829b6e786d9f8276a1218d8f29450170daa01cb4c39b9d67e10d9f4977bd197",
+      "bytes": 19019
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\result.csv": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\result.csv",
+      "sha256": "8178152ff3e875ed3f06539060f83306de098a79937faf11a4c9883ace81ca60",
+      "bytes": 6826989
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\submission.csv": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\submission.csv",
+      "sha256": "9ff79b79e43347aedc99a2706d616b552ca61ec8a40b89b38f1ccdc3efe7e533",
+      "bytes": 6759993
+    },
+    "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\verification.json": {
+      "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\output\\chronological_lgb_v2\\verification.json",
+      "sha256": "0b59a04a1f021b26126886d978568003d5e504f503c35bc46c6e7ac67750dcbc",
+      "bytes": 1918
+    }
+  },
+  "cache_manifest": {
+    "path": "C:\\Users\\30272\\Desktop\\ml\\大作业上传\\analysis\\daily_interest_din\\full_refit_cache\\manifest.json",
+    "sha256": "e9d0c6c1b05e0aa93daaab640ba2aa0b160ed5ac78b5d2d7e5447415bcf4038e",
+    "bytes": 36096
+  },
+  "input_sha256": {
+    "train.csv": "3f1b4dc73a754c60df3df8fd6f4c13f76ee57bd3be03ded365aba69f6dca34ad",
+    "train_feeds.csv": "c9eea8f2637fdd5e42a7c341c7ff0ddca12f9d0a054a5fa40a05ebe2263f7c85",
+    "final_test.csv": "9478dfd16937919a30b4efe7b19b805c70196ca5d0c2c8561e37bdb0fdd42b59",
+    "test_feeds.csv": "cce1b0fa2929190642cdc724cd2342edc755b1847a87fc5acc8c26469ddcdbd2"
+  },
+  "early_stopping": false,
+  "feature_generation": "Import build_multiscale_statistics(all_train_plus_final_minus1,20191117,F_memmap159)",
+  "numeric_inputs": "Existing full-cache166 unchanged + 159 multiscale columns normalized on full training rows only",
+  "same_day_input_assumption": "Supplied full source-day snapshots, daily exposures and ad-history snapshots available offline",
+  "advertisement_statistics": "Strictly earlier calendar dates; final advertisement labels never loaded",
+  "inference_batch_size": 4096,
+  "final_labels_available": false,
+  "final_labels_read": false,
+  "final_label_value": -1,
+  "final_auc": null,
+  "warnings": [
+    "开发日期15/16反复用于模型和固定融合权重选型，不是独立盲测；开发AUC不代表final AUC。",
+    "源域新闻数据、当前日曝光和广告历史快照采用所提供整日离线输入假设，不代表逐条在线曝光前可用。",
+    "final标签不读取且强制为-1；final_auc=None，不能声称final达标或AUC达到0.85。"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "scope": "Repeated-development dates; not final score",
+  "fixed_weights": {
+    "snapshot_exposure_tree": 0.75,
+    "strict_dcn": 0.25
+  },
+  "records": [
+    {
+      "day": 20191115,
+      "baseline_neural_auc": 0.7383246728284034,
+      "snapshot_tree_auc": 0.7761661703993995,
+      "tree75_neural25_auc": 0.7792342200966085,
+      "logloss": 0.04269084561927686
+    },
+    {
+      "day": 20191116,
+      "baseline_neural_auc": 0.7373452650943141,
+      "snapshot_tree_auc": 0.7838375557845688,
+      "tree75_neural25_auc": 0.7861803733644203,
+      "logloss": 0.04465570572423135
+    }
+  ],
+  "final_auc": null
+}
